@@ -1654,6 +1654,14 @@ def save(img, filename=None):
 
 
 """
+Returns Supported File Formats for Reading Images
+"""
+def getSupportedFileFormats():
+        return {"Bitmap":["*.bmp", "*.dib"], "JPEG": ["*.jpeg", "*.jpg", "*.jpe"], "JPEG 2000": ["*.jp2"],"Portanle Network Graphics" : ["*.png"], "WebP": ["*.webp"], "Portable image formats":["*.pbm", "*.pgm", "*.ppm"], "Sun rasters":["*.sr", "*.ras"], "TIFF files", ["*.tiff","*.tif"] }
+
+
+
+"""
 Saves a list of images to a file
 
 Params:
