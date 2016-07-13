@@ -16,7 +16,7 @@ import sys
 import time
 import subprocess
 
-__version__ = 0.1
+__version__ = 0.2
 
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
