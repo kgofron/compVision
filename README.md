@@ -20,4 +20,5 @@ Summer 2016
 ### Files ###
 * cvlib.py - Wrapper CV Module
 * fire.sh - Git Shell Script
+* updateLib.sh - Shell Script to update cvlib.py in all subfolders. SO PLEASE ONLY ADJUST `cvlib.py` in top folder!!!!
 * Various standalone applications with module in use (SEE FOLDERS)
