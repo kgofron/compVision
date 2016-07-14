@@ -13,12 +13,12 @@ Summer 2016
 * Alexey Suvorov - Beamline Scientist (IXS)
 
 ### Dependencies ###
-* OpenCV
-* EPICS
-* Numpy
+* `OpenCV`
+* `EPICS`
+* `Numpy`
 
 ### Files ###
-* cvlib.py - Wrapper CV Module
-* fire.sh - Git Shell Script
-* updateLib.sh - Shell Script to update cvlib.py in all subfolders. SO PLEASE ONLY ADJUST `cvlib.py` in top folder!!!!
+* `cvlib.py` - Wrapper CV Module
+* `fire.sh` - Git Shell Script
+* `updateLib.sh` - Shell Script to update cvlib.py in all subfolders. SO PLEASE ONLY ADJUST `cvlib.py` in top folder!!!!
 * Various standalone applications with module in use (SEE FOLDERS)
