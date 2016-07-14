@@ -192,6 +192,18 @@ def transpose(matrix):
 
 
 """
+Returns a dictionary into two lists of [[key][values]]
+"""
+def dictToLst(dictionary):
+        keys = []
+        values = []
+        for key value in dictionary.iteritems():
+                keys.append(key)
+                values.append(value)
+        return [keys, values]
+
+
+"""
 Returns the Mean Color (Regular Img) / Mean Intensity (Grayscale)
 
 Params:
