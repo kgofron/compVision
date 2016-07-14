@@ -14,8 +14,9 @@ import cv2.cv as cv
 import numpy as np 
 import sys
 import time
+import subprocess
 
-__version__ = 0.1
+__version__ = 0.2
 
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
@@ -1571,8 +1572,29 @@ def load(filename, flag=None):
 	else:
 		return img
 
+        
+"""
+Loads an image from an EPICS PV Value
 
+Params:
+    * PV - PV Value of Camera to fetch image
 
+Returns:
+    * Loaded Image
+"""
+def fetchImg(PV):
+        #subprocess.check_output("rm *.tiff", shell=True)
+        subprocess.check_output("caput XF:10IDD-BI{" + str(PV) + "-Cam:1}TIFF1:WriteFile 1", shell=True)
+        fileNum = subprocess.check_output("caget XF:10IDD-BI{" + str(PV) + "-Cam:1}TIFF1:FileNumber_RBV", shell=True).split()[1]
+        pwd = subprocess.check_output("pwd", shell=True)
+        time.sleep(1)
+        subprocess.check_output("cp /IXS/CAMERA/" + str(PV) + "/sample_0%03d.tiff " % int(fileNum) + str(pwd[:-1])+"/", shell=True)
+        time.sleep(1)
+        subprocess.check_output("mv sample_0%03d.tiff img.tiff" % int(fileNum), shell=True)
+        img = load("img.tiff")
+        return img
+
+        
 """
 Backprojection - Finds objects of interest in an image
 
@@ -1657,7 +1679,7 @@ def save(img, filename=None):
 Returns Supported File Formats for Reading Images
 """
 def getSupportedFileFormats():
-        return {"Bitmap":["*.bmp", "*.dib"], "JPEG": ["*.jpeg", "*.jpg", "*.jpe"], "JPEG 2000": ["*.jp2"],"Portanle Network Graphics" : ["*.png"], "WebP": ["*.webp"], "Portable image formats":["*.pbm", "*.pgm", "*.ppm"], "Sun rasters":["*.sr", "*.ras"], "TIFF files", ["*.tiff","*.tif"] }
+        return {"Bitmap":["*.bmp", "*.dib"], "JPEG": ["*.jpeg", "*.jpg", "*.jpe"], "JPEG 2000": ["*.jp2"],"Portanle Network Graphics" : ["*.png"], "WebP": ["*.webp"], "Portable image formats":["*.pbm", "*.pgm", "*.ppm"], "Sun rasters":["*.sr", "*.ras"], "TIFF files": ["*.tiff","*.tif"] }
 
 
 
