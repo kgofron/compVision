@@ -16,3 +16,8 @@ Summer 2016
 * OpenCV
 * EPICS
 * Numpy
+
+### Files ###
+* cvlib.py - Wrapper CV Module
+* fire.sh - Git Shell Script
+* Various standalone applications with module in use (SEE FOLDERS)
