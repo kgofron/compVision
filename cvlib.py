@@ -1,12 +1,12 @@
 """
 BNL NSLS-2 Computer Vision Module
 Author: William Watson
-Date: 2016-6-28
+Date: 2016-7-14
 
 This Module contains numerous functions designed to 
 help in the data manipulation of images on the Beam-lines within NSLS-2.
 It Uses the numpy and cv2 libraries to construct a simple module to 
-make image processing and computer vision easier.
+make image processing and computer vision easier, faster, and more compact.
 """
 
 import cv2
