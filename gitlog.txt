@@ -1,12 +1,18 @@
-* commit bb1fed8 (HEAD, origin/master, origin/HEAD, master)
+* commit df2aa7e (HEAD, origin/master, origin/HEAD, master)
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   8 minutes ago
+| Date:   46 seconds ago
+| 
+|     Update Files In Case Of Fire at 09:28:46 - 07/14/16
+|  
+* commit bb1fed8
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   9 minutes ago
 | 
 |     Update Files In Case Of Fire at 09:20:53 - 07/14/16
 |  
 * commit 0d133e3
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   9 minutes ago
+| Date:   10 minutes ago
 | 
 |     add in case of fire
 |  
