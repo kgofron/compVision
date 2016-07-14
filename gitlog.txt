@@ -1,0 +1,83 @@
+* commit bb1fed8 (HEAD, origin/master, origin/HEAD, master)
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   8 minutes ago
+| 
+|     Update Files In Case Of Fire at 09:20:53 - 07/14/16
+|  
+* commit 0d133e3
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   9 minutes ago
+| 
+|     add in case of fire
+|  
+* commit bef8a63
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   15 minutes ago
+| 
+|     update cvlib
+|  
+* commit 8b54728
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   17 hours ago
+| 
+|     forgot to add these files lol
+|  
+* commit 1b4b943
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   17 hours ago
+| 
+|     testing file for fetching via epics, and adjusted nrightness img2.tiff
+|  
+* commit d566036
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   19 hours ago
+| 
+|     update version
+|  
+* commit b30a539
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   19 hours ago
+| 
+|     add new load option via PV val
+|  
+* commit af1354e
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   24 hours ago
+| 
+|     update cvlib to include extra help for supported files
+|  
+* commit 9c4ccde
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   2 days ago
+| 
+|     time of work
+|  
+* commit e204b45
+| Author: nextBillyonair <wwatso13@jhu.edu>
+| Date:   2 days ago
+| 
+|     Update README.md
+|     
+|     fix spelling
+|  
+* commit 3f2d800
+| Author: nextBillyonair <wwatso13@jhu.edu>
+| Date:   2 days ago
+| 
+|     Update README.md
+|     
+|     Added blurb, me, other cool ppl
+|  
+* commit 428e7d3
+| Author: nextBillyonair <wwatso13@jhu.edu>
+| Date:   2 days ago
+| 
+|     Add files via upload
+|     
+|     Pushed local files to Git repo for better access to files and use of git
+|  
+* commit 1dff2ec
+  Author: nextBillyonair <wwatso13@jhu.edu>
+  Date:   2 days ago
+  
+      Initial commit
