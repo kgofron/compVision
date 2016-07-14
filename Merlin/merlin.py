@@ -6,7 +6,7 @@ Images Provided by IXS Staff at NSLS-2. Yong Cai, Alessandro Cunsolo, Alexy Suvo
 
 import cvlib
 
-img = cvlib.load("Merlin/photo2.jpg")
+img = cvlib.load("photo2.jpg")
 gray = cvlib.grayscale(img)
 lap = cvlib.binaryThreshold(img, threshVal=20)
 contours = cvlib.findContours(lap)

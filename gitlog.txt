@@ -1,36 +1,42 @@
-* commit 7e8c768 (HEAD, origin/master, origin/HEAD, master)
+* commit f0cac15 (HEAD, origin/master, origin/HEAD, master)
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   11 minutes ago
+| Date:   17 minutes ago
+| 
+|     Update Files In Case Of Fire at 09:49:46 - 07/14/16
+|  
+* commit 7e8c768
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   28 minutes ago
 | 
 |     Update Files In Case Of Fire at 09:38:34 - 07/14/16
 |  
 * commit 2a882c0
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   20 minutes ago
+| Date:   37 minutes ago
 | 
 |     Update Files In Case Of Fire at 09:29:32 - 07/14/16
 |  
 * commit df2aa7e
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   21 minutes ago
+| Date:   38 minutes ago
 | 
 |     Update Files In Case Of Fire at 09:28:46 - 07/14/16
 |  
 * commit bb1fed8
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   29 minutes ago
+| Date:   46 minutes ago
 | 
 |     Update Files In Case Of Fire at 09:20:53 - 07/14/16
 |  
 * commit 0d133e3
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   30 minutes ago
+| Date:   48 minutes ago
 | 
 |     add in case of fire
 |  
 * commit bef8a63
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   36 minutes ago
+| Date:   53 minutes ago
 | 
 |     update cvlib
 |  
