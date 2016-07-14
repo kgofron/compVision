@@ -1,84 +1,90 @@
-* commit 1c5598e (HEAD, origin/master, origin/HEAD, master)
+* commit 063e821 (HEAD, origin/master, origin/HEAD, master)
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   54 seconds ago
+| Date:   2 hours ago
+| 
+|     Update Files In Case Of Fire at 10:10:00 - 07/14/16
+|  
+* commit 1c5598e
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 10:09:06 - 07/14/16
 |  
 * commit d5f10f1
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   3 minutes ago
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 10:06:50 - 07/14/16
 |  
 * commit f0cac15
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   20 minutes ago
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 09:49:46 - 07/14/16
 |  
 * commit 7e8c768
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   31 minutes ago
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 09:38:34 - 07/14/16
 |  
 * commit 2a882c0
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   40 minutes ago
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 09:29:32 - 07/14/16
 |  
 * commit df2aa7e
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   41 minutes ago
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 09:28:46 - 07/14/16
 |  
 * commit bb1fed8
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   49 minutes ago
+| Date:   3 hours ago
 | 
 |     Update Files In Case Of Fire at 09:20:53 - 07/14/16
 |  
 * commit 0d133e3
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   51 minutes ago
+| Date:   3 hours ago
 | 
 |     add in case of fire
 |  
 * commit bef8a63
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   56 minutes ago
+| Date:   3 hours ago
 | 
 |     update cvlib
 |  
 * commit 8b54728
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   17 hours ago
+| Date:   19 hours ago
 | 
 |     forgot to add these files lol
 |  
 * commit 1b4b943
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   17 hours ago
+| Date:   19 hours ago
 | 
 |     testing file for fetching via epics, and adjusted nrightness img2.tiff
 |  
 * commit d566036
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   19 hours ago
+| Date:   21 hours ago
 | 
 |     update version
 |  
 * commit b30a539
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   19 hours ago
+| Date:   21 hours ago
 | 
 |     add new load option via PV val
 |  
 * commit af1354e
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   24 hours ago
+| Date:   26 hours ago
 | 
 |     update cvlib to include extra help for supported files
 |  
