@@ -16,7 +16,7 @@ import sys
 import time
 import subprocess
 
-__version__ = 0.3
+__version__ = 0.4
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
