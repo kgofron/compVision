@@ -204,24 +204,26 @@ def checkSim(mount):
         bestTh = cvlib.binaryThreshold(best, threshVal=100, invert=False)
         contours = cvlib.findContours(bestTh)
         contours = contours[1]
-        print "Image Similiarity" + str(i) + " " + str(cvlib.matchShapes(contours, mount))
+        print "Image Disimilarity: " + str(cvlib.matchShapes(contours, mount))
 
 
 def matchGame(img):
         img = cvlib.drawMatch(img, cvlib.load("pin.bmp"))
 	img = cvlib.drawMatch(img, cvlib.load("gripper.bmp"), color=(255,0,0))
-	cvlib.display(img)
+        return img
         
 
 ##################################################################################
 
 # Load Image
-image = cvlib.load("photo7.bmp")
+image = cvlib.load("photo16.bmp")
 img = image.copy()
 
-#Find COntours, Check Position, Separate Contours
+#Find Contours, Check Position, Separate Contours
 contours = cvlib.findContours(img)
 mount, base = separateCnt(img, contours)
+cvlib.printCntInfo(image, mount)
+#print "\nMount Info: " + str(cvlib.cntInfo(image, mount)) + "\n\n"
 posCheck(img, mount)
 
 # Find Points of Value
@@ -236,14 +238,17 @@ d = kinkDistance(image, mount)
 pinDist = getPinDistance(image, mount, lines, pts)
 
 #Display Work, Optional
-#cvlib.drawContour(image, mount)
+cvlib.drawContour(image, mount)
 cvlib.drawLine(image, centroid, botPt)
 cvlib.drawContour(image, apprx, color=(255,255,0))
 cvlib.drawContour(image, base, color=(255,0,0))
 cvlib.plotPoints(image, cvlib.extremePointsTup(mount), radius = 10)
 cvlib.plotCentroid(image, mount)
+
+# Match our celebrities to win.
 checkSim(mount)
-matchGame(image)
+image = matchGame(image)
+
 cvlib.display(image, "Photo")
 
 # End of File

@@ -197,7 +197,7 @@ Returns a dictionary into two lists of [[key][values]]
 def dictToLst(dictionary):
         keys = []
         values = []
-        for key value in dictionary.iteritems():
+        for key, value in dictionary.iteritems():
                 keys.append(key)
                 values.append(value)
         return [keys, values]
@@ -379,6 +379,32 @@ def scalarInfo(img, cnt):
 	m = cntInfo(img, cnt)
 	d = {"perimeter":m["perimeter"], "oreientation":m["orientation"], "solidity":m["solidity"],"height":m["height"], "extent":m["extent"], "aspect ratio":m["aspect ratio"], "area":m["area"], "sum intensity":m["sum intensity"], "width":m["width"], "equivalent diameter": m["equivalent diameter"], "mean intensity": m["mean intensity"]}
 	return d
+
+
+"""
+Prints the contour information line by line via key: value format
+
+Params:
+        * image - image
+        * cnt - contour
+""" 
+def printCntInfo(img, cnt):
+        m = cntInfo(img, cnt)
+        lst = dictToLst(m)
+        for i in range(len(lst[0])):
+                print str(lst[0][i]) + ": " + str(lst[1][i])
+                
+
+"""
+Prints a Dictionary in Key: Value format
+
+Params:
+        * m - Dictionary to print
+"""
+def printDic(m):
+        lst = dictToList(m)
+        for i in range(len(lst[0])):
+                print str(lst[0][i]) + ": " + str(lst[1][i])
 
 
 """
