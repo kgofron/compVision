@@ -160,10 +160,7 @@ def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 		maskVar = mask(tmp)
 	maskG = np.array(maskVar)
 	maskG = resize(maskG, maskG.shape[1] + 2, maskG.shape[0] + 2)
-	display(maskG)
 	ret, rect = cv2.floodFill(tmp, maskG, seedPoint, newVal=newval)
-        print ret
-        print rect
 	return tmp
 
 ################################################################################
