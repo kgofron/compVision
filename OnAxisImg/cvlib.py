@@ -17,6 +17,9 @@ import time
 import subprocess
 
 __version__ = 0.3
+__opencv__ = cv2.__version__
+__npversion__ = np.version.version
+__sysver__ = sys.version
 
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
@@ -165,6 +168,16 @@ def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 
 ################################################################################
 
+"""
+Prints the version codes for cvlib, OpenCV, and Numpy. For Refrence
+"""
+def version():
+        print "cvlib  Version: " + str(__version__)
+        print "OpenCV Version: " + str(__opencv__)
+        print "Numpy  Version: " + str(__npversion__)
+        print "Python Version: " + str(__sysver__)
+
+        
 """
 Transposes a matrix
 
