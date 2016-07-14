@@ -198,6 +198,21 @@ def getPinDistance(image, mount, lines, pts):
 		print "ERROR: Pin Not Mounted Correctly: Distance: " + str(dis)
 	return dis
 
+
+def checkSim(mount):
+        best = cvlib.load("photo14.bmp")
+        bestTh = cvlib.binaryThreshold(best, threshVal=100, invert=False)
+        contours = cvlib.findContours(bestTh)
+        contours = contours[1]
+        print "Image Similiarity" + str(i) + " " + str(cvlib.matchShapes(contours, mount))
+
+
+def matchGame(img):
+        img = cvlib.drawMatch(img, cvlib.load("pin.bmp"))
+	img = cvlib.drawMatch(img, cvlib.load("gripper.bmp"), color=(255,0,0))
+	cvlib.display(img)
+        
+
 ##################################################################################
 
 # Load Image
@@ -227,6 +242,8 @@ cvlib.drawContour(image, apprx, color=(255,255,0))
 cvlib.drawContour(image, base, color=(255,0,0))
 cvlib.plotPoints(image, cvlib.extremePointsTup(mount), radius = 10)
 cvlib.plotCentroid(image, mount)
+checkSim(mount)
+matchGame(image)
 cvlib.display(image, "Photo")
 
 # End of File
