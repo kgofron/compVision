@@ -9,6 +9,7 @@ It Uses the numpy and cv2 libraries to construct a simple module to
 make image processing and computer vision easier, faster, and more compact.
 """
 
+# DEPENDENCIES
 import cv2
 import cv2.cv as cv
 import numpy as np 
@@ -16,11 +17,13 @@ import sys
 import time
 import subprocess
 
+# VERSION
 __version__ = 0.4
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
 
+# GLOBAL VARS
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
 
