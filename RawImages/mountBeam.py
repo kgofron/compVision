@@ -222,8 +222,9 @@ img = image.copy()
 #Find Contours, Check Position, Separate Contours
 contours = cvlib.findContours(img)
 mount, base = separateCnt(img, contours)
+print "\n\n"
 cvlib.printCntInfo(image, mount)
-#print "\nMount Info: " + str(cvlib.cntInfo(image, mount)) + "\n\n"
+print "\n\n"
 posCheck(img, mount)
 
 # Find Points of Value
