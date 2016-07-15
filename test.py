@@ -1,10 +1,10 @@
 import cvlib
 from matplotlib import pyplot as plt
 
-#img = cvlib.fetchImg("OnAxis")
+img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
 
-img = cvlib.load("selfie.jpg")
-
+#img = cvlib.load("selfie.jpg")
+cvlib.display(img)
 """
 lap = cvlib.binaryThreshold(img, threshVal=100)
 contours = cvlib.findContours(lap)
@@ -24,6 +24,7 @@ print "Object Details: " + str(m)
 
 jet = cvlib.applyColorMap(img, "jet")
 """
+"""
 f1 = cvlib.highPassFilter(img)
 f2 = cvlib.lowPassFilter(img)
 enh = cvlib.enhance(img, window=60)
@@ -33,3 +34,4 @@ sharp = cvlib.sharpen(img)
 #cvlib.matplotlibDisplay(f2, title="Mag Spoec")
 cvlib.matplotlibDisplayMulti([f1, f2, enh, cvlib.grayscale(img), cvlib.grayscale(sharp)])
 #cvlib.displayImgs([img, f1, f2])
+"""
