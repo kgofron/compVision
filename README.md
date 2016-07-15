@@ -16,6 +16,7 @@ Summer 2016
 * `OpenCV`
 * `EPICS`
 * `Numpy`
+* `Matplotlib`
 
 ### Files ###
 * `cvlib.py` - Wrapper CV Module
