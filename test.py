@@ -1,12 +1,12 @@
 import cvlib
 from matplotlib import pyplot as plt
 
-img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
+#img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
 
-#img = cvlib.load("selfie.jpg")
+img = cvlib.load("selfie.jpg")
 #cvlib.display(img)
 print img
-cvlib.save(img)
+#cvlib.save(img)
 """
 lap = cvlib.binaryThreshold(img, threshVal=100)
 contours = cvlib.findContours(lap)

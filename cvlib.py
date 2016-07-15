@@ -22,7 +22,7 @@ from epics import caget, caput
 
 
 # VERSION
-__version__ = "0.5.3"
+__version__ = "0.5.3.1"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
