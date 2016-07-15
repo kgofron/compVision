@@ -22,7 +22,7 @@ from epics import caget, caput
 
 
 # VERSION
-__version__ = "0.5.3.1"
+__version__ = "0.5.3.2"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
@@ -1776,7 +1776,11 @@ def fetchImg(SYS, DEV):
                 for j in range(cols):
                         row.append(data[count])
                         count = count + 1
-        return img, rows, cols
+                r = np.array(row)
+                img.append(r)
+                row = []
+        npra = np.array(img)
+        return npra
         
 """
         #subprocess.check_output("rm *.tiff", shell=True)
