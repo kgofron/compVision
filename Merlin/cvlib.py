@@ -1764,11 +1764,12 @@ Returns:
     * Loaded Image
 """
 def fetchImg(SYS, DEV):
-        PV = str(SYS) + "{" + str(DEV) + "}image1:ArrayData"
-        data = caget(PV)
-        SYSDEV = str(SYS) + "{" + str(DEV) + "}image1:ArraySize"
-        rows = caget(SYSDEV + "1_RBV")
-        cols = caget(SYSDEV + "0_RBV")
+        SYSDEV = str(SYS) + "{" + str(DEV) + "}"
+        data = caget(SYSDEV + "image1:ArrayData")
+        rows = caget(SYSDEV + "image1:ArraySize1_RBV")
+        cols = caget(SYSDEV + "image1:ArraySize0_RBV")
+        dtype = caget(SYSDEV + "cam1:DataType_RBV")
+        color = caget(SYSDEV + "cam1:ColorMode_RBV")
         count = 0
         img = []
         row = []
@@ -1776,10 +1777,10 @@ def fetchImg(SYS, DEV):
                 for j in range(cols):
                         row.append(data[count])
                         count = count + 1
-                r = np.array(row)
+                r = np.array(row, np.uint8)
                 img.append(r)
                 row = []
-        npra = np.array(img)
+        npra = np.array(img, np.uint8)
         return npra
         
 """
