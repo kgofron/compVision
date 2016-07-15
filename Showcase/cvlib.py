@@ -16,6 +16,8 @@ import numpy as np
 import sys
 import time
 import subprocess
+from matplotlib import pyplot as plt
+
 
 # VERSION
 __version__ = 0.4
@@ -34,43 +36,11 @@ border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "defaul
 
 # METHODS KNOWN TO BE BROKEN / Need Further Looking!!!!!!!!!
 
-
-"""
-Fourier Transform
-
-Params:
-	* img - image
-
-Returns:
-	* SOMETHING
-"""
-def fourierCV(img):
-	gray = grayscale(img)
-	dft = cv2.dft(np.float32(gray), flags = cv2.DFT_COMPLEX_OUTPUT)
-	dft_shift = np.fft.fftshift(dft)
-	magnitude_spectrum = 20*np.log(cv2.magnitude(dft_shift[:,:,0], dft_shift[:,:,1]))
-	rows, cols = gray.shape
-	crow, ccol = rows/2, cols/2
-	mask = np.zeros((rows, cols, 2), np.uint8)
-	mask[crow-30:crow+30, ccol-30:ccol+30] = 1
-	fshift = dft_shift*mask
-	f_ishift = np.fft.ifftshift(fshift)
-	img_back = cv2.idft(f_ishift)
-	img_back = cv2.magnitude(img_back[:,:,0], img_back[:,:,1])
-	return img_back
-
-def fourierNP(img):
-	gray = grayscale(img)
-	f = np.fft.fft2(gray)
-	fshift = np.fft.fftshift(f)
-	magnitude_spectrum = 20*np.log(np.abs(fshift))
-	rows, cols = gray.shape
-	crow, ccol = rows/2, cols/2
-	fshift[crow-30:crow+30, ccol-30:ccol+30] = 0
-	f_ishift = np.fft.ifftshift(fshift)
-	img_back = np.fft.ifft2(f_ishift)
-	img_back = np.abs(img_back)
-	return img_back
+# Is this really enhancing? Need to figure out...
+def enhance(img, window=30):
+        hp = highPassFilter(img, window=window)
+        tmp = grayscale(img) + laplacian(img)
+        return tmp
 
 
 """
@@ -170,6 +140,143 @@ def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 	return tmp
 
 ################################################################################
+
+
+"""
+Performs a Fourier Transform using OpenCV Methods
+
+Params: 
+        * img - Image
+       
+Returns: 
+        * Magnitude Spectrum of Image 
+"""
+def fourierCV(img):
+	gray = grayscale(img)
+	dft = cv2.dft(np.float32(gray), flags = cv2.DFT_COMPLEX_OUTPUT)
+	dft_shift = np.fft.fftshift(dft)
+	magnitude_spectrum = 20*np.log(cv2.magnitude(dft_shift[:,:,0], dft_shift[:,:,1]))
+        return magnitude_spectrum
+
+
+"""
+Performs a Low Pass Filter Operation on the Image
+
+Params:
+        * img - image
+        * window - OPTIONAL - window size used for masking in spectrum; def: 30 - results in 60x60 window
+
+Returns:
+        * Low Pass Filtered Image
+"""
+def lowPassFilter(img, window=30):
+        gray = grayscale(img)
+	dft = cv2.dft(np.float32(gray), flags = cv2.DFT_COMPLEX_OUTPUT)
+	dft_shift = np.fft.fftshift(dft)
+	rows, cols = gray.shape
+	crow, ccol = rows/2, cols/2
+	mask = np.zeros((rows, cols, 2), np.uint8)
+	mask[crow-window:crow+window, ccol-window:ccol+window] = 1
+	fshift = dft_shift*mask
+	f_ishift = np.fft.ifftshift(fshift)
+	img_back = cv2.idft(f_ishift)
+	img_back = cv2.magnitude(img_back[:,:,0], img_back[:,:,1])
+	return img_back
+
+
+"""
+Performs a Fourier Transform using CV
+This is a wrapper fourier function for generic fourier. 
+More specific fncs are provided as well.
+
+Params: 
+        * img - Image
+       
+Returns: 
+        * Magnitude Spectrum of Image 
+"""
+def fourier(img):
+        return fourierCV(img)
+
+
+"""
+Performs a Fourier Transform using Numpy Methods
+
+Params: 
+        * img - Image
+       
+Returns: 
+        * Magnitude Spectrum of Image 
+"""
+def fourierNP(img):
+	gray = grayscale(img)
+	f = np.fft.fft2(gray)
+	fshift = np.fft.fftshift(f)
+	magnitude_spectrum = 20*np.log(np.abs(fshift)) # RETURN THIS
+        return magnitude_spectrum
+
+
+"""
+Performs a High Pass Filter Operation on the Image
+
+Params:
+        * img - image
+        * window - OPTIONAL - window size used for masking in spectrum; def: 30 - results in 60x60 window
+
+Returns:
+        * High Pass Filtered Image
+"""
+def highPassFilter(img, window=30):
+        gray = grayscale(img)
+	f = np.fft.fft2(gray)
+	fshift = np.fft.fftshift(f)
+	rows, cols = gray.shape
+	crow, ccol = rows/2, cols/2
+	fshift[crow-window:crow+window, ccol-window:ccol+window] = 0
+	f_ishift = np.fft.ifftshift(fshift)
+	img_back = np.fft.ifft2(f_ishift)
+	img_back = np.abs(img_back)
+	return img_back
+
+
+"""
+Displays an image using MatPlotLib
+Useful for displaying all images and Magnitude Spectrums
+
+Params:
+        * img - image
+        * title - OPTIONAL - name of Image
+        * colorFlag - OPTIONAL - color flag for imshow; def: 'gray'
+"""
+def matplotlibDisplay(img, title="Image", colorFlag = 'gray'):
+        plt.imshow(img, colorFlag)
+        plt.title(title)
+        plt.xticks([])
+        plt.yticks([])
+        plt.show()
+
+
+"""
+Displays multiple images in a matplotlib window
+
+Params: 
+        * img - image
+        * title - OPTIONAL - name of Image
+        * colorFlag - OPTIONAL - color flag for imshow; def: 'gray'
+"""
+def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
+        if titles is None:
+                titles = []
+                for i in range(len(imgs)):
+                        titles.append("IMAGE " + str(i))
+        for i in range(len(imgs)):
+                plt.subplot(1, len(imgs),  1+i)
+                plt.imshow(imgs[i], colorFlag)
+                plt.title(titles[i])
+                plt.xticks([])
+                plt.yticks([])
+        plt.show()
+
 
 """
 Prints the version codes for cvlib, OpenCV, and Numpy. For Refrence

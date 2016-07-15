@@ -1,10 +1,11 @@
 import cvlib
+from matplotlib import pyplot as plt
 
+#img = cvlib.fetchImg("OnAxis")
 
-img = cvlib.fetchImg("OnAxis")
+img = cvlib.load("Narutos_selfie_344_3543114b.jpg")
 
-img = cvlib.load("img2.tif")
-
+"""
 lap = cvlib.binaryThreshold(img, threshVal=100)
 contours = cvlib.findContours(lap)
 cvlib.display(lap)
@@ -22,5 +23,12 @@ cvlib.plotCentroid(lap, contours[0])
 print "Object Details: " + str(m)
 
 jet = cvlib.applyColorMap(img, "jet")
+"""
+f1 = cvlib.highPassFilter(img)
+f2 = cvlib.lowPassFilter(img)
+enh = cvlib.enhance(img, window=60)
 
-cvlib.displayImgs([img, lap, jet])
+#cvlib.matplotlibDisplay(f1, title="Mag Spoec")
+#cvlib.matplotlibDisplay(f2, title="Mag Spoec")
+cvlib.matplotlibDisplayMulti([f1, f2, enh, cvlib.grayscale(img)])
+#cvlib.displayImgs([img, f1, f2])
