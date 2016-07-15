@@ -20,7 +20,7 @@ from matplotlib import pyplot as plt
 
 
 # VERSION
-__version__ = 0.4
+__version__ = 0.5
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
