@@ -23,17 +23,23 @@
 | | 
 | |     merge
 | |   
-| * commit b51a71e (HEAD, master)
-| | Author: William Watson <wwatson@localhost.localdomain>
-| | Date:   36 minutes ago
-| | 
-| |     Update Files In Case Of Fire at 13:27:06 - 07/15/16
-| |   
 * | commit 9ee475d
-|/  Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-|   Date:   in the future
+| | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| | Date:   in the future
+| | 
+| |     Update Files In Case Of Fire at 15:42:33 - 07/15/16
+| |     
+| | * commit 25ac3ed (HEAD, master)
+| |/  Author: William Watson <wwatson@localhost.localdomain>
+| |   Date:   27 seconds ago
+| |   
+| |       Update Files In Case Of Fire at 14:03:02 - 07/15/16
+| |   
+| * commit b51a71e
+|/  Author: William Watson <wwatson@localhost.localdomain>
+|   Date:   36 minutes ago
 |   
-|       Update Files In Case Of Fire at 15:42:33 - 07/15/16
+|       Update Files In Case Of Fire at 13:27:06 - 07/15/16
 |  
 * commit acaf111
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>

@@ -1,13 +1,16 @@
-import cvlib
+#import cvlib
 from matplotlib import pyplot as plt
+import cv2
+#img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
 
-img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
-
-#img = cvlib.load("selfie.jpg")
-#cvlib.display(img)
+img = cv2.imread("T20160715.jpg")
 print img
+<<<<<<< HEAD
 print len(img)
 
+=======
+#cvlib.display(img)
+>>>>>>> 89f7c471920554aa5ee8c273202f633acc8f133b
 #cvlib.save(img)
 """
 lap = cvlib.binaryThreshold(img, threshVal=100)
