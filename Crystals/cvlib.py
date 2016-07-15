@@ -18,6 +18,7 @@ import time
 import subprocess
 from matplotlib import pyplot as plt
 import matplotlib
+from epics import caget, caput
 
 
 # VERSION
@@ -1756,12 +1757,18 @@ def load(filename, flag=None):
 Loads an image from an EPICS PV Value
 
 Params:
-    * PV - PV Value of Camera to fetch image
+    * SYS - System String
+    * DEV - Device String
 
 Returns:
     * Loaded Image
 """
-def fetchImg(PV):
+def fetchImg(SYS, DEV):
+        PV = str(SYS) + "{" + str(DEV) + "}image1:ArrayData"
+        img = caget(PV)
+        return img
+        
+"""
         #subprocess.check_output("rm *.tiff", shell=True)
         subprocess.check_output("caput XF:10IDD-BI{" + str(PV) + "-Cam:1}TIFF1:WriteFile 1", shell=True)
         fileNum = subprocess.check_output("caget XF:10IDD-BI{" + str(PV) + "-Cam:1}TIFF1:FileNumber_RBV", shell=True).split()[1]
@@ -1772,7 +1779,7 @@ def fetchImg(PV):
         subprocess.check_output("mv sample_0%03d.tiff img.tiff" % int(fileNum), shell=True)
         img = load("img.tiff")
         return img
-
+"""
         
 """
 Backprojection - Finds objects of interest in an image
