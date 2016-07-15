@@ -17,13 +17,15 @@ import sys
 import time
 import subprocess
 from matplotlib import pyplot as plt
+import matplotlib
 
 
 # VERSION
-__version__ = 0.5
+__version__ = "0.5.1"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
+__matplotlibver__ = matplotlib.__version__
 
 # GLOBAL VARS
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
@@ -282,9 +284,10 @@ def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
 Prints the version codes for cvlib, OpenCV, and Numpy. For Refrence
 """
 def version():
-        print "cvlib  Version: " + str(__version__)
+        print "Cvlib  Version: " + str(__version__)
         print "OpenCV Version: " + str(__opencv__)
         print "Numpy  Version: " + str(__npversion__)
+        print "Matplotlib Ver: " + str(__matplotlibver__)
         print "Python Version: " + str(__sysver__)
 
         

@@ -1,12 +1,24 @@
-* commit 679dffc (HEAD, origin/master, origin/HEAD, master)
+* commit e94668a (HEAD, origin/master, origin/HEAD, master)
+| Author: Bill Watson <wwatso13@jhu.edu>
+| Date:   9 minutes ago
+| 
+|     Update README.md
+|  
+* commit 370f17c
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   40 seconds ago
+| Date:   12 minutes ago
+| 
+|     Update Files In Case Of Fire at 11:01:08 - 07/15/16
+|  
+* commit 679dffc
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   13 minutes ago
 | 
 |     Update Files In Case Of Fire at 11:00:28 - 07/15/16
 |  
 * commit b2155e8
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   7 minutes ago
+| Date:   19 minutes ago
 | 
 |     Update Files In Case Of Fire at 10:53:53 - 07/15/16
 |  
@@ -48,7 +60,7 @@
 |  
 * commit d6cbd5d
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   20 hours ago
+| Date:   21 hours ago
 | 
 |     Update Files In Case Of Fire at 14:34:43 - 07/14/16
 |  
@@ -108,7 +120,7 @@
 |  
 * commit 7e8c768
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   25 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 09:38:34 - 07/14/16
 |  
