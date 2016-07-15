@@ -1,44 +1,50 @@
-*   commit 579c3e0 (HEAD, origin/master, origin/HEAD, master)
+* commit a105d9b (HEAD, origin/master, origin/HEAD, master)
+| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| Date:   30 minutes ago
+| 
+|     Update Files In Case Of Fire at 15:47:27 - 07/15/16
+|    
+*   commit 579c3e0
 |\  Merge: 9ee475d b51a71e
 | | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| | Date:   4 minutes ago
+| | Date:   34 minutes ago
 | | 
 | |     merge
 | |   
 | * commit b51a71e
 | | Author: William Watson <wwatson@localhost.localdomain>
-| | Date:   2 hours ago
+| | Date:   3 hours ago
 | | 
 | |     Update Files In Case Of Fire at 13:27:06 - 07/15/16
 | |   
 * | commit 9ee475d
 |/  Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-|   Date:   5 minutes ago
+|   Date:   35 minutes ago
 |   
 |       Update Files In Case Of Fire at 15:42:33 - 07/15/16
 |  
 * commit acaf111
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   8 minutes ago
+| Date:   38 minutes ago
 | 
 |     Update Files In Case Of Fire at 15:39:36 - 07/15/16
 |  
 * commit d23fc7e
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   2 hours ago
+| Date:   3 hours ago
 | 
 |     Update Files In Case Of Fire at 13:23:07 - 07/15/16
 |  
 * commit 236bd9a
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   2 hours ago
+| Date:   3 hours ago
 | 
 |     Update Files In Case Of Fire at 13:21:24 - 07/15/16
 |    
 *   commit 0900bd0
 |\  Merge: ca77d9b ce117ec
 | | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| | Date:   12 minutes ago
+| | Date:   42 minutes ago
 | | 
 | |     merge override
 | |   
@@ -50,7 +56,7 @@
 | |   
 * | commit ca77d9b
 |/  Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-|   Date:   13 minutes ago
+|   Date:   43 minutes ago
 |   
 |       Update Files In Case Of Fire at 15:34:34 - 07/15/16
 |  
@@ -62,13 +68,13 @@
 |  
 * commit 6756af4
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   4 hours ago
+| Date:   5 hours ago
 | 
 |     Update Files In Case Of Fire at 11:47:21 - 07/15/16
 |  
 * commit 42aeb13
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   4 hours ago
+| Date:   5 hours ago
 | 
 |     Update Files In Case Of Fire at 11:18:27 - 07/15/16
 |  
@@ -104,13 +110,13 @@
 |  
 * commit 7d905a6
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   23 hours ago
+| Date:   24 hours ago
 | 
 |     Update Files In Case Of Fire at 16:28:33 - 07/14/16
 |  
 * commit 3b982bb
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   23 hours ago
+| Date:   24 hours ago
 | 
 |     Update Files In Case Of Fire at 16:18:57 - 07/14/16
 |  
@@ -140,13 +146,13 @@
 |  
 * commit d6cbd5d
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   25 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 14:34:43 - 07/14/16
 |  
 * commit 0c8ce45
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   25 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 14:31:10 - 07/14/16
 |  
@@ -200,31 +206,31 @@
 |  
 * commit 7e8c768
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   30 hours ago
+| Date:   31 hours ago
 | 
 |     Update Files In Case Of Fire at 09:38:34 - 07/14/16
 |  
 * commit 2a882c0
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   30 hours ago
+| Date:   31 hours ago
 | 
 |     Update Files In Case Of Fire at 09:29:32 - 07/14/16
 |  
 * commit df2aa7e
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   30 hours ago
+| Date:   31 hours ago
 | 
 |     Update Files In Case Of Fire at 09:28:46 - 07/14/16
 |  
 * commit bb1fed8
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   30 hours ago
+| Date:   31 hours ago
 | 
 |     Update Files In Case Of Fire at 09:20:53 - 07/14/16
 |  
 * commit 0d133e3
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   30 hours ago
+| Date:   31 hours ago
 | 
 |     add in case of fire
 |  

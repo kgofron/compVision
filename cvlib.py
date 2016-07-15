@@ -1765,8 +1765,18 @@ Returns:
 """
 def fetchImg(SYS, DEV):
         PV = str(SYS) + "{" + str(DEV) + "}image1:ArrayData"
-        img = caget(PV)
-        return img
+        data = caget(PV)
+        SYSDEV = str(SYS) + "{" + str(DEV) + "}image1:ArraySize"
+        rows = caget(SYSDEV + "1_RBV")
+        cols = caget(SYSDEV + "0_RBV")
+        count = 0
+        img = []
+        row = []
+        for i in range(rows):
+                for j in range(cols):
+                        row.append(data[count])
+                        count = count + 1
+        return img, rows, cols
         
 """
         #subprocess.check_output("rm *.tiff", shell=True)
