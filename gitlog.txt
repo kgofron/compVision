@@ -1,43 +1,50 @@
-* commit 89f7c47 (origin/master, origin/HEAD)
-| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   in the future
-| 
-|     Update Files In Case Of Fire at 16:17:46 - 07/15/16
-|  
-* commit deec44a
-| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   in the future
-| 
-|     Update Files In Case Of Fire at 16:17:26 - 07/15/16
-|  
-* commit a105d9b
-| Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   in the future
-| 
-|     Update Files In Case Of Fire at 15:47:27 - 07/15/16
-|    
-*   commit 579c3e0
-|\  Merge: 9ee475d b51a71e
-| | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| | Date:   in the future
+*   commit 614c4f7 (HEAD, origin/master, origin/HEAD, master)
+|\  Merge: 25ac3ed 89f7c47
+| | Author: William Watson <wwatson@localhost.localdomain>
+| | Date:   2 minutes ago
 | | 
-| |     merge
+| |     Update Files In Case Of Fire at 14:03:29 - 07/15/16
 | |   
-* | commit 9ee475d
+| * commit 89f7c47
 | | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
 | | Date:   in the future
 | | 
-| |     Update Files In Case Of Fire at 15:42:33 - 07/15/16
+| |     Update Files In Case Of Fire at 16:17:46 - 07/15/16
+| |   
+| * commit deec44a
+| | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| | Date:   in the future
+| | 
+| |     Update Files In Case Of Fire at 16:17:26 - 07/15/16
+| |   
+| * commit a105d9b
+| | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| | Date:   in the future
+| | 
+| |     Update Files In Case Of Fire at 15:47:27 - 07/15/16
 | |     
-| | * commit 25ac3ed (HEAD, master)
+| *   commit 579c3e0
+| |\  Merge: 9ee475d b51a71e
+| | | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| | | Date:   in the future
+| | | 
+| | |     merge
+| | |    
+| * | commit 9ee475d
+| | | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
+| | | Date:   in the future
+| | | 
+| | |     Update Files In Case Of Fire at 15:42:33 - 07/15/16
+| | |    
+* | | commit 25ac3ed
 | |/  Author: William Watson <wwatson@localhost.localdomain>
-| |   Date:   27 seconds ago
+|/|   Date:   2 minutes ago
 | |   
 | |       Update Files In Case Of Fire at 14:03:02 - 07/15/16
 | |   
-| * commit b51a71e
+* | commit b51a71e
 |/  Author: William Watson <wwatson@localhost.localdomain>
-|   Date:   36 minutes ago
+|   Date:   38 minutes ago
 |   
 |       Update Files In Case Of Fire at 13:27:06 - 07/15/16
 |  
@@ -49,13 +56,13 @@
 |  
 * commit d23fc7e
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   40 minutes ago
+| Date:   42 minutes ago
 | 
 |     Update Files In Case Of Fire at 13:23:07 - 07/15/16
 |  
 * commit 236bd9a
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   42 minutes ago
+| Date:   44 minutes ago
 | 
 |     Update Files In Case Of Fire at 13:21:24 - 07/15/16
 |    
@@ -68,7 +75,7 @@
 | |   
 | * commit ce117ec
 | | Author: William Watson <wwatson@localhost.localdomain>
-| | Date:   46 minutes ago
+| | Date:   48 minutes ago
 | | 
 | |     Update Files In Case Of Fire at 13:17:28 - 07/15/16
 | |   
@@ -164,7 +171,7 @@
 |  
 * commit d6cbd5d
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   23 hours ago
+| Date:   24 hours ago
 | 
 |     Update Files In Case Of Fire at 14:34:43 - 07/14/16
 |  

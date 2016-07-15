@@ -5,12 +5,8 @@ import cv2
 
 img = cv2.imread("T20160715.jpg")
 print img
-<<<<<<< HEAD
 print len(img)
 
-=======
-#cvlib.display(img)
->>>>>>> 89f7c471920554aa5ee8c273202f633acc8f133b
 #cvlib.save(img)
 """
 lap = cvlib.binaryThreshold(img, threshVal=100)
