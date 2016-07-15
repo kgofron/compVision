@@ -1,13 +1,16 @@
 import cvlib
 from matplotlib import pyplot as plt
 import cv2
-img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
-
+img = cvlib.fetchImg("XF:10IDD-BI", "Mir:HFM-Cam:1")
+img2 = cvlib.fetchImg("XF:10IDD-BI", "Mir:VFM-Cam:1")
 #img = cv2.imread("T20160715.jpg")
 
 print len(img)
+print len(img2)
 
-cvlib.save(img)
+cvlib.save(img, "HFM.jpg")
+cvlib.save(img, "VFM.jpg")
+
 """
 lap = cvlib.binaryThreshold(img, threshVal=100)
 contours = cvlib.findContours(lap)
