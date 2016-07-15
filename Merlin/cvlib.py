@@ -44,7 +44,6 @@ def enhance(img, window=30):
         tmp = grayscale(img) + laplacian(img)
         return tmp
 
-
 """
 Image Segmenting - Watershed Algorithm
 
