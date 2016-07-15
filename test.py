@@ -9,7 +9,7 @@ print len(img)
 print len(img2)
 
 cvlib.save(img, "HFM.jpg")
-cvlib.save(img, "VFM.jpg")
+cvlib.save(img2, "VFM.jpg")
 
 """
 lap = cvlib.binaryThreshold(img, threshVal=100)
