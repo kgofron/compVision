@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 
 #img = cvlib.fetchImg("OnAxis")
 
-img = cvlib.load("Narutos_selfie_344_3543114b.jpg")
+img = cvlib.load("selfie.jpg")
 
 """
 lap = cvlib.binaryThreshold(img, threshVal=100)
@@ -27,8 +27,9 @@ jet = cvlib.applyColorMap(img, "jet")
 f1 = cvlib.highPassFilter(img)
 f2 = cvlib.lowPassFilter(img)
 enh = cvlib.enhance(img, window=60)
+sharp = cvlib.sharpen(img)
 
 #cvlib.matplotlibDisplay(f1, title="Mag Spoec")
 #cvlib.matplotlibDisplay(f2, title="Mag Spoec")
-cvlib.matplotlibDisplayMulti([f1, f2, enh, cvlib.grayscale(img)])
+cvlib.matplotlibDisplayMulti([f1, f2, enh, cvlib.grayscale(img), cvlib.grayscale(sharp)])
 #cvlib.displayImgs([img, f1, f2])

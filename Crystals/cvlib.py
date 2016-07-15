@@ -21,7 +21,7 @@ import matplotlib
 
 
 # VERSION
-__version__ = "0.5.1"
+__version__ = "0.5.2"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
@@ -139,6 +139,22 @@ def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 	maskG = resize(maskG, maskG.shape[1] + 2, maskG.shape[0] + 2)
 	ret, rect = cv2.floodFill(tmp, maskG, seedPoint, newVal=newval)
 	return tmp
+
+"""
+Returns a shapredned image using the Unsharp Img Algorithm
+
+Params:
+        * img - image
+        * ker - OPTIONAL - kernel size tuple; def:(9,9)
+        * sigX - OPTIONAL - Gaussian kernel standard deviation in X dir; def:10.0
+
+Returns:
+        * sharpened img
+"""
+def sharpen(img, ker = (9,9), sigX=10.0):
+        gaus = cv2.GaussianBlur(img, ker, sigX)
+        unsharp = cv2.addWeighted(img, 1.5, gaus, -0.5, 0, img)
+        return unsharp
 
 ################################################################################
 
