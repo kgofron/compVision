@@ -1776,7 +1776,11 @@ def fetchImg(SYS, DEV):
                 for j in range(cols):
                         row.append(data[count])
                         count = count + 1
-        return img, rows, cols
+                r = np.array(row)
+                img.append(r)
+                row = []
+        npra = np.array(img)
+        return npra
         
 """
         #subprocess.check_output("rm *.tiff", shell=True)
