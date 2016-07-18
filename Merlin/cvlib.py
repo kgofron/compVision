@@ -1775,7 +1775,7 @@ def fetchImg(SYS, DEV):
         count = 0
         img = []
         row = []
-        dtype = np.uint8 #EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
+        dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
         print dtype
         color = caget(SYSDEV + "cam1:ColorMode_RBV")
         for i in range(rows):
