@@ -1788,7 +1788,7 @@ def fetchImg(SYS, DEV):
                 row = []
         npra = np.array(img, dtype)
         save(npra, "fetchImg.tif")
-        img = load("fetchImg.tif", getColorFlag(color))
+        img = load("fetchImg.tif")#, getColorFlag(color))
         return img
 
 
