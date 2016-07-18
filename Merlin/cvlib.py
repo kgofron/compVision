@@ -21,7 +21,7 @@ from epics import caget, caput
 
 
 # VERSION
-__version__ = "0.5.3.4"
+__version__ = "0.5.3.5"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
@@ -135,11 +135,10 @@ Params:
 """
 def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 	tmp = img.copy()
+        h, w = img.shape[:2]
 	if maskVar is None:
-		maskVar = mask(tmp)
-	maskG = np.array(maskVar)
-	maskG = resize(maskG, maskG.shape[1] + 2, maskG.shape[0] + 2)
-	ret, rect = cv2.floodFill(tmp, maskG, seedPoint, newVal=newval)
+		maskVar = np.zeros((h+2,w+2), np.uint8)
+	ret, rect = cv2.floodFill(tmp, maskVar, seedPoint, newval)
 	return tmp
 
 """
