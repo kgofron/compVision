@@ -1775,7 +1775,7 @@ def fetchImg(SYS, DEV):
         count = 0
         img = []
         row = []
-        dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
+        dtype = np.uint8 #EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
         print dtype
         color = caget(SYSDEV + "cam1:ColorMode_RBV")
         print color
@@ -1787,8 +1787,9 @@ def fetchImg(SYS, DEV):
                 img.append(r)
                 row = []
         npra = np.array(img, dtype)
-        save(npra, "fetchImg.jpg")
-        img = load("fetchImg.jpg")#, getColorFlag(color))
+        display(npra)
+        save(npra, "fetchImg.tiff")
+        img = load("fetchImg.tiff") #, getColorFlag(color))
         return img
 
 
