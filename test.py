@@ -6,7 +6,7 @@ count = 0
 lst = []
 while count < 3:
     img = cvlib.fetchImg("XF:10IDD-BI", "Mir:HFM-Cam:1")
-    cvlib.save(img, "HFM%d.png" % count)
+    cvlib.save(img, "HFM%d.jp2" % count)
     #img = cvlib.load("HFM%d.tif" % count)
     """lap = cvlib.binaryThreshold(img, threshVal=100)
     contours = cvlib.findContours(lap)
