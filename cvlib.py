@@ -1785,8 +1785,8 @@ def fetchImg(SYS, DEV):
                 img.append(r)
                 row = []
         npra = np.array(img, dtype)
-        save(npra, "fetchImg.tif")
-        img = load("fetchImg.tif")
+        save(npra, "fetchImg.jpg")
+        img = load("fetchImg.jpg")
         return img
 
 ###EXPERIMETNAL###
