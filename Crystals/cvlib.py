@@ -11,18 +11,17 @@ make image processing and computer vision easier, faster, and more compact.
 
 # DEPENDENCIES
 import cv2
-import cv2.cv as cv
+import cv2.cv as cv # SEE IF NECESSARY
 import numpy as np 
 import sys
 import time
-import subprocess
 from matplotlib import pyplot as plt
-import matplotlib
+import matplotlib # SEE IF NECESSARY
 from epics import caget, caput
 
 
 # VERSION
-__version__ = "0.5.3.2"
+__version__ = "0.5.3.3"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
@@ -31,6 +30,8 @@ __matplotlibver__ = matplotlib.__version__
 # GLOBAL VARS
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
+EPICSTYPE = {"UINT16":np.uint16 , "UINT8": np.uint8}
+EPICSCOLOR = {"MONO":0, "BAYER":2, "RBG1":1}
 
 #######################################################################################
 
@@ -1018,13 +1019,14 @@ def inRangeThresh(img, lower, upper):
 Displays an Image onto the screen and waits for user to close
 
 Params:
-	* name - OPTIONAL - string name of window, def is IMAGE
 	* img - image to display
+        * name - OPTIONAL - string name of window, def is IMAGE
+        * wait - OPTIONAL - time in ms for screen to wait, def:0 - INDEFINITE
 """
-def display(img, name="IMAGE"):
+def display(img, name="IMAGE", wait=0):
 	cv2.namedWindow(name, cv2.WINDOW_NORMAL)
 	cv2.imshow(name, img)
-	cv2.waitKey(0) & 0xFF
+	cv2.waitKey(wait) & 0xFF
 	cv2.destroyAllWindows()
 
 
@@ -1773,28 +1775,18 @@ def fetchImg(SYS, DEV):
         count = 0
         img = []
         row = []
+        dtype = EPICSTYPE[(str(caget(SYSDEV + "cam1:DataType_RBV"))).upper()]
+        color = caget(SYSDEV + "cam1:ColorMode_RBV")
         for i in range(rows):
                 for j in range(cols):
                         row.append(data[count])
                         count = count + 1
-                r = np.array(row, np.uint8)
+                r = np.array(row, dtype)
                 img.append(r)
                 row = []
-        npra = np.array(img, np.uint8)
+        npra = np.array(img, dtype)
         return npra
         
-"""
-        #subprocess.check_output("rm *.tiff", shell=True)
-        subprocess.check_output("caput XF:10IDD-BI{" + str(PV) + "-Cam:1}TIFF1:WriteFile 1", shell=True)
-        fileNum = subprocess.check_output("caget XF:10IDD-BI{" + str(PV) + "-Cam:1}TIFF1:FileNumber_RBV", shell=True).split()[1]
-        pwd = subprocess.check_output("pwd", shell=True)
-        time.sleep(1)
-        subprocess.check_output("cp /IXS/CAMERA/" + str(PV) + "/sample_0%03d.tiff " % int(fileNum) + str(pwd[:-1])+"/", shell=True)
-        time.sleep(1)
-        subprocess.check_output("mv sample_0%03d.tiff img.tiff" % int(fileNum), shell=True)
-        img = load("img.tiff")
-        return img
-"""
         
 """
 Backprojection - Finds objects of interest in an image
@@ -2049,8 +2041,9 @@ Displays a list of images
 Parms:
 	* imgs - list of images
 	* titles - OPTIONAL - list of titles of images
+        * wait - OPTIONAL - wait time in ms ffor screen; def: 0 - INDEFINITE
 """
-def displayImgs(imgs, titles = None):
+def displayImgs(imgs, titles = None, wait=0):
 	if len(imgs) > 100:
 		print "WARNING: DisplayImgs: List is of length " + str(len(imgs))
 		print "Please reduce list size to avoid improper display"
@@ -2067,7 +2060,7 @@ def displayImgs(imgs, titles = None):
 			cv2.namedWindow(titles[count], cv2.WINDOW_NORMAL)
 			cv2.imshow(titles[count], i)
 			count += 1
-	cv2.waitKey(0) & 0xFF
+	cv2.waitKey(wait) & 0xFF
 	cv2.destroyAllWindows()
 
 
