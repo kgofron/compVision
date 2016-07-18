@@ -6,7 +6,7 @@ cp cvlib.py Merlin/cvlib.py
 cp cvlib.py RawImages/cvlib.py
 cp cvlib.py Showcase/cvlib.py
 cp cvlib.py XrayImg/cvlib.py
-cp cvlib.py CV\ Library/cvlib.py
+cp cvlib.py CVLibrary/cvlib.py
 cp cvlib.py OnAxisImg/cvlib.py
 cp cvlib.py IXS/cvlib.py
 printf "\n"
