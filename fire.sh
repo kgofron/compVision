@@ -2,6 +2,7 @@
 
 git pull
 git log --graph --abbrev-commit --decorate --date=relative --all > gitlog.txt
+bash genTreeTable.sh
 git add -A
 git status
 now=$(date +"%T - %D")
