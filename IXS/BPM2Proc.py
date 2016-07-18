@@ -1,6 +1,6 @@
 import cvlib
 
-img = cvlib.load("BPM1-0.jpg") # change to fetch
+img = cvlib.load("BPM2-0.jpg") # change to fetch
 lap = cvlib.binaryThreshold(img, threshVal=170)
 contours = cvlib.findContours(lap)
 cvlib.fillContour(lap, contours[0], color=(100,100,255))
