@@ -69,9 +69,9 @@
  RawImages/README.md            |    9 +
  RawImages/Slide.pdf            |  Bin 0 -> 117709 bytes
  RawImages/cvlib.py             | 3052 ++++++++++++++++++++++++++++++++++++++++
- RawImages/cvlib.pyc            |  Bin 0 -> 56652 bytes
+ RawImages/cvlib.pyc            |  Bin 0 -> 59800 bytes
  RawImages/gripper.bmp          |  Bin 0 -> 466578 bytes
- RawImages/matchTest.py         |   31 +
+ RawImages/matchTest.py         |   34 +
  RawImages/mountBeam.py         |  255 ++++
  RawImages/photo1.bmp           |  Bin 0 -> 1921078 bytes
  RawImages/photo10.bmp          |  Bin 0 -> 1921078 bytes
@@ -128,9 +128,9 @@
  cvlib.pyc                      |  Bin 0 -> 58100 bytes
  fire.sh                        |   10 +
  genTreeTable.sh                |    4 +
- gitlog.txt                     |  710 ++++++++++
+ gitlog.txt                     |  716 ++++++++++
  selfie.jpg                     |  Bin 0 -> 101522 bytes
  tree.txt                       |    0
  updateLib.sh                   |   14 +
  wordcount.sh                   |    7 +
- 135 files changed, 28958 insertions(+)
+ 135 files changed, 28967 insertions(+)

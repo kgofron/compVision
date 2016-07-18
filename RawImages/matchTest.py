@@ -27,5 +27,8 @@ for i in range(1,20):
 	print "Image " + str(i) + " " + str(cvlib.matchShapes(contours, mount)) + " Sim"
 	img = cvlib.drawMatch(img, cvlib.load("pin.bmp"))
 	img = cvlib.drawMatch(img, cvlib.load("gripper.bmp"), color=(255,0,0))
+        print "PIN: " + str(cvlib.templateMatchSingle(img, cvlib.load("pin.bmp")))
+        print "PIN: " + str(cvlib.templateMatchSingle(img, cvlib.load("gripper.bmp")))
+        
 	cvlib.display(img)
 	lst.append(img)
