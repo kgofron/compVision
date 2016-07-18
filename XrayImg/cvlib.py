@@ -30,7 +30,7 @@ __matplotlibver__ = matplotlib.__version__
 # GLOBAL VARS
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
-EPICSTYPE = {"UINT16":np.uint16 , "UINT8": np.uint8, "UINT32":np.uint32, "UINT64", np.uint64}
+EPICSTYPE = {"UINT16":np.uint16 , "UINT8": np.uint8, "UINT32":np.uint32, "UINT64": np.uint64}
 EPICSCOLOR = {"MONO":0, "BAYER":2, "RBG1":1}
 
 #######################################################################################
