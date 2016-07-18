@@ -30,7 +30,7 @@ __matplotlibver__ = matplotlib.__version__
 # GLOBAL VARS
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
-EPICSTYPE = {"UINT16":np.uint16 , "UINT8": np.uint8, "UINT32":np.uint32, "UINT64": np.uint64}
+EPICSTYPE = {1 : np.uint16 , 0 : np.uint8, 2:np.uint32, 3: np.uint64}
 EPICSCOLOR = {"MONO":0, "BAYER":2, "RBG1":1}
 
 #######################################################################################
@@ -1775,7 +1775,8 @@ def fetchImg(SYS, DEV):
         count = 0
         img = []
         row = []
-        dtype = EPICSTYPE[(str(caget(SYSDEV + "cam1:DataType_RBV"))).upper()]
+        dtype = np.uint8 #EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
+        print dtype
         color = caget(SYSDEV + "cam1:ColorMode_RBV")
         for i in range(rows):
                 for j in range(cols):
