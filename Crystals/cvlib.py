@@ -1775,10 +1775,8 @@ def fetchImg(SYS, DEV):
         count = 0
         img = []
         row = []
-        dtype = np.uint8 #EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
-        print dtype
+        dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
         color = caget(SYSDEV + "cam1:ColorMode_RBV")
-        print color
         for i in range(rows):
                 for j in range(cols):
                         row.append(data[count])
@@ -1787,7 +1785,34 @@ def fetchImg(SYS, DEV):
                 img.append(r)
                 row = []
         npra = np.array(img, dtype)
-        display(npra)
+        save(npra, "fetchImg.jpg")
+        img = load("fetchImg.jpg")
+        return img
+
+###EXPERIMETNAL###
+def fetchImgEXP(SYS, DEV):
+        SYSDEV = str(SYS) + "{" + str(DEV) + "}"
+        data = caget(SYSDEV + "image1:ArrayData")
+        rows = caget(SYSDEV + "image1:ArraySize1_RBV")
+        cols = caget(SYSDEV + "image1:ArraySize0_RBV")
+        dtype = caget(SYSDEV + "cam1:DataType_RBV")
+        color = caget(SYSDEV + "cam1:ColorMode_RBV")
+        count = 0
+        img = []
+        row = []
+        dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
+        #print dtype
+        color = caget(SYSDEV + "cam1:ColorMode_RBV")
+        #print color
+        for i in range(rows):
+                for j in range(cols):
+                        row.append(data[count])
+                        count = count + 1
+                r = np.array(row, dtype)
+                img.append(r)
+                row = []
+        npra = np.array(img, dtype)
+        #display(npra)
         save(npra, "fetchImg.jpg")
         img = load("fetchImg.jpg") #, getColorFlag(color))
         return img
