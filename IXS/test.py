@@ -5,8 +5,8 @@ from time import sleep
 count = 0
 lst = []
 while count < 3:
-    img = cvlib.fetchImg("XF:10IDA-BI", "BMP1-Cam:1")
-    cvlib.save(img, "BMP1-%d.jpg" % count)
+    img = cvlib.fetchImg("XF:10IDC-BI", "BPM2-Cam:1")
+    cvlib.save(img, "BPM2-%d.jpg" % count)
     #img = cvlib.load("HFM%d.tif" % count)
     """lap = cvlib.binaryThreshold(img, threshVal=100)
     contours = cvlib.findContours(lap)
