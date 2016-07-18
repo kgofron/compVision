@@ -1778,6 +1778,7 @@ def fetchImg(SYS, DEV):
         dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
         print dtype
         color = caget(SYSDEV + "cam1:ColorMode_RBV")
+        print color
         for i in range(rows):
                 for j in range(cols):
                         row.append(data[count])
