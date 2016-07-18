@@ -3,7 +3,7 @@ import cvlib
 img = cvlib.load("BPM1-0.jpg") # change to fetch
 lap = cvlib.binaryThreshold(img, threshVal=20)
 contours = cvlib.findContours(lap)
-cvlib.fillContour(lap, contours[0], color=(100,100,255)) ##############################
+cvlib.fillContour(lap, contours[0], color=(100,100,255))
 
 m = cvlib.cntInfo(img, contours[0])
 cvlib.plotPoints(lap, cvlib.extremePointsTup(contours[0]), radius=8)
