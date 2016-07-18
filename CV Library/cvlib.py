@@ -31,7 +31,7 @@ __matplotlibver__ = matplotlib.__version__
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
 border_flag = {"constant":0, "reflect":2, "reflect101":4, "replicate":1, "default":4, "wrap":3}
 EPICSTYPE = {1 : np.uint16 , 0 : np.uint8, 2:np.uint32, 3: np.uint64}
-EPICSCOLOR = {"MONO":0, "BAYER":2, "RBG1":1}
+EPICSCOLOR = {0: "gray", 1: "bayer", 2: "RBG1"}
 
 #######################################################################################
 
@@ -1787,10 +1787,28 @@ def fetchImg(SYS, DEV):
                 row = []
         npra = np.array(img, dtype)
         save(npra, "fetchImg.tif")
-        img = load("fetchImg.tif")
+        img = load("fetchImg.tif", getColorFlag(color))
         return img
-        
-        
+
+
+"""
+Retrieves the color flags associated with img
+
+Params:
+        * color - COLOR CODE
+
+Returns: 
+        * CV Color Code
+"""
+def getColorFlag(color):
+        if color == 0: # MONO
+                return 0
+        elif color == 1: # BAYER
+                return -1
+        elif color == 2: # AS IS RBG
+                return 1
+                
+
 """
 Backprojection - Finds objects of interest in an image
 
