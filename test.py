@@ -8,7 +8,7 @@ while count < 3:
     img = cvlib.fetchImg("XF:10IDD-BI", "Mir:HFM-Cam:1")
     cvlib.save(img, "HFM%d.tif" % count)
     #img = cvlib.load("HFM%d.tif" % count)
-    lap = cvlib.binaryThreshold(img, threshVal=100)
+    """lap = cvlib.binaryThreshold(img, threshVal=100)
     contours = cvlib.findContours(lap)
     
     
@@ -26,7 +26,7 @@ while count < 3:
     cvlib.display(img)
     jet = cvlib.applyColorMap(img, "jet")
     lst.append(jet)
-    
+    """
     count = count + 1
 
 #img2 = cvlib.fetchImg("XF:10IDD-BI", "Mir:VFM-Cam:1")
