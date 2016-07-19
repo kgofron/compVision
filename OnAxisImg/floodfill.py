@@ -25,7 +25,7 @@ if __name__ == '__main__':
     try:
         fn = sys.argv[1]
     except:
-        fn = 'sample_0001.tif'
+        fn = 'sample_0009.tif'
     print(__doc__)
 
     img = cv2.imread(fn, True)
