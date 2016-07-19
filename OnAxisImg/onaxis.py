@@ -3,11 +3,16 @@ import cvlib
 filename = "sample_0009.tif" #01-10 or sample.tif
 
 img = cvlib.load(filename)
+lap = cvlib.imfill(img, threshVal=29)
+cvlib.display(lap)
+
+"""
 gray = cvlib.grayscale(img)
 #lap = cvlib.otsu(img, invert=True)
 lap = cvlib.binaryThreshold(img, threshVal=70)
 lap = cvlib.closing(lap)
 lap = cvlib.opening(lap)
+"""
 contours = cvlib.findContours(lap)
 cvlib.drawContour(img, contours[0])
 m = cvlib.cntInfo(img, contours[0])

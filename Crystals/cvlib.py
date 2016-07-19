@@ -36,10 +36,34 @@ EPICSCOLOR = {0: "gray", 1: "bayer", 2: "RBG1"}
 
 #######################################################################################
 
-
+# EXPERIMENTAL SECTION - ALL NEW METHODS GO HERE FIRST FOR TESTING
 #FIX FIX FIX
 
 # METHODS KNOWN TO BE BROKEN / Need Further Looking!!!!!!!!!
+
+"""
+Background Subtraction Methods
+
+Params:
+        * img - Image
+        * flag - OPTIONAL - algorithm select; <0 - MOG2, 0- MOG, >0-GMG; def: 0
+
+Returns:
+        * Basckground Subtracted Mask
+"""
+def backgroundSubtract(img, flag=0):
+        if flag == 0:
+                fgbg = cv2.createBackgroundSubtractorMOG()
+        elif flag < 0:
+                fgbg = cv2.createBackgroundSubtractorMOG2()
+        elif flag > 0:
+                fgbg = cv2.createBackgroundSubtractorGMG()
+        fgmask = fgbg.apply(img)
+        if flag > 0:
+                kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3,3))
+                fgmask = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, kernel)
+        return fgmask
+
 
 # Is this really enhancing? Need to figure out...
 def enhance(img, window=30):
@@ -170,20 +194,21 @@ Imfill - Creates a mask for an image by removing holes, Isolates shape of object
 
 Params:
         * img - image
-        * ThreshVal - OPTIONAL - Threshold Value; def: 220
+        * threshVal - OPTIONAL - Threshold Value; def: 220
 
 Returns:
         * Image with Holes Filled
 """
-def imfill(img, ThreshVal = 220):
+def imfill(img, threshVal = 220):
         tmp = grayscale(img)
-        ret, thresh = cv2.threshold(tmp, ThreshVal, 255, cv2.THRESH_BINARY_INV)
+        ret, thresh = cv2.threshold(tmp, threshVal, 255, cv2.THRESH_BINARY_INV)
         flood = thresh.copy()
         h, w = thresh.shape[:2]
         mask = np.zeros((h+2,w+2), np.uint8)
         cv2.floodFill(flood, mask, (0,0), 255)
         invert = cv2.bitwise_not(flood)
         output = thresh | invert
+        displayImgs([tmp, thresh, flood, invert, output])
         return output
 
 
