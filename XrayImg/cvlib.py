@@ -21,11 +21,12 @@ from epics import caget, caput
 
 
 # VERSION
-__version__ = "0.5.3.5"
+__version__ = "0.5.4.0"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
 __matplotlibver__ = matplotlib.__version__
+
 
 # GLOBAL VARS
 colorMap_flag = {"autumn":0, "bone":1, "jet":2, "winter":3, "rainbow":4, "ocean":5, "summer":6, "spring":7, "cool":8, "hsv":9, "pink":10, "hot":11}
@@ -125,13 +126,16 @@ def depthImg(imgL, imgR, ndisparities=16, blockSize=16):
 
 
 """
-Flood Fill - Acts a little funny
+Flood Fill Algorithm
 
 Params:
 	* img - image
 	* seedPoint - startPoint
 	* mask - OPTIONAL - mask
         * newval - OPTIONAL - new value of repainted pixels
+
+Returns:
+        * Flood Filles Img
 """
 def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 	tmp = img.copy()
@@ -140,6 +144,33 @@ def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 		maskVar = np.zeros((h+2,w+2), np.uint8)
 	ret, rect = cv2.floodFill(tmp, maskVar, seedPoint, newval)
 	return tmp
+
+
+"""
+Extracts the Foreground of an Image
+
+Params:
+        * img - image
+        * ThreshVal - OPTIONAL - Threshold Value; def: 220
+
+Returns:
+        * Image with Foreground Only
+"""
+def extractForeground(img, ThreshVal = 220):
+        tmp = grayscale(img)
+        ret, thresh = cv2.threshold(tmp, ThreshVal, 255, cv2.THRESH_BINARY_INV)
+        flood = thresh.copy()
+        h, w = thresh.shape[:2]
+        mask = np.zeros((h+2,w+2), np.uint8)
+        cv2.floodFill(flood, mask, (0,0), 255)
+        invert = cv2.bitwise_not(flood)
+        output = thresh | invert
+        out = tmp | invert
+        orign = img | invert
+        displayImgs([img, thresh, flood, invert, output, out, orign])
+        return output
+        
+
 
 """
 Returns a shapredned image using the Unsharp Img Algorithm

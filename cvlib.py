@@ -165,7 +165,9 @@ def extractForeground(img, ThreshVal = 220):
         cv2.floodFill(flood, mask, (0,0), 255)
         invert = cv2.bitwise_not(flood)
         output = thresh | invert
-        displayImgs([img, thresh, flood, invert, output])
+        out = tmp | invert
+        orign = img | invert
+        displayImgs([img, thresh, flood, invert, output, out, orign])
         return output
         
 
