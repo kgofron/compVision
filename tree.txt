@@ -129,15 +129,16 @@
  coin.jpg                       |  Bin 0 -> 118766 bytes
  cvlib.py                       | 3078 ++++++++++++++++++++++++++++++++++++++++
  cvlib.pyc                      |  Bin 0 -> 58536 bytes
+ depth.py                       |    6 +
  fire.sh                        |   10 +
  floodfill.py                   |    6 +
  foreground.py                  |   10 +
  genTreeTable.sh                |    4 +
- gitlog.txt                     |  764 ++++++++++
- mapL.jpg                       |  Bin 0 -> 18922 bytes
- mapR.jpg                       |  Bin 0 -> 16326 bytes
+ gitlog.txt                     |  770 ++++++++++
+ mapL.jpg                       |  Bin 0 -> 376954 bytes
+ mapR.jpg                       |  Bin 0 -> 125748 bytes
  selfie.jpg                     |  Bin 0 -> 101522 bytes
  tree.txt                       |    0
  updateLib.sh                   |   14 +
  wordcount.sh                   |    7 +
- 142 files changed, 29265 insertions(+)
+ 143 files changed, 29277 insertions(+)
