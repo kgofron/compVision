@@ -52,17 +52,11 @@ Returns:
         * Basckground Subtracted Mask
 """
 def backgroundSubtract(img, flag=0):
-        if flag == 0:
-                fgbg = cv2.createBackgroundSubtractorMOG()
-        elif flag < 0:
-                fgbg = cv2.createBackgroundSubtractorMOG2()
-        elif flag > 0:
-                fgbg = cv2.createBackgroundSubtractorGMG()
+        fgbg = cv2.BackgroundSubtractorMOG()
         fgmask = fgbg.apply(img)
-        if flag > 0:
-                kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3,3))
-                fgmask = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, kernel)
         return fgmask
+
+
 
 
 # Is this really enhancing? Need to figure out...
@@ -165,6 +159,57 @@ def sharpen(img, ker = (9,9), sigX=10.0):
         unsharp = cv2.addWeighted(img, 1.5, gaus, -0.5, 0, img)
         return unsharp
 
+###EXPERIMETNAL###
+def fetchImgEXP(SYS, DEV):
+        SYSDEV = str(SYS) + "{" + str(DEV) + "}"
+        data = caget(SYSDEV + "image1:ArrayData")
+        rows = caget(SYSDEV + "image1:ArraySize1_RBV")
+        cols = caget(SYSDEV + "image1:ArraySize0_RBV")
+        dtype = caget(SYSDEV + "cam1:DataType_RBV")
+        color = caget(SYSDEV + "cam1:ColorMode_RBV")
+        count = 0
+        img = []
+        row = []
+        dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
+        #print dtype
+        color = caget(SYSDEV + "cam1:ColorMode_RBV")
+        #print color
+        for i in range(rows):
+                for j in range(cols):
+                        row.append(data[count])
+                        count = count + 1
+                r = np.array(row, dtype)
+                img.append(r)
+                row = []
+        npra = np.array(img, dtype)
+        #display(npra)
+        save(npra, "fetchImg.jpg")
+        img = load("fetchImg.jpg") #, getColorFlag(color))
+        return img
+
+"""
+Imfill - Creates a mask for an image by removing holes, Isolates shape of object
+
+Params:
+        * img - image
+        * threshVal - OPTIONAL - Threshold Value; def: 220
+
+Returns:
+        * Image with Holes Filled
+"""
+def imfill2(img, threshVal = 220):
+        tmp = grayscale(img)
+        #kernel = np.ones((5,5),np.uint8)
+        thresh = otsu(tmp) #cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel) #otsu(tmp) #cv2.adaptiveThreshold(tmp, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 2)
+        flood = thresh.copy()
+        h, w = thresh.shape[:2]
+        mask = np.zeros((h+2,w+2), np.uint8)
+        cv2.floodFill(flood, mask, (0,0), 255)
+        invert = cv2.bitwise_not(flood)
+        output = thresh | invert
+        displayImgs([tmp, thresh, flood, invert, output])
+        return output
+
 ################################################################################
 
 
@@ -174,13 +219,28 @@ Flood Fill Algorithm
 Params:
 	* img - image
 	* seedPoint - startPoint
-	* mask - OPTIONAL - mask
-        * newval - OPTIONAL - new value of repainted pixels
+	* val -OPTIONAL - New Value; 255,255,255
+        * lo - OPTIONAL - Max lower birghtness/color diff; def: 20
+        * hi - OPTIONAL - Max upper birghtness/color diff; def: 20
+        * fixedRng - OPTIONAL - TRUE=FIXED diff btw curr and see; FALSE=MASK only fills mask
+        * connectivity - OPTIONAL - 4 or 8 bit neightborrhood, def:4
 
 Returns:
         * Flood Filles Img
 """
-def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
+def floodFill(img, seedPoint, val=(255,255,255), lo=25, hi=25, fixedRng=True, connectivity=4):
+        flooded = img.copy()
+        h, w = img.shape[:2]
+        mask = np.zeros((h+2,w+2), np.uint8)
+        flags = connectivity
+        if fixedRng:
+                flags |= cv2.FLOODFILL_FIXED_RANGE
+        cv2.floodFill(flooded, mask, seedPoint, val, (lo,)*3, (hi,)*3, flags)
+        return flooded
+
+
+
+def floodFillOld(img, seedPoint, maskVar=None, newval=(255,0,0)):
 	tmp = img.copy()
         h, w = img.shape[:2]
 	if maskVar is None:
@@ -208,7 +268,6 @@ def imfill(img, threshVal = 220):
         cv2.floodFill(flood, mask, (0,0), 255)
         invert = cv2.bitwise_not(flood)
         output = thresh | invert
-        displayImgs([tmp, thresh, flood, invert, output])
         return output
 
 
@@ -1838,34 +1897,6 @@ def fetchImg(SYS, DEV):
         npra = np.array(img, dtype)
         save(npra, "fetchImg.jpg")
         img = load("fetchImg.jpg")
-        return img
-
-###EXPERIMETNAL###
-def fetchImgEXP(SYS, DEV):
-        SYSDEV = str(SYS) + "{" + str(DEV) + "}"
-        data = caget(SYSDEV + "image1:ArrayData")
-        rows = caget(SYSDEV + "image1:ArraySize1_RBV")
-        cols = caget(SYSDEV + "image1:ArraySize0_RBV")
-        dtype = caget(SYSDEV + "cam1:DataType_RBV")
-        color = caget(SYSDEV + "cam1:ColorMode_RBV")
-        count = 0
-        img = []
-        row = []
-        dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
-        #print dtype
-        color = caget(SYSDEV + "cam1:ColorMode_RBV")
-        #print color
-        for i in range(rows):
-                for j in range(cols):
-                        row.append(data[count])
-                        count = count + 1
-                r = np.array(row, dtype)
-                img.append(r)
-                row = []
-        npra = np.array(img, dtype)
-        #display(npra)
-        save(npra, "fetchImg.jpg")
-        img = load("fetchImg.jpg") #, getColorFlag(color))
         return img
 
 
