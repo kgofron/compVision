@@ -126,6 +126,25 @@ def depthImg(imgL, imgR, ndisparities=16, blockSize=16):
 
 
 """
+Returns a sharpebded image using the Unsharp Img Algorithm
+
+Params:
+        * img - image
+        * ker - OPTIONAL - kernel size tuple; def:(9,9)
+        * sigX - OPTIONAL - Gaussian kernel standard deviation in X dir; def:10.0
+
+Returns:
+        * sharpened img
+"""
+def sharpen(img, ker = (9,9), sigX=10.0):
+        gaus = cv2.GaussianBlur(img, ker, sigX)
+        unsharp = cv2.addWeighted(img, 1.5, gaus, -0.5, 0, img)
+        return unsharp
+
+################################################################################
+
+
+"""
 Flood Fill Algorithm
 
 Params:
@@ -147,7 +166,7 @@ def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 
 
 """
-Imfill - Creates a mask for an image by removing holes
+Imfill - Creates a mask for an image by removing holes, Isolates shape of object
 
 Params:
         * img - image
@@ -166,28 +185,6 @@ def imfill(img, ThreshVal = 220):
         invert = cv2.bitwise_not(flood)
         output = thresh | invert
         return output
-        
-
-
-
-
-"""
-Returns a shapredned image using the Unsharp Img Algorithm
-
-Params:
-        * img - image
-        * ker - OPTIONAL - kernel size tuple; def:(9,9)
-        * sigX - OPTIONAL - Gaussian kernel standard deviation in X dir; def:10.0
-
-Returns:
-        * sharpened img
-"""
-def sharpen(img, ker = (9,9), sigX=10.0):
-        gaus = cv2.GaussianBlur(img, ker, sigX)
-        unsharp = cv2.addWeighted(img, 1.5, gaus, -0.5, 0, img)
-        return unsharp
-
-################################################################################
 
 
 """
