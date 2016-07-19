@@ -222,13 +222,13 @@ Params:
 	* val -OPTIONAL - New Value; 255,255,255
         * lo - OPTIONAL - Max lower birghtness/color diff; def: 20
         * hi - OPTIONAL - Max upper birghtness/color diff; def: 20
-        * fixedRng - OPTIONAL - TRUE=FIXED diff btw curr and see; FALSE=MASK only fills mask
-        * connectivity - OPTIONAL - 4 or 8 bit neightborrhood, def:4
+        * fixedRng - OPTIONAL - TRUE=FIXED diff btw curr and see; FALSE=MASK only fills mask def:False
+        * connectivity - OPTIONAL - 4 or 8 bit neightborrhood, def:8
 
 Returns:
         * Flood Filles Img
 """
-def floodFill(img, seedPoint, val=(255,255,255), lo=25, hi=25, fixedRng=True, connectivity=4):
+def floodFill(img, seedPoint, val=(255,255,255), lo=25, hi=25, fixedRng=False, connectivity=8):
         flooded = img.copy()
         h, w = img.shape[:2]
         mask = np.zeros((h+2,w+2), np.uint8)

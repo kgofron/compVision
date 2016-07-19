@@ -25,7 +25,7 @@ if __name__ == '__main__':
     try:
         fn = sys.argv[1]
     except:
-        fn = 'sample_0009.tif'
+        fn = 'img.jpg'
     print(__doc__)
 
     img = cv2.imread(fn, True)
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     def onmouse(event, x, y, flags, param):
         global seed_pt
         if flags & cv2.EVENT_FLAG_LBUTTON:
-            seed_pt = 0,0#x, y
+            seed_pt = x, y
             update()
 
     update()

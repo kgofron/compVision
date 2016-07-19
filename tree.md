@@ -1,3 +1,4 @@
+ 2coins.jpg                     |  Bin 0 -> 889391 bytes
  CVLibrary/cvlib.py             | 3134 ++++++++++++++++++++++++++++++++++++++++
  Crystals/Crystals.py           |   24 +
  Crystals/bulb.py               |   22 +
@@ -54,7 +55,7 @@
  OnAxisImg/cvlib.py             | 3134 ++++++++++++++++++++++++++++++++++++++++
  OnAxisImg/cvlib.pyc            |  Bin 0 -> 61470 bytes
  OnAxisImg/floodfill.py         |   80 +
- OnAxisImg/onaxis.py            |   24 +
+ OnAxisImg/onaxis.py            |   21 +
  OnAxisImg/sample.tif           |  Bin 0 -> 8148032 bytes
  OnAxisImg/sample_0001.tif      |  Bin 0 -> 8147860 bytes
  OnAxisImg/sample_0002.tif      |  Bin 0 -> 8147860 bytes
@@ -126,12 +127,16 @@
  XrayImg/cvlib.py               | 3134 ++++++++++++++++++++++++++++++++++++++++
  XrayImg/cvlib.pyc              |  Bin 0 -> 54970 bytes
  XrayImg/xray.py                |   32 +
+ coin.jpg                       |  Bin 0 -> 118766 bytes
  cvlib.py                       | 3134 ++++++++++++++++++++++++++++++++++++++++
  cvlib.pyc                      |  Bin 0 -> 58536 bytes
  fire.sh                        |   10 +
+ floodfill.py                   |    6 +
+ foreground.py                  |   10 +
  genTreeTable.sh                |    4 +
- gitlog.txt                     |  818 +++++++++++
+ gitlog.txt                     |  812 +++++++++++
+ selfie.jpg                     |  Bin 0 -> 101522 bytes
  tree.txt                       |    0
  updateLib.sh                   |   14 +
  wordcount.sh                   |    7 +
- 136 files changed, 29898 insertions(+)
+ 141 files changed, 29905 insertions(+)
