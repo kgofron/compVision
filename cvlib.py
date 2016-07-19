@@ -11,12 +11,11 @@ make image processing and computer vision easier, faster, and more compact.
 
 # DEPENDENCIES
 import cv2
-import cv2.cv as cv # SEE IF NECESSARY
 import numpy as np 
 import sys
 import time
 from matplotlib import pyplot as plt
-import matplotlib # SEE IF NECESSARY
+import matplotlib 
 from epics import caget, caput
 
 
