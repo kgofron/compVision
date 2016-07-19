@@ -412,6 +412,20 @@ def dictToLst(dictionary):
 
 
 """
+Turns two lists into a dictionary
+
+Params:
+        * key - List of Keys
+        * value - List of Values
+
+Returns:
+        * Dictionary of Key/Values
+"""
+def lstToDict(key, value):
+        return dict(zip(key, value))
+
+
+"""
 Returns the Mean Color (Regular Img) / Mean Intensity (Grayscale)
 
 Params:
