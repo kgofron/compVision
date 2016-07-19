@@ -7,6 +7,6 @@ contours = cvlib.findContours(i)
 
 for cnt in contours:
     cvlib.drawContour(img, cnt)
-    print cvlib.cntInfo(img, cnt)
+    print cvlib.cntInfo(img, cnt), "\n"
     cvlib.plotPOI(img, cnt)
 cvlib.display(img)
