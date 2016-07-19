@@ -187,28 +187,6 @@ def fetchImgEXP(SYS, DEV):
         img = load("fetchImg.jpg") #, getColorFlag(color))
         return img
 
-"""
-Imfill - Creates a mask for an image by removing holes, Isolates shape of object
-
-Params:
-        * img - image
-        * threshVal - OPTIONAL - Threshold Value; def: 220
-
-Returns:
-        * Image with Holes Filled
-"""
-def imfill2(img, threshVal = 220):
-        tmp = grayscale(img)
-        #kernel = np.ones((5,5),np.uint8)
-        thresh = otsu(tmp) #cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel) #otsu(tmp) #cv2.adaptiveThreshold(tmp, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 2)
-        flood = thresh.copy()
-        h, w = thresh.shape[:2]
-        mask = np.zeros((h+2,w+2), np.uint8)
-        cv2.floodFill(flood, mask, (0,0), 255)
-        invert = cv2.bitwise_not(flood)
-        output = thresh | invert
-        displayImgs([tmp, thresh, flood, invert, output])
-        return output
 
 ################################################################################
 
@@ -237,16 +215,6 @@ def floodFill(img, seedPoint, val=(255,255,255), lo=25, hi=25, fixedRng=False, c
                 flags |= cv2.FLOODFILL_FIXED_RANGE
         cv2.floodFill(flooded, mask, seedPoint, val, (lo,)*3, (hi,)*3, flags)
         return flooded
-
-
-
-def floodFillOld(img, seedPoint, maskVar=None, newval=(255,0,0)):
-	tmp = img.copy()
-        h, w = img.shape[:2]
-	if maskVar is None:
-		maskVar = np.zeros((h+2,w+2), np.uint8)
-	ret, rect = cv2.floodFill(tmp, maskVar, seedPoint, newval)
-	return tmp
 
 
 """
