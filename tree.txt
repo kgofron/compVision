@@ -1,4 +1,5 @@
- CVLibrary/cvlib.py             | 3082 ++++++++++++++++++++++++++++++++++++++++
+ 2coins.jpg                     |  Bin 0 -> 889391 bytes
+ CVLibrary/cvlib.py             | 3081 ++++++++++++++++++++++++++++++++++++++++
  Crystals/Crystals.py           |   24 +
  Crystals/bulb.py               |   22 +
  Crystals/bulb/T201607061.jpg   |  Bin 0 -> 483283 bytes
@@ -9,7 +10,7 @@
  Crystals/bulb/bulbPic.jpg      |  Bin 0 -> 26353 bytes
  Crystals/crystalProc.py        |   20 +
  Crystals/crystals.png          |  Bin 0 -> 14358985 bytes
- Crystals/cvlib.py              | 3082 ++++++++++++++++++++++++++++++++++++++++
+ Crystals/cvlib.py              | 3081 ++++++++++++++++++++++++++++++++++++++++
  Crystals/line.py               |   20 +
  Crystals/line/T2016070610.jpg  |  Bin 0 -> 500024 bytes
  Crystals/line/T201607068.jpg   |  Bin 0 -> 499584 bytes
@@ -37,7 +38,7 @@
  IXS/VFM1.jpg                   |  Bin 0 -> 129402 bytes
  IXS/VFM2.jpg                   |  Bin 0 -> 129402 bytes
  IXS/VFMProc.py                 |    8 +
- IXS/cvlib.py                   | 3082 ++++++++++++++++++++++++++++++++++++++++
+ IXS/cvlib.py                   | 3081 ++++++++++++++++++++++++++++++++++++++++
  IXS/cvlib.pyc                  |  Bin 0 -> 58780 bytes
  IXS/fetchImg.jpg               |  Bin 0 -> 1729187 bytes
  IXS/slitHFM.jpg                |  Bin 0 -> 17208 bytes
@@ -45,13 +46,13 @@
  IXS/test.py                    |   70 +
  LICENSE                        |   21 +
  Merlin/README.md               |    9 +
- Merlin/cvlib.py                | 3082 ++++++++++++++++++++++++++++++++++++++++
+ Merlin/cvlib.py                | 3081 ++++++++++++++++++++++++++++++++++++++++
  Merlin/cvlib.pyc               |  Bin 0 -> 54813 bytes
  Merlin/merlin.py               |   25 +
  Merlin/photo1.jpg              |  Bin 0 -> 4543 bytes
  Merlin/photo2.jpg              |  Bin 0 -> 4283 bytes
  Merlin/photo3.jpg              |  Bin 0 -> 3861 bytes
- OnAxisImg/cvlib.py             | 3082 ++++++++++++++++++++++++++++++++++++++++
+ OnAxisImg/cvlib.py             | 3081 ++++++++++++++++++++++++++++++++++++++++
  OnAxisImg/cvlib.pyc            |  Bin 0 -> 56013 bytes
  OnAxisImg/onaxis.py            |   19 +
  OnAxisImg/sample.tif           |  Bin 0 -> 8148032 bytes
@@ -68,7 +69,7 @@
  README.md                      |   25 +
  RawImages/README.md            |    9 +
  RawImages/Slide.pdf            |  Bin 0 -> 117709 bytes
- RawImages/cvlib.py             | 3082 ++++++++++++++++++++++++++++++++++++++++
+ RawImages/cvlib.py             | 3081 ++++++++++++++++++++++++++++++++++++++++
  RawImages/cvlib.pyc            |  Bin 0 -> 59800 bytes
  RawImages/gripper.bmp          |  Bin 0 -> 466578 bytes
  RawImages/matchTest.py         |   34 +
@@ -95,7 +96,7 @@
  RawImages/pin.bmp              |  Bin 0 -> 179958 bytes
  Showcase/README.md             |    5 +
  Showcase/Scintillator.py       |   25 +
- Showcase/cvlib.py              | 3082 ++++++++++++++++++++++++++++++++++++++++
+ Showcase/cvlib.py              | 3081 ++++++++++++++++++++++++++++++++++++++++
  Showcase/gripper.bmp           |  Bin 0 -> 466578 bytes
  Showcase/matchTest.py          |   31 +
  Showcase/perfect.bmp           |  Bin 0 -> 1921078 bytes
@@ -121,19 +122,19 @@
  XrayImg/T201606308.jpg         |  Bin 0 -> 46757 bytes
  XrayImg/T201606309.jpg         |  Bin 0 -> 51600 bytes
  XrayImg/beam.png               |  Bin 0 -> 829223 bytes
- XrayImg/cvlib.py               | 3082 ++++++++++++++++++++++++++++++++++++++++
+ XrayImg/cvlib.py               | 3081 ++++++++++++++++++++++++++++++++++++++++
  XrayImg/cvlib.pyc              |  Bin 0 -> 54970 bytes
  XrayImg/xray.py                |   32 +
  coin.jpg                       |  Bin 0 -> 118766 bytes
- cvlib.py                       | 3082 ++++++++++++++++++++++++++++++++++++++++
- cvlib.pyc                      |  Bin 0 -> 58056 bytes
+ cvlib.py                       | 3081 ++++++++++++++++++++++++++++++++++++++++
+ cvlib.pyc                      |  Bin 0 -> 58602 bytes
  fire.sh                        |   10 +
  floodfill.py                   |    6 +
  foreground.py                  |    5 +
  genTreeTable.sh                |    4 +
- gitlog.txt                     |  740 ++++++++++
+ gitlog.txt                     |  746 ++++++++++
  selfie.jpg                     |  Bin 0 -> 101522 bytes
  tree.txt                       |    0
  updateLib.sh                   |   14 +
  wordcount.sh                   |    7 +
- 138 files changed, 29272 insertions(+)
+ 139 files changed, 29269 insertions(+)

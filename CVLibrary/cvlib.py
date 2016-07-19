@@ -147,16 +147,16 @@ def floodFill(img, seedPoint, maskVar=None, newval=(255,0,0)):
 
 
 """
-Extracts the Foreground of an Image
+Imfill - Creates a mask for an image by removing holes
 
 Params:
         * img - image
         * ThreshVal - OPTIONAL - Threshold Value; def: 220
 
 Returns:
-        * Image with Foreground Only
+        * Image with Holes Filled
 """
-def extractForeground(img, ThreshVal = 220):
+def imfill(img, ThreshVal = 220):
         tmp = grayscale(img)
         ret, thresh = cv2.threshold(tmp, ThreshVal, 255, cv2.THRESH_BINARY_INV)
         flood = thresh.copy()
@@ -165,11 +165,10 @@ def extractForeground(img, ThreshVal = 220):
         cv2.floodFill(flood, mask, (0,0), 255)
         invert = cv2.bitwise_not(flood)
         output = thresh | invert
-        out = tmp | invert
-        orign = img | invert
-        displayImgs([img, thresh, flood, invert, output, out, orign])
         return output
         
+
+
 
 
 """
