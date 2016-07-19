@@ -108,7 +108,6 @@
  Showcase/pin.bmp               |  Bin 0 -> 179958 bytes
  Showcase/sin1.jpg              |  Bin 0 -> 51600 bytes
  Showcase/sin2.jpg              |  Bin 0 -> 80125 bytes
- StereoDepthMapDemo.png         |  Bin 0 -> 184274 bytes
  XrayImg/Scintillator.py        |   25 +
  XrayImg/T201606300.jpg         |  Bin 0 -> 45963 bytes
  XrayImg/T201606301.jpg         |  Bin 0 -> 47535 bytes
@@ -134,11 +133,9 @@
  floodfill.py                   |    6 +
  foreground.py                  |   10 +
  genTreeTable.sh                |    4 +
- gitlog.txt                     |  776 ++++++++++
- mapL.jpg                       |  Bin 0 -> 125748 bytes
- mapR.jpg                       |  Bin 0 -> 125748 bytes
+ gitlog.txt                     |  782 ++++++++++
  selfie.jpg                     |  Bin 0 -> 101522 bytes
  tree.txt                       |    0
  updateLib.sh                   |   14 +
  wordcount.sh                   |    7 +
- 143 files changed, 29283 insertions(+)
+ 140 files changed, 29289 insertions(+)
