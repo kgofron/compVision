@@ -209,6 +209,7 @@ def fetchImgEXP(SYS, DEV):
 
 def coherenceFilter(img, sigma=11, str_sigma=11, blend=0.5, iter_n=4):
         """
+        EXPERIMENTAL
         Applies a Coherence-enhancing filter onto an img
 
         Params:
@@ -243,6 +244,7 @@ def coherenceFilter(img, sigma=11, str_sigma=11, blend=0.5, iter_n=4):
 
 def gaborFilter(img):
         """
+        EXPERIMENTAL
         Gabor Filter
         Uses the Gabor Filter Convolutions to get Fractalius-like image effect
         
