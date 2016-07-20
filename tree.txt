@@ -130,22 +130,30 @@
  XrayImg/cvlib.py               | 3299 ++++++++++++++++++++++++++++++++++++++++
  XrayImg/cvlib.pyc              |  Bin 0 -> 54970 bytes
  XrayImg/xray.py                |   32 +
- cvlib.html                     | 1478 ++++++++++++++++++
+ cvlib.html                     | 1476 ++++++++++++++++++
  cvlib.py                       | 3299 ++++++++++++++++++++++++++++++++++++++++
- cvlib.pyc                      |  Bin 0 -> 102308 bytes
+ cvlib.pyc                      |  Bin 0 -> 96293 bytes
+ fetchImg.jp2                   |  Bin 0 -> 1068423 bytes
+ fetchImg.jpg                   |  Bin 0 -> 632889 bytes
+ fetchImg.png                   |  Bin 0 -> 1777615 bytes
+ fetchImg.tiff                  |  Bin 0 -> 1914844 bytes
  fire.sh                        |   11 +
  genTreeTable.sh                |    7 +
  generateDocs.sh                |    5 +
- gitlog.txt                     |  932 ++++++++++++
+ gitlog.txt                     |  938 ++++++++++++
+ img.py                         |    5 +
  showDocs.sh                    |    5 +
  tests/2coins.jpg               |  Bin 0 -> 889391 bytes
+ tests/coherence.jpg            |  Bin 0 -> 170810 bytes
  tests/coin.jpg                 |  Bin 0 -> 118766 bytes
  tests/cvlib.py                 | 3299 ++++++++++++++++++++++++++++++++++++++++
- tests/cvlib.pyc                |  Bin 0 -> 103394 bytes
+ tests/cvlib.pyc                |  Bin 0 -> 103895 bytes
+ tests/filters.py               |   11 +
  tests/floodfill.py             |    6 +
  tests/foreground.py            |   26 +
+ tests/gaborFilter.jpg          |  Bin 0 -> 103672 bytes
  tests/selfie.jpg               |  Bin 0 -> 101522 bytes
  tree.txt                       |    0
  updateLib.sh                   |   15 +
  wordcount.sh                   |    7 +
- 150 files changed, 36643 insertions(+)
+ 158 files changed, 36663 insertions(+)
