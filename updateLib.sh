@@ -9,6 +9,7 @@ cp cvlib.py XrayImg/cvlib.py
 cp cvlib.py CVLibrary/cvlib.py
 cp cvlib.py OnAxisImg/cvlib.py
 cp cvlib.py IXS/cvlib.py
+cp cvlib.py tests/cvlib.py
 printf "\n"
 printf "All Folders updated with new cvlib.py file..."
 printf "\n"
