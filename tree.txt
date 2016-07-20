@@ -100,7 +100,6 @@
  RawImages/pin.bmp              |  Bin 0 -> 179958 bytes
  RawImages/pinFlood.py          |  257 ++++
  Showcase/README.md             |    5 +
- Showcase/Scintillator.py       |   25 +
  Showcase/cvlib.py              | 3299 ++++++++++++++++++++++++++++++++++++++++
  Showcase/gripper.bmp           |  Bin 0 -> 466578 bytes
  Showcase/matchTest.py          |   31 +
@@ -109,10 +108,7 @@
  Showcase/photo02.bmp           |  Bin 0 -> 1921078 bytes
  Showcase/photo03.bmp           |  Bin 0 -> 1921078 bytes
  Showcase/photo04.bmp           |  Bin 0 -> 1921078 bytes
- Showcase/photo05.bmp           |  Bin 0 -> 1921078 bytes
  Showcase/pin.bmp               |  Bin 0 -> 179958 bytes
- Showcase/sin1.jpg              |  Bin 0 -> 51600 bytes
- Showcase/sin2.jpg              |  Bin 0 -> 80125 bytes
  XrayImg/Scintillator.py        |   25 +
  XrayImg/T201606300.jpg         |  Bin 0 -> 45963 bytes
  XrayImg/T201606301.jpg         |  Bin 0 -> 47535 bytes
@@ -140,8 +136,9 @@
  fire.sh                        |   11 +
  genTreeTable.sh                |    7 +
  generateDocs.sh                |    5 +
- gitlog.txt                     |  938 ++++++++++++
+ gitlog.txt                     |  944 ++++++++++++
  img.py                         |    5 +
+ presentation.txt               |    2 +
  showDocs.sh                    |    5 +
  tests/2coins.jpg               |  Bin 0 -> 889391 bytes
  tests/coherence.jpg            |  Bin 0 -> 170810 bytes
@@ -156,4 +153,4 @@
  tree.txt                       |    0
  updateLib.sh                   |   15 +
  wordcount.sh                   |    7 +
- 158 files changed, 36663 insertions(+)
+ 155 files changed, 36646 insertions(+)

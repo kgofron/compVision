@@ -1,7 +1,7 @@
 """
 Author: William Watson
 This program finds the pin and gripper through all 19
-photos. Provided by NSLS-2 Beamlines.
+photos.
 """
 
 import cvlib
@@ -13,7 +13,7 @@ contours = contours[1]
 cvlib.drawContour(best, contours, thickness = 5)
 cvlib.display(best)
 lst = [best]
-for i in range(1,6):
+for i in range(1,5):
 	img = cvlib.load("photo0%s.bmp" % i)
 	imgTh = cvlib.binaryThreshold(img, threshVal=100, invert=False)
 	cnts = cvlib.findContours(imgTh)
