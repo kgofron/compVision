@@ -104,7 +104,7 @@
  Showcase/README.md             |    5 +
  Showcase/cvlib.py              | 3299 ++++++++++++++++++++++++++++++++++++++++
  Showcase/gripper.bmp           |  Bin 0 -> 466578 bytes
- Showcase/matchTest.py          |   31 +
+ Showcase/matchTest.py          |   33 +
  Showcase/merlin.jpg            |  Bin 0 -> 4543 bytes
  Showcase/merlin.py             |   25 +
  Showcase/perfect.bmp           |  Bin 0 -> 1921078 bytes
@@ -132,14 +132,14 @@
  XrayImg/xray.py                |   32 +
  cvlib.html                     | 1476 ++++++++++++++++++
  cvlib.py                       | 3299 ++++++++++++++++++++++++++++++++++++++++
- cvlib.pyc                      |  Bin 0 -> 102266 bytes
+ cvlib.pyc                      |  Bin 0 -> 96293 bytes
  fetchImg.jpg                   |  Bin 0 -> 632889 bytes
  fetchImg.png                   |  Bin 0 -> 1777615 bytes
  fetchImg.tiff                  |  Bin 0 -> 1914844 bytes
  fire.sh                        |   11 +
  genTreeTable.sh                |    7 +
  generateDocs.sh                |    5 +
- gitlog.txt                     |  956 ++++++++++++
+ gitlog.txt                     |  962 ++++++++++++
  img.py                         |    9 +
  presentation.txt               |    2 +
  showDocs.sh                    |    5 +
@@ -157,4 +157,4 @@
  tree.txt                       |    0
  updateLib.sh                   |   15 +
  wordcount.sh                   |    7 +
- 159 files changed, 36716 insertions(+)
+ 159 files changed, 36724 insertions(+)

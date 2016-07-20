@@ -11,7 +11,7 @@ bestTh = cvlib.binaryThreshold(best, threshVal=100, invert=False)
 contours = cvlib.findContours(bestTh)
 contours = contours[1]
 cvlib.drawContour(best, contours, thickness = 5)
-cvlib.display(best)
+#cvlib.display(best)
 lst = [best]
 for i in range(1,5):
 	img = cvlib.load("photo0%s.bmp" % i)
@@ -27,5 +27,7 @@ for i in range(1,5):
 	print "Image " + str(i) + " " + str(cvlib.matchShapes(contours, mount)) + " Sim"
 	img = cvlib.drawMatch(img, cvlib.load("pin.bmp"))
 	img = cvlib.drawMatch(img, cvlib.load("gripper.bmp"), color=(255,0,0))
-	cvlib.display(img)
+	#cvlib.display(img)
 	lst.append(img)
+
+cvlib.displayImgs(lst)
