@@ -203,13 +203,17 @@ def fetchImgEXP(SYS, DEV):
         npra = np.array(img, dtype)
         #display(npra)
         save(npra, "fetchImg.jpg")
+        save(npra, "fetchImg.tiff") # Might need to change file type
+        save(npra, "fetchImg.jp2") # Might need to change file type
+        save(npra, "fetchImg.png") # Might need to change file type
         img = load("fetchImg.jpg") #, getColorFlag(color))
         return img
 
 
+################################################################################
+
 def coherenceFilter(img, sigma=11, str_sigma=11, blend=0.5, iter_n=4):
         """
-        EXPERIMENTAL
         Applies a Coherence-enhancing filter onto an img
 
         Params:
@@ -244,7 +248,6 @@ def coherenceFilter(img, sigma=11, str_sigma=11, blend=0.5, iter_n=4):
 
 def gaborFilter(img):
         """
-        EXPERIMENTAL
         Gabor Filter
         Uses the Gabor Filter Convolutions to get Fractalius-like image effect
         
@@ -265,9 +268,6 @@ def gaborFilter(img):
                 fimg = cv2.filter2D(img, cv2.CV_8UC3, ker)
                 np.maximum(accum, fimg, accum)
         return accum
-
-
-################################################################################
 
 
 def floodFill(img, seedPoint, val=(255,255,255), lo=25, hi=25, fixedRng=False, connectivity=8):
@@ -2021,7 +2021,7 @@ def fetchImg(SYS, DEV):
         npra = np.array(img, dtype)
         save(npra, "fetchImg.jpg") # Might need to change file type
         img = load("fetchImg.jpg") # Might need to change file type
-        return img
+        return npra
 
 
 def epicscaget(PV):
