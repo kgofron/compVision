@@ -100,7 +100,6 @@
  RawImages/pin.bmp              |  Bin 0 -> 179958 bytes
  RawImages/pinFlood.py          |  257 ++++
  Showcase/BPM1Proc.py           |   20 +
- Showcase/BPM1Proc.py~          |   20 +
  Showcase/BPM1photo.jpg         |  Bin 0 -> 531496 bytes
  Showcase/README.md             |    5 +
  Showcase/cvlib.py              | 3299 ++++++++++++++++++++++++++++++++++++++++
@@ -108,7 +107,6 @@
  Showcase/matchTest.py          |   31 +
  Showcase/merlin.jpg            |  Bin 0 -> 4543 bytes
  Showcase/merlin.py             |   25 +
- Showcase/merlin.py~            |   25 +
  Showcase/perfect.bmp           |  Bin 0 -> 1921078 bytes
  Showcase/photo01.bmp           |  Bin 0 -> 1921078 bytes
  Showcase/photo02.bmp           |  Bin 0 -> 1921078 bytes
@@ -141,7 +139,7 @@
  fire.sh                        |   11 +
  genTreeTable.sh                |    7 +
  generateDocs.sh                |    5 +
- gitlog.txt                     |  950 ++++++++++++
+ gitlog.txt                     |  956 ++++++++++++
  img.py                         |    9 +
  presentation.txt               |    2 +
  showDocs.sh                    |    5 +
@@ -150,6 +148,7 @@
  tests/coin.jpg                 |  Bin 0 -> 118766 bytes
  tests/cvlib.py                 | 3299 ++++++++++++++++++++++++++++++++++++++++
  tests/cvlib.pyc                |  Bin 0 -> 103352 bytes
+ tests/enhance.py               |    9 +
  tests/filters.py               |   11 +
  tests/floodfill.py             |    6 +
  tests/foreground.py            |   26 +
@@ -158,4 +157,4 @@
  tree.txt                       |    0
  updateLib.sh                   |   15 +
  wordcount.sh                   |    7 +
- 160 files changed, 36746 insertions(+)
+ 159 files changed, 36716 insertions(+)
