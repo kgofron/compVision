@@ -68,7 +68,7 @@
  OnAxisImg/sample_0009.tif      |  Bin 0 -> 8147860 bytes
  OnAxisImg/sample_0010.tif      |  Bin 0 -> 8147860 bytes
  OnAxisImg/update.sh            |    6 +
- README.md                      |   25 +
+ README.md                      |   42 +
  RawImages/README.md            |    9 +
  RawImages/Slide.pdf            |  Bin 0 -> 117709 bytes
  RawImages/cvlib.py             | 3239 ++++++++++++++++++++++++++++++++++++++++
@@ -136,7 +136,7 @@
  fire.sh                        |   11 +
  genTreeTable.sh                |    7 +
  generateDocs.sh                |    5 +
- gitlog.txt                     |  890 +++++++++++
+ gitlog.txt                     |  896 +++++++++++
  showDocs.sh                    |    5 +
  tests/2coins.jpg               |  Bin 0 -> 889391 bytes
  tests/coin.jpg                 |  Bin 0 -> 118766 bytes
@@ -148,4 +148,4 @@
  tree.txt                       |    0
  updateLib.sh                   |   15 +
  wordcount.sh                   |    7 +
- 150 files changed, 35963 insertions(+)
+ 150 files changed, 35986 insertions(+)
