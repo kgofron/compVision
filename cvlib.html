@@ -317,6 +317,17 @@ Params:<br>
 &nbsp;<br>
 Returns:<br>
 *&nbsp;contour&nbsp;information&nbsp;in&nbsp;list&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-coherenceFilter"><strong>coherenceFilter</strong></a>(img, sigma<font color="#909090">=11</font>, str_sigma<font color="#909090">=11</font>, blend<font color="#909090">=0.5</font>, iter_n<font color="#909090">=4</font>)</dt><dd><tt>Applies&nbsp;a&nbsp;Coherence-enhancing&nbsp;filter&nbsp;onto&nbsp;an&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img-&nbsp;image<br>
+*&nbsp;sigma&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def:&nbsp;11<br>
+*&nbsp;str_sigma&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def:&nbsp;11<br>
+*&nbsp;blend&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def:&nbsp;0.5<br>
+*&nbsp;iter_n&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;number&nbsp;of&nbsp;iterations;&nbsp;def:&nbsp;4<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Filtered&nbsp;Img</tt></dd></dl>
  <dl><dt><a name="-colorFlags"><strong>colorFlags</strong></a>(filterStr<font color="#909090">=''</font>)</dt><dd><tt>Returns&nbsp;the&nbsp;list&nbsp;of&nbsp;acceptable&nbsp;flags&nbsp;for&nbsp;color&nbsp;conversion&nbsp;<br>
 used&nbsp;for&nbsp;change&nbsp;colormap&nbsp;fnc<br>
 &nbsp;<br>
@@ -817,6 +828,14 @@ Params:&nbsp;<br>
 &nbsp;<br>
 Returns:&nbsp;<br>
 *&nbsp;Magnitude&nbsp;Spectrum&nbsp;of&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-gaborFilter"><strong>gaborFilter</strong></a>(img)</dt><dd><tt>Gabor&nbsp;Filter<br>
+Uses&nbsp;the&nbsp;Gabor&nbsp;Filter&nbsp;Convolutions&nbsp;to&nbsp;get&nbsp;Fractalius-like&nbsp;image&nbsp;effect<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Gabor&nbsp;Filtered&nbsp;Image&nbsp;Effect</tt></dd></dl>
  <dl><dt><a name="-gaussianBlur"><strong>gaussianBlur</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Gaussian&nbsp;Filtering/Blur<br>
 &nbsp;<br>
 Params:<br>
