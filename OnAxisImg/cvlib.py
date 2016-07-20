@@ -11,17 +11,16 @@ make image processing and computer vision easier, faster, and more compact.
 
 # DEPENDENCIES
 import cv2
-import cv2.cv as cv # SEE IF NECESSARY
 import numpy as np 
 import sys
 import time
 from matplotlib import pyplot as plt
-import matplotlib # SEE IF NECESSARY
+import matplotlib 
 from epics import caget, caput
 
 
 # VERSION
-__version__ = "0.5.4.0"
+__version__ = "0.5.4.1"
 __opencv__ = cv2.__version__
 __npversion__ = np.version.version
 __sysver__ = sys.version
@@ -1877,9 +1876,46 @@ def fetchImg(SYS, DEV):
                 img.append(r)
                 row = []
         npra = np.array(img, dtype)
-        save(npra, "fetchImg.jpg")
-        img = load("fetchImg.jpg")
+        save(npra, "fetchImg.jpg") # Might need to change file type
+        img = load("fetchImg.jpg") # Might need to change file type
         return img
+
+
+"""
+Retrieves and Returns the value of the named PV
+
+Params:  
+        * PV - PV name to get
+
+Returns: 
+        * Value of PV
+"""
+def caget(PV):
+        return caget(PV)
+
+
+"""
+Sets the Value of the Named PV with Value
+
+Params:
+        * PV - PV to set
+        * value - Value to set PV to
+"""
+def caput(PV, value):
+        caput(PV, value)
+
+
+"""
+Returns a string of info about a PV
+
+Params:
+        * PV - The PV Value to retrieve info from
+
+Returns:
+        * String of info about PV
+"""
+def cainfo(PV):
+        return cainfo(PV, False)
 
 
 """
