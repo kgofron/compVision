@@ -2,7 +2,8 @@
 
 git pull
 git log --graph --abbrev-commit --decorate --date=relative --all > gitlog.txt
-bash genTreeTable.sh
+git diff --stat `git hash-object -t tree /dev/null` > tree.txt
+pydoc -w cvlib 
 git add -A
 git status
 now=$(date +"%T - %D")

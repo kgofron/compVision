@@ -1,0 +1,1457 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module cvlib</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>cvlib</strong></big></big> (version 0.5.4.1)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/wwatson/Documents/compVision/cvlib.py">/home/wwatson/Documents/compVision/cvlib.py</a></font></td></tr></table>
+    <p><tt>BNL&nbsp;NSLS-2&nbsp;Computer&nbsp;Vision&nbsp;Module<br>
+Author:&nbsp;William&nbsp;Watson<br>
+Date:&nbsp;2016-7-14<br>
+&nbsp;<br>
+This&nbsp;Module&nbsp;contains&nbsp;numerous&nbsp;functions&nbsp;designed&nbsp;to&nbsp;<br>
+help&nbsp;in&nbsp;the&nbsp;data&nbsp;manipulation&nbsp;of&nbsp;images&nbsp;on&nbsp;the&nbsp;Beam-lines&nbsp;within&nbsp;NSLS-2.<br>
+It&nbsp;Uses&nbsp;the&nbsp;numpy&nbsp;and&nbsp;cv2&nbsp;libraries&nbsp;to&nbsp;construct&nbsp;a&nbsp;simple&nbsp;module&nbsp;to&nbsp;<br>
+make&nbsp;image&nbsp;processing&nbsp;and&nbsp;computer&nbsp;vision&nbsp;easier,&nbsp;faster,&nbsp;and&nbsp;more&nbsp;compact.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="cv2.html">cv2</a><br>
+<a href="matplotlib.html">matplotlib</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-BFMatch"><strong>BFMatch</strong></a>(img1, img2)</dt><dd><tt>Brute-Force&nbsp;Matcher&nbsp;-&nbsp;Matches<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;Query&nbsp;Image&nbsp;<br>
+*&nbsp;img2&nbsp;-&nbsp;Train&nbsp;Image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Matches</tt></dd></dl>
+ <dl><dt><a name="-adaptiveBilateralFilter"><strong>adaptiveBilateralFilter</strong></a>(img, ksize<font color="#909090">=(5, 5)</font>, sigmaSpace<font color="#909090">=None</font>)</dt><dd><tt>Adaptive&nbsp;Bilateral&nbsp;Filtering<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;ksize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Kernal&nbsp;Size,&nbsp;def:&nbsp;(5,5)<br>
+*&nbsp;sigmaSpace&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Filter&nbsp;sigma&nbsp;in&nbsp;coord&nbsp;space.&nbsp;def:&nbsp;None</tt></dd></dl>
+ <dl><dt><a name="-adaptiveEqHist"><strong>adaptiveEqHist</strong></a>(img, clipLimit<font color="#909090">=2.0</font>, tileGridSize<font color="#909090">=(8, 8)</font>)</dt><dd><tt>CLAHE&nbsp;(Contrast&nbsp;Limited&nbsp;Adaptive&nbsp;Histogram&nbsp;Equalization)&nbsp;-&nbsp;Improves&nbsp;contrast&nbsp;via&nbsp;Adaptive&nbsp;Histogram&nbsp;Equalization<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;clipLimit&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;contrast&nbsp;limit&nbsp;to&nbsp;clip&nbsp;pixels&nbsp;before&nbsp;hist&nbsp;eq,&nbsp;def&nbsp;is&nbsp;2.0<br>
+*&nbsp;tileGridSize&nbsp;-&nbsp;(row,&nbsp;col)&nbsp;blocks&nbsp;that&nbsp;are&nbsp;equalized&nbsp;-&nbsp;def&nbsp;is&nbsp;(8,8)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Equalized&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-adaptiveGaussianThreshold"><strong>adaptiveGaussianThreshold</strong></a>(img)</dt><dd><tt>Returns&nbsp;an&nbsp;img&nbsp;after&nbsp;Adaptive&nbsp;Gaussian&nbsp;Thresholding<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;Image&nbsp;that&nbsp;has&nbsp;undergone&nbsp;Adaptive&nbsp;Gaussian&nbsp;Thresholding</tt></dd></dl>
+ <dl><dt><a name="-adaptiveMeanThreshold"><strong>adaptiveMeanThreshold</strong></a>(img)</dt><dd><tt>Returns&nbsp;an&nbsp;img&nbsp;after&nbsp;Adaptive&nbsp;Mean&nbsp;Thresholding<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;Image&nbsp;that&nbsp;has&nbsp;undergone&nbsp;Adaptive&nbsp;Mean&nbsp;Thresholding</tt></dd></dl>
+ <dl><dt><a name="-add"><strong>add</strong></a>(img1, img2)</dt><dd><tt>Image&nbsp;Addition&nbsp;-&nbsp;add&nbsp;two&nbsp;images<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;image&nbsp;1<br>
+*&nbsp;img2&nbsp;-&nbsp;image&nbsp;2&nbsp;or&nbsp;a&nbsp;scalar&nbsp;quantity<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Addition&nbsp;of&nbsp;img1&nbsp;and&nbsp;img2</tt></dd></dl>
+ <dl><dt><a name="-addBorder"><strong>addBorder</strong></a>(img, flag<font color="#909090">=0</font>, top<font color="#909090">=10</font>, bottom<font color="#909090">=10</font>, left<font color="#909090">=10</font>, right<font color="#909090">=10</font>, color<font color="#909090">=(255, 0, 0)</font>)</dt><dd><tt>Adds&nbsp;a&nbsp;border&nbsp;to&nbsp;the&nbsp;image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;add&nbsp;border<br>
+*&nbsp;flag&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;border&nbsp;type&nbsp;flag,&nbsp;def&nbsp;is&nbsp;CONSTANT&nbsp;(0)<br>
+*&nbsp;top&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;top&nbsp;pixel&nbsp;width<br>
+*&nbsp;bottom&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;bottom&nbsp;pixel&nbsp;width<br>
+*&nbsp;right&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;right&nbsp;pixel&nbsp;width<br>
+*&nbsp;left&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;left&nbsp;pixel&nbsp;width<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;only&nbsp;used&nbsp;if&nbsp;flag&nbsp;==&nbsp;cv2.BORDER_CONSTANT<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;img&nbsp;with&nbsp;specified&nbsp;border</tt></dd></dl>
+ <dl><dt><a name="-addWeight"><strong>addWeight</strong></a>(img1, wt1, img2, wt2, gamma<font color="#909090">=0</font>)</dt><dd><tt>Image&nbsp;Blending&nbsp;-&nbsp;Added&nbsp;Weighting<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;first&nbsp;image<br>
+*&nbsp;wt1&nbsp;-&nbsp;weight&nbsp;of&nbsp;first&nbsp;image<br>
+*&nbsp;img2&nbsp;-&nbsp;second&nbsp;img<br>
+*&nbsp;wt2&nbsp;-&nbsp;weight&nbsp;of&nbsp;second&nbsp;image<br>
+*&nbsp;gamma&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;0<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;weighted&nbsp;addition&nbsp;of&nbsp;imgs</tt></dd></dl>
+ <dl><dt><a name="-affineTransform"><strong>affineTransform</strong></a>(img, pts, newPts)</dt><dd><tt>Affine&nbsp;Transformation&nbsp;-&nbsp;translates&nbsp;a&nbsp;list&nbsp;of&nbsp;points&nbsp;to&nbsp;a&nbsp;new&nbsp;set&nbsp;of&nbsp;points&nbsp;while&nbsp;keeping&nbsp;<br>
+all&nbsp;parallel&nbsp;lines&nbsp;in&nbsp;original&nbsp;img&nbsp;parallel&nbsp;in&nbsp;output<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;pts&nbsp;-&nbsp;points&nbsp;of&nbsp;reference&nbsp;in&nbsp;original&nbsp;image<br>
+*&nbsp;newPts&nbsp;-&nbsp;points&nbsp;to&nbsp;be&nbsp;translated&nbsp;to<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Shifted&nbsp;img&nbsp;under&nbsp;an&nbsp;Affine&nbsp;Transformation</tt></dd></dl>
+ <dl><dt><a name="-applyColorMap"><strong>applyColorMap</strong></a>(img, flag)</dt><dd><tt>Apply&nbsp;a&nbsp;Color&nbsp;map&nbsp;to&nbsp;an&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;flag&nbsp;-&nbsp;string&nbsp;flag&nbsp;or&nbsp;corresponding&nbsp;int&nbsp;found&nbsp;in&nbsp;<a href="#-getColorMapFlags">getColorMapFlags</a>()<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;img&nbsp;in&nbsp;color&nbsp;map</tt></dd></dl>
+ <dl><dt><a name="-applyHSV"><strong>applyHSV</strong></a>(img)</dt><dd><tt>Apply&nbsp;a&nbsp;HSV&nbsp;Color&nbsp;Map&nbsp;to&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;HSV&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-applyJET"><strong>applyJET</strong></a>(img)</dt><dd><tt>Apply&nbsp;a&nbsp;JET&nbsp;Color&nbsp;Map&nbsp;to&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;JET&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-area"><strong>area</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;area&nbsp;of&nbsp;cnt<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Area&nbsp;of&nbsp;cnt</tt></dd></dl>
+ <dl><dt><a name="-aspectRatio"><strong>aspectRatio</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Aspect&nbsp;Ratio&nbsp;(Ratio&nbsp;of&nbsp;width&nbsp;to&nbsp;height&nbsp;of&nbsp;bounding&nbsp;rectangle)<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Aspect&nbsp;Ratio&nbsp;of&nbsp;cnt</tt></dd></dl>
+ <dl><dt><a name="-axis"><strong>axis</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Major&nbsp;and&nbsp;Minor&nbsp;axis&nbsp;lengths&nbsp;of&nbsp;the&nbsp;nearest&nbsp;fitting&nbsp;ellipse&nbsp;for&nbsp;the&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(Major&nbsp;Axis,&nbsp;Minor&nbsp;Axis)&nbsp;-&nbsp;lengths&nbsp;of&nbsp;Major&nbsp;and&nbsp;Minor&nbsp;Axis&nbsp;ellipse&nbsp;for&nbsp;a&nbsp;given&nbsp;contour</tt></dd></dl>
+ <dl><dt><a name="-backProjection"><strong>backProjection</strong></a>(roi, target)</dt><dd><tt>Backprojection&nbsp;-&nbsp;Finds&nbsp;objects&nbsp;of&nbsp;interest&nbsp;in&nbsp;an&nbsp;image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;roi&nbsp;-&nbsp;Region&nbsp;of&nbsp;Interest&nbsp;Img<br>
+*&nbsp;target&nbsp;-&nbsp;target&nbsp;img<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Img&nbsp;of&nbsp;Result</tt></dd></dl>
+ <dl><dt><a name="-backgroundSubtract"><strong>backgroundSubtract</strong></a>(img, flag<font color="#909090">=0</font>)</dt><dd><tt>EXPERIMENTAL<br>
+Background&nbsp;Subtraction&nbsp;Methods<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+*&nbsp;flag&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;algorithm&nbsp;select;&nbsp;&lt;0&nbsp;-&nbsp;MOG2,&nbsp;0-&nbsp;MOG,&nbsp;&gt;0-GMG;&nbsp;def:&nbsp;0<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Background&nbsp;Subtracted&nbsp;Mask</tt></dd></dl>
+ <dl><dt><a name="-bgr2hsv"><strong>bgr2hsv</strong></a>(BGR)</dt><dd><tt>Finds&nbsp;the&nbsp;HSV&nbsp;value&nbsp;from&nbsp;a&nbsp;BGR&nbsp;value,&nbsp;good&nbsp;for&nbsp;using&nbsp;ot&nbsp;track<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;BGR&nbsp;-&nbsp;BGR&nbsp;value&nbsp;i.e.&nbsp;[X,&nbsp;Y,&nbsp;X]<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;HSV&nbsp;-&nbsp;HSV&nbsp;value&nbsp;corresponding&nbsp;to&nbsp;it.</tt></dd></dl>
+ <dl><dt><a name="-bilateralFilter"><strong>bilateralFilter</strong></a>(img, d<font color="#909090">=9</font>, sigmaColor<font color="#909090">=75</font>, sigmaSpace<font color="#909090">=75</font>)</dt><dd><tt>Bilateral&nbsp;Filtering<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+*&nbsp;d&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;diameter&nbsp;of&nbsp;each&nbsp;pixel&nbsp;neighborhood.&nbsp;def:&nbsp;9<br>
+*&nbsp;sigmaColor&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Filter&nbsp;sigma&nbsp;in&nbsp;color&nbsp;space.&nbsp;def:&nbsp;75<br>
+*&nbsp;sigmaSpace&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Filter&nbsp;sigma&nbsp;in&nbsp;coord&nbsp;space.&nbsp;def:&nbsp;75<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Bilateral&nbsp;Filtered&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-binaryThreshold"><strong>binaryThreshold</strong></a>(img, threshVal<font color="#909090">=127</font>, maxVal<font color="#909090">=255</font>, invert<font color="#909090">=True</font>)</dt><dd><tt>Returns&nbsp;a&nbsp;binary&nbsp;threshold&nbsp;of&nbsp;the&nbsp;image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;threshold<br>
+*&nbsp;threshVal&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;threshold&nbsp;value&nbsp;to&nbsp;classify&nbsp;pixels&nbsp;Default&nbsp;127<br>
+*&nbsp;maxVal&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;value&nbsp;to&nbsp;be&nbsp;given&nbsp;if&nbsp;pixel&nbsp;over&nbsp;threshVal.&nbsp;Default&nbsp;255<br>
+*&nbsp;invert&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;True&nbsp;means&nbsp;inverts&nbsp;binary&nbsp;threshold&nbsp;(white&nbsp;to&nbsp;black,&nbsp;vice&nbsp;versa),&nbsp;false&nbsp;otherwise.&nbsp;Default&nbsp;True<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;threshold&nbsp;image</tt></dd></dl>
+ <dl><dt><a name="-bitAnd"><strong>bitAnd</strong></a>(img1, img2<font color="#909090">=None</font>, maskVar<font color="#909090">=None</font>)</dt><dd><tt>Bitwise&nbsp;Ops&nbsp;-&nbsp;And<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;first&nbsp;input&nbsp;array/scalar<br>
+*&nbsp;img2&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;second&nbsp;input&nbsp;array/scalar;&nbsp;def&nbsp;is&nbsp;usually&nbsp;img1<br>
+*&nbsp;maskVar&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;mask&nbsp;of&nbsp;img;&nbsp;def&nbsp;of&nbsp;None<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Bitwise&nbsp;And&nbsp;of&nbsp;imgs</tt></dd></dl>
+ <dl><dt><a name="-bitNot"><strong>bitNot</strong></a>(img)</dt><dd><tt>Bitwise&nbsp;Ops&nbsp;-&nbsp;Not<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;input&nbsp;img<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Bitwise&nbsp;Not&nbsp;of&nbsp;imgs</tt></dd></dl>
+ <dl><dt><a name="-bitOr"><strong>bitOr</strong></a>(img1, img2<font color="#909090">=None</font>, mask<font color="#909090">=None</font>)</dt><dd><tt>Bitwise&nbsp;Ops&nbsp;-&nbsp;Or<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;first&nbsp;input&nbsp;array/scalar<br>
+*&nbsp;img2&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;second&nbsp;input&nbsp;array/scalar;&nbsp;def&nbsp;is&nbsp;usually&nbsp;img1<br>
+*&nbsp;mask&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;mask&nbsp;of&nbsp;img;&nbsp;def&nbsp;is&nbsp;None<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Bitwise&nbsp;Or&nbsp;of&nbsp;imgs</tt></dd></dl>
+ <dl><dt><a name="-bitXor"><strong>bitXor</strong></a>(img1, img2<font color="#909090">=None</font>, mask<font color="#909090">=None</font>)</dt><dd><tt>Bitwise&nbsp;Ops&nbsp;-&nbsp;Exclusive&nbsp;Or<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;first&nbsp;input&nbsp;array/scalar<br>
+*&nbsp;img2&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;second&nbsp;input&nbsp;array/scalar;&nbsp;def&nbsp;is&nbsp;usually&nbsp;img1<br>
+*&nbsp;mask&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;mask&nbsp;of&nbsp;img;&nbsp;def&nbsp;is&nbsp;None<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Bitwise&nbsp;Exclusive&nbsp;Or&nbsp;of&nbsp;imgs</tt></dd></dl>
+ <dl><dt><a name="-blackhat"><strong>blackhat</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Black&nbsp;Hat&nbsp;-&nbsp;Difference&nbsp;btw&nbsp;closing&nbsp;of&nbsp;img&nbsp;and&nbsp;input&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;in&nbsp;tuple,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;BlackHat&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-blur"><strong>blur</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Image&nbsp;Blur<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;size&nbsp;of&nbsp;kernel,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Blurred&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-boundingRect"><strong>boundingRect</strong></a>(cnt)</dt><dd><tt>Calculates&nbsp;the&nbsp;up-right&nbsp;bounding&nbsp;rectangle&nbsp;of&nbsp;a&nbsp;point&nbsp;set&nbsp;/&nbsp;cnt<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;Contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Bounding&nbsp;Rectangle</tt></dd></dl>
+ <dl><dt><a name="-boundingRectPoints"><strong>boundingRectPoints</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;points&nbsp;to&nbsp;a&nbsp;rectangle&nbsp;bounding&nbsp;cnt<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;Contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;points&nbsp;to&nbsp;bouding&nbsp;rectangle</tt></dd></dl>
+ <dl><dt><a name="-capture"><strong>capture</strong></a>()</dt><dd><tt>Captures&nbsp;and&nbsp;returns&nbsp;an&nbsp;image&nbsp;from&nbsp;Camera<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Captured&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-captureDisplay"><strong>captureDisplay</strong></a>(title<font color="#909090">='Frame'</font>)</dt><dd><tt>Capture&nbsp;and&nbsp;display&nbsp;an&nbsp;image&nbsp;from&nbsp;Camera<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;title&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;name&nbsp;of&nbsp;display&nbsp;pop&nbsp;up,&nbsp;def:&nbsp;'Frame'</tt></dd></dl>
+ <dl><dt><a name="-centroid"><strong>centroid</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;centroid&nbsp;to&nbsp;a&nbsp;given&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(cx,&nbsp;cy)&nbsp;-&gt;&nbsp;Pixel&nbsp;Position&nbsp;of&nbsp;the&nbsp;Centroid</tt></dd></dl>
+ <dl><dt><a name="-centroidFloat"><strong>centroidFloat</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;centroid&nbsp;as&nbsp;a&nbsp;float&nbsp;for&nbsp;exactness<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(cx,&nbsp;cy)&nbsp;-&gt;&nbsp;centroid&nbsp;coord,&nbsp;as&nbsp;a&nbsp;float&nbsp;for&nbsp;exactness</tt></dd></dl>
+ <dl><dt><a name="-closing"><strong>closing</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Closing&nbsp;-&nbsp;Dilation&nbsp;followed&nbsp;by&nbsp;Erosion.&nbsp;<br>
+Useful&nbsp;for&nbsp;closing&nbsp;small&nbsp;holes&nbsp;inside&nbsp;foreground&nbsp;objects,&nbsp;<br>
+or&nbsp;small&nbsp;black&nbsp;points&nbsp;on&nbsp;object<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;in&nbsp;tuple,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;closed&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-cntInfo"><strong>cntInfo</strong></a>(img, cnt)</dt><dd><tt>Returns&nbsp;pertinent&nbsp;information&nbsp;regarding&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;dictionary&nbsp;of&nbsp;cnt&nbsp;info</tt></dd></dl>
+ <dl><dt><a name="-cntInfoMult"><strong>cntInfoMult</strong></a>(img, cnts)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;cnt&nbsp;info&nbsp;for&nbsp;a&nbsp;list&nbsp;of&nbsp;contours<br>
+Here,&nbsp;cnts[0]&nbsp;-&gt;&nbsp;cntProp[0];&nbsp;i.e.&nbsp;all&nbsp;contour&nbsp;indexes&nbsp;map&nbsp;to&nbsp;info&nbsp;index<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;containing&nbsp;contours<br>
+*&nbsp;cnts&nbsp;-&nbsp;list&nbsp;of&nbsp;contours<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;contour&nbsp;information&nbsp;in&nbsp;list&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-colorFlags"><strong>colorFlags</strong></a>(filterStr<font color="#909090">=''</font>)</dt><dd><tt>Returns&nbsp;the&nbsp;list&nbsp;of&nbsp;acceptable&nbsp;flags&nbsp;for&nbsp;color&nbsp;conversion&nbsp;<br>
+used&nbsp;for&nbsp;change&nbsp;colormap&nbsp;fnc<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;filter&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;filters&nbsp;flags&nbsp;to&nbsp;specified&nbsp;string<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;List&nbsp;of&nbsp;Color&nbsp;Flags</tt></dd></dl>
+ <dl><dt><a name="-contourApprox"><strong>contourApprox</strong></a>(cnt, epsilon<font color="#909090">=0.005</font>)</dt><dd><tt>Approimates&nbsp;a&nbsp;contour&nbsp;to&nbsp;a&nbsp;given&nbsp;epsilon<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour&nbsp;to&nbsp;approximate<br>
+*&nbsp;epsilon&nbsp;-&nbsp;OPTIONAL-&nbsp;percentage&nbsp;of&nbsp;arc&nbsp;length&nbsp;allowed&nbsp;as&nbsp;max&nbsp;distance&nbsp;from&nbsp;contour&nbsp;to&nbsp;approx<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;approximated&nbsp;contour</tt></dd></dl>
+ <dl><dt><a name="-copy"><strong>copy</strong></a>(img)</dt><dd><tt>Copy&nbsp;an&nbsp;image,&nbsp;removes&nbsp;all&nbsp;refrences&nbsp;to&nbsp;original&nbsp;image<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img-&nbsp;image&nbsp;to&nbsp;be&nbsp;copied<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;copied&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-crop"><strong>crop</strong></a>(img, x0, y0, x1, y1)</dt><dd><tt>Image&nbsp;Crop:&nbsp;Returns&nbsp;a&nbsp;Crop&nbsp;Img<br>
+Can&nbsp;be&nbsp;Used&nbsp;for&nbsp;ROI<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;x0&nbsp;-&nbsp;X&nbsp;Position&nbsp;(start)<br>
+*&nbsp;y0&nbsp;-&nbsp;Y&nbsp;Position&nbsp;(start)<br>
+*&nbsp;x1&nbsp;-&nbsp;X&nbsp;End&nbsp;Position<br>
+*&nbsp;y1&nbsp;-&nbsp;Y&nbsp;End&nbsp;Position<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;imgROI&nbsp;-&nbsp;from&nbsp;[y:y+h,&nbsp;x:x+w]</tt></dd></dl>
+ <dl><dt><a name="-cropCnt"><strong>cropCnt</strong></a>(img, cnt)</dt><dd><tt>Crops&nbsp;A&nbsp;Contour&nbsp;to&nbsp;a&nbsp;ROI&nbsp;by&nbsp;using&nbsp;extreme&nbsp;points&nbsp;to&nbsp;map&nbsp;values<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Crop&nbsp;ROI&nbsp;with&nbsp;Extrema&nbsp;as&nbsp;base&nbsp;points</tt></dd></dl>
+ <dl><dt><a name="-cropPt"><strong>cropPt</strong></a>(img, start, end)</dt><dd><tt>Image&nbsp;Cropping/ROI&nbsp;for&nbsp;PTS&nbsp;or&nbsp;Tuples&nbsp;as&nbsp;coordinates<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;start&nbsp;-&nbsp;(x,&nbsp;y)&nbsp;tuple&nbsp;for&nbsp;start&nbsp;pt<br>
+*&nbsp;end&nbsp;-&nbsp;(x,&nbsp;y)&nbsp;tuple&nbsp;for&nbsp;end&nbsp;pt<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Cropped&nbsp;Image&nbsp;ROI&nbsp;in&nbsp;rectangle&nbsp;bounded&nbsp;by&nbsp;start:end</tt></dd></dl>
+ <dl><dt><a name="-cvtColor"><strong>cvtColor</strong></a>(img, flag)</dt><dd><tt>Wrapper&nbsp;Function&nbsp;for&nbsp;cv2.<a href="#-cvtColor">cvtColor</a>()<br>
+Used&nbsp;to&nbsp;change&nbsp;Color-space&nbsp;of&nbsp;Image<br>
+WARNING:&nbsp;No&nbsp;error&nbsp;checking&nbsp;is&nbsp;performed<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;flag&nbsp;-&nbsp;color&nbsp;flag,&nbsp;use&nbsp;<a href="#-colorFlags">colorFlags</a>()&nbsp;to&nbsp;see&nbsp;list&nbsp;of&nbsp;flags&nbsp;available,&nbsp;cv2.FLAG<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Image&nbsp;in&nbsp;new&nbsp;colorspace</tt></dd></dl>
+ <dl><dt><a name="-denoise"><strong>denoise</strong></a>(img, h<font color="#909090">=10</font>, hForColor<font color="#909090">=None</font>, templateWindowSize<font color="#909090">=7</font>, searchWindowSize<font color="#909090">=21</font>)</dt><dd><tt>Image&nbsp;De-noising&nbsp;-&nbsp;Both&nbsp;Colored&nbsp;and&nbsp;Grayscale&nbsp;imgs<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;h&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;filter&nbsp;strength;&nbsp;def:&nbsp;10<br>
+*&nbsp;hForColor&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;used&nbsp;if&nbsp;img&nbsp;is&nbsp;color;&nbsp;same&nbsp;as&nbsp;h;&nbsp;def:&nbsp;h<br>
+*&nbsp;templateWindowSize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;odd&nbsp;num;&nbsp;def:&nbsp;7<br>
+*&nbsp;searchWindowSize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;odd&nbsp;num;&nbsp;def:&nbsp;21<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;De-noised&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-depthImg"><strong>depthImg</strong></a>(imgL, imgR, ndisparities<font color="#909090">=16</font>, blockSize<font color="#909090">=16</font>)</dt><dd><tt>EXPERIMENTAL<br>
+Returns&nbsp;a&nbsp;depth&nbsp;map&nbsp;of&nbsp;an&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;imgL&nbsp;-&nbsp;first&nbsp;image&nbsp;in&nbsp;pair<br>
+*&nbsp;imgR&nbsp;-&nbsp;second&nbsp;image&nbsp;in&nbsp;pair<br>
+*&nbsp;ndisparities&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def:&nbsp;16<br>
+*&nbsp;blockSize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def:16<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Depth&nbsp;map&nbsp;of&nbsp;an&nbsp;image</tt></dd></dl>
+ <dl><dt><a name="-dictToLst"><strong>dictToLst</strong></a>(dictionary)</dt><dd><tt>Returns&nbsp;a&nbsp;dictionary&nbsp;into&nbsp;two&nbsp;lists&nbsp;of&nbsp;[[key][values]]<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;dictionary&nbsp;-&nbsp;Dictionary&nbsp;to&nbsp;be&nbsp;split<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;[keys,&nbsp;values]</tt></dd></dl>
+ <dl><dt><a name="-dilate"><strong>dilate</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>, iterations<font color="#909090">=1</font>)</dt><dd><tt>Dilation&nbsp;-&nbsp;Increases&nbsp;white&nbsp;region,&nbsp;size&nbsp;of&nbsp;foreground&nbsp;increases<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;in&nbsp;tuple,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+*&nbsp;iterations&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;number&nbsp;of&nbsp;iterations&nbsp;for&nbsp;dilate,&nbsp;def&nbsp;is&nbsp;1<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;dilated&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-display"><strong>display</strong></a>(img, name<font color="#909090">='IMAGE'</font>, wait<font color="#909090">=0</font>)</dt><dd><tt>Displays&nbsp;an&nbsp;Image&nbsp;onto&nbsp;the&nbsp;screen&nbsp;and&nbsp;waits&nbsp;for&nbsp;user&nbsp;to&nbsp;close<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;display<br>
+*&nbsp;name&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;string&nbsp;name&nbsp;of&nbsp;window,&nbsp;def&nbsp;is&nbsp;IMAGE<br>
+*&nbsp;wait&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;time&nbsp;in&nbsp;ms&nbsp;for&nbsp;screen&nbsp;to&nbsp;wait,&nbsp;def:0&nbsp;-&nbsp;INDEFINITE</tt></dd></dl>
+ <dl><dt><a name="-displayImgs"><strong>displayImgs</strong></a>(imgs, titles<font color="#909090">=None</font>, wait<font color="#909090">=0</font>)</dt><dd><tt>Displays&nbsp;a&nbsp;list&nbsp;of&nbsp;images<br>
+&nbsp;<br>
+Parms:<br>
+*&nbsp;imgs&nbsp;-&nbsp;list&nbsp;of&nbsp;images<br>
+*&nbsp;titles&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;list&nbsp;of&nbsp;titles&nbsp;of&nbsp;images<br>
+*&nbsp;wait&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;wait&nbsp;time&nbsp;in&nbsp;ms&nbsp;ffor&nbsp;screen;&nbsp;def:&nbsp;0&nbsp;-&nbsp;INDEFINITE</tt></dd></dl>
+ <dl><dt><a name="-distance"><strong>distance</strong></a>(pt1, pt2)</dt><dd><tt>Distance&nbsp;Between&nbsp;Two&nbsp;Points<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;pt1&nbsp;-&nbsp;first&nbsp;point,&nbsp;(x,y)<br>
+*&nbsp;pt2&nbsp;-&nbsp;second&nbsp;point,&nbsp;(x,y)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Distance&nbsp;Between&nbsp;Two&nbsp;Points</tt></dd></dl>
+ <dl><dt><a name="-drawBFMatch"><strong>drawBFMatch</strong></a>(img1, img2, numMatches<font color="#909090">=None</font>)</dt><dd><tt>Brute-Force&nbsp;Matcher&nbsp;-&nbsp;Draw&nbsp;Img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;Query&nbsp;Image&nbsp;<br>
+*&nbsp;img2&nbsp;-&nbsp;Train&nbsp;Image<br>
+*&nbsp;numMatches&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Number&nbsp;of&nbsp;Matches&nbsp;to&nbsp;Display;&nbsp;def:&nbsp;All<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Img&nbsp;with&nbsp;matches&nbsp;drawn</tt></dd></dl>
+ <dl><dt><a name="-drawCircle"><strong>drawCircle</strong></a>(img, center, radius<font color="#909090">=3</font>, color<font color="#909090">=(0, 0, 255)</font>, fill<font color="#909090">=-1</font>)</dt><dd><tt>Draws&nbsp;a&nbsp;circle&nbsp;at&nbsp;a&nbsp;point&nbsp;with&nbsp;given&nbsp;radius&nbsp;onto&nbsp;img.<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;center&nbsp;-&nbsp;(x,y)&nbsp;center&nbsp;of&nbsp;circle<br>
+*&nbsp;radius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;radius&nbsp;of&nbsp;circle,&nbsp;default&nbsp;is&nbsp;3<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;(0,&nbsp;0,&nbsp;255)&nbsp;-&nbsp;RED<br>
+*&nbsp;fill&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;-1,&nbsp;change&nbsp;for&nbsp;outline&nbsp;thickness</tt></dd></dl>
+ <dl><dt><a name="-drawContour"><strong>drawContour</strong></a>(img, cnt, color<font color="#909090">=(0, 255, 0)</font>, thickness<font color="#909090">=2</font>)</dt><dd><tt>Draws&nbsp;a&nbsp;contour&nbsp;onto&nbsp;an&nbsp;image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;draw&nbsp;on<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour&nbsp;to&nbsp;draw<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;cnt,&nbsp;default&nbsp;is&nbsp;(0,&nbsp;255,&nbsp;0)<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;thickness&nbsp;of&nbsp;cnt&nbsp;line,&nbsp;default&nbsp;is&nbsp;2</tt></dd></dl>
+ <dl><dt><a name="-drawContours"><strong>drawContours</strong></a>(img, cnt, color<font color="#909090">=(0, 255, 0)</font>, thickness<font color="#909090">=2</font>)</dt><dd><tt>Draws&nbsp;all&nbsp;contours&nbsp;from&nbsp;a&nbsp;list<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;draw&nbsp;on<br>
+*&nbsp;cnt&nbsp;-&nbsp;contours&nbsp;to&nbsp;draw<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;cnt,&nbsp;default&nbsp;is&nbsp;(0,&nbsp;255,&nbsp;0)<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;thickness&nbsp;of&nbsp;cnt&nbsp;line,&nbsp;default&nbsp;is&nbsp;2</tt></dd></dl>
+ <dl><dt><a name="-drawEllipse"><strong>drawEllipse</strong></a>(img, center, axes, angle, startAngle<font color="#909090">=0</font>, endAngle<font color="#909090">=360</font>, color<font color="#909090">=(0, 0, 255)</font>, fill<font color="#909090">=-1</font>)</dt><dd><tt>Draws&nbsp;an&nbsp;ellipse&nbsp;onto&nbsp;img.<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;center&nbsp;-&nbsp;center&nbsp;of&nbsp;ellipse&nbsp;(x,y)<br>
+*&nbsp;(Major&nbsp;Axis&nbsp;Len,&nbsp;Minor&nbsp;Axis&nbsp;Len)<br>
+*&nbsp;Angle&nbsp;-&nbsp;angle&nbsp;of&nbsp;rotation<br>
+*&nbsp;startAngle&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;0<br>
+*&nbsp;endAngle&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;360<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;(0,&nbsp;0,&nbsp;255)&nbsp;-&nbsp;RED<br>
+*&nbsp;fill&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;-1,&nbsp;change&nbsp;for&nbsp;thickness</tt></dd></dl>
+ <dl><dt><a name="-drawFast"><strong>drawFast</strong></a>(img, nonmaxSuppression<font color="#909090">=True</font>, color<font color="#909090">=(255, 0, 0)</font>)</dt><dd><tt>FAST&nbsp;Algorithm&nbsp;for&nbsp;Corner&nbsp;Detection&nbsp;-&nbsp;Returns&nbsp;Key&nbsp;Points<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;nonmaxSuppression&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Suppresses&nbsp;number&nbsp;of&nbsp;points&nbsp;if&nbsp;True,&nbsp;def&nbsp;is&nbsp;True<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def:&nbsp;(255,0,0)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Key&nbsp;Points&nbsp;drawn&nbsp;onto&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-drawFitEllipse"><strong>drawFitEllipse</strong></a>(img, cnt)</dt><dd><tt>Draws&nbsp;a&nbsp;nearest&nbsp;fitting&nbsp;ellipse&nbsp;to&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;draw&nbsp;on<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour</tt></dd></dl>
+ <dl><dt><a name="-drawHarrisSubPixel"><strong>drawHarrisSubPixel</strong></a>(img, blockSize<font color="#909090">=2</font>, ksize<font color="#909090">=3</font>, k<font color="#909090">=0.04</font>, color1<font color="#909090">=(0, 0, 255)</font>, color2<font color="#909090">=(0, 255, 0)</font>)</dt><dd><tt>EXPERIMENTAL<br>
+Harris&nbsp;Corner&nbsp;Detection&nbsp;with&nbsp;SubPixel&nbsp;Accuracy<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;blockSize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;size&nbsp;of&nbsp;neighborhood&nbsp;considered&nbsp;for&nbsp;corner&nbsp;detection<br>
+*&nbsp;ksize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Aperture&nbsp;parameter&nbsp;of&nbsp;Sobel&nbsp;derivative&nbsp;used<br>
+*&nbsp;k&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Harris&nbsp;detector&nbsp;free&nbsp;parameter&nbsp;in&nbsp;equation<br>
+*&nbsp;color1&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;(0,0,255)&nbsp;<br>
+*&nbsp;color1&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;(0,255,0)&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Image&nbsp;with&nbsp;corners&nbsp;marked.</tt></dd></dl>
+ <dl><dt><a name="-drawHoughCircles"><strong>drawHoughCircles</strong></a>(img, minDist<font color="#909090">=20</font>, param1<font color="#909090">=50</font>, param2<font color="#909090">=30</font>, minRadius<font color="#909090">=0</font>, maxRadius<font color="#909090">=0</font>, colorCircle<font color="#909090">=(0, 255, 0)</font>, colorCenter<font color="#909090">=(0, 0, 255)</font>, centerRadius<font color="#909090">=2</font>, thickness<font color="#909090">=2</font>)</dt><dd><tt>Hough&nbsp;Circle&nbsp;Transform&nbsp;-&nbsp;Finds&nbsp;Circles&nbsp;in&nbsp;an&nbsp;image&nbsp;and&nbsp;draws&nbsp;it<br>
+NOTE:&nbsp;Play&nbsp;around&nbsp;with&nbsp;params&nbsp;to&nbsp;get&nbsp;what&nbsp;you&nbsp;need,&nbsp;each&nbsp;img&nbsp;has&nbsp;different&nbsp;req&nbsp;params<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;minDist&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Minimum&nbsp;Distance&nbsp;btw&nbsp;centers&nbsp;of&nbsp;detected&nbsp;circles,&nbsp;def&nbsp;is&nbsp;20<br>
+*&nbsp;param1&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Higher&nbsp;Threshold&nbsp;of&nbsp;two&nbsp;sent&nbsp;to&nbsp;Canny&nbsp;edge&nbsp;detector,&nbsp;def&nbsp;is&nbsp;50<br>
+*&nbsp;param2&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Accumulator&nbsp;Threshold&nbsp;for&nbsp;the&nbsp;circle&nbsp;centers&nbsp;at&nbsp;detection&nbsp;stage,&nbsp;def&nbsp;is&nbsp;30<br>
+*&nbsp;minRadius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Minimum&nbsp;Circle&nbsp;Radius,&nbsp;def&nbsp;is&nbsp;0<br>
+*&nbsp;maxRadius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Maximum&nbsp;Circle&nbsp;Radius,&nbsp;def&nbsp;is&nbsp;0<br>
+*&nbsp;colorCircle&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;circle,&nbsp;def&nbsp;is&nbsp;(0,255,0)<br>
+*&nbsp;colorCenter&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;circle's&nbsp;center,&nbsp;def&nbsp;is&nbsp;(0,0,255)<br>
+*&nbsp;centerRadius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;radius&nbsp;of&nbsp;center<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;thickness&nbsp;of&nbsp;circles<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Image&nbsp;with&nbsp;circles&nbsp;and&nbsp;their&nbsp;centers&nbsp;drawn</tt></dd></dl>
+ <dl><dt><a name="-drawHoughLines"><strong>drawHoughLines</strong></a>(img, rho<font color="#909090">=1</font>, theta<font color="#909090">=0.017453292519943295</font>, color<font color="#909090">=(0, 0, 255)</font>, threshold<font color="#909090">=200</font>, thickness<font color="#909090">=2</font>)</dt><dd><tt>Draws&nbsp;the&nbsp;Found&nbsp;Lines&nbsp;onto&nbsp;the&nbsp;Image<br>
+NOTE:&nbsp;Play&nbsp;around&nbsp;with&nbsp;params&nbsp;to&nbsp;get&nbsp;what&nbsp;you&nbsp;need,&nbsp;each&nbsp;img&nbsp;has&nbsp;different&nbsp;req&nbsp;params<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;rho-&nbsp;OPTIONAL&nbsp;-&nbsp;radius,&nbsp;measured&nbsp;in&nbsp;pixels,&nbsp;def&nbsp;is&nbsp;1<br>
+*&nbsp;theta&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;angle,&nbsp;measured&nbsp;in&nbsp;radians,&nbsp;def&nbsp;is&nbsp;np.pi/180<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;(0,0,255)<br>
+*&nbsp;threshold&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Minimum&nbsp;Length&nbsp;of&nbsp;Line,&nbsp;def&nbsp;200<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;2<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Image&nbsp;with&nbsp;lines&nbsp;plotted</tt></dd></dl>
+ <dl><dt><a name="-drawHoughLinesProb"><strong>drawHoughLinesProb</strong></a>(img, minLineLength<font color="#909090">=100</font>, maxLineGap<font color="#909090">=10</font>, color<font color="#909090">=(0, 255, 0)</font>, thickness<font color="#909090">=2</font>)</dt><dd><tt>Draws&nbsp;the&nbsp;result&nbsp;of&nbsp;Probabilistic&nbsp;Hough&nbsp;Line&nbsp;Transform&nbsp;onto&nbsp;img<br>
+NOTE:&nbsp;Play&nbsp;around&nbsp;with&nbsp;params&nbsp;to&nbsp;get&nbsp;what&nbsp;you&nbsp;need,&nbsp;each&nbsp;img&nbsp;has&nbsp;different&nbsp;req&nbsp;params<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;minLineLength&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Min&nbsp;length&nbsp;of&nbsp;line,&nbsp;any&nbsp;lines&nbsp;shorter&nbsp;rejected,&nbsp;def&nbsp;is&nbsp;100<br>
+*&nbsp;maxLineGap&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Max&nbsp;allowed&nbsp;gap&nbsp;btw&nbsp;line&nbsp;segments&nbsp;to&nbsp;treat&nbsp;as&nbsp;single&nbsp;line,&nbsp;def&nbsp;is&nbsp;10<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;line,&nbsp;def&nbsp;is&nbsp;(0,255,0)<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;2<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;img&nbsp;with&nbsp;lines&nbsp;draw&nbsp;onto&nbsp;it</tt></dd></dl>
+ <dl><dt><a name="-drawKeyPoints"><strong>drawKeyPoints</strong></a>(img, kp, color<font color="#909090">=(255, 0, 0)</font>)</dt><dd><tt>Draw&nbsp;Key&nbsp;Points<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kp&nbsp;-&nbsp;Key&nbsp;Pints&nbsp;List<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def:&nbsp;(255,0,0)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;img&nbsp;with&nbsp;keypoints</tt></dd></dl>
+ <dl><dt><a name="-drawLine"><strong>drawLine</strong></a>(img, start, end, color<font color="#909090">=(0, 0, 255)</font>, thickness<font color="#909090">=3</font>)</dt><dd><tt>Draws&nbsp;a&nbsp;line&nbsp;btw&nbsp;2&nbsp;points&nbsp;onto&nbsp;img.<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;start&nbsp;-&nbsp;start&nbsp;point<br>
+*&nbsp;end&nbsp;-&nbsp;end&nbsp;point<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;(0,&nbsp;0,&nbsp;255)&nbsp;-&nbsp;RED<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;3,&nbsp;change&nbsp;for&nbsp;thickness</tt></dd></dl>
+ <dl><dt><a name="-drawMatch"><strong>drawMatch</strong></a>(img, template, color<font color="#909090">=(255, 255, 0)</font>, thickness<font color="#909090">=2</font>)</dt><dd><tt>Draws&nbsp;a&nbsp;rectangle&nbsp;over&nbsp;a&nbsp;matching&nbsp;pattern&nbsp;in&nbsp;img&nbsp;from&nbsp;template<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;template&nbsp;-&nbsp;pattern&nbsp;to&nbsp;search&nbsp;for<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color;&nbsp;def:&nbsp;(255,255,0)<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;thickness&nbsp;of&nbsp;rectangle;&nbsp;def:&nbsp;2<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;img&nbsp;with&nbsp;rectangle&nbsp;over&nbsp;object</tt></dd></dl>
+ <dl><dt><a name="-drawMatchMulti"><strong>drawMatchMulti</strong></a>(img, template, color<font color="#909090">=(0, 0, 255)</font>, thickness<font color="#909090">=2</font>)</dt><dd><tt>Draws&nbsp;a&nbsp;rectangle&nbsp;over&nbsp;each&nbsp;instance&nbsp;of&nbsp;an&nbsp;object&nbsp;it&nbsp;finds<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;template&nbsp;-&nbsp;template&nbsp;to&nbsp;search&nbsp;for<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;(0,0,255)<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;2</tt></dd></dl>
+ <dl><dt><a name="-drawOrb"><strong>drawOrb</strong></a>(img, color<font color="#909090">=(0, 255, 0)</font>)</dt><dd><tt>ORB&nbsp;Corner&nbsp;Detection<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;img&nbsp;with&nbsp;key&nbsp;points&nbsp;drawn&nbsp;on<br>
+*&nbsp;color-&nbsp;OPTIONAL&nbsp;-&nbsp;color,&nbsp;def&nbsp;is&nbsp;(0,255,0)</tt></dd></dl>
+ <dl><dt><a name="-drawRectangle"><strong>drawRectangle</strong></a>(img, top_left, bottom_right, color<font color="#909090">=(0, 0, 255)</font>, thickness<font color="#909090">=3</font>)</dt><dd><tt>Draws&nbsp;a&nbsp;rectangle&nbsp;btw&nbsp;2&nbsp;points&nbsp;(Top&nbsp;Left&nbsp;and&nbsp;Bottom&nbsp;Right)&nbsp;onto&nbsp;img.<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;top_left&nbsp;-&nbsp;top&nbsp;left&nbsp;point&nbsp;of&nbsp;rectangle<br>
+*&nbsp;bottom_right&nbsp;-&nbsp;bottom&nbsp;right&nbsp;point&nbsp;of&nbsp;rectangle<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;(0,&nbsp;0,&nbsp;255)&nbsp;-&nbsp;RED<br>
+*&nbsp;thickness&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;default&nbsp;is&nbsp;3,&nbsp;change&nbsp;for&nbsp;thickness</tt></dd></dl>
+ <dl><dt><a name="-edgeDetect"><strong>edgeDetect</strong></a>(img, minVal<font color="#909090">=100</font>, maxVal<font color="#909090">=200</font>)</dt><dd><tt>Canny&nbsp;Edge&nbsp;Detection&nbsp;-&nbsp;Returns&nbsp;an&nbsp;img&nbsp;with&nbsp;only&nbsp;edges<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;minVal&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Minimum&nbsp;Threshold<br>
+*&nbsp;maxVal&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Maximum&nbsp;Threshold<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Image&nbsp;with&nbsp;only&nbsp;Edges</tt></dd></dl>
+ <dl><dt><a name="-enhance"><strong>enhance</strong></a>(img, window<font color="#909090">=30</font>)</dt><dd><tt>EXPERMIENTAL<br>
+Enhances&nbsp;an&nbsp;Img<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+*&nbsp;window&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Window&nbsp;Size&nbsp;used&nbsp;for&nbsp;High&nbsp;Pass&nbsp;Filter<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Enhanced&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-epicscaget"><strong>epicscaget</strong></a>(PV)</dt><dd><tt>Retrieves&nbsp;and&nbsp;Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;named&nbsp;PV<br>
+&nbsp;<br>
+Params:&nbsp;&nbsp;<br>
+*&nbsp;PV&nbsp;-&nbsp;PV&nbsp;name&nbsp;to&nbsp;get<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;Value&nbsp;of&nbsp;PV</tt></dd></dl>
+ <dl><dt><a name="-epicscainfo"><strong>epicscainfo</strong></a>(PV)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;of&nbsp;info&nbsp;about&nbsp;a&nbsp;PV<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;PV&nbsp;-&nbsp;The&nbsp;PV&nbsp;Value&nbsp;to&nbsp;retrieve&nbsp;info&nbsp;from<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;String&nbsp;of&nbsp;info&nbsp;about&nbsp;PV</tt></dd></dl>
+ <dl><dt><a name="-epicscaput"><strong>epicscaput</strong></a>(PV, value)</dt><dd><tt>Sets&nbsp;the&nbsp;Value&nbsp;of&nbsp;the&nbsp;Named&nbsp;PV&nbsp;with&nbsp;Value<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;PV&nbsp;-&nbsp;PV&nbsp;to&nbsp;set<br>
+*&nbsp;value&nbsp;-&nbsp;Value&nbsp;to&nbsp;set&nbsp;PV&nbsp;to</tt></dd></dl>
+ <dl><dt><a name="-eqHist"><strong>eqHist</strong></a>(img)</dt><dd><tt>Histogram&nbsp;Equalization&nbsp;-&nbsp;Improves&nbsp;the&nbsp;contrast&nbsp;of&nbsp;an&nbsp;image&nbsp;via&nbsp;global&nbsp;contrast<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Equalized&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-equivalentDiameter"><strong>equivalentDiameter</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Equivalent&nbsp;Diameter&nbsp;(Circle&nbsp;whose&nbsp;area&nbsp;is&nbsp;same&nbsp;as&nbsp;cnt&nbsp;area)<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;=&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Equivalent&nbsp;Diameter</tt></dd></dl>
+ <dl><dt><a name="-erode"><strong>erode</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>, iterations<font color="#909090">=1</font>)</dt><dd><tt>Erosion&nbsp;-&nbsp;Discard&nbsp;boundary&nbsp;pixels&nbsp;depending&nbsp;on&nbsp;kernel&nbsp;size<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;in&nbsp;tuple,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+*&nbsp;iterations&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;number&nbsp;of&nbsp;iterations&nbsp;for&nbsp;erosion,&nbsp;def&nbsp;is&nbsp;1<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;eroded&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-errorCheckContour"><strong>errorCheckContour</strong></a>(contours)</dt><dd><tt>Error&nbsp;checks&nbsp;the&nbsp;contours&nbsp;in&nbsp;images&nbsp;and&nbsp;stops&nbsp;program&nbsp;if&nbsp;something&nbsp;is&nbsp;wrong<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;contours&nbsp;-&nbsp;list&nbsp;of&nbsp;contours&nbsp;to&nbsp;error&nbsp;check</tt></dd></dl>
+ <dl><dt><a name="-eventList"><strong>eventList</strong></a>(filterStr<font color="#909090">=''</font>)</dt><dd><tt>Returns&nbsp;a&nbsp;List&nbsp;of&nbsp;all&nbsp;Events&nbsp;handled&nbsp;by&nbsp;OpenCV<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;filter&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;filter&nbsp;list&nbsp;results<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;list&nbsp;of&nbsp;events</tt></dd></dl>
+ <dl><dt><a name="-extent"><strong>extent</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Extent&nbsp;(Ratio&nbsp;of&nbsp;contour&nbsp;area&nbsp;to&nbsp;bounding&nbsp;rectangle&nbsp;area)<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Extent&nbsp;of&nbsp;cnt</tt></dd></dl>
+ <dl><dt><a name="-extremePoints"><strong>extremePoints</strong></a>(cnt)</dt><dd><tt>Extreme&nbsp;Points&nbsp;Dictionary<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Dictionary&nbsp;of&nbsp;extrema,&nbsp;such&nbsp;that&nbsp;L&nbsp;=&nbsp;Left,&nbsp;R&nbsp;=&nbsp;Right,&nbsp;T&nbsp;=&nbsp;Top,&nbsp;B&nbsp;=&nbsp;Bottom</tt></dd></dl>
+ <dl><dt><a name="-extremePointsTup"><strong>extremePointsTup</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Extreme&nbsp;Points&nbsp;of&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(LeftMost,&nbsp;RightMost,&nbsp;TopMost,&nbsp;BottomMost)</tt></dd></dl>
+ <dl><dt><a name="-fast"><strong>fast</strong></a>(img, nonmaxSuppression<font color="#909090">=True</font>)</dt><dd><tt>FAST&nbsp;Algorithm&nbsp;for&nbsp;Corner&nbsp;Detection&nbsp;-&nbsp;Returns&nbsp;Key&nbsp;Points<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;nonmaxSuppression&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Suppresses&nbsp;number&nbsp;of&nbsp;points&nbsp;if&nbsp;True,&nbsp;def&nbsp;is&nbsp;True<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Key&nbsp;Points</tt></dd></dl>
+ <dl><dt><a name="-fetchImg"><strong>fetchImg</strong></a>(SYS, DEV)</dt><dd><tt>Loads&nbsp;an&nbsp;image&nbsp;from&nbsp;an&nbsp;EPICS&nbsp;PV&nbsp;Value<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;SYS&nbsp;-&nbsp;System&nbsp;String<br>
+*&nbsp;DEV&nbsp;-&nbsp;Device&nbsp;String<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Loaded&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-fetchImgEXP"><strong>fetchImgEXP</strong></a>(SYS, DEV)</dt><dd><tt>EXPERIMENTAL&nbsp;FETCH&nbsp;IMG&nbsp;METHOD</tt></dd></dl>
+ <dl><dt><a name="-fillContour"><strong>fillContour</strong></a>(img, cnt, color<font color="#909090">=(255, 255, 0)</font>)</dt><dd><tt>Fill&nbsp;a&nbsp;Contour&nbsp;-&nbsp;Fills&nbsp;a&nbsp;contour&nbsp;with&nbsp;color&nbsp;onto&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;fill,&nbsp;def:&nbsp;(255,255,0)</tt></dd></dl>
+ <dl><dt><a name="-filter2D"><strong>filter2D</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>2D&nbsp;Convolution&nbsp;-&nbsp;Image&nbsp;Filtering<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;be&nbsp;filtered<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;size&nbsp;of&nbsp;average&nbsp;filtering&nbsp;kernel,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Filtered&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-filterCnts"><strong>filterCnts</strong></a>(cnts, threshold<font color="#909090">=5</font>)</dt><dd><tt>Removes&nbsp;contours&nbsp;that&nbsp;contain&nbsp;less&nbsp;points&nbsp;than&nbsp;threshold,&nbsp;EXCLUSIVE<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnts&nbsp;-&nbsp;list&nbsp;of&nbsp;contours<br>
+*&nbsp;threshold&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Removes&nbsp;all&nbsp;contours&nbsp;less&nbsp;than&nbsp;it,&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.e&nbsp;only&nbsp;allows&nbsp;for&nbsp;contours&nbsp;greater&nbsp;than&nbsp;it;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def:&nbsp;5<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;new&nbsp;list&nbsp;of&nbsp;contours&nbsp;filtered</tt></dd></dl>
+ <dl><dt><a name="-findCntHierarchy"><strong>findCntHierarchy</strong></a>(img, thresh<font color="#909090">=127</font>, val<font color="#909090">=255</font>)</dt><dd><tt>Returns&nbsp;the&nbsp;contours&nbsp;to&nbsp;a&nbsp;given&nbsp;image,&nbsp;sorted&nbsp;by&nbsp;size&nbsp;of&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Image&nbsp;to&nbsp;find&nbsp;contours&nbsp;in<br>
+*&nbsp;thresh&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;threhsold&nbsp;value&nbsp;used<br>
+*&nbsp;val&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;value&nbsp;to&nbsp;set&nbsp;items&nbsp;in&nbsp;threshold<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Hierarchy&nbsp;of&nbsp;Contours&nbsp;found&nbsp;in&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-findContours"><strong>findContours</strong></a>(img, thresh<font color="#909090">=127</font>, val<font color="#909090">=255</font>)</dt><dd><tt>Returns&nbsp;the&nbsp;contours&nbsp;to&nbsp;a&nbsp;given&nbsp;image,&nbsp;sorted&nbsp;by&nbsp;size&nbsp;of&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Image&nbsp;to&nbsp;find&nbsp;contours&nbsp;in<br>
+*&nbsp;thresh&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;threhsold&nbsp;value&nbsp;used<br>
+*&nbsp;val&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;value&nbsp;to&nbsp;set&nbsp;items&nbsp;in&nbsp;threshold<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Sorted&nbsp;List&nbsp;of&nbsp;Contours&nbsp;found&nbsp;in&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-findMax"><strong>findMax</strong></a>(img)</dt><dd><tt>Returns&nbsp;the&nbsp;Max&nbsp;value&nbsp;and&nbsp;Location<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(MaxVal,&nbsp;MaxLoc)&nbsp;in&nbsp;dictionary&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-findMin"><strong>findMin</strong></a>(img)</dt><dd><tt>Returns&nbsp;the&nbsp;Min&nbsp;value&nbsp;and&nbsp;Location<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(MinVal,&nbsp;MinLoc)&nbsp;in&nbsp;dictionary&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-fitEllipse"><strong>fitEllipse</strong></a>(cnt)</dt><dd><tt>Finds&nbsp;the&nbsp;nearest&nbsp;fitting&nbsp;ellippse&nbsp;to&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(center,&nbsp;Major,&nbsp;Minor,&nbsp;angle)&nbsp;-&nbsp;in&nbsp;dicitionary&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-flip"><strong>flip</strong></a>(img, code<font color="#909090">=0</font>)</dt><dd><tt>Flips&nbsp;a&nbsp;2D&nbsp;array&nbsp;around&nbsp;vertical,&nbsp;horizontal,&nbsp;or&nbsp;both&nbsp;axes<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;code&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;flip&nbsp;code<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flip&nbsp;code&nbsp;==&nbsp;0&nbsp;-&gt;&nbsp;Vertical<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flip&nbsp;code&nbsp;&nbsp;&gt;&nbsp;0&nbsp;-&gt;&nbsp;Horizontal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flip&nbsp;code&nbsp;&nbsp;&lt;&nbsp;0&nbsp;-&gt;&nbsp;Diagonal<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;flipped&nbsp;image</tt></dd></dl>
+ <dl><dt><a name="-floodFill"><strong>floodFill</strong></a>(img, seedPoint, val<font color="#909090">=(255, 255, 255)</font>, lo<font color="#909090">=25</font>, hi<font color="#909090">=25</font>, fixedRng<font color="#909090">=False</font>, connectivity<font color="#909090">=8</font>)</dt><dd><tt>Flood&nbsp;Fill&nbsp;Algorithm<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;seedPoint&nbsp;-&nbsp;startPoint<br>
+*&nbsp;val&nbsp;-OPTIONAL&nbsp;-&nbsp;New&nbsp;Value;&nbsp;255,255,255<br>
+*&nbsp;lo&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Max&nbsp;lower&nbsp;birghtness/color&nbsp;diff;&nbsp;def:&nbsp;20<br>
+*&nbsp;hi&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Max&nbsp;upper&nbsp;birghtness/color&nbsp;diff;&nbsp;def:&nbsp;20<br>
+*&nbsp;fixedRng&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;TRUE=FIXED&nbsp;diff&nbsp;btw&nbsp;curr&nbsp;and&nbsp;see;&nbsp;FALSE=MASK&nbsp;only&nbsp;fills&nbsp;mask&nbsp;def:False<br>
+*&nbsp;connectivity&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;4&nbsp;or&nbsp;8&nbsp;bit&nbsp;neightborrhood,&nbsp;def:8<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Flood&nbsp;Filles&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-fourier"><strong>fourier</strong></a>(img)</dt><dd><tt>Performs&nbsp;a&nbsp;Fourier&nbsp;Transform&nbsp;using&nbsp;CV<br>
+This&nbsp;is&nbsp;a&nbsp;wrapper&nbsp;fourier&nbsp;function&nbsp;for&nbsp;generic&nbsp;fourier.&nbsp;<br>
+More&nbsp;specific&nbsp;fncs&nbsp;are&nbsp;provided&nbsp;as&nbsp;well.<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;Magnitude&nbsp;Spectrum&nbsp;of&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-fourierCV"><strong>fourierCV</strong></a>(img)</dt><dd><tt>Performs&nbsp;a&nbsp;Fourier&nbsp;Transform&nbsp;using&nbsp;OpenCV&nbsp;Methods<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;Magnitude&nbsp;Spectrum&nbsp;of&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-fourierNP"><strong>fourierNP</strong></a>(img)</dt><dd><tt>Performs&nbsp;a&nbsp;Fourier&nbsp;Transform&nbsp;using&nbsp;Numpy&nbsp;Methods<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;Magnitude&nbsp;Spectrum&nbsp;of&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-gaussianBlur"><strong>gaussianBlur</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Gaussian&nbsp;Filtering/Blur<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Gaussian&nbsp;Blurred&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-getBorderFlags"><strong>getBorderFlags</strong></a>()</dt><dd><tt>Returns&nbsp;border&nbsp;flags&nbsp;and&nbsp;int&nbsp;values<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Border&nbsp;values</tt></dd></dl>
+ <dl><dt><a name="-getColorFlag"><strong>getColorFlag</strong></a>(color)</dt><dd><tt>Retrieves&nbsp;the&nbsp;color&nbsp;flags&nbsp;associated&nbsp;with&nbsp;img&nbsp;with&nbsp;Epics<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;color&nbsp;-&nbsp;COLOR&nbsp;CODE<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;CV&nbsp;Color&nbsp;Code</tt></dd></dl>
+ <dl><dt><a name="-getColorMapFlags"><strong>getColorMapFlags</strong></a>()</dt><dd><tt>Returns&nbsp;the&nbsp;flags&nbsp;and&nbsp;corresponding&nbsp;int&nbsp;values<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;dicitonary&nbsp;of&nbsp;values&nbsp;to&nbsp;int&nbsp;codes</tt></dd></dl>
+ <dl><dt><a name="-getCrossKernel"><strong>getCrossKernel</strong></a>(size<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Get&nbsp;a&nbsp;cross-shaped&nbsp;kernel<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;size&nbsp;-&nbsp;tuple&nbsp;of&nbsp;size&nbsp;of&nbsp;requested&nbsp;kernel,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;desired&nbsp;kernel</tt></dd></dl>
+ <dl><dt><a name="-getEllipticalKernel"><strong>getEllipticalKernel</strong></a>(size<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Get&nbsp;a&nbsp;elliptical&nbsp;kernel<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;size&nbsp;-&nbsp;tuple&nbsp;of&nbsp;size&nbsp;of&nbsp;requested&nbsp;kernel,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;desired&nbsp;kernel</tt></dd></dl>
+ <dl><dt><a name="-getRectangularKernel"><strong>getRectangularKernel</strong></a>(size<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Get&nbsp;a&nbsp;rectangular&nbsp;kernel<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;size&nbsp;-&nbsp;tuple&nbsp;of&nbsp;size&nbsp;of&nbsp;requested&nbsp;kernel,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;desired&nbsp;kernel</tt></dd></dl>
+ <dl><dt><a name="-getSupportedFileFormats"><strong>getSupportedFileFormats</strong></a>()</dt><dd><tt>Returns&nbsp;Supported&nbsp;File&nbsp;Formats&nbsp;for&nbsp;Reading&nbsp;Images<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Dictionary&nbsp;of&nbsp;Supported&nbsp;File&nbsp;Formats&nbsp;and&nbsp;Extensions</tt></dd></dl>
+ <dl><dt><a name="-goodFeaturesToTrack"><strong>goodFeaturesToTrack</strong></a>(img, numCorners<font color="#909090">=25</font>, quality<font color="#909090">=0.01</font>, minDist<font color="#909090">=10</font>, radius<font color="#909090">=3</font>, color<font color="#909090">=(0, 0, 255)</font>)</dt><dd><tt>Good&nbsp;Features&nbsp;to&nbsp;Track&nbsp;Corner&nbsp;Detection&nbsp;Shi&nbsp;Tomasi<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;numCorners&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Number&nbsp;of&nbsp;Corners,&nbsp;def&nbsp;is&nbsp;25<br>
+*&nbsp;quality&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;min&nbsp;quality&nbsp;of&nbsp;corner,&nbsp;btw&nbsp;0-1,&nbsp;def&nbsp;is&nbsp;0.01<br>
+*&nbsp;minDist&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Min&nbsp;Euclidean&nbsp;Dist&nbsp;btw&nbsp;Corners&nbsp;Detected<br>
+*&nbsp;radius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;radius,&nbsp;def&nbsp;is&nbsp;3<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;(0,0,255)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;img&nbsp;with&nbsp;corners&nbsp;marked</tt></dd></dl>
+ <dl><dt><a name="-goodFeaturesToTrackPts"><strong>goodFeaturesToTrackPts</strong></a>(img, numCorners<font color="#909090">=25</font>, quality<font color="#909090">=0.01</font>, minDist<font color="#909090">=10</font>, radius<font color="#909090">=3</font>, color<font color="#909090">=(0, 0, 255)</font>)</dt><dd><tt>Good&nbsp;Features&nbsp;to&nbsp;Track&nbsp;Corner&nbsp;Detection&nbsp;Shi&nbsp;Tomasi<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;numCorners&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Number&nbsp;of&nbsp;Corners,&nbsp;def&nbsp;is&nbsp;25<br>
+*&nbsp;quality&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;min&nbsp;quality&nbsp;of&nbsp;corner,&nbsp;btw&nbsp;0-1,&nbsp;def&nbsp;is&nbsp;0.01<br>
+*&nbsp;minDist&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Min&nbsp;Euclidean&nbsp;Dist&nbsp;btw&nbsp;Corners&nbsp;Detected<br>
+*&nbsp;radius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;radius,&nbsp;def&nbsp;is&nbsp;3<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;(0,0,255)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;corners&nbsp;detected</tt></dd></dl>
+ <dl><dt><a name="-gradient"><strong>gradient</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Morphological&nbsp;Gradient&nbsp;-&nbsp;Difference&nbsp;btw&nbsp;Dilation&nbsp;and&nbsp;Erosion&nbsp;of&nbsp;img.<br>
+Usually&nbsp;results&nbsp;in&nbsp;outline&nbsp;of&nbsp;object<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;in&nbsp;tuple,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Gradient&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-grayscale"><strong>grayscale</strong></a>(img)</dt><dd><tt>Returns&nbsp;a&nbsp;grayscale&nbsp;version&nbsp;of&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Grayscale&nbsp;image</tt></dd></dl>
+ <dl><dt><a name="-harrisCorner"><strong>harrisCorner</strong></a>(img, blockSize<font color="#909090">=2</font>, ksize<font color="#909090">=3</font>, k<font color="#909090">=0.04</font>, color<font color="#909090">=(0, 0, 255)</font>)</dt><dd><tt>Harris&nbsp;Corner&nbsp;Detection<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;blockSize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;size&nbsp;of&nbsp;neighborhood&nbsp;considered&nbsp;for&nbsp;corner&nbsp;detection<br>
+*&nbsp;ksize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Aperture&nbsp;parameter&nbsp;of&nbsp;Sobel&nbsp;derivative&nbsp;used<br>
+*&nbsp;k&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Harris&nbsp;detector&nbsp;free&nbsp;parameter&nbsp;in&nbsp;equation<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;is&nbsp;(0,0,255)&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Image&nbsp;with&nbsp;corners&nbsp;marked.</tt></dd></dl>
+ <dl><dt><a name="-harrisSubPixel"><strong>harrisSubPixel</strong></a>(img, blockSize<font color="#909090">=2</font>, ksize<font color="#909090">=3</font>, k<font color="#909090">=0.04</font>)</dt><dd><tt>Harris&nbsp;Corner&nbsp;Detection&nbsp;with&nbsp;SubPixel&nbsp;Accuracy<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;blockSize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;size&nbsp;of&nbsp;neighborhood&nbsp;considered&nbsp;for&nbsp;corner&nbsp;detection<br>
+*&nbsp;ksize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Aperture&nbsp;parameter&nbsp;of&nbsp;Sobel&nbsp;derivative&nbsp;used<br>
+*&nbsp;k&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Harris&nbsp;detector&nbsp;free&nbsp;parameter&nbsp;in&nbsp;equation<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Corners.</tt></dd></dl>
+ <dl><dt><a name="-highPassFilter"><strong>highPassFilter</strong></a>(img, window<font color="#909090">=30</font>)</dt><dd><tt>Performs&nbsp;a&nbsp;High&nbsp;Pass&nbsp;Filter&nbsp;Operation&nbsp;on&nbsp;the&nbsp;Image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;window&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;window&nbsp;size&nbsp;used&nbsp;for&nbsp;masking&nbsp;in&nbsp;spectrum;&nbsp;def:&nbsp;30&nbsp;-&nbsp;results&nbsp;in&nbsp;60x60&nbsp;window<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;High&nbsp;Pass&nbsp;Filtered&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-hitAndMiss"><strong>hitAndMiss</strong></a>(img)</dt><dd><tt>Hit&nbsp;And&nbsp;Miss&nbsp;Morphological&nbsp;Transform<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;HitAndMiss&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-houghCircles"><strong>houghCircles</strong></a>(img, minDist<font color="#909090">=20</font>, param1<font color="#909090">=50</font>, param2<font color="#909090">=30</font>, minRadius<font color="#909090">=0</font>, maxRadius<font color="#909090">=0</font>)</dt><dd><tt>Hough&nbsp;Circle&nbsp;Transform&nbsp;-&nbsp;Finds&nbsp;Circles&nbsp;in&nbsp;an&nbsp;image&nbsp;and&nbsp;draws&nbsp;it<br>
+NOTE:&nbsp;Play&nbsp;around&nbsp;with&nbsp;params&nbsp;to&nbsp;get&nbsp;what&nbsp;you&nbsp;need,&nbsp;each&nbsp;img&nbsp;has&nbsp;different&nbsp;req&nbsp;params<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;minDist&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Minimum&nbsp;Distance&nbsp;btw&nbsp;centers&nbsp;of&nbsp;detected&nbsp;circles,&nbsp;def&nbsp;is&nbsp;20<br>
+*&nbsp;param1&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Higher&nbsp;Threshold&nbsp;of&nbsp;two&nbsp;sent&nbsp;to&nbsp;Canny&nbsp;edge&nbsp;detector,&nbsp;def&nbsp;is&nbsp;50<br>
+*&nbsp;param2&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Accumulator&nbsp;Threshold&nbsp;for&nbsp;the&nbsp;circle&nbsp;centers&nbsp;at&nbsp;detection&nbsp;stage,&nbsp;def&nbsp;is&nbsp;30<br>
+*&nbsp;minRadius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Minimum&nbsp;Circle&nbsp;Radius,&nbsp;def&nbsp;is&nbsp;0<br>
+*&nbsp;maxRadius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Maximum&nbsp;Circle&nbsp;Radius,&nbsp;def&nbsp;is&nbsp;0<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;List&nbsp;of&nbsp;circles&nbsp;in&nbsp;(x,&nbsp;y,&nbsp;radius)&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-houghLines"><strong>houghLines</strong></a>(img, rho<font color="#909090">=1</font>, theta<font color="#909090">=0.017453292519943295</font>, threshold<font color="#909090">=200</font>)</dt><dd><tt>Hough&nbsp;Lines&nbsp;Detection&nbsp;Method<br>
+NOTE:&nbsp;Play&nbsp;around&nbsp;with&nbsp;params&nbsp;to&nbsp;get&nbsp;what&nbsp;you&nbsp;need,&nbsp;each&nbsp;img&nbsp;has&nbsp;different&nbsp;req&nbsp;params<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;rho-&nbsp;OPTIONAL&nbsp;-&nbsp;radius,&nbsp;measured&nbsp;in&nbsp;pixels,&nbsp;def&nbsp;is&nbsp;1<br>
+*&nbsp;theta&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;angle,&nbsp;measured&nbsp;in&nbsp;radians,&nbsp;def&nbsp;is&nbsp;np.pi/180<br>
+*&nbsp;threshold&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Minimum&nbsp;Length&nbsp;of&nbsp;Line,&nbsp;def&nbsp;200<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;List&nbsp;of&nbsp;points&nbsp;in&nbsp;[(start,&nbsp;end)]&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-houghLinesProb"><strong>houghLinesProb</strong></a>(img, minLineLength<font color="#909090">=100</font>, maxLineGap<font color="#909090">=10</font>)</dt><dd><tt>Returns&nbsp;the&nbsp;result&nbsp;of&nbsp;Probabilistic&nbsp;Hough&nbsp;Line&nbsp;Transform&nbsp;from&nbsp;img<br>
+NOTE:&nbsp;Play&nbsp;around&nbsp;with&nbsp;params&nbsp;to&nbsp;get&nbsp;what&nbsp;you&nbsp;need,&nbsp;each&nbsp;img&nbsp;has&nbsp;different&nbsp;req&nbsp;params<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;minLineLength&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Min&nbsp;length&nbsp;of&nbsp;line,&nbsp;any&nbsp;lines&nbsp;shorter&nbsp;rejected,&nbsp;def&nbsp;is&nbsp;100<br>
+*&nbsp;maxLineGap&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Max&nbsp;allowed&nbsp;gap&nbsp;btw&nbsp;line&nbsp;segments&nbsp;to&nbsp;treat&nbsp;as&nbsp;single&nbsp;line,&nbsp;def&nbsp;is&nbsp;10<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;List&nbsp;of&nbsp;lines&nbsp;in&nbsp;[(start,&nbsp;end)]&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-hsv"><strong>hsv</strong></a>(img)</dt><dd><tt>Returns&nbsp;a&nbsp;hsv&nbsp;version&nbsp;of&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;HSV&nbsp;image&nbsp;if&nbsp;orginial&nbsp;is&nbsp;RBG</tt></dd></dl>
+ <dl><dt><a name="-huMoments"><strong>huMoments</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Hu&nbsp;Moments&nbsp;from&nbsp;moments<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;Contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Hu&nbsp;Moments</tt></dd></dl>
+ <dl><dt><a name="-imfill"><strong>imfill</strong></a>(img, threshVal<font color="#909090">=220</font>)</dt><dd><tt>Imfill&nbsp;-&nbsp;Creates&nbsp;a&nbsp;mask&nbsp;for&nbsp;an&nbsp;image&nbsp;by&nbsp;removing&nbsp;holes,&nbsp;Isolates&nbsp;shape&nbsp;of&nbsp;object<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;threshVal&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Threshold&nbsp;Value;&nbsp;def:&nbsp;220<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Image&nbsp;with&nbsp;Holes&nbsp;Filled</tt></dd></dl>
+ <dl><dt><a name="-imgProp"><strong>imgProp</strong></a>(img)</dt><dd><tt>Returns&nbsp;properties&nbsp;of&nbsp;an&nbsp;image&nbsp;in&nbsp;a&nbsp;dictionary&nbsp;format<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;dictionary&nbsp;of&nbsp;properties&nbsp;"shape,&nbsp;rows,&nbsp;columns,&nbsp;channels,&nbsp;size,&nbsp;dtype"</tt></dd></dl>
+ <dl><dt><a name="-inRangeThresh"><strong>inRangeThresh</strong></a>(img, lower, upper)</dt><dd><tt>Thresholds&nbsp;an&nbsp;image&nbsp;between&nbsp;two&nbsp;color&nbsp;ranges,&nbsp;or&nbsp;scalars&nbsp;for&nbsp;grayscale<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Image&nbsp;to&nbsp;threshold<br>
+*&nbsp;lower&nbsp;-&nbsp;lower&nbsp;bound,&nbsp;either&nbsp;[X,&nbsp;Y,&nbsp;Z]&nbsp;for&nbsp;color&nbsp;or&nbsp;scalar&nbsp;for&nbsp;gray<br>
+*&nbsp;upper&nbsp;-&nbsp;upper&nbsp;bound,&nbsp;either&nbsp;[X,&nbsp;Y,&nbsp;Z]&nbsp;for&nbsp;color&nbsp;or&nbsp;scalar&nbsp;for&nbsp;gray<br>
+&nbsp;<br>
+Retuns:<br>
+*&nbsp;In&nbsp;Range&nbsp;Thresholded&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-integral"><strong>integral</strong></a>(img, sqSum<font color="#909090">=False</font>, tilted<font color="#909090">=False</font>)</dt><dd><tt>Integral&nbsp;of&nbsp;an&nbsp;Img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;sqSum&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;if&nbsp;True,&nbsp;returns&nbsp;integral&nbsp;for&nbsp;squared&nbsp;pixel&nbsp;values<br>
+*&nbsp;tilted&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;if&nbsp;True,&nbsp;returns&nbsp;integral&nbsp;for&nbsp;img&nbsp;rotated&nbsp;by&nbsp;45&nbsp;deg<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;integral<br>
+*&nbsp;sq&nbsp;pixel&nbsp;integral<br>
+*&nbsp;tilted&nbsp;integral</tt></dd></dl>
+ <dl><dt><a name="-laplacian"><strong>laplacian</strong></a>(img)</dt><dd><tt>Laplacian&nbsp;Image&nbsp;Gradient<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Laplacian&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-load"><strong>load</strong></a>(filename, flag<font color="#909090">=None</font>)</dt><dd><tt>Loads&nbsp;an&nbsp;image&nbsp;from&nbsp;a&nbsp;file&nbsp;name&nbsp;and&nbsp;returns&nbsp;it&nbsp;in&nbsp;color&nbsp;mode&nbsp;(default).<br>
+Safety&nbsp;check&nbsp;if&nbsp;img&nbsp;fails&nbsp;to&nbsp;load.<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;filename&nbsp;-&nbsp;filename&nbsp;of&nbsp;image<br>
+*&nbsp;flag&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;open&nbsp;mode:&nbsp;1&nbsp;=&nbsp;COLOR,&nbsp;0&nbsp;=&nbsp;GRAYSCALE,&nbsp;-1&nbsp;=&nbsp;UNCHANGED<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Loaded&nbsp;Img&nbsp;if&nbsp;sucessful</tt></dd></dl>
+ <dl><dt><a name="-lowPassFilter"><strong>lowPassFilter</strong></a>(img, window<font color="#909090">=30</font>)</dt><dd><tt>Performs&nbsp;a&nbsp;Low&nbsp;Pass&nbsp;Filter&nbsp;Operation&nbsp;on&nbsp;the&nbsp;Image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;window&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;window&nbsp;size&nbsp;used&nbsp;for&nbsp;masking&nbsp;in&nbsp;spectrum;&nbsp;def:&nbsp;30&nbsp;-&nbsp;results&nbsp;in&nbsp;60x60&nbsp;window<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Low&nbsp;Pass&nbsp;Filtered&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-lstToDict"><strong>lstToDict</strong></a>(key, value)</dt><dd><tt>Turns&nbsp;two&nbsp;lists&nbsp;into&nbsp;a&nbsp;dictionary<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;key&nbsp;-&nbsp;List&nbsp;of&nbsp;Keys<br>
+*&nbsp;value&nbsp;-&nbsp;List&nbsp;of&nbsp;Values<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Dictionary&nbsp;of&nbsp;Key/Values</tt></dd></dl>
+ <dl><dt><a name="-mask"><strong>mask</strong></a>(img, invert<font color="#909090">=False</font>)</dt><dd><tt>Finds&nbsp;the&nbsp;mask&nbsp;for&nbsp;an&nbsp;image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;invert&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;def&nbsp;False;&nbsp;if&nbsp;def,&nbsp;returns&nbsp;mask,&nbsp;if&nbsp;True,&nbsp;returns&nbsp;bitwise&nbsp;not&nbsp;of&nbsp;mask<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;mask</tt></dd></dl>
+ <dl><dt><a name="-matchShapes"><strong>matchShapes</strong></a>(cnt1, cnt2)</dt><dd><tt>Takes&nbsp;two&nbsp;contours&nbsp;and&nbsp;compares&nbsp;them.<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt1&nbsp;-&nbsp;first&nbsp;contour<br>
+*&nbsp;cnt2&nbsp;-&nbsp;second&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;metric&nbsp;showing&nbsp;similarity,&nbsp;lower&nbsp;the&nbsp;result,&nbsp;better&nbsp;the&nbsp;match</tt></dd></dl>
+ <dl><dt><a name="-matchShapesImages"><strong>matchShapesImages</strong></a>(img1, img2)</dt><dd><tt>Takes&nbsp;two&nbsp;images&nbsp;and&nbsp;compares&nbsp;them.<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img1&nbsp;-&nbsp;first&nbsp;image<br>
+*&nbsp;img2&nbsp;-&nbsp;second&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;metric&nbsp;showing&nbsp;similarity,&nbsp;lower&nbsp;the&nbsp;result,&nbsp;better&nbsp;the&nbsp;match</tt></dd></dl>
+ <dl><dt><a name="-matplotlibDisplay"><strong>matplotlibDisplay</strong></a>(img, title<font color="#909090">='Image'</font>, colorFlag<font color="#909090">='gray'</font>)</dt><dd><tt>Displays&nbsp;an&nbsp;image&nbsp;using&nbsp;MatPlotLib<br>
+Useful&nbsp;for&nbsp;displaying&nbsp;all&nbsp;images&nbsp;and&nbsp;Magnitude&nbsp;Spectrums<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;title&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;name&nbsp;of&nbsp;Image<br>
+*&nbsp;colorFlag&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;flag&nbsp;for&nbsp;imshow;&nbsp;def:&nbsp;'gray'</tt></dd></dl>
+ <dl><dt><a name="-matplotlibDisplayMulti"><strong>matplotlibDisplayMulti</strong></a>(imgs, titles<font color="#909090">=None</font>, colorFlag<font color="#909090">='gray'</font>)</dt><dd><tt>Displays&nbsp;multiple&nbsp;images&nbsp;in&nbsp;a&nbsp;matplotlib&nbsp;window<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;title&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;name&nbsp;of&nbsp;Image<br>
+*&nbsp;colorFlag&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;flag&nbsp;for&nbsp;imshow;&nbsp;def:&nbsp;'gray'</tt></dd></dl>
+ <dl><dt><a name="-meanVal"><strong>meanVal</strong></a>(img)</dt><dd><tt>Returns&nbsp;the&nbsp;Mean&nbsp;Color&nbsp;(Regular&nbsp;Img)&nbsp;/&nbsp;Mean&nbsp;Intensity&nbsp;(Grayscale)<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Mean&nbsp;Color&nbsp;/&nbsp;Mean&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-medianBlur"><strong>medianBlur</strong></a>(img)</dt><dd><tt>Median&nbsp;Filtering<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Median&nbsp;Filtered&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-minEncloseCircle"><strong>minEncloseCircle</strong></a>(cnt)</dt><dd><tt>Minimum&nbsp;Enclosing&nbsp;Circle<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;Contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Min&nbsp;Enclose&nbsp;Circle&nbsp;info</tt></dd></dl>
+ <dl><dt><a name="-minMaxLoc"><strong>minMaxLoc</strong></a>(img)</dt><dd><tt>Returns&nbsp;the&nbsp;Max&nbsp;Val,&nbsp;Min&nbsp;Val,&nbsp;and&nbsp;Locations<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(minVal,&nbsp;maxVal,&nbsp;minLoc,&nbsp;maxLoc)&nbsp;in&nbsp;dicitonary&nbsp;format</tt></dd></dl>
+ <dl><dt><a name="-moments"><strong>moments</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;moments&nbsp;of&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;dictionary&nbsp;of&nbsp;moments</tt></dd></dl>
+ <dl><dt><a name="-objectTrackVid"><strong>objectTrackVid</strong></a>(lower, upper)</dt><dd><tt>Object&nbsp;Tracking&nbsp;Video<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;lower&nbsp;-&nbsp;Lower&nbsp;Bound<br>
+*&nbsp;upper&nbsp;-&nbsp;Upper&nbsp;Bound</tt></dd></dl>
+ <dl><dt><a name="-opening"><strong>opening</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Opening&nbsp;-&nbsp;Erosion&nbsp;followed&nbsp;by&nbsp;dilation.&nbsp;Useful&nbsp;for&nbsp;removing&nbsp;noise<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;in&nbsp;tuple,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;opened&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-orb"><strong>orb</strong></a>(img)</dt><dd><tt>ORB&nbsp;Corner&nbsp;Detection&nbsp;-&nbsp;Detects&nbsp;Corners<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;key&nbsp;points</tt></dd></dl>
+ <dl><dt><a name="-orientation"><strong>orientation</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Orientation&nbsp;of&nbsp;the&nbsp;Object<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;Contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Angle&nbsp;at&nbsp;which&nbsp;object&nbsp;is&nbsp;directed</tt></dd></dl>
+ <dl><dt><a name="-otsu"><strong>otsu</strong></a>(img, invert<font color="#909090">=False</font>)</dt><dd><tt>Returns&nbsp;an&nbsp;img&nbsp;after&nbsp;Otsu&nbsp;Binarization<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;invert&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;uses&nbsp;inverse&nbsp;binary&nbsp;if&nbsp;True,&nbsp;def:&nbsp;False<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;An&nbsp;Otsu&nbsp;Binarization&nbsp;of&nbsp;the&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-perimeter"><strong>perimeter</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Contour&nbsp;Perimeter<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Perimeter&nbsp;of&nbsp;cnt</tt></dd></dl>
+ <dl><dt><a name="-perspectiveTransform"><strong>perspectiveTransform</strong></a>(img, pts, newPts, size<font color="#909090">=None</font>)</dt><dd><tt>Perspective&nbsp;Transformation&nbsp;-&nbsp;Translates&nbsp;pts&nbsp;to&nbsp;newPts&nbsp;while&nbsp;keeping&nbsp;all&nbsp;lines&nbsp;straight<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;pts&nbsp;-&nbsp;4&nbsp;points&nbsp;on&nbsp;input&nbsp;image<br>
+*&nbsp;newPts&nbsp;-&nbsp;4&nbsp;points&nbsp;to&nbsp;be&nbsp;shifted&nbsp;to<br>
+*&nbsp;size&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;new&nbsp;size&nbsp;of&nbsp;output&nbsp;image&nbsp;(x,y),&nbsp;def&nbsp;is&nbsp;max&nbsp;newPts<br>
+&nbsp;<br>
+Returns:<br>
+Shifted&nbsp;img&nbsp;under&nbsp;Perspective&nbsp;Transformation</tt></dd></dl>
+ <dl><dt><a name="-pixelPoints"><strong>pixelPoints</strong></a>(img, cnt)</dt><dd><tt>Finds&nbsp;all&nbsp;the&nbsp;points&nbsp;that&nbsp;comprises&nbsp;an&nbsp;object&nbsp;(Pixel&nbsp;Points)<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;pixelpoints</tt></dd></dl>
+ <dl><dt><a name="-plotCentroid"><strong>plotCentroid</strong></a>(img, cnt, radius<font color="#909090">=3</font>, color<font color="#909090">=(255, 255, 0)</font>)</dt><dd><tt>Plots&nbsp;a&nbsp;centroid&nbsp;onto&nbsp;an&nbsp;image&nbsp;from&nbsp;a&nbsp;given&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;modify<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;specify&nbsp;color&nbsp;of&nbsp;centroid&nbsp;cross<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Centroid&nbsp;Pixel&nbsp;Coord</tt></dd></dl>
+ <dl><dt><a name="-plotPOI"><strong>plotPOI</strong></a>(img, cnt, radius<font color="#909090">=3</font>, color<font color="#909090">=(100, 100, 255)</font>)</dt><dd><tt>Plots&nbsp;the&nbsp;points&nbsp;of&nbsp;interest&nbsp;of&nbsp;a&nbsp;cnt<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+*&nbsp;radius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;radius&nbsp;of&nbsp;point;&nbsp;def:&nbsp;3<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;pt;&nbsp;def:&nbsp;(100,&nbsp;100,&nbsp;255)</tt></dd></dl>
+ <dl><dt><a name="-plotPoint"><strong>plotPoint</strong></a>(img, point, radius<font color="#909090">=3</font>, color<font color="#909090">=(0, 0, 255)</font>)</dt><dd><tt>Plots&nbsp;a&nbsp;single&nbsp;point&nbsp;onto&nbsp;an&nbsp;image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;point&nbsp;-&nbsp;pixel&nbsp;tuple&nbsp;to&nbsp;plot&nbsp;at&nbsp;(x,&nbsp;y)<br>
+*&nbsp;radius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;radius&nbsp;of&nbsp;point&nbsp;to&nbsp;be&nbsp;plotted<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;pixel&nbsp;to&nbsp;be&nbsp;plotted</tt></dd></dl>
+ <dl><dt><a name="-plotPoints"><strong>plotPoints</strong></a>(img, points, radius<font color="#909090">=3</font>, color<font color="#909090">=(0, 0, 255)</font>)</dt><dd><tt>Plots&nbsp;a&nbsp;list&nbsp;of&nbsp;points&nbsp;onto&nbsp;an&nbsp;img<br>
+&nbsp;<br>
+Params:&nbsp;<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;points&nbsp;-&nbsp;list&nbsp;of&nbsp;points&nbsp;to&nbsp;plot<br>
+*&nbsp;radius&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;radius&nbsp;of&nbsp;points&nbsp;to&nbsp;be&nbsp;plotted<br>
+*&nbsp;color&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;color&nbsp;of&nbsp;points&nbsp;to&nbsp;plot,&nbsp;default&nbsp;is&nbsp;(0,&nbsp;0,&nbsp;255)</tt></dd></dl>
+ <dl><dt><a name="-poi"><strong>poi</strong></a>(img, cnt)</dt><dd><tt>Returns&nbsp;only&nbsp;points&nbsp;of&nbsp;interest&nbsp;for&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;cnt-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;points&nbsp;of&nbsp;interest&nbsp;(max/min,&nbsp;extremas,&nbsp;center)</tt></dd></dl>
+ <dl><dt><a name="-pointPolygonTest"><strong>pointPolygonTest</strong></a>(cnt, point, distance<font color="#909090">=True</font>)</dt><dd><tt>Point&nbsp;Polygon&nbsp;Test&nbsp;-&nbsp;Finds&nbsp;the&nbsp;Shortest&nbsp;Distance&nbsp;between&nbsp;a&nbsp;point&nbsp;in&nbsp;the&nbsp;image&nbsp;and&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+*&nbsp;point&nbsp;-&nbsp;point&nbsp;coordinates<br>
+*&nbsp;distance&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;True&nbsp;if&nbsp;signed&nbsp;distance,&nbsp;False&nbsp;for&nbsp;Inside/Outside/On&nbsp;cnt<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Relation&nbsp;of&nbsp;point&nbsp;to&nbsp;cnt</tt></dd></dl>
+ <dl><dt><a name="-printCntInfo"><strong>printCntInfo</strong></a>(img, cnt)</dt><dd><tt>Prints&nbsp;the&nbsp;contour&nbsp;information&nbsp;line&nbsp;by&nbsp;line&nbsp;via&nbsp;key:&nbsp;value&nbsp;format<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;image&nbsp;-&nbsp;image<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour</tt></dd></dl>
+ <dl><dt><a name="-printDic"><strong>printDic</strong></a>(m)</dt><dd><tt>Prints&nbsp;a&nbsp;Dictionary&nbsp;in&nbsp;Key:&nbsp;Value&nbsp;format<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;m&nbsp;-&nbsp;Dictionary&nbsp;to&nbsp;print</tt></dd></dl>
+ <dl><dt><a name="-resize"><strong>resize</strong></a>(img, width, height)</dt><dd><tt>Resize&nbsp;an&nbsp;Image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;width&nbsp;-&nbsp;new&nbsp;width<br>
+*&nbsp;height&nbsp;-&nbsp;new&nbsp;height<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;resized&nbsp;image</tt></dd></dl>
+ <dl><dt><a name="-roi"><strong>roi</strong></a>(img, x, y, w, h)</dt><dd><tt>Image&nbsp;ROI:&nbsp;Returns&nbsp;a&nbsp;Region&nbsp;of&nbsp;Interest<br>
+Can&nbsp;be&nbsp;Used&nbsp;for&nbsp;Cropping<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;x&nbsp;-&nbsp;X&nbsp;Position&nbsp;(start)<br>
+*&nbsp;y&nbsp;-&nbsp;Y&nbsp;Position(start)<br>
+*&nbsp;w&nbsp;-&nbsp;Width&nbsp;-&nbsp;How&nbsp;much&nbsp;region&nbsp;spans&nbsp;after&nbsp;X<br>
+*&nbsp;h&nbsp;-&nbsp;Height&nbsp;-&nbsp;How&nbsp;much&nbsp;region&nbsp;spans&nbsp;after&nbsp;Y<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;imgROI&nbsp;-&nbsp;from&nbsp;[x:x+w,&nbsp;y:y+h]</tt></dd></dl>
+ <dl><dt><a name="-rotate"><strong>rotate</strong></a>(img, deg, center<font color="#909090">=None</font>)</dt><dd><tt>Rotates&nbsp;the&nbsp;image&nbsp;by&nbsp;a&nbsp;given&nbsp;degree<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;deg&nbsp;-&nbsp;degrees&nbsp;to&nbsp;rotate<br>
+*&nbsp;center&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;coordinate&nbsp;to&nbsp;rotate&nbsp;around,&nbsp;def&nbsp;is&nbsp;center&nbsp;of&nbsp;img<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;rotated&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-save"><strong>save</strong></a>(img, filename<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;an&nbsp;image&nbsp;to&nbsp;a&nbsp;file<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;save<br>
+*&nbsp;filename&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;file&nbsp;to&nbsp;save&nbsp;to,&nbsp;def&nbsp;is&nbsp;TYEARMONTHDAY.jpg</tt></dd></dl>
+ <dl><dt><a name="-saveImgs"><strong>saveImgs</strong></a>(img, filename<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;a&nbsp;list&nbsp;of&nbsp;images&nbsp;to&nbsp;a&nbsp;file<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;images&nbsp;to&nbsp;save<br>
+*&nbsp;filename&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;file&nbsp;names&nbsp;to&nbsp;save&nbsp;to,&nbsp;def&nbsp;is&nbsp;TYEARMONTHDAYITEM#.jpg</tt></dd></dl>
+ <dl><dt><a name="-scalarInfo"><strong>scalarInfo</strong></a>(img, cnt)</dt><dd><tt>Returns&nbsp;only&nbsp;scalar&nbsp;information&nbsp;for&nbsp;a&nbsp;contour<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img-&nbsp;image<br>
+*&nbsp;cnt-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;scalar&nbsp;contour&nbsp;information</tt></dd></dl>
+ <dl><dt><a name="-shape"><strong>shape</strong></a>(img)</dt><dd><tt>Image&nbsp;Dimensions<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(x,&nbsp;y,&nbsp;c)&nbsp;-&nbsp;x&nbsp;pixels,&nbsp;y&nbsp;pixels,&nbsp;channels</tt></dd></dl>
+ <dl><dt><a name="-sharpen"><strong>sharpen</strong></a>(img, ker<font color="#909090">=(9, 9)</font>, sigX<font color="#909090">=10.0</font>)</dt><dd><tt>EXPERIMENTAL<br>
+Returns&nbsp;a&nbsp;sharpebded&nbsp;image&nbsp;using&nbsp;the&nbsp;Unsharp&nbsp;Img&nbsp;Algorithm<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;ker&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;tuple;&nbsp;def:(9,9)<br>
+*&nbsp;sigX&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Gaussian&nbsp;kernel&nbsp;standard&nbsp;deviation&nbsp;in&nbsp;X&nbsp;dir;&nbsp;def:10.0<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;sharpened&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-size"><strong>size</strong></a>(img)</dt><dd><tt>Returns&nbsp;the&nbsp;Number&nbsp;of&nbsp;pixels&nbsp;in&nbsp;an&nbsp;image<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;size&nbsp;of&nbsp;image&nbsp;in&nbsp;pixels</tt></dd></dl>
+ <dl><dt><a name="-slope"><strong>slope</strong></a>(start, end)</dt><dd><tt>Slope&nbsp;Calculator&nbsp;from&nbsp;two&nbsp;points<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;start&nbsp;-&nbsp;start&nbsp;point&nbsp;(x,y)<br>
+*&nbsp;end&nbsp;-&nbsp;end&nbsp;point&nbsp;(x,y)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;slope&nbsp;of&nbsp;line&nbsp;connecting&nbsp;two&nbsp;pts,&nbsp;None&nbsp;if&nbsp;undefined</tt></dd></dl>
+ <dl><dt><a name="-sobelx"><strong>sobelx</strong></a>(img, ksize<font color="#909090">=5</font>)</dt><dd><tt>Sobel&nbsp;X&nbsp;Image&nbsp;Gradient<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-image<br>
+*&nbsp;ksize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Kernel&nbsp;Size,&nbsp;def&nbsp;is&nbsp;5<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Sobel&nbsp;X&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-sobelxy"><strong>sobelxy</strong></a>(img, ksize<font color="#909090">=5</font>)</dt><dd><tt>Sobel&nbsp;XY&nbsp;Image&nbsp;Gradient<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-image<br>
+*&nbsp;ksize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Kernel&nbsp;Size,&nbsp;def&nbsp;is&nbsp;5<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Sobel&nbsp;XY&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-sobely"><strong>sobely</strong></a>(img, ksize<font color="#909090">=5</font>)</dt><dd><tt>Sobel&nbsp;Y&nbsp;Image&nbsp;Gradient<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-image<br>
+*&nbsp;ksize&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Kernel&nbsp;Size,&nbsp;def&nbsp;is&nbsp;5<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Sobel&nbsp;Y&nbsp;Image</tt></dd></dl>
+ <dl><dt><a name="-solidity"><strong>solidity</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;Solidity&nbsp;(Ratio&nbsp;of&nbsp;area&nbsp;to&nbsp;convex&nbsp;hull&nbsp;area)<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;cnt&nbsp;-&nbsp;contour<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Solidity&nbsp;of&nbsp;cnt</tt></dd></dl>
+ <dl><dt><a name="-sort"><strong>sort</strong></a>(contours)</dt><dd><tt>Sorts&nbsp;a&nbsp;list&nbsp;of&nbsp;contours&nbsp;by&nbsp;number&nbsp;of&nbsp;points,&nbsp;in&nbsp;descending&nbsp;order<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;contours&nbsp;-&nbsp;list&nbsp;of&nbsp;contours&nbsp;to&nbsp;sort<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Sorted&nbsp;list&nbsp;of&nbsp;contour&nbsp;objects&nbsp;such&nbsp;that&nbsp;the&nbsp;largest&nbsp;contour&nbsp;is&nbsp;first</tt></dd></dl>
+ <dl><dt><a name="-sortList"><strong>sortList</strong></a>(lst, reverse<font color="#909090">=False</font>, key<font color="#909090">=None</font>)</dt><dd><tt>Sorts&nbsp;a&nbsp;given&nbsp;list<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;lst&nbsp;-&nbsp;List&nbsp;to&nbsp;be&nbsp;sorted<br>
+*&nbsp;reverse&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;TRUE=List&nbsp;Reversed,&nbsp;FALSE&nbsp;=&nbsp;List&nbsp;Normal;&nbsp;def:&nbsp;False<br>
+*&nbsp;key&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;function&nbsp;used&nbsp;as&nbsp;comparision;&nbsp;def:&nbsp;None<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Sorted&nbsp;List</tt></dd></dl>
+ <dl><dt><a name="-sumPixel"><strong>sumPixel</strong></a>(img)</dt><dd><tt>Sums&nbsp;all&nbsp;of&nbsp;the&nbsp;pixels&nbsp;in&nbsp;an&nbsp;image<br>
+Best&nbsp;for&nbsp;Grayscale<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;sum&nbsp;of&nbsp;pixel&nbsp;values</tt></dd></dl>
+ <dl><dt><a name="-templateMatchMulti"><strong>templateMatchMulti</strong></a>(img, template)</dt><dd><tt>Template&nbsp;Matching&nbsp;-&nbsp;Multiple&nbsp;Objects<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;template&nbsp;-&nbsp;image&nbsp;to&nbsp;search&nbsp;for<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;lst&nbsp;of&nbsp;points&nbsp;in&nbsp;[(tl,&nbsp;br),&nbsp;(tl+w,&nbsp;br+h)]&nbsp;format&nbsp;for&nbsp;rectangles</tt></dd></dl>
+ <dl><dt><a name="-templateMatchSingle"><strong>templateMatchSingle</strong></a>(img, template)</dt><dd><tt>Template&nbsp;Matching&nbsp;-&nbsp;Single&nbsp;Object,&nbsp;will&nbsp;find&nbsp;the&nbsp;points&nbsp;to&nbsp;draw&nbsp;a&nbsp;rectangle&nbsp;over&nbsp;given&nbsp;template<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;template&nbsp;-&nbsp;template&nbsp;image&nbsp;to&nbsp;match<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;(top&nbsp;left,&nbsp;bottom&nbsp;right)&nbsp;-&nbsp;points&nbsp;of&nbsp;a&nbsp;rectangle</tt></dd></dl>
+ <dl><dt><a name="-tophat"><strong>tophat</strong></a>(img, kernel<font color="#909090">=(5, 5)</font>)</dt><dd><tt>Top&nbsp;Hat&nbsp;-&nbsp;Difference&nbsp;btw&nbsp;input&nbsp;img&nbsp;and&nbsp;Opening&nbsp;of&nbsp;img<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;kernel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;kernel&nbsp;size&nbsp;in&nbsp;tuple,&nbsp;def&nbsp;is&nbsp;(5,5)<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;TopHat&nbsp;Img</tt></dd></dl>
+ <dl><dt><a name="-trackObject"><strong>trackObject</strong></a>(img, lower, upper)</dt><dd><tt>Isolates&nbsp;a&nbsp;Color&nbsp;within&nbsp;an&nbsp;Image&nbsp;for&nbsp;tracking<br>
+Useful&nbsp;for&nbsp;tracking&nbsp;certain&nbsp;colors<br>
+Use&nbsp;within&nbsp;while&nbsp;loop&nbsp;for&nbsp;video<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;Color&nbsp;Image<br>
+*&nbsp;lower&nbsp;-&nbsp;Lower&nbsp;Threshold&nbsp;of&nbsp;Color,&nbsp;[X,&nbsp;Y,&nbsp;Z]&nbsp;format<br>
+*&nbsp;upper&nbsp;-&nbsp;Upper&nbsp;Threshold&nbsp;of&nbsp;Color,&nbsp;[X,&nbsp;Y,&nbsp;Z]&nbsp;format<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Isolated&nbsp;img</tt></dd></dl>
+ <dl><dt><a name="-translate"><strong>translate</strong></a>(img, shift)</dt><dd><tt>Translates&nbsp;a&nbsp;image&nbsp;by&nbsp;shift&nbsp;(x,&nbsp;y)<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+*&nbsp;shift&nbsp;-&nbsp;(x,&nbsp;y)&nbsp;tuple&nbsp;that&nbsp;has&nbsp;the&nbsp;shift&nbsp;direction&nbsp;in&nbsp;the&nbsp;x&nbsp;and&nbsp;y&nbsp;directions<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Translated&nbsp;image</tt></dd></dl>
+ <dl><dt><a name="-transpose"><strong>transpose</strong></a>(matrix)</dt><dd><tt>Transposes&nbsp;a&nbsp;matrix<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;matrix&nbsp;-&nbsp;matrix<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;transpose&nbsp;of&nbsp;matrix</tt></dd></dl>
+ <dl><dt><a name="-version"><strong>version</strong></a>()</dt><dd><tt>Prints&nbsp;the&nbsp;version&nbsp;codes&nbsp;for&nbsp;cvlib,&nbsp;OpenCV,&nbsp;and&nbsp;Numpy.&nbsp;For&nbsp;Refrence</tt></dd></dl>
+ <dl><dt><a name="-watershed"><strong>watershed</strong></a>(img)</dt><dd><tt>EXPERIMENTAL<br>
+Image&nbsp;Segmenting&nbsp;-&nbsp;Watershed&nbsp;Algorithm<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;img&nbsp;-&nbsp;image<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;Segmented&nbsp;img</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>EPICSCOLOR</strong> = {0: 'gray', 1: 'bayer', 2: 'RBG1'}<br>
+<strong>EPICSTYPE</strong> = {0: &lt;type 'numpy.uint8'&gt;, 1: &lt;type 'numpy.uint16'&gt;, 2: &lt;type 'numpy.uint32'&gt;, 3: &lt;type 'numpy.uint64'&gt;}<br>
+<strong>__matplotlibver__</strong> = '1.4.2'<br>
+<strong>__npversion__</strong> = '1.8.2'<br>
+<strong>__opencv__</strong> = '2.4.9.1'<br>
+<strong>__sysver__</strong> = '2.7.9 (default, Mar  1 2015, 12:57:24) <font color="#c040c0">\n</font>[GCC 4.9.2]'<br>
+<strong>__version__</strong> = '0.5.4.1'<br>
+<strong>border_flag</strong> = {'constant': 0, 'default': 4, 'reflect': 2, 'reflect101': 4, 'replicate': 1, 'wrap': 3}<br>
+<strong>colorMap_flag</strong> = {'autumn': 0, 'bone': 1, 'cool': 8, 'hot': 11, 'hsv': 9, 'jet': 2, 'ocean': 5, 'pink': 10, 'rainbow': 4, 'spring': 7, ...}</td></tr></table>
+</body></html>
