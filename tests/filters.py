@@ -1,11 +1,11 @@
 import cvlib
 
 
-img = cvlib.load("coin.jpg")
+img = cvlib.load("selfie.jpg")
 
 co = cvlib.coherenceFilter(img)
 gab = cvlib.gaborFilter(img)
 
 cvlib.displayImgs([img, co, gab])
-#cvlib.save(co, "coherence.jpg")
-#cvlib.save(gab, "gaborFilter.jpg")
+cvlib.save(co, "coherence.jpg")
+cvlib.save(gab, "gaborFilter.jpg")
