@@ -15,9 +15,11 @@ contours = cvlib.filterCnts(contours)
 a = cvlib.cntInfoMult(img, contours)
 crops = [img]
 for i in range(0, len(a)):
-	print str(a[i]) + "\n"
+        print "Object %d:\n" % i
+        cvlib.printCntInfo(img, contours[i])
 	cvlib.plotPOI(img, contours[i], radius=1)
 	crops.append(cvlib.copy(cvlib.cropCnt(img, contours[i])))
+        print "\n"
 	
 cvlib.drawContours(img, contours, thickness = 1)
 jet = cvlib.applyColorMap(gray, "jet")

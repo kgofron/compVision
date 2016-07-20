@@ -14,7 +14,8 @@ cvlib.plotPoint(img, m["max"], color=(100,100,0), radius=5)
 cvlib.plotPoint(lap, m["max"], color=(100,100,0), radius=5)
 cvlib.plotCentroid(lap, contours[0])
 cvlib.plotCentroid(img, contours[0])
-print "Object Details: " + str(m)
+print "Object Details: \n"
+cvlib.printCntInfo(img, contours[0])
 jet = cvlib.applyColorMap(img, "jet")
 
 cvlib.displayImgs([img, lap, jet])
