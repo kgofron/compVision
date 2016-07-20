@@ -207,6 +207,64 @@ def fetchImgEXP(SYS, DEV):
         return img
 
 
+def coherenceFilter(img, sigma=11, str_sigma=11, blend=0.5, iter_n=4):
+        """
+        Applies a Coherence-enhancing filter onto an img
+
+        Params:
+        * img- image
+        * sigma - OPTIONAL - def: 11
+        * str_sigma - OPTIONAL - def: 11
+        * blend - OPTIONAL - def: 0.5
+        * iter_n - OPTIONAL - number of iterations; def: 4
+
+        Returns:
+        * Filtered Img
+        """
+        h, w = img.shape[:2]
+        tmp = img.copy()
+        for i in xrange(iter_n):
+                gray = cv2.cvtColor(tmp, cv2.COLOR_BGR2GRAY)
+                eigen = cv2.cornerEigenValsAndVecs(gray, str_sigma, 3)
+                eigen = eigen.reshape(h, w, 3, 2)  # [[e1, e2], v1, v2]
+                x, y = eigen[:,:,1,0], eigen[:,:,1,1]
+                gxx = cv2.Sobel(gray, cv2.CV_32F, 2, 0, ksize=sigma)
+                gxy = cv2.Sobel(gray, cv2.CV_32F, 1, 1, ksize=sigma)
+                gyy = cv2.Sobel(gray, cv2.CV_32F, 0, 2, ksize=sigma)
+                gvv = x*x*gxx + 2*x*y*gxy + y*y*gyy
+                m = gvv < 0
+                ero = cv2.erode(tmp, None)
+                dil = cv2.dilate(tmp, None)
+                img1 = ero
+                img1[m] = dil[m]
+                tmp = np.uint8(tmp*(1.0 - blend) + img1*blend)
+        return tmp
+
+
+def gaborFilter(img):
+        """
+        Gabor Filter
+        Uses the Gabor Filter Convolutions to get Fractalius-like image effect
+        
+        Params:
+        * img - image
+        
+        Returns:
+        * Gabor Filtered Image Effect
+        """
+        filters = []
+        ksize = 31
+        for theta in np.arange(0, np.pi, np.pi / 16):
+                kern = cv2.getGaborKernel((ksize, ksize), 4.0, theta, 10.0, 0.5, 0, ktype=cv2.CV_32F)
+                kern /= 1.5*kern.sum()
+                filters.append(kern)
+        accum = np.zeros_like(img)
+        for ker in filters:
+                fimg = cv2.filter2D(img, cv2.CV_8UC3, ker)
+                np.maximum(accum, fimg, accum)
+        return accum
+
+
 ################################################################################
 
 
