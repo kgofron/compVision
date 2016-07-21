@@ -246,19 +246,20 @@ def coherenceFilter(img, sigma=11, str_sigma=11, blend=0.5, iter_n=4):
         return tmp
 
 
-def gaborFilter(img):
+def gaborFilter(img, ksize=31):
         """
         Gabor Filter
         Uses the Gabor Filter Convolutions to get Fractalius-like image effect
         
         Params:
         * img - image
+        * ksize - OPTIONAL - size of the kernel; def: 31
         
         Returns:
         * Gabor Filtered Image Effect
         """
         filters = []
-        ksize = 31
+        #ksize = 31
         for theta in np.arange(0, np.pi, np.pi / 16):
                 kern = cv2.getGaborKernel((ksize, ksize), 4.0, theta, 10.0, 0.5, 0, ktype=cv2.CV_32F)
                 kern /= 1.5*kern.sum()
