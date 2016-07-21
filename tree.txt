@@ -100,6 +100,7 @@
  RawImages/pin.bmp                        |  Bin 0 -> 179958 bytes
  RawImages/pinFlood.py                    |  257 +++
  Showcase/BPM1Proc.py                     |   21 +
+ Showcase/BPM1ProcNoDis.py                |   21 +
  Showcase/BPM1photo.jpg                   |  Bin 0 -> 531496 bytes
  Showcase/BPMResult.jpg                   |  Bin 0 -> 541752 bytes
  Showcase/BPMjet.jpg                      |  Bin 0 -> 648244 bytes
@@ -108,7 +109,7 @@
  Showcase/I2.jpg                          |  Bin 0 -> 243547 bytes
  Showcase/I3.jpg                          |  Bin 0 -> 232552 bytes
  Showcase/I4.jpg                          |  Bin 0 -> 264119 bytes
- Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 1767567 bytes
+ Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 1723498 bytes
  Showcase/MerlinJet.jpg                   |  Bin 0 -> 7663 bytes
  Showcase/MerlinResult.jpg                |  Bin 0 -> 7983 bytes
  Showcase/README.md                       |    5 +
@@ -120,9 +121,12 @@
  Showcase/img3.jpg                        |  Bin 0 -> 212862 bytes
  Showcase/img4.jpg                        |  Bin 0 -> 241442 bytes
  Showcase/matchTest.py                    |   33 +
+ Showcase/matchTestNoDis.py               |   33 +
  Showcase/merlin.jpg                      |  Bin 0 -> 4543 bytes
  Showcase/merlin.py                       |   27 +
+ Showcase/merlinNoDis.py                  |   31 +
  Showcase/mountBeam.py                    |  258 +++
+ Showcase/mountBeamNoDis.py               |  258 +++
  Showcase/perfect.bmp                     |  Bin 0 -> 1921078 bytes
  Showcase/photo01.bmp                     |  Bin 0 -> 1921078 bytes
  Showcase/photo02.bmp                     |  Bin 0 -> 1921078 bytes
@@ -156,7 +160,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1022 +++++++++
+ gitlog.txt                               | 1034 ++++++++++
  img.py                                   |    9 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -174,4 +178,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   15 +
  wordcount.sh                             |    7 +
- 176 files changed, 37057 insertions(+)
+ 180 files changed, 37412 insertions(+)
