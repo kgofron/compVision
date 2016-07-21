@@ -1,3 +1,27 @@
+ AMX/findloop_0.jpg                       |  Bin 0 -> 9966 bytes
+ AMX/findloop_105.jpg                     |  Bin 0 -> 11182 bytes
+ AMX/findloop_120.jpg                     |  Bin 0 -> 10756 bytes
+ AMX/findloop_135.jpg                     |  Bin 0 -> 10492 bytes
+ AMX/findloop_15.jpg                      |  Bin 0 -> 9312 bytes
+ AMX/findloop_150.jpg                     |  Bin 0 -> 10202 bytes
+ AMX/findloop_165.jpg                     |  Bin 0 -> 9889 bytes
+ AMX/findloop_180.jpg                     |  Bin 0 -> 9384 bytes
+ AMX/findloop_195.jpg                     |  Bin 0 -> 8970 bytes
+ AMX/findloop_210.jpg                     |  Bin 0 -> 9632 bytes
+ AMX/findloop_225.jpg                     |  Bin 0 -> 10490 bytes
+ AMX/findloop_240.jpg                     |  Bin 0 -> 10880 bytes
+ AMX/findloop_255.jpg                     |  Bin 0 -> 10863 bytes
+ AMX/findloop_270.jpg                     |  Bin 0 -> 11147 bytes
+ AMX/findloop_285.jpg                     |  Bin 0 -> 11190 bytes
+ AMX/findloop_30.jpg                      |  Bin 0 -> 9320 bytes
+ AMX/findloop_300.jpg                     |  Bin 0 -> 11318 bytes
+ AMX/findloop_315.jpg                     |  Bin 0 -> 11318 bytes
+ AMX/findloop_330.jpg                     |  Bin 0 -> 11490 bytes
+ AMX/findloop_345.jpg                     |  Bin 0 -> 10827 bytes
+ AMX/findloop_45.jpg                      |  Bin 0 -> 9972 bytes
+ AMX/findloop_60.jpg                      |  Bin 0 -> 11174 bytes
+ AMX/findloop_75.jpg                      |  Bin 0 -> 10812 bytes
+ AMX/findloop_90.jpg                      |  Bin 0 -> 11043 bytes
  CVLibrary/cvlib.py                       | 3295 +++++++++++++++++++++++++++++
  Crystals/Crystals.py                     |   24 +
  Crystals/bulb.py                         |   22 +
@@ -140,6 +164,7 @@
  Showcase/BenchTest/photo8.bmp            |  Bin 0 -> 1921078 bytes
  Showcase/BenchTest/photo9.bmp            |  Bin 0 -> 1921078 bytes
  Showcase/BenchTest/pin.bmp               |  Bin 0 -> 179958 bytes
+ Showcase/BenchTest/time.xlsx             |  Bin 0 -> 9331 bytes
  Showcase/I1.jpg                          |  Bin 0 -> 155528 bytes
  Showcase/I2.jpg                          |  Bin 0 -> 243547 bytes
  Showcase/I3.jpg                          |  Bin 0 -> 232552 bytes
@@ -173,6 +198,14 @@
  Showcase/photo04.bmp                     |  Bin 0 -> 1921078 bytes
  Showcase/pin.bmp                         |  Bin 0 -> 179958 bytes
  Showcase/runShowcase.sh                  |   12 +
+ XPD/Au10_Test-00000.tif                  |  Bin 0 -> 16777436 bytes
+ XPD/Au10_Test-00001.tif                  |  Bin 0 -> 16777436 bytes
+ XPD/Au10_Test-00002.tif                  |  Bin 0 -> 16777436 bytes
+ XPD/Au10_Test-00003.tif                  |  Bin 0 -> 16777436 bytes
+ XPD/Au10_Test-00004.tif                  |  Bin 0 -> 16777436 bytes
+ XPD/Au10_Test-00005.tif                  |  Bin 0 -> 16777436 bytes
+ XPD/Au10_Test-00006.tif                  |  Bin 0 -> 16777436 bytes
+ XPD/Au10_Test-00007.tif                  |  Bin 0 -> 16777436 bytes
  XrayImg/Scintillator.py                  |   25 +
  XrayImg/T201606300.jpg                   |  Bin 0 -> 45963 bytes
  XrayImg/T201606301.jpg                   |  Bin 0 -> 47535 bytes
@@ -199,7 +232,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1178 +++++++++++
+ gitlog.txt                               | 1190 +++++++++++
  img.py                                   |    9 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -217,4 +250,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   16 +
  wordcount.sh                             |    7 +
- 219 files changed, 44872 insertions(+)
+ 252 files changed, 44884 insertions(+)
