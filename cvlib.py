@@ -1301,7 +1301,7 @@ def findContours(img, thresh=127, val=255):
         """
 	gray = grayscale(img)
 	ret, binary = cv2.threshold(gray, thresh, val, cv2.THRESH_BINARY_INV)
-	contours, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+	bina, contours, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 	errorCheckContour(contours)
 	return sort(contours) 		       
 

@@ -38,7 +38,7 @@
  IXS/VFM2.jpg                             |  Bin 0 -> 129402 bytes
  IXS/VFMProc.py                           |    8 +
  IXS/cvlib.py                             | 3299 ++++++++++++++++++++++++++++++
- IXS/cvlib.pyc                            |  Bin 0 -> 58780 bytes
+ IXS/cvlib.pyc                            |  Bin 0 -> 102997 bytes
  IXS/fetchImg.jpg                         |  Bin 0 -> 1729187 bytes
  IXS/slitHFM.jpg                          |  Bin 0 -> 17208 bytes
  IXS/slitVFM.jpg                          |  Bin 0 -> 5855 bytes
@@ -68,7 +68,7 @@
  OnAxisImg/sample_0009.tif                |  Bin 0 -> 8147860 bytes
  OnAxisImg/sample_0010.tif                |  Bin 0 -> 8147860 bytes
  OnAxisImg/update.sh                      |    6 +
- README.md                                |   42 +
+ README.md                                |   43 +
  RawImages/README.md                      |    9 +
  RawImages/Slide.pdf                      |  Bin 0 -> 117709 bytes
  RawImages/cvlib.py                       | 3299 ++++++++++++++++++++++++++++++
@@ -109,12 +109,12 @@
  Showcase/I2.jpg                          |  Bin 0 -> 243547 bytes
  Showcase/I3.jpg                          |  Bin 0 -> 232552 bytes
  Showcase/I4.jpg                          |  Bin 0 -> 264119 bytes
- Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 1723498 bytes
+ Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 1733962 bytes
  Showcase/MerlinJet.jpg                   |  Bin 0 -> 7663 bytes
  Showcase/MerlinResult.jpg                |  Bin 0 -> 7983 bytes
  Showcase/README.md                       |    5 +
  Showcase/cvlib.py                        | 3299 ++++++++++++++++++++++++++++++
- Showcase/cvlib.pyc                       |  Bin 0 -> 103890 bytes
+ Showcase/cvlib.pyc                       |  Bin 0 -> 103902 bytes
  Showcase/gripper.bmp                     |  Bin 0 -> 466578 bytes
  Showcase/img1.jpg                        |  Bin 0 -> 142249 bytes
  Showcase/img2.jpg                        |  Bin 0 -> 224807 bytes
@@ -162,7 +162,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1040 ++++++++++
+ gitlog.txt                               | 1058 ++++++++++
  img.py                                   |    9 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -170,14 +170,14 @@
  tests/coherence.jpg                      |  Bin 0 -> 170810 bytes
  tests/coin.jpg                           |  Bin 0 -> 118766 bytes
  tests/cvlib.py                           | 3299 ++++++++++++++++++++++++++++++
- tests/cvlib.pyc                          |  Bin 0 -> 103352 bytes
+ tests/cvlib.pyc                          |  Bin 0 -> 103359 bytes
  tests/enhance.py                         |    9 +
  tests/filters.py                         |   11 +
  tests/floodfill.py                       |    6 +
  tests/foreground.py                      |   26 +
- tests/gaborFilter.jpg                    |  Bin 0 -> 103672 bytes
+ tests/gaborFilter.jpg                    |  Bin 0 -> 103683 bytes
  tests/selfie.jpg                         |  Bin 0 -> 101522 bytes
  tree.txt                                 |    0
  updateLib.sh                             |   15 +
  wordcount.sh                             |    7 +
- 182 files changed, 37709 insertions(+)
+ 182 files changed, 37728 insertions(+)
