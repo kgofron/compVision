@@ -645,15 +645,8 @@ def sumPixel(img):
         Returns:
 	* sum of pixel values
         """
-	if img is None:
-		print "ERROR: SumPixel: None-Type Object sent in"
-		return -1
-	sh = img.shape
-	su = 0
-	for i in range(0, sh[0]):
-		for j in range(0, sh[1]):
-			su = su + img[i][j]
-	return su
+        ret = cv2.sumElems(img)
+        return ret
 
 
 def poi(img, cnt):
