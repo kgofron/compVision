@@ -253,7 +253,6 @@ def gaborFilter(img, ksize=31):
         
         Params:
         * img - image
-        * ksize - OPTIONAL - size of the kernel; def: 31
         
         Returns:
         * Gabor Filtered Image Effect
