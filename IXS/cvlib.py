@@ -646,7 +646,10 @@ def sumPixel(img):
 	* sum of pixel values
         """
         ret = cv2.sumElems(img)
-        return ret
+        if len(img.shape) == 2:
+                return ret[0]
+        else:
+                return (ret[0], ret[1], ret[2])
 
 
 def poi(img, cnt):

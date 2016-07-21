@@ -1,4 +1,4 @@
- CVLibrary/cvlib.py                       | 3292 ++++++++++++++++++++++++++++++
+ CVLibrary/cvlib.py                       | 3295 ++++++++++++++++++++++++++++++
  Crystals/Crystals.py                     |   24 +
  Crystals/bulb.py                         |   22 +
  Crystals/bulb/T201607061.jpg             |  Bin 0 -> 483283 bytes
@@ -9,7 +9,7 @@
  Crystals/bulb/bulbPic.jpg                |  Bin 0 -> 26353 bytes
  Crystals/crystalProc.py                  |   20 +
  Crystals/crystals.png                    |  Bin 0 -> 14358985 bytes
- Crystals/cvlib.py                        | 3292 ++++++++++++++++++++++++++++++
+ Crystals/cvlib.py                        | 3295 ++++++++++++++++++++++++++++++
  Crystals/line.py                         |   20 +
  Crystals/line/T2016070610.jpg            |  Bin 0 -> 500024 bytes
  Crystals/line/T201607068.jpg             |  Bin 0 -> 499584 bytes
@@ -37,7 +37,7 @@
  IXS/VFM1.jpg                             |  Bin 0 -> 129402 bytes
  IXS/VFM2.jpg                             |  Bin 0 -> 129402 bytes
  IXS/VFMProc.py                           |    8 +
- IXS/cvlib.py                             | 3292 ++++++++++++++++++++++++++++++
+ IXS/cvlib.py                             | 3295 ++++++++++++++++++++++++++++++
  IXS/cvlib.pyc                            |  Bin 0 -> 102997 bytes
  IXS/fetchImg.jpg                         |  Bin 0 -> 1729187 bytes
  IXS/slitHFM.jpg                          |  Bin 0 -> 17208 bytes
@@ -45,13 +45,13 @@
  IXS/test.py                              |   70 +
  LICENSE                                  |   21 +
  Merlin/README.md                         |    9 +
- Merlin/cvlib.py                          | 3292 ++++++++++++++++++++++++++++++
+ Merlin/cvlib.py                          | 3295 ++++++++++++++++++++++++++++++
  Merlin/cvlib.pyc                         |  Bin 0 -> 54813 bytes
  Merlin/merlin.py                         |   25 +
  Merlin/photo1.jpg                        |  Bin 0 -> 4543 bytes
  Merlin/photo2.jpg                        |  Bin 0 -> 4283 bytes
  Merlin/photo3.jpg                        |  Bin 0 -> 3861 bytes
- OnAxisImg/cvlib.py                       | 3292 ++++++++++++++++++++++++++++++
+ OnAxisImg/cvlib.py                       | 3295 ++++++++++++++++++++++++++++++
  OnAxisImg/cvlib.pyc                      |  Bin 0 -> 61470 bytes
  OnAxisImg/floodfill.py                   |   80 +
  OnAxisImg/img.jpg                        |  Bin 0 -> 2031427 bytes
@@ -71,7 +71,7 @@
  README.md                                |   43 +
  RawImages/README.md                      |    9 +
  RawImages/Slide.pdf                      |  Bin 0 -> 117709 bytes
- RawImages/cvlib.py                       | 3292 ++++++++++++++++++++++++++++++
+ RawImages/cvlib.py                       | 3295 ++++++++++++++++++++++++++++++
  RawImages/cvlib.pyc                      |  Bin 0 -> 60796 bytes
  RawImages/flood.py                       |   12 +
  RawImages/gripper.bmp                    |  Bin 0 -> 466578 bytes
@@ -113,8 +113,8 @@
  Showcase/MerlinJet.jpg                   |  Bin 0 -> 7663 bytes
  Showcase/MerlinResult.jpg                |  Bin 0 -> 7983 bytes
  Showcase/README.md                       |    5 +
- Showcase/cvlib.py                        | 3292 ++++++++++++++++++++++++++++++
- Showcase/cvlib.pyc                       |  Bin 0 -> 103713 bytes
+ Showcase/cvlib.py                        | 3295 ++++++++++++++++++++++++++++++
+ Showcase/cvlib.pyc                       |  Bin 0 -> 103797 bytes
  Showcase/gripper.bmp                     |  Bin 0 -> 466578 bytes
  Showcase/img1.jpg                        |  Bin 0 -> 142249 bytes
  Showcase/img2.jpg                        |  Bin 0 -> 224807 bytes
@@ -150,11 +150,11 @@
  XrayImg/T201606308.jpg                   |  Bin 0 -> 46757 bytes
  XrayImg/T201606309.jpg                   |  Bin 0 -> 51600 bytes
  XrayImg/beam.png                         |  Bin 0 -> 829223 bytes
- XrayImg/cvlib.py                         | 3292 ++++++++++++++++++++++++++++++
+ XrayImg/cvlib.py                         | 3295 ++++++++++++++++++++++++++++++
  XrayImg/cvlib.pyc                        |  Bin 0 -> 54970 bytes
  XrayImg/xray.py                          |   32 +
- cvlib.html                               | 1476 ++++++++++++++
- cvlib.py                                 | 3292 ++++++++++++++++++++++++++++++
+ cvlib.html                               | 1476 +++++++++++++
+ cvlib.py                                 | 3295 ++++++++++++++++++++++++++++++
  cvlib.pyc                                |  Bin 0 -> 96111 bytes
  fetchImg.jpg                             |  Bin 0 -> 632889 bytes
  fetchImg.png                             |  Bin 0 -> 1777615 bytes
@@ -162,14 +162,14 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1106 ++++++++++
+ gitlog.txt                               | 1112 ++++++++++
  img.py                                   |    9 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
  tests/coherence.jpg                      |  Bin 0 -> 170810 bytes
  tests/coin.jpg                           |  Bin 0 -> 118766 bytes
- tests/cvlib.py                           | 3292 ++++++++++++++++++++++++++++++
+ tests/cvlib.py                           | 3295 ++++++++++++++++++++++++++++++
  tests/cvlib.pyc                          |  Bin 0 -> 103359 bytes
  tests/enhance.py                         |    9 +
  tests/filters.py                         |   11 +
@@ -180,4 +180,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   15 +
  wordcount.sh                             |    7 +
- 182 files changed, 37708 insertions(+)
+ 182 files changed, 37744 insertions(+)
