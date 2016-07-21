@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 BNL NSLS-2 Computer Vision Program for Gripper Mount
 Author: William Watson

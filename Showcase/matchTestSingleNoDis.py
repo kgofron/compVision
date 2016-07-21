@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Author: William Watson
 This program finds the pin and gripper through all 19

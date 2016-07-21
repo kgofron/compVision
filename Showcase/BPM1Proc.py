@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import cvlib
 
 img = cvlib.load("BPM1photo.jpg") # change to fetch

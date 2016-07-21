@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 BNL NSLS-2 Computer Vision Module
 Author: William Watson

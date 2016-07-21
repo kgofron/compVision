@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Author: William Watson
 Program processes Merlin Streaks
