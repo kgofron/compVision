@@ -81,6 +81,8 @@
  RawImages/cvlib.pyc                      |  Bin 0 -> 60796 bytes
  RawImages/flood.py                       |   12 +
  RawImages/gripper.bmp                    |  Bin 0 -> 466578 bytes
+ RawImages/match19.py                     |   36 +
+ RawImages/match7.py                      |   36 +
  RawImages/matchTest.py                   |   34 +
  RawImages/matchTestFd.py                 |   36 +
  RawImages/mountBeam.py                   |  255 +++
@@ -120,12 +122,14 @@
  Showcase/MerlinResult.jpg                |  Bin 0 -> 7983 bytes
  Showcase/README.md                       |    5 +
  Showcase/cvlib.py                        | 3296 ++++++++++++++++++++++++++++++
- Showcase/cvlib.pyc                       |  Bin 0 -> 95833 bytes
+ Showcase/cvlib.pyc                       |  Bin 0 -> 104340 bytes
  Showcase/gripper.bmp                     |  Bin 0 -> 466578 bytes
  Showcase/img1.jpg                        |  Bin 0 -> 142249 bytes
  Showcase/img2.jpg                        |  Bin 0 -> 224807 bytes
  Showcase/img3.jpg                        |  Bin 0 -> 212862 bytes
  Showcase/img4.jpg                        |  Bin 0 -> 241442 bytes
+ Showcase/match2.py                       |   36 +
+ Showcase/match3.py                       |   36 +
  Showcase/matchTest.py                    |   34 +
  Showcase/matchTestNoDis.py               |   36 +
  Showcase/matchTestSingleNoDis.py         |   34 +
@@ -168,7 +172,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1130 ++++++++++
+ gitlog.txt                               | 1160 +++++++++++
  img.py                                   |    9 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -186,4 +190,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   16 +
  wordcount.sh                             |    7 +
- 188 files changed, 41069 insertions(+)
+ 192 files changed, 41243 insertions(+)
