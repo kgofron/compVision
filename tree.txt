@@ -122,11 +122,13 @@
  Showcase/img4.jpg                        |  Bin 0 -> 241442 bytes
  Showcase/matchTest.py                    |   33 +
  Showcase/matchTestNoDis.py               |   33 +
+ Showcase/matchTestSingleNoDis.py         |   33 +
  Showcase/merlin.jpg                      |  Bin 0 -> 4543 bytes
  Showcase/merlin.py                       |   27 +
  Showcase/merlinNoDis.py                  |   31 +
  Showcase/mountBeam.py                    |  258 +++
  Showcase/mountBeamNoDis.py               |  258 +++
+ Showcase/mountBeamSingleNoDis.py         |  258 +++
  Showcase/perfect.bmp                     |  Bin 0 -> 1921078 bytes
  Showcase/photo01.bmp                     |  Bin 0 -> 1921078 bytes
  Showcase/photo02.bmp                     |  Bin 0 -> 1921078 bytes
@@ -160,7 +162,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1034 ++++++++++
+ gitlog.txt                               | 1040 ++++++++++
  img.py                                   |    9 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -178,4 +180,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   15 +
  wordcount.sh                             |    7 +
- 180 files changed, 37412 insertions(+)
+ 182 files changed, 37709 insertions(+)
