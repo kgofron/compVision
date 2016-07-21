@@ -216,9 +216,9 @@ def matchGame(img):
 
 ##################################################################################
 imgLst = []
-for i in range(1,5):
+for i in range(1,20):
         # Load Image
-        image = cvlib.load("photo0%d.bmp" % i)
+        image = cvlib.load("photo%d.bmp" % i)
         img = image.copy()
         
         #Find Contours, Check Position, Separate Contours

@@ -116,6 +116,7 @@
  Showcase/BenchTest/cvlib.py              | 3295 +++++++++++++++++++++++++++++
  Showcase/BenchTest/gripper.bmp           |  Bin 0 -> 466578 bytes
  Showcase/BenchTest/mountBeamNoDis.py     |  259 +++
+ Showcase/BenchTest/perfect.bmp           |  Bin 0 -> 1921078 bytes
  Showcase/BenchTest/photo1.bmp            |  Bin 0 -> 1921078 bytes
  Showcase/BenchTest/photo10.bmp           |  Bin 0 -> 1921078 bytes
  Showcase/BenchTest/photo11.bmp           |  Bin 0 -> 1921078 bytes
@@ -195,7 +196,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1166 +++++++++++
+ gitlog.txt                               | 1172 +++++++++++
  img.py                                   |    9 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -213,4 +214,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   16 +
  wordcount.sh                             |    7 +
- 215 files changed, 44803 insertions(+)
+ 216 files changed, 44809 insertions(+)
