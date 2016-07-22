@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """
 BNL NSLS-2 Computer Vision Module
 Author: William Watson
@@ -692,11 +691,15 @@ def printCntInfo(img, cnt):
         Params:
         * image - image
         * cnt - contour
+        
+        Returns:
+        * dicitonary of Contour Info
         """ 
         m = cntInfo(img, cnt)
         lst = dictToLst(m)
         for i in range(len(lst[0])):
                 print str(lst[0][i]) + ": " + str(lst[1][i])
+        return m
                 
 
 def printDic(m):

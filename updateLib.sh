@@ -15,7 +15,7 @@ cp cvlib.py IXS/VFM/cvlib.py
 cp cvlib.py Poster/Crystals/cvlib.py
 cp cvlib.py Poster/XrayImg/cvlib.py
 cp cvlib.py Showcase/cvlib.py
-cp cvlib.py Showcase/BenchMark/cvlib.py
+cp cvlib.py Showcase/BenchTest/cvlib.py
 cp cvlib.py tests/cvlib.py
 cp cvlib.py XPD/cvlib.py
 printf "\n"

@@ -1,4 +1,4 @@
- AMX/Crystal/cvlib.py                     | 3295 +++++++++++++++++++++++++++++
+ AMX/Crystal/cvlib.py                     | 3299 ++++++++++++++++++++++++++++++
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
  AMX/Crystal/findloop_105.jpg             |  Bin 0 -> 11182 bytes
  AMX/Crystal/findloop_120.jpg             |  Bin 0 -> 10756 bytes
@@ -25,7 +25,7 @@
  AMX/Crystal/findloop_90.jpg              |  Bin 0 -> 11043 bytes
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
- AMX/RawImages/cvlib.py                   | 3295 +++++++++++++++++++++++++++++
+ AMX/RawImages/cvlib.py                   | 3299 ++++++++++++++++++++++++++++++
  AMX/RawImages/cvlib.pyc                  |  Bin 0 -> 60796 bytes
  AMX/RawImages/flood.py                   |   12 +
  AMX/RawImages/gripper.bmp                |  Bin 0 -> 466578 bytes
@@ -55,8 +55,8 @@
  AMX/RawImages/photo9.bmp                 |  Bin 0 -> 1921078 bytes
  AMX/RawImages/pin.bmp                    |  Bin 0 -> 179958 bytes
  AMX/RawImages/pinFlood.py                |  257 +++
- CVLibrary/cvlib.py                       | 3295 +++++++++++++++++++++++++++++
- EPICS/cvlib.py                           | 3295 +++++++++++++++++++++++++++++
+ CVLibrary/cvlib.py                       | 3299 ++++++++++++++++++++++++++++++
+ EPICS/cvlib.py                           | 3299 ++++++++++++++++++++++++++++++
  EPICS/fetchImg.jpg                       |  Bin 0 -> 632889 bytes
  EPICS/fetchImg.png                       |  Bin 0 -> 1777615 bytes
  EPICS/fetchImg.tiff                      |  Bin 0 -> 1914844 bytes
@@ -69,28 +69,28 @@
  IXS/BPM/BPM2-1.jpg                       |  Bin 0 -> 1747961 bytes
  IXS/BPM/BPM2-2.jpg                       |  Bin 0 -> 1747961 bytes
  IXS/BPM/BPM2Proc.py                      |   20 +
- IXS/BPM/cvlib.py                         | 3295 +++++++++++++++++++++++++++++
+ IXS/BPM/cvlib.py                         | 3299 ++++++++++++++++++++++++++++++
  IXS/BPM/fetchImg.jpg                     |  Bin 0 -> 1729187 bytes
  IXS/HFM/HFM0.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFM1.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFM2.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFMProc.py                       |    7 +
- IXS/HFM/cvlib.py                         | 3295 +++++++++++++++++++++++++++++
+ IXS/HFM/cvlib.py                         | 3299 ++++++++++++++++++++++++++++++
  IXS/HFM/slitHFM.jpg                      |  Bin 0 -> 17208 bytes
  IXS/Merlin/README.md                     |    9 +
- IXS/Merlin/cvlib.py                      | 3295 +++++++++++++++++++++++++++++
+ IXS/Merlin/cvlib.py                      | 3299 ++++++++++++++++++++++++++++++
  IXS/Merlin/cvlib.pyc                     |  Bin 0 -> 54813 bytes
  IXS/Merlin/merlin.py                     |   25 +
  IXS/Merlin/photo1.jpg                    |  Bin 0 -> 4543 bytes
  IXS/Merlin/photo2.jpg                    |  Bin 0 -> 4283 bytes
  IXS/Merlin/photo3.jpg                    |  Bin 0 -> 3861 bytes
- IXS/OnAxis2/cvlib.py                     | 3295 +++++++++++++++++++++++++++++
+ IXS/OnAxis2/cvlib.py                     | 3299 ++++++++++++++++++++++++++++++
  IXS/OnAxis2/sample_0048.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/sample_0049.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/sample_0050.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/sample_0051.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/sample_0052.tiff             |  Bin 0 -> 16295630 bytes
- IXS/OnAxisImg/cvlib.py                   | 3295 +++++++++++++++++++++++++++++
+ IXS/OnAxisImg/cvlib.py                   | 3299 ++++++++++++++++++++++++++++++
  IXS/OnAxisImg/cvlib.pyc                  |  Bin 0 -> 61470 bytes
  IXS/OnAxisImg/floodfill.py               |   80 +
  IXS/OnAxisImg/img.jpg                    |  Bin 0 -> 2031427 bytes
@@ -112,9 +112,9 @@
  IXS/VFM/VFM1.jpg                         |  Bin 0 -> 129402 bytes
  IXS/VFM/VFM2.jpg                         |  Bin 0 -> 129402 bytes
  IXS/VFM/VFMProc.py                       |    8 +
- IXS/VFM/cvlib.py                         | 3295 +++++++++++++++++++++++++++++
+ IXS/VFM/cvlib.py                         | 3299 ++++++++++++++++++++++++++++++
  IXS/VFM/slitVFM.jpg                      |  Bin 0 -> 5855 bytes
- IXS/cvlib.py                             | 3295 +++++++++++++++++++++++++++++
+ IXS/cvlib.py                             | 3299 ++++++++++++++++++++++++++++++
  IXS/cvlib.pyc                            |  Bin 0 -> 102997 bytes
  IXS/test.py                              |   70 +
  LICENSE                                  |   21 +
@@ -128,7 +128,7 @@
  Poster/Crystals/bulb/bulbPic.jpg         |  Bin 0 -> 26353 bytes
  Poster/Crystals/crystalProc.py           |   20 +
  Poster/Crystals/crystals.png             |  Bin 0 -> 14358985 bytes
- Poster/Crystals/cvlib.py                 | 3295 +++++++++++++++++++++++++++++
+ Poster/Crystals/cvlib.py                 | 3299 ++++++++++++++++++++++++++++++
  Poster/Crystals/line.py                  |   20 +
  Poster/Crystals/line/T2016070610.jpg     |  Bin 0 -> 500024 bytes
  Poster/Crystals/line/T201607068.jpg      |  Bin 0 -> 499584 bytes
@@ -153,7 +153,7 @@
  Poster/XrayImg/T201606308.jpg            |  Bin 0 -> 46757 bytes
  Poster/XrayImg/T201606309.jpg            |  Bin 0 -> 51600 bytes
  Poster/XrayImg/beam.png                  |  Bin 0 -> 829223 bytes
- Poster/XrayImg/cvlib.py                  | 3295 +++++++++++++++++++++++++++++
+ Poster/XrayImg/cvlib.py                  | 3299 ++++++++++++++++++++++++++++++
  Poster/XrayImg/cvlib.pyc                 |  Bin 0 -> 54970 bytes
  Poster/XrayImg/xray.py                   |   32 +
  README.md                                |   45 +
@@ -164,7 +164,7 @@
  Showcase/BPMjet.jpg                      |  Bin 0 -> 648244 bytes
  Showcase/BPMthresh.jpg                   |  Bin 0 -> 39337 bytes
  Showcase/BenchTest/BenchTests.txt        |   21 +
- Showcase/BenchTest/cvlib.py              | 3295 +++++++++++++++++++++++++++++
+ Showcase/BenchTest/cvlib.py              | 3299 ++++++++++++++++++++++++++++++
  Showcase/BenchTest/cvlib.pyc             |  Bin 0 -> 105607 bytes
  Showcase/BenchTest/gripper.bmp           |  Bin 0 -> 466578 bytes
  Showcase/BenchTest/matchTestNoDis.py     |   36 +
@@ -195,12 +195,12 @@
  Showcase/I2.jpg                          |  Bin 0 -> 243547 bytes
  Showcase/I3.jpg                          |  Bin 0 -> 232552 bytes
  Showcase/I4.jpg                          |  Bin 0 -> 264119 bytes
- Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 2085496 bytes
+ Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 2375929 bytes
  Showcase/MerlinJet.jpg                   |  Bin 0 -> 7663 bytes
  Showcase/MerlinResult.jpg                |  Bin 0 -> 7983 bytes
  Showcase/README.md                       |    5 +
- Showcase/cvlib.py                        | 3296 ++++++++++++++++++++++++++++++
- Showcase/cvlib.pyc                       |  Bin 0 -> 104340 bytes
+ Showcase/cvlib.py                        | 3299 ++++++++++++++++++++++++++++++
+ Showcase/cvlib.pyc                       |  Bin 0 -> 103861 bytes
  Showcase/gripper.bmp                     |  Bin 0 -> 466578 bytes
  Showcase/img1.jpg                        |  Bin 0 -> 142249 bytes
  Showcase/img2.jpg                        |  Bin 0 -> 224807 bytes
@@ -232,20 +232,20 @@
  XPD/Au10_Test-00005.tif                  |  Bin 0 -> 16777436 bytes
  XPD/Au10_Test-00006.tif                  |  Bin 0 -> 16777436 bytes
  XPD/Au10_Test-00007.tif                  |  Bin 0 -> 16777436 bytes
- XPD/cvlib.py                             | 3295 +++++++++++++++++++++++++++++
+ XPD/cvlib.py                             | 3299 ++++++++++++++++++++++++++++++
  cvlib.html                               | 1476 +++++++++++++
- cvlib.py                                 | 3295 +++++++++++++++++++++++++++++
+ cvlib.py                                 | 3299 ++++++++++++++++++++++++++++++
  cvlib.pyc                                |  Bin 0 -> 96195 bytes
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1214 +++++++++++
+ gitlog.txt                               | 1226 +++++++++++
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
  tests/coherence.jpg                      |  Bin 0 -> 170810 bytes
  tests/coin.jpg                           |  Bin 0 -> 118766 bytes
- tests/cvlib.py                           | 3295 +++++++++++++++++++++++++++++
+ tests/cvlib.py                           | 3299 ++++++++++++++++++++++++++++++
  tests/cvlib.pyc                          |  Bin 0 -> 103359 bytes
  tests/enhance.py                         |    9 +
  tests/filters.py                         |   11 +
@@ -256,4 +256,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 258 files changed, 64687 insertions(+)
+ 258 files changed, 64770 insertions(+)
