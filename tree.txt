@@ -156,7 +156,7 @@
  Poster/XrayImg/cvlib.py                  | 3295 +++++++++++++++++++++++++++++
  Poster/XrayImg/cvlib.pyc                 |  Bin 0 -> 54970 bytes
  Poster/XrayImg/xray.py                   |   32 +
- README.md                                |   43 +
+ README.md                                |   45 +
  Showcase/BPM1Proc.py                     |   22 +
  Showcase/BPM1ProcNoDis.py                |   22 +
  Showcase/BPM1photo.jpg                   |  Bin 0 -> 531496 bytes
@@ -239,7 +239,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1208 +++++++++++
+ gitlog.txt                               | 1214 +++++++++++
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
@@ -256,4 +256,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 258 files changed, 64679 insertions(+)
+ 258 files changed, 64687 insertions(+)

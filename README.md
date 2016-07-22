@@ -9,7 +9,9 @@ Summer 2016
 
 ### Acknowledgments ###
 * Kaz Gofron - My Mentor at BNL. 
-* NSLS-2 IXS (10-ID) Beamline Staff
+* NSLS-2 IXS Beamline - Yong Cai, Alessandro Cunsolo, Alexey Suvorov
+* NSLS-2 AMX Beamline - Jean Jakoncic
+* NSLS-2 XPD Beamline - Sanjit Ghose
 
 ### Dependencies ###
 * `OpenCV` - for Computer Vision
@@ -34,10 +36,10 @@ Summer 2016
 
 ### Folders ###
 * `CVLibrary` - Contains a copy of cvlib.py as a standalone
-* `Crystals` - Sub application used for crystal detection and X-Ray streak analysis
-* `IXS` - Sub programs for cv related applications to IXS Cameras
-* `Merlin` - Programs written for Merlin Detector Image Analysis
-* `OnAxisImg` - Image Analysis for On Axis Camera at IXS
-* `RawImages` - Programs Designed to pass jusdgement on Pin and Gripper Placement
-* `Showcase` - Programs designed to show to other scientists the value of integrating cv to their beamlines
-* `tests` - Testing Files and Programs written just for fun, with wacky images
+* `AMX' - Contains Sub Folders for Pin/Gripper and Loop Programs
+* `EPICS` - Contains Files Associated to EPICS Server
+* `IXS` - Subprograms for Merlin, BPM, Camera Analysis for IXS
+* `Poster` - Subprograms made for posters by Kaz Gofron
+* `Showcase` - Testing Programs for Demos
+* `XPD` - Programs and Images related to X-Ray Diffractions for XPD
+* `tests` - Testing files and concepts
