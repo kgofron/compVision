@@ -50,6 +50,7 @@
  AMX/Crystal/found75.jpg                  |  Bin 0 -> 25417 bytes
  AMX/Crystal/found90.jpg                  |  Bin 0 -> 26261 bytes
  AMX/Crystal/graph.png                    |  Bin 0 -> 32855 bytes
+ AMX/Crystal/loop.gif                     |  Bin 0 -> 4229224 bytes
  AMX/Crystal/loop.py                      |   31 +
  AMX/Crystal/position.txt                 |    3 +
  AMX/Crystal/position.txt~                |    0
@@ -271,7 +272,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1256 ++++++++++++
+ gitlog.txt                               | 1262 ++++++++++++
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
@@ -289,4 +290,4 @@
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 291 files changed, 64883 insertions(+)
+ 292 files changed, 64889 insertions(+)
