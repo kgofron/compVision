@@ -1,4 +1,5 @@
  AMX/Crystal/cvlib.py                     | 3299 ++++++++++++++++++++++++++++++
+ AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 104404 bytes
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
  AMX/Crystal/findloop_105.jpg             |  Bin 0 -> 11182 bytes
  AMX/Crystal/findloop_120.jpg             |  Bin 0 -> 10756 bytes
@@ -23,6 +24,34 @@
  AMX/Crystal/findloop_60.jpg              |  Bin 0 -> 11174 bytes
  AMX/Crystal/findloop_75.jpg              |  Bin 0 -> 10812 bytes
  AMX/Crystal/findloop_90.jpg              |  Bin 0 -> 11043 bytes
+ AMX/Crystal/found0.jpg                   |  Bin 0 -> 22573 bytes
+ AMX/Crystal/found105.jpg                 |  Bin 0 -> 26832 bytes
+ AMX/Crystal/found120.jpg                 |  Bin 0 -> 24596 bytes
+ AMX/Crystal/found135.jpg                 |  Bin 0 -> 23243 bytes
+ AMX/Crystal/found15.jpg                  |  Bin 0 -> 21046 bytes
+ AMX/Crystal/found150.jpg                 |  Bin 0 -> 22295 bytes
+ AMX/Crystal/found165.jpg                 |  Bin 0 -> 21267 bytes
+ AMX/Crystal/found180.jpg                 |  Bin 0 -> 20888 bytes
+ AMX/Crystal/found195.jpg                 |  Bin 0 -> 21342 bytes
+ AMX/Crystal/found210.jpg                 |  Bin 0 -> 22971 bytes
+ AMX/Crystal/found225.jpg                 |  Bin 0 -> 28554 bytes
+ AMX/Crystal/found240.jpg                 |  Bin 0 -> 26327 bytes
+ AMX/Crystal/found255.jpg                 |  Bin 0 -> 26465 bytes
+ AMX/Crystal/found270.jpg                 |  Bin 0 -> 27498 bytes
+ AMX/Crystal/found285.jpg                 |  Bin 0 -> 27420 bytes
+ AMX/Crystal/found30.jpg                  |  Bin 0 -> 21340 bytes
+ AMX/Crystal/found300.jpg                 |  Bin 0 -> 27824 bytes
+ AMX/Crystal/found315.jpg                 |  Bin 0 -> 27200 bytes
+ AMX/Crystal/found330.jpg                 |  Bin 0 -> 27618 bytes
+ AMX/Crystal/found345.jpg                 |  Bin 0 -> 28548 bytes
+ AMX/Crystal/found45.jpg                  |  Bin 0 -> 23679 bytes
+ AMX/Crystal/found60.jpg                  |  Bin 0 -> 26378 bytes
+ AMX/Crystal/found75.jpg                  |  Bin 0 -> 25417 bytes
+ AMX/Crystal/found90.jpg                  |  Bin 0 -> 26261 bytes
+ AMX/Crystal/graph.png                    |  Bin 0 -> 32855 bytes
+ AMX/Crystal/loop.py                      |   31 +
+ AMX/Crystal/position.txt                 |    3 +
+ AMX/Crystal/position.txt~                |    0
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
  AMX/RawImages/cvlib.py                   | 3299 ++++++++++++++++++++++++++++++
@@ -160,6 +189,7 @@
  Showcase/BPM1Proc.py                     |   22 +
  Showcase/BPM1ProcNoDis.py                |   22 +
  Showcase/BPM1photo.jpg                   |  Bin 0 -> 531496 bytes
+ Showcase/BPMOPT.py                       |   14 +
  Showcase/BPMResult.jpg                   |  Bin 0 -> 541752 bytes
  Showcase/BPMjet.jpg                      |  Bin 0 -> 648244 bytes
  Showcase/BPMthresh.jpg                   |  Bin 0 -> 39337 bytes
@@ -214,6 +244,7 @@
  Showcase/merlin.jpg                      |  Bin 0 -> 4543 bytes
  Showcase/merlin.py                       |   28 +
  Showcase/merlinNoDis.py                  |   32 +
+ Showcase/merlinOPT.py                    |   32 +
  Showcase/mountBeam.py                    |  259 +++
  Showcase/mountBeamNoDis.py               |  259 +++
  Showcase/mountBeamSingleNoDis.py         |  259 +++
@@ -233,13 +264,13 @@
  XPD/Au10_Test-00006.tif                  |  Bin 0 -> 16777436 bytes
  XPD/Au10_Test-00007.tif                  |  Bin 0 -> 16777436 bytes
  XPD/cvlib.py                             | 3299 ++++++++++++++++++++++++++++++
- cvlib.html                               | 1476 +++++++++++++
+ cvlib.html                               | 1479 ++++++++++++++
  cvlib.py                                 | 3299 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 96195 bytes
+ cvlib.pyc                                |  Bin 0 -> 96259 bytes
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1226 +++++++++++
+ gitlog.txt                               | 1232 +++++++++++
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
@@ -256,4 +287,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 258 files changed, 64770 insertions(+)
+ 289 files changed, 64859 insertions(+)
