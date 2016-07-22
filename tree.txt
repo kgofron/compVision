@@ -1,3 +1,4 @@
+ AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
  AMX/Crystal/cvlib.py                     | 3299 ++++++++++++++++++++++++++++++
  AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 104404 bytes
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
@@ -270,7 +271,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1238 +++++++++++
+ gitlog.txt                               | 1244 +++++++++++
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
@@ -287,4 +288,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 289 files changed, 64865 insertions(+)
+ 290 files changed, 64871 insertions(+)
