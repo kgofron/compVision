@@ -270,7 +270,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1232 +++++++++++
+ gitlog.txt                               | 1238 +++++++++++
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
@@ -287,4 +287,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 289 files changed, 64859 insertions(+)
+ 289 files changed, 64865 insertions(+)
