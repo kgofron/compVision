@@ -227,7 +227,7 @@
  Showcase/I2.jpg                          |  Bin 0 -> 243547 bytes
  Showcase/I3.jpg                          |  Bin 0 -> 232552 bytes
  Showcase/I4.jpg                          |  Bin 0 -> 264119 bytes
- Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 2375929 bytes
+ Showcase/Integrating Computer Vision.pdf |  Bin 0 -> 2498793 bytes
  Showcase/MerlinJet.jpg                   |  Bin 0 -> 7663 bytes
  Showcase/MerlinResult.jpg                |  Bin 0 -> 7983 bytes
  Showcase/README.md                       |    5 +
@@ -266,13 +266,14 @@
  XPD/Au10_Test-00006.tif                  |  Bin 0 -> 16777436 bytes
  XPD/Au10_Test-00007.tif                  |  Bin 0 -> 16777436 bytes
  XPD/cvlib.py                             | 3299 ++++++++++++++++++++++++++++++
+ XPD/cvlib.pyc                            |  Bin 0 -> 102956 bytes
  cvlib.html                               | 1479 ++++++++++++++
  cvlib.py                                 | 3299 ++++++++++++++++++++++++++++++
  cvlib.pyc                                |  Bin 0 -> 96259 bytes
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1262 ++++++++++++
+ gitlog.txt                               | 1280 ++++++++++++
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
@@ -290,4 +291,4 @@
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 292 files changed, 64889 insertions(+)
+ 293 files changed, 64907 insertions(+)

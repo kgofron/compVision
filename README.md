@@ -1,5 +1,4 @@
 # compVision #
-# WARNING: TRANSITION TO OPENCV 3.1 #
 This is a computer vision wrapper module along with pratical applications at the NSLS-2 facility at Brookhaven National Lab.
 This work was done at the Inelastic X-ray Scattering (IXS) 10-ID Beamline At the National Synchrotron Light Source - 2 at BNL. Upon Integration with EPICS, these programs will be more useful.
 Summer 2016
@@ -21,6 +20,7 @@ Summer 2016
 
 ### Files ###
 * `cvlib.py` - Wrapper CV Module
+* `cvlibNoEpics.py` - CV Module Without EPICS, useful for just cv without Beamline integration
 * `LICENSE` - MIT License for this Project
 * `README.md` - Markdown Readme File
 * `fire.sh` - Git Shell Script
