@@ -12,6 +12,10 @@ Summer 2016
 * NSLS-2 AMX Beamline - Jean Jakoncic
 * NSLS-2 XPD Beamline - Sanjit Ghose
 
+### Install ###
+* Take `install.sh` and run it in an empty directory, it will download all libs, clone this repo, and install opencv 3.1.0
+* NOTE: Still trying to make sure it works so no gaurtenttes it will be perfect right now...
+
 ### Dependencies ###
 * `OpenCV` - for Computer Vision
 * `EPICS` - for Server and Database Integration
