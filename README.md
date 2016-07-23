@@ -36,7 +36,7 @@ Summer 2016
 
 ### Folders ###
 * `CVLibrary` - Contains a copy of cvlib.py as a standalone
-* `AMX' - Contains Sub Folders for Pin/Gripper and Loop Programs
+* `AMX` - Contains Sub Folders for Pin/Gripper and Loop Programs
 * `EPICS` - Contains Files Associated to EPICS Server
 * `IXS` - Subprograms for Merlin, BPM, Camera Analysis for IXS
 * `Poster` - Subprograms made for posters by Kaz Gofron
