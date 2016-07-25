@@ -187,7 +187,7 @@
  Poster/XrayImg/cvlib.py                  | 3299 ++++++++++++++++++++++++++++++
  Poster/XrayImg/cvlib.pyc                 |  Bin 0 -> 54970 bytes
  Poster/XrayImg/xray.py                   |   32 +
- README.md                                |   45 +
+ README.md                                |   49 +
  Showcase/BPM1Proc.py                     |   22 +
  Showcase/BPM1ProcNoDis.py                |   22 +
  Showcase/BPM1photo.jpg                   |  Bin 0 -> 531496 bytes
@@ -270,10 +270,12 @@
  cvlib.html                               | 1479 ++++++++++++++
  cvlib.py                                 | 3299 ++++++++++++++++++++++++++++++
  cvlib.pyc                                |  Bin 0 -> 96259 bytes
+ cvlibNoEpics.py                          | 3299 ++++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1280 ++++++++++++
+ gitlog.txt                               | 1310 ++++++++++++
+ install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
@@ -291,4 +293,4 @@
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 293 files changed, 64907 insertions(+)
+ 295 files changed, 68271 insertions(+)

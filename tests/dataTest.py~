@@ -1,0 +1,9 @@
+from cvlibNoEpics import *
+
+img8 = grayscale(load("dataRGB.jpg"))
+img16 = load("data32.tif") #32 bit
+img32 = load("bit16.png")
+
+print img8.dtype
+print img16.dtype
+print img32.dtype

@@ -2830,7 +2830,7 @@ def drawHoughCircles(img, minDist=20, param1=50, param2=30, minRadius=0, maxRadi
 	tmp = grayscale(img)
 	tmp = cv2.medianBlur(tmp, 5)
 	cimg = cv2.cvtColor(tmp, cv2.COLOR_GRAY2BGR)
-	circles = cv2.HoughCircles(tmp, cv.CV_HOUGH_GRADIENT, 1, minDist, param1=param1, param2=param2, minRadius=minRadius, maxRadius=maxRadius)
+	circles = cv2.HoughCircles(tmp, cv2.CV_HOUGH_GRADIENT, 1, minDist, param1=param1, param2=param2, minRadius=minRadius, maxRadius=maxRadius)
 	if circles is None:
 		print "No circles found, please adjust params...\n"
 		return None
@@ -2860,7 +2860,7 @@ def houghCircles(img, minDist=20, param1=50, param2=30, minRadius=0, maxRadius=0
 	tmp = grayscale(img)
 	tmp = cv2.medianBlur(tmp, 5)
 	cimg = cv2.cvtColor(tmp, cv2.COLOR_GRAY2BGR)
-	circles = cv2.HoughCircles(tmp, cv.CV_HOUGH_GRADIENT, 1, minDist, param1=param1, param2=param2, minRadius=minRadius, maxRadius=maxRadius)
+	circles = cv2.HoughCircles(tmp, cv2.CV_HOUGH_GRADIENT, 1, minDist, param1=param1, param2=param2, minRadius=minRadius, maxRadius=maxRadius)
 	if circles is None:
 		print "No circles found, please adjust params...\n"
 		return None
