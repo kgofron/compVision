@@ -456,6 +456,16 @@ def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
 
 
 def approxSinCurve(data, adjLinSp=2):
+        """
+        Approximates a Sin Curve to given Data using the Least Squares Solutions Method
+        
+        Params:
+        * data - list of data points
+        * adjLinSp - OPTIONAL - adjusts the linear space multiplier; def: 2
+
+        Returns:
+        * {"data", "amplitude", "phase shift", "vertical shift"} dictionary
+        """
         N = len(data)
         t = np.linspace(0, adjLinSp*np.pi, N)
         guess_mean = np.mean(data)
