@@ -15,7 +15,7 @@ import numpy as np
 import sys
 import time
 from matplotlib import pyplot as plt
-import matplotlib 
+import matplotlib
 from epics import caget, caput
 
 
@@ -454,6 +454,51 @@ def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
         plt.show()
 
 
+def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo'):
+        """
+        Makes and Displays Mat Plot Lib Graph from data
+
+        Params:
+        * xval - X Values
+        * yval - Y Values
+        * title - OPTIONAL - Graph Title
+        * xlabel - OPTIONAL - X Axis Title
+        * ylabel - OPTIONAL - Y Axis Title
+        * axisRng - OPTIONAL - Axis Range
+        * style - OPTIONAL - graph plotting style
+        """
+        plt.plot(xval, yval, style)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.title(title)
+        if axisRng is not None:
+                plt.axis(axisRng)
+        plt.show()
+        
+
+def saveGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo', filename="graph.png"):
+        """
+        Makes and Saves Mat Plot Lib Graph from data
+
+        Params:
+        * xval - X Values
+        * yval - Y Values
+        * title - OPTIONAL - Graph Title
+        * xlabel - OPTIONAL - X Axis Title
+        * ylabel - OPTIONAL - Y Axis Title
+        * axisRng - OPTIONAL - Axis Range
+        * style - OPTIONAL - graph plotting style
+        * filename - OPTIONAL - name of file to save to
+        """
+        plt.plot(xval, yval, style)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.title(title)
+        if axisRng is not None:
+                plt.axis(axisRng)
+        plt.savefig(filename)
+
+        
 def version():
         """
         Prints the version codes for cvlib, OpenCV, and Numpy. For Refrence

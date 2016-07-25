@@ -22,10 +22,6 @@ for i in range(24): #24
     #cvlib.save(img, "found%d.jpg" % angle)
     angle += 15
 
-plt.plot(angles, center, 'bo')
-plt.xlabel("Angles in Degrees")
-plt.ylabel("Y Pixel Coordinate of Centroid")
-plt.title("Y Position of Crystal Per Angle")
-plt.axis([0, 360, 0, 400])
-plt.savefig("graph.png")
-#plt.show()
+cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400])
+
+
