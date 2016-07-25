@@ -1,6 +1,9 @@
 from cvlibNoEpics import *
 
-for i in range(8):
+for i in range(1):
     img = load("test%d.tif" % i, 0)
-    circle = drawHoughCircles(img)
-    display(circle)
+    jet = applyJET(img)
+    hsv = applyHSV(img)
+    #drawContours(, cnt)
+    save(jet, "jet.jpg")
+    save(hsv, "hsv.jpg")

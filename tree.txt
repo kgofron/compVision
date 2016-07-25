@@ -267,30 +267,53 @@
  XPD/Au10_Test-00007.tif                  |  Bin 0 -> 16777436 bytes
  XPD/cvlib.py                             | 3299 ++++++++++++++++++++++++++++++
  XPD/cvlib.pyc                            |  Bin 0 -> 102956 bytes
+ XPD/cvlibNoEpics.py                      | 3299 ++++++++++++++++++++++++++++++
+ XPD/cvlibNoEpics.pyc                     |  Bin 0 -> 101202 bytes
+ XPD/cvlibNoEpics.py~                     | 3299 ++++++++++++++++++++++++++++++
+ XPD/diffracScore.py                      |    9 +
+ XPD/diffracScore.py~                     |    6 +
+ XPD/test0.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/test1.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/test2.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/test3.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/test4.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/test5.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/test6.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/test7.tif                            |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1479 ++++++++++++++
  cvlib.py                                 | 3299 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 96259 bytes
+ cvlib.pyc                                |  Bin 0 -> 96246 bytes
  cvlibNoEpics.py                          | 3299 ++++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1310 ++++++++++++
+ gitlog.txt                               | 1316 ++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  tests/2coins.jpg                         |  Bin 0 -> 889391 bytes
+ tests/Au10_Test-00007.tif                |  Bin 0 -> 16777436 bytes
+ tests/bit16.png                          |  Bin 0 -> 1777615 bytes
  tests/coherence.jpg                      |  Bin 0 -> 170810 bytes
  tests/coin.jpg                           |  Bin 0 -> 118766 bytes
  tests/cvlib.py                           | 3299 ++++++++++++++++++++++++++++++
  tests/cvlib.pyc                          |  Bin 0 -> 103359 bytes
+ tests/cvlibNoEpics.py                    | 3299 ++++++++++++++++++++++++++++++
+ tests/cvlibNoEpics.pyc                   |  Bin 0 -> 102095 bytes
+ tests/data32.bmp                         |  Bin 0 -> 4195382 bytes
+ tests/data32.tif                         |  Bin 0 -> 16777436 bytes
+ tests/dataRGB.jpg                        |  Bin 0 -> 11043 bytes
+ tests/dataTest.py                        |   11 +
+ tests/dataTest.py~                       |    9 +
  tests/enhance.py                         |    9 +
  tests/filters.py                         |   11 +
  tests/floodfill.py                       |    6 +
  tests/foreground.py                      |   26 +
  tests/gaborFilter.jpg                    |  Bin 0 -> 103683 bytes
+ tests/new.png                            |  Bin 0 -> 870493 bytes
  tests/selfie.jpg                         |  Bin 0 -> 101522 bytes
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 295 files changed, 68271 insertions(+)
+ 318 files changed, 78209 insertions(+)
