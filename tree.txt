@@ -114,6 +114,15 @@
  IXS/Merlin/photo2.jpg                    |  Bin 0 -> 4283 bytes
  IXS/Merlin/photo3.jpg                    |  Bin 0 -> 3861 bytes
  IXS/OnAxis2/cvlib.py                     | 3344 ++++++++++++++++++++++++++++++
+ IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 105969 bytes
+ IXS/OnAxis2/graph.png                    |  Bin 0 -> 23173 bytes
+ IXS/OnAxis2/pin.py                       |   21 +
+ IXS/OnAxis2/pinSample.jpg                |  Bin 0 -> 174994 bytes
+ IXS/OnAxis2/result48.png                 |  Bin 0 -> 115329 bytes
+ IXS/OnAxis2/result49.png                 |  Bin 0 -> 114638 bytes
+ IXS/OnAxis2/result50.png                 |  Bin 0 -> 114669 bytes
+ IXS/OnAxis2/result51.png                 |  Bin 0 -> 112993 bytes
+ IXS/OnAxis2/result52.png                 |  Bin 0 -> 112245 bytes
  IXS/OnAxis2/sample_0048.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/sample_0049.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/sample_0050.tiff             |  Bin 0 -> 16295630 bytes
@@ -280,14 +289,14 @@
  XPD/test5.tif                            |  Bin 0 -> 4194556 bytes
  XPD/test6.tif                            |  Bin 0 -> 4194556 bytes
  XPD/test7.tif                            |  Bin 0 -> 4194556 bytes
- cvlib.html                               | 1479 +++++++++++++
+ cvlib.html                               | 1500 ++++++++++++++
  cvlib.py                                 | 3344 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 96246 bytes
+ cvlib.pyc                                |  Bin 0 -> 97734 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1322 ++++++++++++
+ gitlog.txt                               | 1328 ++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -316,4 +325,4 @@
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 318 files changed, 79019 insertions(+)
+ 327 files changed, 79067 insertions(+)
