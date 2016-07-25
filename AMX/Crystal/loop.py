@@ -1,5 +1,7 @@
 import cvlib
 from matplotlib import pyplot as plt
+import numpy as np
+from scipy.optimize import leastsq
 
 angle = 0
 angles = []
@@ -22,6 +24,11 @@ for i in range(24): #24
     #cvlib.save(img, "found%d.jpg" % angle)
     angle += 15
 
-cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400])
+#cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400])
+
+d = cvlib.approxSinCurve(center)
+print d["amplitude"], d["phase shift"], d["vertical shift"]
+cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400], filename="fit.png")
+cvlib.makeGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400], style="r")
 
 

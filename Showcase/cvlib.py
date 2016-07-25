@@ -17,6 +17,7 @@ import time
 from matplotlib import pyplot as plt
 import matplotlib
 from epics import caget, caput
+from scipy.optimize import leastsq
 
 
 # VERSION
@@ -452,6 +453,19 @@ def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
                 plt.xticks([])
                 plt.yticks([])
         plt.show()
+
+
+def approxSinCurve(data, adjLinSp=2):
+        N = len(data)
+        t = np.linspace(0, adjLinSp*np.pi, N)
+        guess_mean = np.mean(data)
+        guess_std = 3*np.std(data)/(2**0.5)
+        guess_phase = 0
+        data_first_guess = guess_std*np.sin(t+guess_phase) + guess_mean
+        optimize_func = lambda x: x[0]*np.sin(t+x[1]) + x[2] - data
+        est_std, est_phase, est_mean = leastsq(optimize_func, [guess_std, guess_phase, guess_mean])[0]
+        data_fit = est_std*np.sin(t+est_phase) + est_mean
+        return {"data": data_fit, "amplitude": est_std, "phase shift":-est_phase, "vertical shift": est_mean}
 
 
 def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo'):
