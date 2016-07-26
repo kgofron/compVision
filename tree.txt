@@ -1,5 +1,5 @@
  AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
- AMX/Crystal/crystalCentering.py          |   30 +
+ AMX/Crystal/crystalCentering.py          |   32 +
  AMX/Crystal/cvlib.py                     | 3374 ++++++++++++++++++++++++++++++
  AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 107488 bytes
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
@@ -53,7 +53,7 @@
  AMX/Crystal/found90.jpg                  |  Bin 0 -> 26261 bytes
  AMX/Crystal/graph.png                    |  Bin 0 -> 29028 bytes
  AMX/Crystal/loop.gif                     |  Bin 0 -> 4229224 bytes
- AMX/Crystal/loop.py                      |   30 +
+ AMX/Crystal/loop.py                      |   33 +
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
  AMX/RawImages/cvlib.py                   | 3374 ++++++++++++++++++++++++++++++
@@ -115,6 +115,8 @@
  IXS/Merlin/photo1.jpg                    |  Bin 0 -> 4543 bytes
  IXS/Merlin/photo2.jpg                    |  Bin 0 -> 4283 bytes
  IXS/Merlin/photo3.jpg                    |  Bin 0 -> 3861 bytes
+ IXS/OnAxis2/adjustPin.py                 |   70 +
+ IXS/OnAxis2/adjustPin.py~                |   65 +
  IXS/OnAxis2/cvlib.py                     | 3374 ++++++++++++++++++++++++++++++
  IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 107488 bytes
  IXS/OnAxis2/fit.png                      |  Bin 0 -> 23119 bytes
@@ -303,7 +305,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1370 ++++++++++++
+ gitlog.txt                               | 1376 ++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -334,4 +336,4 @@
  updateNoEpics.sh~                        |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 336 files changed, 79847 insertions(+)
+ 338 files changed, 79993 insertions(+)
