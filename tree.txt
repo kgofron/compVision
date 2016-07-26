@@ -133,6 +133,7 @@
  EPICS/fetchImg.png                       |  Bin 0 -> 1777615 bytes
  EPICS/fetchImg.tiff                      |  Bin 0 -> 1914844 bytes
  EPICS/img.py                             |    9 +
+ IXS/BPM/BPM.xlsx                         |  Bin 0 -> 8319 bytes
  IXS/BPM/BPM1-0.jpg                       |  Bin 0 -> 531496 bytes
  IXS/BPM/BPM1-1.jpg                       |  Bin 0 -> 531496 bytes
  IXS/BPM/BPM1-2.jpg                       |  Bin 0 -> 531496 bytes
@@ -166,6 +167,7 @@
  IXS/OnAxis2/pinSample.jpg                |  Bin 0 -> 174994 bytes
  IXS/OnAxis2/result1.jpg                  |  Bin 0 -> 264458 bytes
  IXS/OnAxis2/result48.png                 |  Bin 0 -> 115329 bytes
+ IXS/OnAxis2/result48.tif                 |  Bin 0 -> 24443290 bytes
  IXS/OnAxis2/result49.png                 |  Bin 0 -> 114638 bytes
  IXS/OnAxis2/result50.png                 |  Bin 0 -> 114669 bytes
  IXS/OnAxis2/result51.png                 |  Bin 0 -> 112993 bytes
@@ -204,44 +206,6 @@
  IXS/cvlib.pyc                            |  Bin 0 -> 102997 bytes
  IXS/test.py                              |   70 +
  LICENSE                                  |   21 +
- Poster/Crystals/Crystals.py              |   24 +
- Poster/Crystals/bulb.py                  |   22 +
- Poster/Crystals/bulb/T201607061.jpg      |  Bin 0 -> 483283 bytes
- Poster/Crystals/bulb/T201607062.jpg      |  Bin 0 -> 483445 bytes
- Poster/Crystals/bulb/T201607063.jpg      |  Bin 0 -> 509538 bytes
- Poster/Crystals/bulb/b3.jpg              |  Bin 0 -> 21651 bytes
- Poster/Crystals/bulb/bulb2.jpg           |  Bin 0 -> 20735 bytes
- Poster/Crystals/bulb/bulbPic.jpg         |  Bin 0 -> 26353 bytes
- Poster/Crystals/crystalProc.py           |   20 +
- Poster/Crystals/crystals.png             |  Bin 0 -> 14358985 bytes
- Poster/Crystals/cvlib.py                 | 3374 ++++++++++++++++++++++++++++++
- Poster/Crystals/line.py                  |   20 +
- Poster/Crystals/line/T2016070610.jpg     |  Bin 0 -> 500024 bytes
- Poster/Crystals/line/T201607068.jpg      |  Bin 0 -> 499584 bytes
- Poster/Crystals/line/T201607069.jpg      |  Bin 0 -> 286590 bytes
- Poster/Crystals/spiral.py                |   22 +
- Poster/Crystals/spiral/T201607064.jpg    |  Bin 0 -> 372108 bytes
- Poster/Crystals/spiral/T201607065.jpg    |  Bin 0 -> 448438 bytes
- Poster/Crystals/spiral/T201607066.jpg    |  Bin 0 -> 550684 bytes
- Poster/Crystals/spiral/T201607067.jpg    |  Bin 0 -> 645407 bytes
- Poster/Crystals/streak/T201607060.jpg    |  Bin 0 -> 43603 bytes
- Poster/XrayImg/Scintillator.py           |   25 +
- Poster/XrayImg/T201606300.jpg            |  Bin 0 -> 45963 bytes
- Poster/XrayImg/T201606301.jpg            |  Bin 0 -> 47535 bytes
- Poster/XrayImg/T2016063010.jpg           |  Bin 0 -> 65075 bytes
- Poster/XrayImg/T2016063011.jpg           |  Bin 0 -> 80125 bytes
- Poster/XrayImg/T201606302.jpg            |  Bin 0 -> 55441 bytes
- Poster/XrayImg/T201606303.jpg            |  Bin 0 -> 72742 bytes
- Poster/XrayImg/T201606304.jpg            |  Bin 0 -> 46014 bytes
- Poster/XrayImg/T201606305.jpg            |  Bin 0 -> 50089 bytes
- Poster/XrayImg/T201606306.jpg            |  Bin 0 -> 56922 bytes
- Poster/XrayImg/T201606307.jpg            |  Bin 0 -> 82481 bytes
- Poster/XrayImg/T201606308.jpg            |  Bin 0 -> 46757 bytes
- Poster/XrayImg/T201606309.jpg            |  Bin 0 -> 51600 bytes
- Poster/XrayImg/beam.png                  |  Bin 0 -> 829223 bytes
- Poster/XrayImg/cvlib.py                  | 3374 ++++++++++++++++++++++++++++++
- Poster/XrayImg/cvlib.pyc                 |  Bin 0 -> 54970 bytes
- Poster/XrayImg/xray.py                   |   32 +
  README.md                                |   50 +
  Showcase/BPM1Proc.py                     |   22 +
  Showcase/BPM1ProcNoDis.py                |   22 +
@@ -344,7 +308,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1418 +++++++++++++
+ gitlog.txt                               | 1424 +++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -375,4 +339,4 @@
  updateNoEpics.sh~                        |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 377 files changed, 80477 insertions(+)
+ 341 files changed, 73570 insertions(+)
