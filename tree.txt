@@ -55,7 +55,6 @@
  AMX/Crystal/loop.gif                     |  Bin 0 -> 4229224 bytes
  AMX/Crystal/loop.py                      |   33 +
  AMX/Crystal/loopCenter.py                |   19 +
- AMX/Crystal/loopCenter.py~               |   19 +
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
  AMX/RawImages/cvlib.py                   | 3374 ++++++++++++++++++++++++++++++
@@ -158,7 +157,6 @@
  IXS/Merlin/photo2.jpg                    |  Bin 0 -> 4283 bytes
  IXS/Merlin/photo3.jpg                    |  Bin 0 -> 3861 bytes
  IXS/OnAxis2/adjustPin.py                 |   90 +
- IXS/OnAxis2/adjustPin.py~                |   65 +
  IXS/OnAxis2/cvlib.py                     | 3374 ++++++++++++++++++++++++++++++
  IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 107488 bytes
  IXS/OnAxis2/fit.png                      |  Bin 0 -> 23119 bytes
@@ -324,11 +322,8 @@
  XPD/cvlib.pyc                            |  Bin 0 -> 104505 bytes
  XPD/cvlibNoEpics.py                      | 3299 +++++++++++++++++++++++++++++
  XPD/cvlibNoEpics.pyc                     |  Bin 0 -> 101202 bytes
- XPD/cvlibNoEpics.py~                     | 3299 +++++++++++++++++++++++++++++
  XPD/diffracScore.py                      |    2 +
- XPD/diffracScore.py~                     |    6 +
  XPD/edge.py                              |   55 +
- XPD/edge.py~                             |   55 +
  XPD/hsv.jpg                              |  Bin 0 -> 394104 bytes
  XPD/jet.jpg                              |  Bin 0 -> 537693 bytes
  XPD/test0.tif                            |  Bin 0 -> 4194556 bytes
@@ -346,7 +341,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1430 +++++++++++++
+ gitlog.txt                               | 1436 +++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -363,7 +358,6 @@
  tests/data32.tif                         |  Bin 0 -> 16777436 bytes
  tests/dataRGB.jpg                        |  Bin 0 -> 11043 bytes
  tests/dataTest.py                        |   11 +
- tests/dataTest.py~                       |    9 +
  tests/enhance.py                         |    9 +
  tests/filters.py                         |   11 +
  tests/floodfill.py                       |    6 +
@@ -375,4 +369,4 @@
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 377 files changed, 80443 insertions(+)
+ 371 files changed, 76996 insertions(+)

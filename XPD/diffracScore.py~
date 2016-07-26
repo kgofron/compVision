@@ -1,6 +1,0 @@
-from cvlibNoEpics import *
-
-for i in range(8):
-    img = load("test%d" % i, 0)
-    circle = drawHoughCircles(img)
-    display(circle)
