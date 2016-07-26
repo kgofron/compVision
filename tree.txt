@@ -82,24 +82,24 @@
  AMX/RawImages/gripper/gripAnalysis9.jpg  |  Bin 0 -> 189311 bytes
  AMX/RawImages/gripper/output.txt         |  472 +++++
  AMX/RawImages/match/best.jpg             |  Bin 0 -> 200253 bytes
- AMX/RawImages/match/match1.jpg           |  Bin 0 -> 189088 bytes
- AMX/RawImages/match/match10.jpg          |  Bin 0 -> 200869 bytes
- AMX/RawImages/match/match11.jpg          |  Bin 0 -> 200989 bytes
- AMX/RawImages/match/match12.jpg          |  Bin 0 -> 205367 bytes
- AMX/RawImages/match/match13.jpg          |  Bin 0 -> 206368 bytes
- AMX/RawImages/match/match14.jpg          |  Bin 0 -> 200253 bytes
- AMX/RawImages/match/match15.jpg          |  Bin 0 -> 199067 bytes
- AMX/RawImages/match/match16.jpg          |  Bin 0 -> 204748 bytes
- AMX/RawImages/match/match17.jpg          |  Bin 0 -> 205601 bytes
- AMX/RawImages/match/match18.jpg          |  Bin 0 -> 222488 bytes
- AMX/RawImages/match/match2.jpg           |  Bin 0 -> 220350 bytes
- AMX/RawImages/match/match3.jpg           |  Bin 0 -> 118948 bytes
- AMX/RawImages/match/match4.jpg           |  Bin 0 -> 128787 bytes
- AMX/RawImages/match/match5.jpg           |  Bin 0 -> 215581 bytes
- AMX/RawImages/match/match6.jpg           |  Bin 0 -> 214366 bytes
- AMX/RawImages/match/match7.jpg           |  Bin 0 -> 217958 bytes
- AMX/RawImages/match/match8.jpg           |  Bin 0 -> 217377 bytes
- AMX/RawImages/match/match9.jpg           |  Bin 0 -> 152066 bytes
+ AMX/RawImages/match/match1.jpg           |  Bin 0 -> 202648 bytes
+ AMX/RawImages/match/match10.jpg          |  Bin 0 -> 225717 bytes
+ AMX/RawImages/match/match11.jpg          |  Bin 0 -> 226183 bytes
+ AMX/RawImages/match/match12.jpg          |  Bin 0 -> 227675 bytes
+ AMX/RawImages/match/match13.jpg          |  Bin 0 -> 228594 bytes
+ AMX/RawImages/match/match14.jpg          |  Bin 0 -> 215795 bytes
+ AMX/RawImages/match/match15.jpg          |  Bin 0 -> 212912 bytes
+ AMX/RawImages/match/match16.jpg          |  Bin 0 -> 222938 bytes
+ AMX/RawImages/match/match17.jpg          |  Bin 0 -> 225152 bytes
+ AMX/RawImages/match/match18.jpg          |  Bin 0 -> 242251 bytes
+ AMX/RawImages/match/match2.jpg           |  Bin 0 -> 238542 bytes
+ AMX/RawImages/match/match3.jpg           |  Bin 0 -> 141525 bytes
+ AMX/RawImages/match/match4.jpg           |  Bin 0 -> 145593 bytes
+ AMX/RawImages/match/match5.jpg           |  Bin 0 -> 235348 bytes
+ AMX/RawImages/match/match6.jpg           |  Bin 0 -> 238542 bytes
+ AMX/RawImages/match/match7.jpg           |  Bin 0 -> 240324 bytes
+ AMX/RawImages/match/match8.jpg           |  Bin 0 -> 236843 bytes
+ AMX/RawImages/match/match9.jpg           |  Bin 0 -> 174956 bytes
  AMX/RawImages/match/matchOutput.txt      |   18 +
  AMX/RawImages/match19.py                 |   38 +
  AMX/RawImages/matchTest.py               |   34 +
@@ -344,7 +344,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1400 +++++++++++++
+ gitlog.txt                               | 1406 +++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -375,4 +375,4 @@
  updateNoEpics.sh~                        |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 377 files changed, 80459 insertions(+)
+ 377 files changed, 80465 insertions(+)
