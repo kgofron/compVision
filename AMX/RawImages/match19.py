@@ -13,7 +13,8 @@ contours = cvlib.findContours(best, thresh=100)
 contours = contours[1]
 gripper = cvlib.load("gripper.bmp")
 pin = cvlib.load("pin.bmp")
-#cvlib.drawContour(best, contours, thickness = 5)
+cvlib.drawContour(best, contours, thickness = 5)
+cvlib.save(best, "match/best.jpg")
 #cvlib.display(best)
 #lst = [best]
 for i in range(1,19):
@@ -25,11 +26,12 @@ for i in range(1,19):
 		mount = cnts[0]
 	else:
 		mount = cnts[1]
-	#cvlib.drawContour(img, mount, thickness = 5)
+	cvlib.drawContour(img, mount, thickness = 5)
 	#cvlib.drawContour(img, contours, thickness = 5, color=(255,255,0))
 	print "Image " + str(i) + " " + str(cvlib.matchShapes(contours, mount)) + " Sim"
 	p = cvlib.templateMatchSingle(img, pin)
 	g = cvlib.templateMatchSingle(img, gripper)
+        cvlib.save(img, "match/match%d.jpg" % i)
 	#cvlib.display(img)
 	#lst.append(img)
 

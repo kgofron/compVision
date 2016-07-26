@@ -1,0 +1,472 @@
+
+
+
+perimeter: 3310.9259671
+orientation: 5.69175100327
+max: (862, 1)
+solidity: 0.975948603308
+height: 868
+extent: 0.924325438401
+extrema: {'B': (1346, 869), 'R': (1598, 864), 'L': (862, 94), 'T': (898, 1)}
+aspect ratio: 0.848101265823
+area: 591987.0
+min: (922, 1)
+sum intensity: 15735135.0
+width: 736
+centroid: (1254, 420)
+equivalent diameter: 868.182733282
+mean intensity: 24.6304833075
+
+
+
+ERROR: Mount Not Aligned: Right Extreme: (1598, 864)
+Image Disimilarity: 0.0575324690312
+ERROR: Missing Component / Gripper Not Aligned
+ERROR: 17 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on L: 34.5398320783
+ERROR: Pin Not Mounted Correctly: Distance: 302
+
+
+
+perimeter: 3721.61939883
+orientation: 171.114837646
+max: (706, 1)
+solidity: 0.971906951183
+height: 851
+extent: 0.925108039052
+extrema: {'B': (1214, 852), 'R': (1598, 742), 'L': (706, 75), 'T': (742, 1)}
+aspect ratio: 1.04812206573
+area: 703855.5
+min: (759, 1)
+sum intensity: 19145848.0
+width: 892
+centroid: (1171, 411)
+equivalent diameter: 946.666074379
+mean intensity: 25.2220389623
+
+
+
+ERROR: Mount Not Aligned: Right Extreme: (1598, 742)
+Image Disimilarity: 0.180812835651
+ERROR: Missing Component / Gripper Not Aligned
+ERROR: 39 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 70.256672281
+ERROR: Possible Kink Distance on L: 230.497288487
+ERROR: Pin Not Mounted Correctly: Distance: 304
+
+
+
+perimeter: 2017.74725473
+orientation: 91.0750732422
+max: (745, 1)
+solidity: 0.996730365951
+height: 217
+extent: 0.940458938544
+extrema: {'B': (1203, 218), 'R': (1567, 129), 'L': (745, 114), 'T': (748, 1)}
+aspect ratio: 3.7752293578
+area: 168731.5
+min: (793, 1)
+sum intensity: 4280971.0
+width: 822
+centroid: (1161, 104)
+equivalent diameter: 463.503633473
+mean intensity: 23.999971969
+
+
+
+ERROR: Mount Centroid: Too High: 104
+Image Disimilarity: 1.36080901012
+ERROR: Missing Component / Gripper Not Aligned
+
+
+
+perimeter: 2095.67113554
+orientation: 91.380317688
+max: (750, 1)
+solidity: 0.992298787896
+height: 270
+extent: 0.928993658869
+extrema: {'B': (1255, 271), 'R': (1573, 172), 'L': (750, 186), 'T': (834, 1)}
+aspect ratio: 3.0405904059
+area: 207448.0
+min: (840, 1)
+sum intensity: 5927124.0
+width: 823
+centroid: (1162, 132)
+equivalent diameter: 513.936763694
+mean intensity: 26.6735250439
+
+
+
+ERROR: Mount Centroid: Too High: 132
+Image Disimilarity: 0.919946449875
+ERROR: Missing Component / Gripper Not Aligned
+ERROR: 29 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 30.083217913
+ERROR: Possible Kink Distance on L: 37.483329628
+
+
+
+perimeter: 3669.64378512
+orientation: 178.817092896
+max: (1448, 1)
+solidity: 0.957898861143
+height: 760
+extent: 0.881207974438
+extrema: {'B': (997, 761), 'R': (1454, 139), 'L': (498, 1), 'T': (498, 1)}
+aspect ratio: 1.25755584757
+area: 641763.5
+min: (527, 1)
+sum intensity: 26368281.0
+width: 956
+centroid: (976, 361)
+equivalent diameter: 903.946163534
+mean intensity: 36.2919524884
+
+
+
+Image Disimilarity: 0.101170069102
+ERROR: 37 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 70.0
+ERROR: Possible Kink Distance on L: 34.9284983931
+ERROR: Pin Not Mounted Correctly: Distance: 303
+
+
+
+perimeter: 3650.91586256
+orientation: 178.060440063
+max: (1447, 1)
+solidity: 0.956954474241
+height: 746
+extent: 0.880118801566
+extrema: {'B': (990, 747), 'R': (1452, 146), 'L': (497, 1), 'T': (497, 1)}
+aspect ratio: 1.27978580991
+area: 628521.0
+min: (518, 1)
+sum intensity: 26068866.0
+width: 955
+centroid: (976, 354)
+equivalent diameter: 894.571289443
+mean intensity: 36.5914770574
+
+
+
+Image Disimilarity: 0.0895718700448
+ERROR: 38 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 67.007462271
+ERROR: Possible Kink Distance on L: 35.2278299076
+ERROR: Pin Not Mounted Correctly: Distance: 300
+
+
+
+perimeter: 3673.14125955
+orientation: 178.078308105
+max: (1444, 1)
+solidity: 0.938134376192
+height: 771
+extent: 0.86077362873
+extrema: {'B': (953, 772), 'R': (1447, 117), 'L': (491, 5), 'T': (492, 1)}
+aspect ratio: 1.2396373057
+area: 635943.0
+min: (517, 1)
+sum intensity: 30721710.0
+width: 956
+centroid: (970, 366)
+equivalent diameter: 899.837638576
+mean intensity: 41.6805186982
+
+
+
+Image Disimilarity: 0.125650122608
+ERROR: Possible Kinks Detected
+ERROR: 44 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 117.0
+ERROR: Possible Kink Distance on L: 91.0
+ERROR: Pin Not Mounted Correctly: Distance: 363
+
+
+
+perimeter: 3699.86918032
+orientation: 178.827972412
+max: (1444, 1)
+solidity: 0.937623573877
+height: 769
+extent: 0.861512020474
+extrema: {'B': (971, 770), 'R': (1447, 113), 'L': (494, 1), 'T': (494, 1)}
+aspect ratio: 1.23896103896
+area: 632849.5
+min: (518, 1)
+sum intensity: 30449704.0
+width: 953
+centroid: (971, 365)
+equivalent diameter: 897.646372056
+mean intensity: 41.549311803
+
+
+
+Image Disimilarity: 0.124456642563
+ERROR: Possible Kinks Detected
+ERROR: 47 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 122.065556157
+ERROR: Possible Kink Distance on L: 92.0217365626
+ERROR: Pin Not Mounted Correctly: Distance: 363
+
+
+
+perimeter: 2767.98693109
+orientation: 92.8104858398
+max: (518, 1)
+solidity: 0.942886535704
+height: 361
+extent: 0.83429997345
+extrema: {'B': (1144, 362), 'R': (1391, 1), 'L': (518, 238), 'T': (530, 1)}
+aspect ratio: 2.41436464088
+area: 263962.5
+min: (545, 1)
+sum intensity: 16050809.0
+width: 873
+centroid: (943, 171)
+equivalent diameter: 579.7305351
+mean intensity: 50.930211675
+
+
+
+ERROR: Mount Centroid: Too High: 171
+Image Disimilarity: 0.482606998119
+ERROR: Missing Component / Gripper Not Aligned
+ERROR: 49 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 102.0
+ERROR: Possible Kink Distance on L: 14.0356688476
+
+
+
+perimeter: 3512.21232665
+orientation: 0.774656236172
+max: (497, 66)
+solidity: 0.941137856546
+height: 664
+extent: 0.839552497596
+extrema: {'B': (1206, 665), 'R': (1450, 31), 'L': (497, 1), 'T': (497, 1)}
+aspect ratio: 1.43458646617
+area: 532620.5
+min: (515, 1)
+sum intensity: 30095708.0
+width: 953
+centroid: (968, 310)
+equivalent diameter: 823.500748595
+mean intensity: 47.5601903943
+
+
+
+Image Disimilarity: 0.0274253192917
+ERROR: Possible Kinks Detected
+ERROR: 41 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 115.004347744
+ERROR: Possible Kink Distance on L: 27.3130005675
+ERROR: Pin Not Mounted Correctly: Distance: 329
+
+
+
+perimeter: 3501.96968472
+orientation: 175.707000732
+max: (1449, 63)
+solidity: 0.940805880501
+height: 663
+extent: 0.839720517289
+extrema: {'B': (1191, 664), 'R': (1450, 22), 'L': (497, 1), 'T': (497, 1)}
+aspect ratio: 1.43674698795
+area: 531926.0
+min: (519, 1)
+sum intensity: 30036454.0
+width: 953
+centroid: (968, 310)
+equivalent diameter: 822.96367968
+mean intensity: 47.5381450021
+
+
+
+Image Disimilarity: 0.0272207094457
+ERROR: Possible Kinks Detected
+ERROR: 39 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 114.004385881
+ERROR: Possible Kink Distance on L: 36.0693775937
+ERROR: Pin Not Mounted Correctly: Distance: 326
+
+
+
+perimeter: 3583.72704494
+orientation: 174.183517456
+max: (500, 73)
+solidity: 0.925656359043
+height: 718
+extent: 0.816305875451
+extrema: {'B': (675, 719), 'R': (1452, 43), 'L': (500, 1), 'T': (500, 1)}
+aspect ratio: 1.32545201669
+area: 559338.5
+min: (519, 1)
+sum intensity: 36036156.0
+width: 952
+centroid: (985, 331)
+equivalent diameter: 843.902777038
+mean intensity: 52.7202020084
+
+
+
+Image Disimilarity: 0.0714487410548
+ERROR: Possible Kinks Detected
+ERROR: 33 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 83.0
+ERROR: Possible Kink Distance on L: 163.370744015
+ERROR: Pin Not Mounted Correctly: Distance: 384
+
+
+
+perimeter: 3582.07019091
+orientation: 175.426498413
+max: (500, 71)
+solidity: 0.925323103682
+height: 718
+extent: 0.816005236374
+extrema: {'B': (675, 719), 'R': (1452, 42), 'L': (500, 1), 'T': (500, 1)}
+aspect ratio: 1.32545201669
+area: 559132.5
+min: (521, 1)
+sum intensity: 36092247.0
+width: 952
+centroid: (985, 331)
+equivalent diameter: 843.747361327
+mean intensity: 52.8022620608
+
+
+
+Image Disimilarity: 0.0717143793666
+ERROR: Possible Kinks Detected
+ERROR: 38 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 76.0065786626
+ERROR: Possible Kink Distance on L: 162.443836448
+ERROR: Pin Not Mounted Correctly: Distance: 384
+
+
+
+perimeter: 3280.22243226
+orientation: 107.43182373
+max: (496, 1)
+solidity: 0.967421043476
+height: 672
+extent: 0.902281771447
+extrema: {'B': (591, 673), 'R': (1452, 179), 'L': (496, 9), 'T': (499, 1)}
+aspect ratio: 1.4219910847
+area: 581124.5
+min: (524, 1)
+sum intensity: 20087769.0
+width: 956
+centroid: (974, 321)
+equivalent diameter: 860.180616972
+mean intensity: 31.2683194486
+
+
+
+Image Disimilarity: 0.000543145190308
+
+
+
+perimeter: 3272.13917053
+orientation: 160.072814941
+max: (496, 1)
+solidity: 0.967876787861
+height: 677
+extent: 0.902237973263
+extrema: {'B': (593, 678), 'R': (1452, 189), 'L': (496, 22), 'T': (503, 1)}
+aspect ratio: 1.41150442478
+area: 585413.5
+min: (525, 1)
+sum intensity: 20199272.0
+width: 956
+centroid: (974, 323)
+equivalent diameter: 863.349070899
+mean intensity: 31.2096685476
+
+
+
+Image Disimilarity: 0.00487836456791
+
+
+
+perimeter: 3712.97473741
+orientation: 179.456069946
+max: (1447, 1)
+solidity: 0.927842753506
+height: 709
+extent: 0.857206695671
+extrema: {'B': (697, 710), 'R': (1450, 93), 'L': (496, 1), 'T': (496, 1)}
+aspect ratio: 1.34507042254
+area: 581229.0
+min: (517, 1)
+sum intensity: 28746912.0
+width: 954
+centroid: (974, 337)
+equivalent diameter: 860.257953957
+mean intensity: 42.500749572
+
+
+
+Image Disimilarity: 0.0663113104454
+ERROR: Possible Kinks Detected
+ERROR: 28 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 112.01785572
+ERROR: Possible Kink Distance on L: 116.004310265
+ERROR: Pin Not Mounted Correctly: Distance: 326
+
+
+
+perimeter: 3745.66102958
+orientation: 177.163970947
+max: (1446, 1)
+solidity: 0.928598109585
+height: 716
+extent: 0.857731832426
+extrema: {'B': (732, 717), 'R': (1449, 103), 'L': (494, 4), 'T': (495, 1)}
+aspect ratio: 1.33333333333
+area: 587934.0
+min: (525, 1)
+sum intensity: 28986235.0
+width: 955
+centroid: (973, 340)
+equivalent diameter: 865.205650984
+mean intensity: 42.3911711369
+
+
+
+Image Disimilarity: 0.0709442834311
+ERROR: Possible Kinks Detected
+ERROR: 30 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 113.0
+ERROR: Possible Kink Distance on L: 117.017092769
+ERROR: Pin Not Mounted Correctly: Distance: 325
+
+
+
+perimeter: 3790.45496655
+orientation: 177.796310425
+max: (1443, 1)
+solidity: 0.925888779152
+height: 821
+extent: 0.845230278227
+extrema: {'B': (828, 822), 'R': (1447, 125), 'L': (492, 1), 'T': (492, 1)}
+aspect ratio: 1.16301703163
+area: 664209.0
+min: (503, 1)
+sum intensity: 35452804.0
+width: 955
+centroid: (974, 387)
+equivalent diameter: 919.617945002
+mean intensity: 45.2172411374
+
+
+
+Image Disimilarity: 0.190836638543
+ERROR: Possible Kinks Detected
+ERROR: 44 Possible Kink Points Detected: Adjust Gripper
+ERROR: Possible Kink Distance on R: 125.015998976
+ERROR: Possible Kink Distance on L: 157.003184681
+ERROR: Pin Not Mounted Correctly: Distance: 411

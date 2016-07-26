@@ -59,14 +59,15 @@
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
  AMX/RawImages/cvlib.py                   | 3374 ++++++++++++++++++++++++++++++
- AMX/RawImages/cvlib.pyc                  |  Bin 0 -> 60796 bytes
+ AMX/RawImages/cvlib.pyc                  |  Bin 0 -> 107858 bytes
  AMX/RawImages/flood.py                   |   12 +
  AMX/RawImages/gripper.bmp                |  Bin 0 -> 466578 bytes
- AMX/RawImages/match19.py                 |   36 +
+ AMX/RawImages/match19.py                 |   38 +
  AMX/RawImages/match7.py                  |   36 +
  AMX/RawImages/matchTest.py               |   34 +
  AMX/RawImages/matchTestFd.py             |   36 +
- AMX/RawImages/mountBeam.py               |  255 +++
+ AMX/RawImages/mountBeam.py               |  256 +++
+ AMX/RawImages/perfect.bmp                |  Bin 0 -> 1921078 bytes
  AMX/RawImages/photo1.bmp                 |  Bin 0 -> 1921078 bytes
  AMX/RawImages/photo10.bmp                |  Bin 0 -> 1921078 bytes
  AMX/RawImages/photo11.bmp                |  Bin 0 -> 1921078 bytes
@@ -305,7 +306,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1388 ++++++++++++
+ gitlog.txt                               | 1394 ++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -336,4 +337,4 @@
  updateNoEpics.sh~                        |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 338 files changed, 79991 insertions(+)
+ 339 files changed, 80000 insertions(+)
