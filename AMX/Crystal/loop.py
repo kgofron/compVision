@@ -26,9 +26,10 @@ for i in range(24): #24
 
 #cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400])
 
+cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angles in Degrees", "Original Data Coord", [0,360,0,400], filename="graph.png")
 d = cvlib.approxSinCurve(center)
 print d["amplitude"], d["phase shift"], d["vertical shift"]
-cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400], filename="fit.png")
-cvlib.makeGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400], style="r")
+cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid Best Fit", [0,360,0,400], filename="fit.png")
+cvlib.makeGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", [0,360,0,400], style="--")
 
 

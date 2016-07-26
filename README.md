@@ -37,6 +37,7 @@ Summer 2016
 * `tree.txt` - Tree Diagram for Git Repo
 * `wordcount.sh` - Counts Total Lines in all files and code files
 * `cvlib.pyc` - Compiled Python Library
+NOTE: cvlibNoEpics.py may not fully support all methods in cvlib
 
 ### Folders ###
 * `CVLibrary` - Contains a copy of cvlib.py as a standalone

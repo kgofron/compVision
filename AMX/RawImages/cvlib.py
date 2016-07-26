@@ -461,7 +461,7 @@ def approxSinCurve(data, adjLinSp=2):
         
         Params:
         * data - list of data points
-        * adjLinSp - OPTIONAL - adjusts the linear space multiplier; def: 2
+        * adjLinSp - OPTIONAL - adjusts the linear space multiplier; def: 2 (2 pi range)
 
         Returns:
         * {"data", "amplitude", "phase shift", "vertical shift"} dictionary
@@ -498,6 +498,7 @@ def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axi
         if axisRng is not None:
                 plt.axis(axisRng)
         plt.show()
+        plt.close()
         
 
 def saveGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo', filename="graph.png"):
@@ -521,6 +522,7 @@ def saveGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axi
         if axisRng is not None:
                 plt.axis(axisRng)
         plt.savefig(filename)
+        plt.clf()
 
         
 def version():
