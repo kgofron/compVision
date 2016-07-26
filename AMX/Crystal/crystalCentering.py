@@ -9,11 +9,11 @@ for i in range(24): #24
     rng = cvlib.inRangeThresh(img, (20,30,20), (200,130,120))
     rng = cvlib.bitNot(rng)
     cnt = cvlib.findContours(rng, thresh=250)
+    centroid = cvlib.centroid(crystal)
     if cvlib.area(cnt[0]) > cvlib.area(cnt[1]):
         crystal = cnt[0]
     else:
         crystal = cnt[1]
-    centroid = cvlib.centroid(crystal)
     center.append(centroid[1])
     cvlib.drawContour(img, crystal, thickness=10)
     cvlib.plotCentroid(img, crystal, radius=7)

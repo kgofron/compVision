@@ -115,7 +115,7 @@
  IXS/Merlin/photo1.jpg                    |  Bin 0 -> 4543 bytes
  IXS/Merlin/photo2.jpg                    |  Bin 0 -> 4283 bytes
  IXS/Merlin/photo3.jpg                    |  Bin 0 -> 3861 bytes
- IXS/OnAxis2/adjustPin.py                 |   70 +
+ IXS/OnAxis2/adjustPin.py                 |   90 +
  IXS/OnAxis2/adjustPin.py~                |   65 +
  IXS/OnAxis2/cvlib.py                     | 3374 ++++++++++++++++++++++++++++++
  IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 107488 bytes
@@ -305,7 +305,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1376 ++++++++++++
+ gitlog.txt                               | 1382 ++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -336,4 +336,4 @@
  updateNoEpics.sh~                        |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 338 files changed, 79993 insertions(+)
+ 338 files changed, 80019 insertions(+)
