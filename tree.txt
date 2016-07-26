@@ -54,6 +54,8 @@
  AMX/Crystal/graph.png                    |  Bin 0 -> 29028 bytes
  AMX/Crystal/loop.gif                     |  Bin 0 -> 4229224 bytes
  AMX/Crystal/loop.py                      |   33 +
+ AMX/Crystal/loopCenter.py                |   19 +
+ AMX/Crystal/loopCenter.py~               |   19 +
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
  AMX/RawImages/cvlib.py                   | 3374 ++++++++++++++++++++++++++++++
@@ -252,8 +254,6 @@
  Showcase/img2.jpg                        |  Bin 0 -> 224807 bytes
  Showcase/img3.jpg                        |  Bin 0 -> 212862 bytes
  Showcase/img4.jpg                        |  Bin 0 -> 241442 bytes
- Showcase/match2.py                       |   36 +
- Showcase/match3.py                       |   36 +
  Showcase/matchTest.py                    |   34 +
  Showcase/matchTestNoDis.py               |   36 +
  Showcase/matchTestSingleNoDis.py         |   34 +
@@ -305,7 +305,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1382 ++++++++++++
+ gitlog.txt                               | 1388 ++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -336,4 +336,4 @@
  updateNoEpics.sh~                        |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 338 files changed, 80019 insertions(+)
+ 338 files changed, 79991 insertions(+)
