@@ -1083,7 +1083,7 @@ Params:<br>
 &nbsp;<br>
 Returns:<br>
 *&nbsp;Dictionary&nbsp;of&nbsp;Key/Values</tt></dd></dl>
- <dl><dt><a name="-makeGraph"><strong>makeGraph</strong></a>(xval, yval, title<font color="#909090">='GRAPH'</font>, xlabel<font color="#909090">='X AXIS'</font>, ylabel<font color="#909090">='Y AXIS'</font>, axisRng<font color="#909090">=None</font>, style<font color="#909090">='bo'</font>)</dt><dd><tt>Makes&nbsp;and&nbsp;Displays&nbsp;Mat&nbsp;Plot&nbsp;Lib&nbsp;Graph&nbsp;from&nbsp;data<br>
+ <dl><dt><a name="-makeGraph"><strong>makeGraph</strong></a>(xval, yval, title<font color="#909090">='GRAPH'</font>, xlabel<font color="#909090">='X AXIS'</font>, ylabel<font color="#909090">='Y AXIS'</font>, axisRng<font color="#909090">=None</font>, style<font color="#909090">='bo'</font>, clear<font color="#909090">=False</font>)</dt><dd><tt>Makes&nbsp;and&nbsp;Displays&nbsp;Mat&nbsp;Plot&nbsp;Lib&nbsp;Graph&nbsp;from&nbsp;data<br>
 &nbsp;<br>
 Params:<br>
 *&nbsp;xval&nbsp;-&nbsp;X&nbsp;Values<br>
@@ -1092,7 +1092,8 @@ Params:<br>
 *&nbsp;xlabel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;X&nbsp;Axis&nbsp;Title<br>
 *&nbsp;ylabel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Y&nbsp;Axis&nbsp;Title<br>
 *&nbsp;axisRng&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Axis&nbsp;Range<br>
-*&nbsp;style&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;graph&nbsp;plotting&nbsp;style</tt></dd></dl>
+*&nbsp;style&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;graph&nbsp;plotting&nbsp;style<br>
+*&nbsp;clear&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;if&nbsp;True&nbsp;clears&nbsp;graph;&nbsp;def:&nbsp;False</tt></dd></dl>
  <dl><dt><a name="-mask"><strong>mask</strong></a>(img, invert<font color="#909090">=False</font>)</dt><dd><tt>Finds&nbsp;the&nbsp;mask&nbsp;for&nbsp;an&nbsp;image<br>
 &nbsp;<br>
 Params:<br>
@@ -1319,7 +1320,7 @@ Returns:<br>
 Params:<br>
 *&nbsp;img&nbsp;-&nbsp;image&nbsp;to&nbsp;save<br>
 *&nbsp;filename&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;file&nbsp;to&nbsp;save&nbsp;to,&nbsp;def&nbsp;is&nbsp;TYEARMONTHDAY.jpg</tt></dd></dl>
- <dl><dt><a name="-saveGraph"><strong>saveGraph</strong></a>(xval, yval, title<font color="#909090">='GRAPH'</font>, xlabel<font color="#909090">='X AXIS'</font>, ylabel<font color="#909090">='Y AXIS'</font>, axisRng<font color="#909090">=None</font>, style<font color="#909090">='bo'</font>, filename<font color="#909090">='graph.png'</font>)</dt><dd><tt>Makes&nbsp;and&nbsp;Saves&nbsp;Mat&nbsp;Plot&nbsp;Lib&nbsp;Graph&nbsp;from&nbsp;data<br>
+ <dl><dt><a name="-saveGraph"><strong>saveGraph</strong></a>(xval, yval, title<font color="#909090">='GRAPH'</font>, xlabel<font color="#909090">='X AXIS'</font>, ylabel<font color="#909090">='Y AXIS'</font>, axisRng<font color="#909090">=None</font>, style<font color="#909090">='bo'</font>, filename<font color="#909090">='graph.png'</font>, clear<font color="#909090">=False</font>)</dt><dd><tt>Makes&nbsp;and&nbsp;Saves&nbsp;Mat&nbsp;Plot&nbsp;Lib&nbsp;Graph&nbsp;from&nbsp;data<br>
 &nbsp;<br>
 Params:<br>
 *&nbsp;xval&nbsp;-&nbsp;X&nbsp;Values<br>
@@ -1329,7 +1330,8 @@ Params:<br>
 *&nbsp;ylabel&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Y&nbsp;Axis&nbsp;Title<br>
 *&nbsp;axisRng&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;Axis&nbsp;Range<br>
 *&nbsp;style&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;graph&nbsp;plotting&nbsp;style<br>
-*&nbsp;filename&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;name&nbsp;of&nbsp;file&nbsp;to&nbsp;save&nbsp;to</tt></dd></dl>
+*&nbsp;filename&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;name&nbsp;of&nbsp;file&nbsp;to&nbsp;save&nbsp;to<br>
+*&nbsp;clear&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;If&nbsp;True&nbsp;Clears&nbsp;the&nbsp;graph</tt></dd></dl>
  <dl><dt><a name="-saveImgs"><strong>saveImgs</strong></a>(img, filename<font color="#909090">=None</font>)</dt><dd><tt>Saves&nbsp;a&nbsp;list&nbsp;of&nbsp;images&nbsp;to&nbsp;a&nbsp;file<br>
 &nbsp;<br>
 Params:<br>

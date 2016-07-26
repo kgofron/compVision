@@ -478,7 +478,7 @@ def approxSinCurve(data, adjLinSp=2):
         return {"data": data_fit, "amplitude": est_std, "phase shift":-est_phase, "vertical shift": est_mean}
 
 
-def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo'):
+def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo', clear=False):
         """
         Makes and Displays Mat Plot Lib Graph from data
 
@@ -490,6 +490,7 @@ def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axi
         * ylabel - OPTIONAL - Y Axis Title
         * axisRng - OPTIONAL - Axis Range
         * style - OPTIONAL - graph plotting style
+        * clear - OPTIONAL - if True clears graph; def: False
         """
         plt.plot(xval, yval, style)
         plt.xlabel(xlabel)
@@ -498,10 +499,11 @@ def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axi
         if axisRng is not None:
                 plt.axis(axisRng)
         plt.show()
-        plt.close()
+        if clear:
+                plt.close()
         
 
-def saveGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo', filename="graph.png"):
+def saveGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo', filename="graph.png", clear=False):
         """
         Makes and Saves Mat Plot Lib Graph from data
 
@@ -514,6 +516,7 @@ def saveGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axi
         * axisRng - OPTIONAL - Axis Range
         * style - OPTIONAL - graph plotting style
         * filename - OPTIONAL - name of file to save to
+        * clear - OPTIONAL - If True Clears the graph
         """
         plt.plot(xval, yval, style)
         plt.xlabel(xlabel)
@@ -522,7 +525,8 @@ def saveGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axi
         if axisRng is not None:
                 plt.axis(axisRng)
         plt.savefig(filename)
-        plt.clf()
+        if clear:
+                plt.clf()
 
         
 def version():
