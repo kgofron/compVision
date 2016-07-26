@@ -216,41 +216,40 @@ def matchGame(img):
 ##################################################################################
 
 # Load Image
-for i in range(1, 19):
-        image = cvlib.load("photo%d.bmp"%i)
-        img = image.copy()
+image = cvlib.load("photo16.bmp")
+img = image.copy()
 
-        #Find Contours, Check Position, Separate Contours
-        contours = cvlib.findContours(img)
-        mount, base = separateCnt(img, contours)
-        print "\n\n"
-        cvlib.printCntInfo(image, mount)
-        print "\n\n"
-        posCheck(img, mount)
+#Find Contours, Check Position, Separate Contours
+contours = cvlib.findContours(img)
+mount, base = separateCnt(img, contours)
+print "\n\n"
+cvlib.printCntInfo(image, mount)
+print "\n\n"
+posCheck(img, mount)
 
-        # Match our celebrities to win.
-        checkSim(mount)
-        image = matchGame(image)
+# Match our celebrities to win.
+checkSim(mount)
+image = matchGame(image)
 
-        # Find Points of Value
-        pts = cvlib.extremePoints(mount)
-        centroid = cvlib.centroid(mount)
-        botPt = verticalTang(mount)
+# Find Points of Value
+pts = cvlib.extremePoints(mount)
+centroid = cvlib.centroid(mount)
+botPt = verticalTang(mount)
 
-        # Process Image
-        apprx = cvlib.contourApprox(mount, epsilon=0.0025)
-        lines = verticalLinesFind(image, apprx)
-        d = kinkDistance(image, mount)
-        pinDist = getPinDistance(image, mount, lines, pts)
+# Process Image
+apprx = cvlib.contourApprox(mount, epsilon=0.0025)
+lines = verticalLinesFind(image, apprx)
+d = kinkDistance(image, mount)
+pinDist = getPinDistance(image, mount, lines, pts)
 
-        #Display Work, Optional
-        cvlib.drawContour(image, mount)
-        cvlib.drawLine(image, centroid, botPt)
-        cvlib.drawContour(image, apprx, color=(255,255,0))
-        cvlib.drawContour(image, base, color=(255,0,0))
-        cvlib.plotPoints(image, cvlib.extremePointsTup(mount), radius = 10)
-        cvlib.plotCentroid(image, mount)
-        cvlib.save(image, "gripper/gripAnalysis%d.jpg" % i)
-        #cvlib.display(image, "Photo")
+#Display Work, Optional
+cvlib.drawContour(image, mount)
+cvlib.drawLine(image, centroid, botPt)
+cvlib.drawContour(image, apprx, color=(255,255,0))
+cvlib.drawContour(image, base, color=(255,0,0))
+cvlib.plotPoints(image, cvlib.extremePointsTup(mount), radius = 10)
+cvlib.plotCentroid(image, mount)
+#cvlib.save(image, "gripper/gripAnalysis%d.jpg" % i)
+cvlib.display(image, "Photo")
 
 # End of File

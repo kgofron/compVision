@@ -29,8 +29,8 @@ for i in range(1,19):
 	cvlib.drawContour(img, mount, thickness = 5)
 	#cvlib.drawContour(img, contours, thickness = 5, color=(255,255,0))
 	print "Image " + str(i) + " " + str(cvlib.matchShapes(contours, mount)) + " Sim"
-	p = cvlib.templateMatchSingle(img, pin)
-	g = cvlib.templateMatchSingle(img, gripper)
+	p = cvlib.drawMatch(img, pin)
+	g = cvlib.drawMatch(img, gripper)
         cvlib.save(img, "match/match%d.jpg" % i)
 	#cvlib.display(img)
 	#lst.append(img)
