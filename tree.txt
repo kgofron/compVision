@@ -205,6 +205,44 @@
  IXS/cvlib.py                             | 3374 ++++++++++++++++++++++++++++++
  IXS/cvlib.pyc                            |  Bin 0 -> 102997 bytes
  IXS/test.py                              |   70 +
+ KazImages/Crystals/Crystals.py           |   24 +
+ KazImages/Crystals/bulb.py               |   22 +
+ KazImages/Crystals/bulb/T201607061.jpg   |  Bin 0 -> 483283 bytes
+ KazImages/Crystals/bulb/T201607062.jpg   |  Bin 0 -> 483445 bytes
+ KazImages/Crystals/bulb/T201607063.jpg   |  Bin 0 -> 509538 bytes
+ KazImages/Crystals/bulb/b3.jpg           |  Bin 0 -> 21651 bytes
+ KazImages/Crystals/bulb/bulb2.jpg        |  Bin 0 -> 20735 bytes
+ KazImages/Crystals/bulb/bulbPic.jpg      |  Bin 0 -> 26353 bytes
+ KazImages/Crystals/crystalProc.py        |   20 +
+ KazImages/Crystals/crystals.png          |  Bin 0 -> 14358985 bytes
+ KazImages/Crystals/cvlib.py              | 3374 ++++++++++++++++++++++++++++++
+ KazImages/Crystals/line.py               |   20 +
+ KazImages/Crystals/line/T2016070610.jpg  |  Bin 0 -> 500024 bytes
+ KazImages/Crystals/line/T201607068.jpg   |  Bin 0 -> 499584 bytes
+ KazImages/Crystals/line/T201607069.jpg   |  Bin 0 -> 286590 bytes
+ KazImages/Crystals/spiral.py             |   22 +
+ KazImages/Crystals/spiral/T201607064.jpg |  Bin 0 -> 372108 bytes
+ KazImages/Crystals/spiral/T201607065.jpg |  Bin 0 -> 448438 bytes
+ KazImages/Crystals/spiral/T201607066.jpg |  Bin 0 -> 550684 bytes
+ KazImages/Crystals/spiral/T201607067.jpg |  Bin 0 -> 645407 bytes
+ KazImages/Crystals/streak/T201607060.jpg |  Bin 0 -> 43603 bytes
+ KazImages/XrayImg/Scintillator.py        |   25 +
+ KazImages/XrayImg/T201606300.jpg         |  Bin 0 -> 45963 bytes
+ KazImages/XrayImg/T201606301.jpg         |  Bin 0 -> 47535 bytes
+ KazImages/XrayImg/T2016063010.jpg        |  Bin 0 -> 65075 bytes
+ KazImages/XrayImg/T2016063011.jpg        |  Bin 0 -> 80125 bytes
+ KazImages/XrayImg/T201606302.jpg         |  Bin 0 -> 55441 bytes
+ KazImages/XrayImg/T201606303.jpg         |  Bin 0 -> 72742 bytes
+ KazImages/XrayImg/T201606304.jpg         |  Bin 0 -> 46014 bytes
+ KazImages/XrayImg/T201606305.jpg         |  Bin 0 -> 50089 bytes
+ KazImages/XrayImg/T201606306.jpg         |  Bin 0 -> 56922 bytes
+ KazImages/XrayImg/T201606307.jpg         |  Bin 0 -> 82481 bytes
+ KazImages/XrayImg/T201606308.jpg         |  Bin 0 -> 46757 bytes
+ KazImages/XrayImg/T201606309.jpg         |  Bin 0 -> 51600 bytes
+ KazImages/XrayImg/beam.png               |  Bin 0 -> 829223 bytes
+ KazImages/XrayImg/cvlib.py               | 3374 ++++++++++++++++++++++++++++++
+ KazImages/XrayImg/cvlib.pyc              |  Bin 0 -> 54970 bytes
+ KazImages/XrayImg/xray.py                |   32 +
  LICENSE                                  |   21 +
  README.md                                |   50 +
  Showcase/BPM1Proc.py                     |   22 +
@@ -308,7 +346,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1424 +++++++++++++
+ gitlog.txt                               | 1430 +++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -335,8 +373,6 @@
  tests/selfie.jpg                         |  Bin 0 -> 101522 bytes
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
- updateNoEpics.sh                         |   23 +
- updateNoEpics.sh~                        |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 341 files changed, 73570 insertions(+)
+ 377 files changed, 80443 insertions(+)

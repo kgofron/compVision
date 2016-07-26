@@ -12,8 +12,8 @@ cp cvlib.py IXS/Merlin/cvlib.py
 cp cvlib.py IXS/OnAxis2/cvlib.py
 cp cvlib.py IXS/OnAxisImg/cvlib.py
 cp cvlib.py IXS/VFM/cvlib.py
-cp cvlib.py Poster/Crystals/cvlib.py
-cp cvlib.py Poster/XrayImg/cvlib.py
+cp cvlib.py KazImages/Crystals/cvlib.py
+cp cvlib.py KazImages/XrayImg/cvlib.py
 cp cvlib.py Showcase/cvlib.py
 cp cvlib.py Showcase/BenchTest/cvlib.py
 cp cvlib.py tests/cvlib.py
