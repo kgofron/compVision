@@ -159,6 +159,7 @@
  IXS/OnAxis2/adjustPin.py                 |   87 +
  IXS/OnAxis2/cvlib.py                     | 3375 ++++++++++++++++++++++++++++++
  IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 107525 bytes
+ IXS/OnAxis2/fetchImg.jpg                 |  Bin 0 -> 3740198 bytes
  IXS/OnAxis2/fit.png                      |  Bin 0 -> 23119 bytes
  IXS/OnAxis2/graph.png                    |  Bin 0 -> 18345 bytes
  IXS/OnAxis2/pin.py                       |   27 +
@@ -336,12 +337,12 @@
  XPD/test7.tif                            |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1510 +++++++++++++
  cvlib.py                                 | 3375 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 99163 bytes
+ cvlib.pyc                                |  Bin 0 -> 99200 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1442 +++++++++++++
+ gitlog.txt                               | 1448 +++++++++++++
  install.sh                               |   31 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
@@ -369,4 +370,4 @@
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
  xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 371 files changed, 77017 insertions(+)
+ 372 files changed, 77023 insertions(+)
