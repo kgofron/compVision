@@ -8,10 +8,10 @@ def nothing(args):
 # Set up GUI
 cv2.namedWindow('image', 0)
 # create trackbars for X Y XScale YScale
-cv2.createTrackbar('X [pel]','image',0,3296,nothing)
-cv2.createTrackbar('Y [pel]','image',0,2472,nothing)
-cv2.createTrackbar('X Scale [ct/pel]','image',0,1000,nothing)
-cv2.createTrackbar('Y Scale [ct/pel]','image',0,1000,nothing)
+cv2.createTrackbar('X [pel]','image',0,3296,nothing) # change to PV IMG SIZE
+cv2.createTrackbar('Y [pel]','image',0,2472,nothing) # change to PV IMG SIZE
+cv2.createTrackbar('X Scale [ct/pel]','image',0,100,nothing)
+cv2.createTrackbar('Y Scale [ct/pel]','image',0,100,nothing)
 
 # create switch for ON/OFF functionality
 switch = '0 : OFF \n1 : ON'
@@ -24,6 +24,7 @@ def toggleSwitch():
     else:
         cv2.setTrackbarPos(switch, 'image', 1)
 
+    
 # mouse callback
 def center(event, x, y, flags, param):
     on = cv2.getTrackbarPos(switch, 'image')
@@ -31,12 +32,9 @@ def center(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN and on == 1:
         cv2.setTrackbarPos('X [pel]', 'image', x)
         cv2.setTrackbarPos('Y [pel]', 'image', y)
-        xpos = x
-        ypox = y
         xscale = cv2.getTrackbarPos('X Scale [ct/pel]','image')
         yscale = cv2.getTrackbarPos('Y Scale [ct/pel]','image')
-        # SEND TO EPICS HERE
-        #cv2.circle(tmp,(x,y),3,(255,0,0),-1) # FILLER
+
 
 def drawCenter(image):
     x = cv2.getTrackbarPos('X [pel]', 'image')
@@ -45,12 +43,13 @@ def drawCenter(image):
     image = cv2.line(image, (x,y-12), (x,y+12), (20, 255,100), 5)
     
     
-img = cvlib.load("sample.tif")
-
+#img = cvlib.load("sample.tif")
+img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1", dtype = np.uint8)
 cv2.setMouseCallback('image', center)
-tmp = img.copy()
+#tmp = img.copy()
 while(1):
-    tmp = img.copy()
+    #tmp = img.copy()
+    tmp = img.copy() #cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
     drawCenter(tmp)
     cv2.imshow('image', tmp)
     
@@ -59,15 +58,13 @@ while(1):
         toggleSwitch()
     elif k == ord('r'):
         tmp = img.copy()
-    elif k == 32:
+    elif k == 32: # SPACE BAR UPDATE MOTORS
         x = cv2.getTrackbarPos('X [pel]', 'image')
         y = cv2.getTrackbarPos('Y [pel]', 'image')
-        xpos = x
-        ypox = y
         xscale = cv2.getTrackbarPos('X Scale [ct/pel]','image')
         yscale = cv2.getTrackbarPos('Y Scale [ct/pel]','image')
-        # SEND TO EPICS HERE
-        #cv2.circle(tmp,(x,y),3,(255,0,0),-1) # FILLER
+        # EPICS HERE
+        tmp = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1", dtype=np.uint8)
     elif k == 27:
         break
     elif k == 82:

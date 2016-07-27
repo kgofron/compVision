@@ -2064,7 +2064,7 @@ def load(filename, flag=None):
 		return img
 
         
-def fetchImg(SYS, DEV):
+def fetchImg(SYS, DEV, dtype = None):
         """
         Loads an image from an EPICS PV Value
 
@@ -2084,16 +2084,17 @@ def fetchImg(SYS, DEV):
         count = 0
         img = []
         row = []
-        dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
+        if dtype is None:
+                dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
         color = caget(SYSDEV + "cam1:ColorMode_RBV")
         for i in range(rows):
                 for j in range(cols):
                         row.append(data[count])
                         count = count + 1
-                r = np.array(row, dtype)
+                r = np.array(row, np.uint8)
                 img.append(r)
                 row = []
-        npra = np.array(img, dtype)
+        npra = np.array(img, np.uint8)
         save(npra, "fetchImg.jpg") # Might need to change file type
         img = load("fetchImg.jpg") # Might need to change file type
         return npra
