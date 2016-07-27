@@ -1,102 +1,108 @@
-* commit 5b991a1 (HEAD, master)
+* commit 47350c2 (HEAD, origin/master, origin/HEAD, master)
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   2 minutes ago
+| Date:   2 hours ago
+| 
+|     Update Files In Case Of Fire at 12:29:49 - 07/27/16
+|  
+* commit 5b991a1
+| Author: William Watson <wwatso13@jhu.edu>
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 12:28:12 - 07/27/16
 |  
 * commit 366e902
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   3 minutes ago
+| Date:   2 hours ago
 | 
 |     Update Files In Case Of Fire at 12:27:10 - 07/27/16
 |  
-* commit a893e01 (origin/master, origin/HEAD)
+* commit a893e01
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   20 hours ago
+| Date:   22 hours ago
 | 
 |     Update Files In Case Of Fire at 16:13:36 - 07/26/16
 |  
 * commit 4e5fce2
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   20 hours ago
+| Date:   22 hours ago
 | 
 |     Update Files In Case Of Fire at 16:08:55 - 07/26/16
 |  
 * commit cdc3b2b
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   20 hours ago
+| Date:   22 hours ago
 | 
 |     Update Files In Case Of Fire at 16:07:28 - 07/26/16
 |  
 * commit 46b4e4f
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   20 hours ago
+| Date:   22 hours ago
 | 
 |     Update Files In Case Of Fire at 16:05:39 - 07/26/16
 |  
 * commit 7a7da4d
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   24 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 12:54:24 - 07/26/16
 |  
 * commit 02efbcd
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   24 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 12:50:52 - 07/26/16
 |  
 * commit a15524e
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   24 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 12:48:54 - 07/26/16
 |  
 * commit 9a6c974
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   24 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 12:44:55 - 07/26/16
 |  
 * commit fb9635d
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   22 hours ago
+| Date:   24 hours ago
 | 
 |     Update Files In Case Of Fire at 14:56:25 - 07/26/16
 |  
 * commit d9150df
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   24 hours ago
+| Date:   26 hours ago
 | 
 |     Update Files In Case Of Fire at 12:36:29 - 07/26/16
 |  
 * commit 7e35a32
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   26 hours ago
+| Date:   28 hours ago
 | 
 |     Update Files In Case Of Fire at 10:04:02 - 07/26/16
 |  
 * commit 7608380
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   26 hours ago
+| Date:   29 hours ago
 | 
 |     Update Files In Case Of Fire at 10:00:40 - 07/26/16
 |  
 * commit 3f56a86
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   25 hours ago
+| Date:   27 hours ago
 | 
 |     Update Files In Case Of Fire at 11:30:46 - 07/26/16
 |  
 * commit 29107b7
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   28 hours ago
+| Date:   31 hours ago
 | 
 |     Update Files In Case Of Fire at 08:00:31 - 07/26/16
 |  
 * commit 11d1273
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   29 hours ago
+| Date:   31 hours ago
 | 
 |     Update Files In Case Of Fire at 07:44:35 - 07/26/16
 |  
