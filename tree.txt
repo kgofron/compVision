@@ -1,7 +1,7 @@
  AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
- AMX/Crystal/crystalCentering.py          |   32 +
+ AMX/Crystal/crystalCentering.py          |   35 +
  AMX/Crystal/cvlib.py                     | 3401 ++++++++++++++++++++++++++++++
- AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 107488 bytes
+ AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 107462 bytes
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
  AMX/Crystal/findloop_105.jpg             |  Bin 0 -> 11182 bytes
  AMX/Crystal/findloop_120.jpg             |  Bin 0 -> 10756 bytes
@@ -26,7 +26,7 @@
  AMX/Crystal/findloop_60.jpg              |  Bin 0 -> 11174 bytes
  AMX/Crystal/findloop_75.jpg              |  Bin 0 -> 10812 bytes
  AMX/Crystal/findloop_90.jpg              |  Bin 0 -> 11043 bytes
- AMX/Crystal/fit.png                      |  Bin 0 -> 36022 bytes
+ AMX/Crystal/fit.png                      |  Bin 0 -> 35999 bytes
  AMX/Crystal/found0.jpg                   |  Bin 0 -> 22573 bytes
  AMX/Crystal/found105.jpg                 |  Bin 0 -> 26832 bytes
  AMX/Crystal/found120.jpg                 |  Bin 0 -> 24596 bytes
@@ -51,7 +51,7 @@
  AMX/Crystal/found60.jpg                  |  Bin 0 -> 26378 bytes
  AMX/Crystal/found75.jpg                  |  Bin 0 -> 25417 bytes
  AMX/Crystal/found90.jpg                  |  Bin 0 -> 26261 bytes
- AMX/Crystal/graph.png                    |  Bin 0 -> 29028 bytes
+ AMX/Crystal/graph.png                    |  Bin 0 -> 29015 bytes
  AMX/Crystal/loop.gif                     |  Bin 0 -> 4229224 bytes
  AMX/Crystal/loop.py                      |   33 +
  AMX/Crystal/loopCenter.py                |   19 +
@@ -164,10 +164,12 @@
  IXS/OnAxis2/graph.png                    |  Bin 0 -> 18345 bytes
  IXS/OnAxis2/pin.py                       |   27 +
  IXS/OnAxis2/pinSample.jpg                |  Bin 0 -> 174994 bytes
+ IXS/OnAxis2/pointAndClickGUI.png         |  Bin 0 -> 1567745 bytes
  IXS/OnAxis2/result1.jpg                  |  Bin 0 -> 264458 bytes
  IXS/OnAxis2/result48.png                 |  Bin 0 -> 115329 bytes
  IXS/OnAxis2/result48.tif                 |  Bin 0 -> 24443290 bytes
  IXS/OnAxis2/result49.png                 |  Bin 0 -> 114638 bytes
+ IXS/OnAxis2/result49.tif                 |  Bin 0 -> 24443290 bytes
  IXS/OnAxis2/result50.png                 |  Bin 0 -> 114669 bytes
  IXS/OnAxis2/result51.png                 |  Bin 0 -> 112993 bytes
  IXS/OnAxis2/result52.png                 |  Bin 0 -> 112245 bytes
@@ -335,6 +337,7 @@
  XPD/test5.tif                            |  Bin 0 -> 4194556 bytes
  XPD/test6.tif                            |  Bin 0 -> 4194556 bytes
  XPD/test7.tif                            |  Bin 0 -> 4194556 bytes
+ XPD/xpdDemo.tif                          |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1513 +++++++++++++
  cvlib.py                                 | 3401 ++++++++++++++++++++++++++++++
  cvlib.pyc                                |  Bin 0 -> 99137 bytes
@@ -342,7 +345,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1472 +++++++++++++
+ gitlog.txt                               | 1478 +++++++++++++
  imgData.txt                              |    0
  install.sh                               |   31 +
  presentation.txt                         |    2 +
@@ -372,4 +375,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 374 files changed, 77537 insertions(+)
+ 377 files changed, 77546 insertions(+)
