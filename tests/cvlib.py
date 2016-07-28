@@ -537,7 +537,7 @@ def approxSinCurve(data, adjLinSp=2):
         optimize_func = lambda x: x[0]*np.sin(t+x[1]) + x[2] - data
         est_std, est_phase, est_mean = leastsq(optimize_func, [guess_std, guess_phase, guess_mean])[0]
         data_fit = est_std*np.sin(t+est_phase) + est_mean
-        return {"data": data_fit, "amplitude": est_std, "phase shift":-est_phase, "vertical shift": est_mean}
+        return {"data": data_fit, "amplitude": est_std, "phase shift":est_phase, "vertical shift": est_mean}
 
 
 def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo', clear=False):

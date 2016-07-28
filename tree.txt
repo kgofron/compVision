@@ -1,5 +1,9 @@
+ AMX/Crystal/Slide1.JPG                   |  Bin 0 -> 108875 bytes
+ AMX/Crystal/Slide2.JPG                   |  Bin 0 -> 119963 bytes
  AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
  AMX/Crystal/crystalCentering.py          |   35 +
+ AMX/Crystal/crystalOutput.txt            |    9 +
+ AMX/Crystal/crystalOutput.txt~           |    5 +
  AMX/Crystal/cvlib.py                     | 3401 ++++++++++++++++++++++++++++++
  AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 107462 bytes
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
@@ -26,7 +30,7 @@
  AMX/Crystal/findloop_60.jpg              |  Bin 0 -> 11174 bytes
  AMX/Crystal/findloop_75.jpg              |  Bin 0 -> 10812 bytes
  AMX/Crystal/findloop_90.jpg              |  Bin 0 -> 11043 bytes
- AMX/Crystal/fit.png                      |  Bin 0 -> 35999 bytes
+ AMX/Crystal/fit.png                      |  Bin 0 -> 36121 bytes
  AMX/Crystal/found0.jpg                   |  Bin 0 -> 22573 bytes
  AMX/Crystal/found105.jpg                 |  Bin 0 -> 26832 bytes
  AMX/Crystal/found120.jpg                 |  Bin 0 -> 24596 bytes
@@ -162,6 +166,7 @@
  IXS/OnAxis2/fetchImg.jpg                 |  Bin 0 -> 3740198 bytes
  IXS/OnAxis2/fit.png                      |  Bin 0 -> 23119 bytes
  IXS/OnAxis2/graph.png                    |  Bin 0 -> 18345 bytes
+ IXS/OnAxis2/outputPin.txt                |    1 +
  IXS/OnAxis2/pin.py                       |   27 +
  IXS/OnAxis2/pinSample.jpg                |  Bin 0 -> 174994 bytes
  IXS/OnAxis2/pointAndClickGUI.png         |  Bin 0 -> 1567745 bytes
@@ -345,7 +350,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1478 +++++++++++++
+ gitlog.txt                               | 1490 +++++++++++++
  imgData.txt                              |    0
  install.sh                               |   31 +
  presentation.txt                         |    2 +
@@ -375,4 +380,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 377 files changed, 77546 insertions(+)
+ 382 files changed, 77573 insertions(+)

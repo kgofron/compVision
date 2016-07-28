@@ -27,7 +27,7 @@ print angles
 print center
 print "\n"
 print d["amplitude"], d["phase shift"], d["vertical shift"]
-cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angle in Degrees", "Y Coord Centroid Best Fit", [0,360,0,400], style="--", filename="fit.png")
+cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angle in Degrees", "Y Coord Centroid Best Fit", [0,360,0,400], style="r--", filename="fit.png")
 cvlib.makeGraph(angles, d["data"], "Y Coord Per Angle", "Angle in Degrees", "Y Coord Centroid", [0,360,0,400], style="r--")
 # X = -[mc/pel]*A*sin(phase)
 # Y = -[mc/pel]*A*cos(phase)
