@@ -335,14 +335,14 @@
  XPD/test5.tif                            |  Bin 0 -> 4194556 bytes
  XPD/test6.tif                            |  Bin 0 -> 4194556 bytes
  XPD/test7.tif                            |  Bin 0 -> 4194556 bytes
- cvlib.html                               | 1512 +++++++++++++
+ cvlib.html                               | 1513 +++++++++++++
  cvlib.py                                 | 3401 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 105221 bytes
+ cvlib.pyc                                |  Bin 0 -> 99137 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1466 +++++++++++++
+ gitlog.txt                               | 1472 +++++++++++++
  imgData.txt                              |    0
  install.sh                               |   31 +
  presentation.txt                         |    2 +
@@ -372,5 +372,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- xpdDemo.tif                              |  Bin 0 -> 4194556 bytes
- 375 files changed, 77530 insertions(+)
+ 374 files changed, 77537 insertions(+)
