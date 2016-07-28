@@ -1,5 +1,5 @@
- AMX/Crystal/Slide1.JPG                   |  Bin 0 -> 108875 bytes
- AMX/Crystal/Slide2.JPG                   |  Bin 0 -> 119963 bytes
+ AMX/Crystal/Slide1.JPG                   |  Bin 0 -> 410130 bytes
+ AMX/Crystal/Slide2.JPG                   |  Bin 0 -> 459294 bytes
  AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
  AMX/Crystal/crystalCentering.py          |   35 +
  AMX/Crystal/crystalOutput.txt            |    9 +
@@ -345,12 +345,12 @@
  XPD/xpdDemo.tif                          |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1513 +++++++++++++
  cvlib.py                                 | 3401 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 99137 bytes
+ cvlib.pyc                                |  Bin 0 -> 99136 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1490 +++++++++++++
+ gitlog.txt                               | 1496 +++++++++++++
  imgData.txt                              |    0
  install.sh                               |   31 +
  presentation.txt                         |    2 +
@@ -380,4 +380,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 382 files changed, 77573 insertions(+)
+ 382 files changed, 77579 insertions(+)
