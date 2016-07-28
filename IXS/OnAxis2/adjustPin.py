@@ -44,7 +44,7 @@ def drawCenter(image):
     
     
 #img = cvlib.load("sample.tif")
-img = cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1", dtype = np.uint8)
+img = cvlib.load("sample.tif") #cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1", dtype = np.uint8)
 cv2.setMouseCallback('image', center)
 #tmp = img.copy()
 while(1):
