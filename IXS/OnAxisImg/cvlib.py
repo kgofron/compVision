@@ -42,7 +42,7 @@ EPICSCOLOR = {0: "gray", 1: "bayer", 2: "RBG1"}
 
 # METHODS KNOWN TO BE BROKEN / Need Further Looking!!!!!!!!!
 
-def fetchImg(SYS, DEV, dtype = None):
+def fetchImg(SYS, DEV):
         """
         EXPERIMENTAL
         Loads an image from an EPICS PV Value
@@ -55,21 +55,24 @@ def fetchImg(SYS, DEV, dtype = None):
         * Loaded Image
         """
         SYSDEV = str(SYS) + "{" + str(DEV) + "}"
-        pvname = SYSDEV + "image1:ArrayData"
-        img_pv = epics.PV(pvname)
-        raw_image = img_pv.get()
+        img = epics.caget(SYSDEV + "image1:ArrayData")
+        #img_pv = epics.PV(pvname)
+        #raw_image = img_pv.get()
         rows = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
         cols = epics.caget(SYSDEV + "image1:ArraySize0_RBV")
         dtype = epics.caget(SYSDEV + "cam1:DataType_RBV")
         color = epics.caget(SYSDEV + "cam1:ColorMode_RBV")
         print cols, rows
-        print len(raw_image)
-        print raw_image[:200]
-        img = Image.frombuffer('L', (cols, rows), raw_image, 'JPEG', 'L', 0, 1)
-        img.show()
-        img = np.array(img)
+        print img.shape
+        img = np.resize(img, (rows, cols))
         print img.shape
         return img
+        #print raw_image[:200]
+        #img = Image.frombuffer('L', (cols, rows), raw_image, 'JPEG', 'L', 0, 1)
+        #img.show()
+        #img = np.array(img)
+        #print img.shape
+        #return img
         """count = 0
         img = np.empty([rows, cols], dtype=np.uint8)
         #print img.shape

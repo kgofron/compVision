@@ -2,14 +2,19 @@ import cvlib
 import cv2
 import numpy as np
 
+SYS = "XF:10IDD-BI"
+DEV = "OnAxis-Cam:1"
+
 def nothing(args):
     pass
 
 # Set up GUI
 cv2.namedWindow('image', 0)
 # create trackbars for X Y XScale YScale
-cv2.createTrackbar('X [pel]','image',0,3296,nothing) # change to PV IMG SIZE
-cv2.createTrackbar('Y [pel]','image',0,2472,nothing) # change to PV IMG SIZE
+
+img = cvlib.fetchImg(SYS, DEV)
+cv2.createTrackbar('X [pel]','image',0,img.shape[1],nothing) # change to PV IMG SIZE
+cv2.createTrackbar('Y [pel]','image',0,img.shape[0],nothing) # change to PV IMG SIZE
 cv2.createTrackbar('X Scale [ct/pel]','image',0,100,nothing)
 cv2.createTrackbar('Y Scale [ct/pel]','image',0,100,nothing)
 
@@ -43,13 +48,13 @@ def drawCenter(image):
     image = cv2.line(image, (x,y-12), (x,y+12), (20, 255,100), 5)
     
     
-#img = cvlib.load("sample.tif")
-img = cvlib.load("sample.tif") #cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1", dtype = np.uint8)
+
+
 cv2.setMouseCallback('image', center)
 #tmp = img.copy()
 while(1):
     #tmp = img.copy()
-    tmp = img.copy() #cvlib.fetchImg("XF:10IDD-BI", "OnAxis-Cam:1")
+    tmp = cvlib.fetchImg(SYS, DEV)
     drawCenter(tmp)
     cv2.imshow('image', tmp)
     
