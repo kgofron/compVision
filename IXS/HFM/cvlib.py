@@ -56,55 +56,15 @@ def fetchImg(SYS, DEV):
         """
         SYSDEV = str(SYS) + "{" + str(DEV) + "}"
         img = epics.caget(SYSDEV + "image1:ArrayData")
-        #img_pv = epics.PV(pvname)
-        #raw_image = img_pv.get()
         rows = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
         cols = epics.caget(SYSDEV + "image1:ArraySize0_RBV")
         dtype = epics.caget(SYSDEV + "cam1:DataType_RBV")
         color = epics.caget(SYSDEV + "cam1:ColorMode_RBV")
-        print cols, rows
-        print img.shape
         img = np.resize(img, (rows, cols))
-        print img.shape
+        print img
+        print img.dtype
         return img
-        #print raw_image[:200]
-        #img = Image.frombuffer('L', (cols, rows), raw_image, 'JPEG', 'L', 0, 1)
-        #img.show()
-        #img = np.array(img)
-        #print img.shape
-        #return img
-        """count = 0
-        img = np.empty([rows, cols], dtype=np.uint8)
-        #print img.shape
-        if dtype is None:
-                dtype = EPICSTYPE[caget(SYSDEV + "cam1:DataType_RBV")]
-        color = caget(SYSDEV + "cam1:ColorMode_RBV")
-        for i in range(rows):
-                img
-
-        f = open('imgData.txt', 'w')
-        for i in range(rows):
-                for j in range(cols):
-                        img[i][j] = data[count]
-                        count += 1
-                #f.write("\n")
-        #f.close()
-        #npra = img #np.loadtxt('imgData.txt', dtype=np.uint8)
-        \"""
-        for i in range(rows):
-                for j in range(cols):
-                        row.append(data[count])
-                        count = count + 1
-                r = np.array(row, np.uint8)
-                img.append(r)
-                row = []
-        npra = np.array(img, np.uint8)
-        save(npra, "fetchImg.jpg") # Might need to change file type
-        img = load("fetchImg.jpg") # Might need to change file type
-        \"""
-
-        return img
-        """
+       
 
         
 def backgroundSubtract(img, flag=0):
