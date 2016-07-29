@@ -61,9 +61,7 @@ def fetchImg(SYS, DEV):
         dtype = epics.caget(SYSDEV + "cam1:DataType_RBV")
         color = epics.caget(SYSDEV + "cam1:ColorMode_RBV")
         img = np.resize(img, (rows, cols))
-        print img
-        print img.dtype
-        return img
+        return np.array(img)
        
 
         

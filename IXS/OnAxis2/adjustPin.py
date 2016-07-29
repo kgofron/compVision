@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 SYS = "XF:10IDD-BI"
-DEV = "Mir:VFM-Cam:1" #"OnAxis-Cam:1"
+DEV = "OnAxis-Cam:1"
 
 def nothing(args):
     pass
@@ -51,12 +51,11 @@ def drawCenter(image):
 
 
 cv2.setMouseCallback('image', center)
-#tmp = img.copy()
+tmp = img.copy()
 count = 0
 while(1):
-    print count
-    count += 1
     tmp = cvlib.fetchImg(SYS, DEV)
+    tmp = np.array(tmp, dtype=np.uint8)
     drawCenter(tmp)
     cv2.imshow('image', tmp)
     
@@ -71,8 +70,8 @@ while(1):
         xscale = cv2.getTrackbarPos('X Scale [ct/pel]','image')
         yscale = cv2.getTrackbarPos('Y Scale [ct/pel]','image')
         # EPICS HERE
-        diff = (cols/2 - x, rows/2 - y) # check signs
-        tmp = cvlib.fetchImg(SYS, DEV)
+        #diff = (cols/2 - x, rows/2 - y) # check signs
+        img = cvlib.fetchImg(SYS, DEV)
     elif k == 27:
         break
     elif k == 82:
