@@ -13,8 +13,8 @@ cv2.namedWindow('image', 0)
 # create trackbars for X Y XScale YScale
 
 img = cvlib.fetchImg(SYS, DEV)
-cv2.createTrackbar('X [pel]','image',0,img.shape[1],nothing) # change to PV IMG SIZE
-cv2.createTrackbar('Y [pel]','image',0,img.shape[0],nothing) # change to PV IMG SIZE
+cv2.createTrackbar('X [pel]','image',0, img.shape[1],nothing) # change to PV IMG SIZE
+cv2.createTrackbar('Y [pel]','image',0, img.shape[0],nothing) # change to PV IMG SIZE
 cv2.createTrackbar('X Scale [ct/pel]','image',0,100,nothing)
 cv2.createTrackbar('Y Scale [ct/pel]','image',0,100,nothing)
 
@@ -70,6 +70,9 @@ while(1):
         xscale = cv2.getTrackbarPos('X Scale [ct/pel]','image')
         yscale = cv2.getTrackbarPos('Y Scale [ct/pel]','image')
         # EPICS HERE
+        cvlib.caput(SYS+"{"+DEV+"}"+"Xpos", x)
+        cvlib.caput(SYS+"{"+DEV+"}"+"Ypos", y)
+        
         #diff = (cols/2 - x, rows/2 - y) # check signs
         img = cvlib.fetchImg(SYS, DEV)
     elif k == 27:
