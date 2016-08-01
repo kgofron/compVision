@@ -19,8 +19,8 @@ cv2.createTrackbar('X Scale [ct/pel]','image',0,100,nothing)
 cv2.createTrackbar('Y Scale [ct/pel]','image',0,100,nothing)
 
 # create switch for ON/OFF functionality
-switch = '0 : OFF \n1 : ON'
-cv2.createTrackbar(switch, 'image',0,1,nothing)
+switch = '0 : OFF \n1 : ON' #Maybe switch to 0 OFF 1 X 2 Y 3 Both
+cv2.createTrackbar(switch, 'image',0,3,nothing)
 
 def toggleSwitch():
     on = cv2.getTrackbarPos(switch, 'image')
