@@ -1,5 +1,4 @@
 from cvlib import *
-import numpy as np
 
 num = 24 #360/15 = 24 -> Higher number == more images, better acc
 SYS = "XF:10IDD-BI"
@@ -12,9 +11,7 @@ angles = []
 toppt = []
 
 # Start roatation here
-for i in range(num):
-    if angle < MaxAngle: #change to number of images
-        break
+for i in range(num) and angle < MaxAngle: #change to number of images
     img = fetchImg(SYS, DEV) #load("sample_00%d.tiff" % angle) #change name to fit img
     img = np.array(img, np.uint8)
     angle = caget(MOTOR+".RBV") #XF:10IDD-OP{Spec:1-Ax:Th}Mtr.RVB

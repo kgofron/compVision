@@ -1,13 +1,24 @@
 import cvlib
+import numpy as np
 
-angle = 0
-angles = []
-center = []
+SYS = ""
+DEV = ""
+MOTOR = ""
 NumImgs = 24
 angleAdj = 15
+angle = caget(MOTOR+".RBV")
+MaxAngle = 10
+MinAngle = -10
+angles = []
+center = []
 
-for i in range(NumImgs): #24
-    img = cvlib.load("findloop_%d.jpg" % angle)
+
+for i in range(NumImgs):
+    if angle < MaxAngle: #24
+        break
+    img = fetchImg(SYS, DEV) #cvlib.load("findloop_%d.jpg" % angle)
+    img = np.array(img, np.uint8)
+    angle = caget(MOTOR+".RBV")
     angles.append(angle)
     rng = cvlib.inRangeThresh(img, (20,30,20), (200,130,120))
     rng = cvlib.bitNot(rng)
@@ -24,7 +35,7 @@ for i in range(NumImgs): #24
     cvlib.display(img)
     cvlib.save(img, "found%d.jpg" % angle)
     # # # #
-    angle += angleAdj
+    #angle += angleAdj
 
 cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angle in Degrees", "Original Data Coord", [0,360,0,400], filename="graph.png")
 d = cvlib.approxSinCurve(center)
