@@ -2087,7 +2087,7 @@ def load(filename, flag=None):
 		return img
 
 
-def epicscaget(PV):
+def caget(PV):
         """
         Retrieves and Returns the value of the named PV
 
@@ -2100,7 +2100,7 @@ def epicscaget(PV):
         return epics.caget(PV)
 
 
-def epicscaput(PV, value):
+def caput(PV, value):
         """
         Sets the Value of the Named PV with Value
 
@@ -2111,7 +2111,7 @@ def epicscaput(PV, value):
         epics.caput(PV, value)
 
 
-def epicscainfo(PV):
+def cainfo(PV):
         """
         Returns a string of info about a PV
 

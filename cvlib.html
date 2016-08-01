@@ -9,7 +9,7 @@
 <td valign=bottom>&nbsp;<br>
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>cvlib</strong></big></big> (version 0.5.4.1)</font></td
 ><td align=right valign=bottom
-><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/wwatson/Documents/compVision/cvlib.py">/home/wwatson/Documents/compVision/cvlib.py</a></font></td></tr></table>
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/kaz/Documents/compVision/cvlib.py">/home/kaz/Documents/compVision/cvlib.py</a></font></td></tr></table>
     <p><tt>BNL&nbsp;NSLS-2&nbsp;Computer&nbsp;Vision&nbsp;Module<br>
 Author:&nbsp;William&nbsp;Watson<br>
 Date:&nbsp;2016-7-14<br>
@@ -278,6 +278,20 @@ Params:<br>
 &nbsp;<br>
 Returns:<br>
 *&nbsp;points&nbsp;to&nbsp;bouding&nbsp;rectangle</tt></dd></dl>
+ <dl><dt><a name="-caget"><strong>caget</strong></a>(PV)</dt><dd><tt>Retrieves&nbsp;and&nbsp;Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;named&nbsp;PV<br>
+&nbsp;<br>
+Params:&nbsp;&nbsp;<br>
+*&nbsp;PV&nbsp;-&nbsp;PV&nbsp;name&nbsp;to&nbsp;get<br>
+&nbsp;<br>
+Returns:&nbsp;<br>
+*&nbsp;Value&nbsp;of&nbsp;PV</tt></dd></dl>
+ <dl><dt><a name="-cainfo"><strong>cainfo</strong></a>(PV)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;of&nbsp;info&nbsp;about&nbsp;a&nbsp;PV<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;PV&nbsp;-&nbsp;The&nbsp;PV&nbsp;Value&nbsp;to&nbsp;retrieve&nbsp;info&nbsp;from<br>
+&nbsp;<br>
+Returns:<br>
+*&nbsp;String&nbsp;of&nbsp;info&nbsp;about&nbsp;PV</tt></dd></dl>
  <dl><dt><a name="-capture"><strong>capture</strong></a>()</dt><dd><tt>Captures&nbsp;and&nbsp;returns&nbsp;an&nbsp;image&nbsp;from&nbsp;Camera<br>
 &nbsp;<br>
 Returns:<br>
@@ -286,6 +300,11 @@ Returns:<br>
 &nbsp;<br>
 Params:<br>
 *&nbsp;title&nbsp;-&nbsp;OPTIONAL&nbsp;-&nbsp;name&nbsp;of&nbsp;display&nbsp;pop&nbsp;up,&nbsp;def:&nbsp;'Frame'</tt></dd></dl>
+ <dl><dt><a name="-caput"><strong>caput</strong></a>(PV, value)</dt><dd><tt>Sets&nbsp;the&nbsp;Value&nbsp;of&nbsp;the&nbsp;Named&nbsp;PV&nbsp;with&nbsp;Value<br>
+&nbsp;<br>
+Params:<br>
+*&nbsp;PV&nbsp;-&nbsp;PV&nbsp;to&nbsp;set<br>
+*&nbsp;value&nbsp;-&nbsp;Value&nbsp;to&nbsp;set&nbsp;PV&nbsp;to</tt></dd></dl>
  <dl><dt><a name="-centroid"><strong>centroid</strong></a>(cnt)</dt><dd><tt>Returns&nbsp;the&nbsp;centroid&nbsp;to&nbsp;a&nbsp;given&nbsp;contour<br>
 &nbsp;<br>
 Params:<br>
@@ -637,25 +656,6 @@ Params:&nbsp;<br>
 &nbsp;<br>
 Returns:<br>
 *&nbsp;Enhanced&nbsp;Img</tt></dd></dl>
- <dl><dt><a name="-epicscaget"><strong>epicscaget</strong></a>(PV)</dt><dd><tt>Retrieves&nbsp;and&nbsp;Returns&nbsp;the&nbsp;value&nbsp;of&nbsp;the&nbsp;named&nbsp;PV<br>
-&nbsp;<br>
-Params:&nbsp;&nbsp;<br>
-*&nbsp;PV&nbsp;-&nbsp;PV&nbsp;name&nbsp;to&nbsp;get<br>
-&nbsp;<br>
-Returns:&nbsp;<br>
-*&nbsp;Value&nbsp;of&nbsp;PV</tt></dd></dl>
- <dl><dt><a name="-epicscainfo"><strong>epicscainfo</strong></a>(PV)</dt><dd><tt>Returns&nbsp;a&nbsp;string&nbsp;of&nbsp;info&nbsp;about&nbsp;a&nbsp;PV<br>
-&nbsp;<br>
-Params:<br>
-*&nbsp;PV&nbsp;-&nbsp;The&nbsp;PV&nbsp;Value&nbsp;to&nbsp;retrieve&nbsp;info&nbsp;from<br>
-&nbsp;<br>
-Returns:<br>
-*&nbsp;String&nbsp;of&nbsp;info&nbsp;about&nbsp;PV</tt></dd></dl>
- <dl><dt><a name="-epicscaput"><strong>epicscaput</strong></a>(PV, value)</dt><dd><tt>Sets&nbsp;the&nbsp;Value&nbsp;of&nbsp;the&nbsp;Named&nbsp;PV&nbsp;with&nbsp;Value<br>
-&nbsp;<br>
-Params:<br>
-*&nbsp;PV&nbsp;-&nbsp;PV&nbsp;to&nbsp;set<br>
-*&nbsp;value&nbsp;-&nbsp;Value&nbsp;to&nbsp;set&nbsp;PV&nbsp;to</tt></dd></dl>
  <dl><dt><a name="-eqHist"><strong>eqHist</strong></a>(img)</dt><dd><tt>Histogram&nbsp;Equalization&nbsp;-&nbsp;Improves&nbsp;the&nbsp;contrast&nbsp;of&nbsp;an&nbsp;image&nbsp;via&nbsp;global&nbsp;contrast<br>
 &nbsp;<br>
 Params:<br>
