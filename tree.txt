@@ -3,7 +3,6 @@
  AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
  AMX/Crystal/crystalCentering.py          |   35 +
  AMX/Crystal/crystalOutput.txt            |    9 +
- AMX/Crystal/crystalOutput.txt~           |    5 +
  AMX/Crystal/cvlib.py                     | 3362 ++++++++++++++++++++++++++++++
  AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 107462 bytes
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
@@ -145,8 +144,10 @@
  IXS/BPM/BPM2-1.jpg                       |  Bin 0 -> 1747961 bytes
  IXS/BPM/BPM2-2.jpg                       |  Bin 0 -> 1747961 bytes
  IXS/BPM/BPM2Proc.py                      |   20 +
+ IXS/BPM/avg.png                          |  Bin 0 -> 29240 bytes
  IXS/BPM/cvlib.py                         | 3362 ++++++++++++++++++++++++++++++
  IXS/BPM/fetchImg.jpg                     |  Bin 0 -> 1729187 bytes
+ IXS/BPM/total.png                        |  Bin 0 -> 31317 bytes
  IXS/HFM/HFM0.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFM1.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFM2.jpg                         |  Bin 0 -> 640035 bytes
@@ -162,12 +163,12 @@
  IXS/Merlin/photo3.jpg                    |  Bin 0 -> 3861 bytes
  IXS/OnAxis2/adjustPin.py                 |   97 +
  IXS/OnAxis2/cvlib.py                     | 3362 ++++++++++++++++++++++++++++++
- IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 106481 bytes
+ IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 107221 bytes
  IXS/OnAxis2/fetchImg.jpg                 |  Bin 0 -> 3740198 bytes
- IXS/OnAxis2/fit.png                      |  Bin 0 -> 23119 bytes
- IXS/OnAxis2/graph.png                    |  Bin 0 -> 18345 bytes
+ IXS/OnAxis2/fit.png                      |  Bin 0 -> 27584 bytes
+ IXS/OnAxis2/graph.png                    |  Bin 0 -> 24643 bytes
  IXS/OnAxis2/outputPin.txt                |    1 +
- IXS/OnAxis2/pin.py                       |   27 +
+ IXS/OnAxis2/pin.py                       |   36 +
  IXS/OnAxis2/pinSample.jpg                |  Bin 0 -> 174994 bytes
  IXS/OnAxis2/pointAndClickGUI.png         |  Bin 0 -> 1567745 bytes
  IXS/OnAxis2/result1.jpg                  |  Bin 0 -> 264458 bytes
@@ -347,12 +348,12 @@
  XPD/xpdDemo.tif                          |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1513 ++++++++++++++
  cvlib.py                                 | 3362 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 98927 bytes
+ cvlib.pyc                                |  Bin 0 -> 98896 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1520 ++++++++++++++
+ gitlog.txt                               | 1545 ++++++++++++++
  imgData.txt                              |    0
  install.sh                               |   31 +
  presentation.txt                         |    2 +
@@ -381,4 +382,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 383 files changed, 76917 insertions(+)
+ 384 files changed, 76946 insertions(+)

@@ -1,27 +1,36 @@
 from cvlib import *
-from matplotlib import pyplot as plt
 
-angle = 0
+num = 24 #360/15 = 24 -> Higher number == more images, better acc
+SYS = "XF:10IDD-BI"
+DEV = "OnAxis-Cam:1"
+MOTOR = "XF:10IDD-OP{Spec:1-Ax:Th}Mtr"
+MaxAngle = 10
+MinAngle = -10
+angle = caget(MOTOR+".RBV") #XF:10IDD-OP{Spec:1-Ax:Th}Mtr.RBV
 angles = []
 toppt = []
 
-for i in range(24): #change to number of images
-    img = load("sample_00%d.tiff" % angle) #change name to fit img
+# Start roatation here
+for i in range(num) and angle < MaxAngle: #change to number of images
+    img = fetchImg(SYS, DEV) #load("sample_00%d.tiff" % angle) #change name to fit img
+    img = np.array(img, np.uint8)
+    angle = caget(MOTOR+".RBV") #XF:10IDD-OP{Spec:1-Ax:Th}Mtr.RVB
     angles.append(angle)
     flood = floodFill(img, (600,600), lo=0, hi=0)
     cnt = findContours(flood)
-    #drawContour(img, cnt[0], thickness=10)
     top = extremePoints(cnt[0])["T"]
-    #plotPoint(img, top, radius = 10)
     print "PIN TOP %d: " % angle, top
     toppt.append(top[0])
+    #plotPoint(img, top, radius = 10)
+    #drawContour(img, cnt[0], thickness=10)
     #save(img, "result%d.png" % i)
     #display(img)
-    angle += 15
+    
 
-saveGraph(angles, toppt, "Pin Tip Position", "Angle", "X Coord Top")
-
+saveGraph(angles, toppt, "Pin Tip Position", "Angle", "X Coord Top") # Do We need this?
 d = approxSinCurve(toppt)
-print d["amplitude"], d["phase shift"], d["vertical shift"]
-saveGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", filename="fit.png")
-makeGraph(angles, d["data"], "Y Coord Per Angle", "Angles in Degrees", "Y Coord Centroid", style="r")
+print d["amplitude"], d["phase shift"], d["vertical shift"] # Extract?
+saveGraph(angles, d["data"], "X Coord Per Angle", "Angles in Degrees", "X Coord Top", filename="fit.png")
+makeGraph(angles, d["data"], "X Coord Per Angle", "Angles in Degrees", "X Coord Top", style="r") # Get rid of this
+
+# use amplitude and phase to motors
