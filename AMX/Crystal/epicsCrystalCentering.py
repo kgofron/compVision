@@ -24,7 +24,7 @@ while cvlib.caget(MOTOR+".DMOV") != 1:
 cvlib.caput(MOTOR+".RLV", 360)
 
 for i in range(NumImgs):
-    if angle >= MaxAngle and cvlib.caget(MOTOR+".DMOV") == 1: #24
+    if angle >= MaxAngle or cvlib.caget(MOTOR+".DMOV") == 1: #24
         break
     angle = cvlib.caget(MOTOR+".RBV")
     img = cvlib.fetchImg(SYS, DEV) 

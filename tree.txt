@@ -3,8 +3,10 @@
  AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
  AMX/Crystal/crystalCentering.py          |   37 +
  AMX/Crystal/crystalOutput.txt            |    9 +
- AMX/Crystal/cvlib.py                     | 3362 ++++++++++++++++++++++++++++++
+ AMX/Crystal/cvlib.py                     | 3373 ++++++++++++++++++++++++++++++
  AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 107462 bytes
+ AMX/Crystal/epicsCrystalCentering.py     |   67 +
+ AMX/Crystal/epicsCrystalCentering.py~    |   46 +
  AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
  AMX/Crystal/findloop_105.jpg             |  Bin 0 -> 11182 bytes
  AMX/Crystal/findloop_120.jpg             |  Bin 0 -> 10756 bytes
@@ -60,7 +62,7 @@
  AMX/Crystal/loopCenter.py                |   19 +
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
- AMX/RawImages/cvlib.py                   | 3362 ++++++++++++++++++++++++++++++
+ AMX/RawImages/cvlib.py                   | 3373 ++++++++++++++++++++++++++++++
  AMX/RawImages/cvlib.pyc                  |  Bin 0 -> 107858 bytes
  AMX/RawImages/flood.py                   |   12 +
  AMX/RawImages/gripper.bmp                |  Bin 0 -> 466578 bytes
@@ -129,8 +131,8 @@
  AMX/RawImages/photo9.bmp                 |  Bin 0 -> 1921078 bytes
  AMX/RawImages/pin.bmp                    |  Bin 0 -> 179958 bytes
  AMX/RawImages/pinFlood.py                |  257 +++
- CVLibrary/cvlib.py                       | 3362 ++++++++++++++++++++++++++++++
- EPICS/cvlib.py                           | 3362 ++++++++++++++++++++++++++++++
+ CVLibrary/cvlib.py                       | 3373 ++++++++++++++++++++++++++++++
+ EPICS/cvlib.py                           | 3373 ++++++++++++++++++++++++++++++
  EPICS/fetchImg.jpg                       |  Bin 0 -> 632889 bytes
  EPICS/fetchImg.png                       |  Bin 0 -> 1777615 bytes
  EPICS/fetchImg.tiff                      |  Bin 0 -> 1914844 bytes
@@ -145,28 +147,30 @@
  IXS/BPM/BPM2-2.jpg                       |  Bin 0 -> 1747961 bytes
  IXS/BPM/BPM2Proc.py                      |   20 +
  IXS/BPM/avg.png                          |  Bin 0 -> 29240 bytes
- IXS/BPM/cvlib.py                         | 3362 ++++++++++++++++++++++++++++++
+ IXS/BPM/cvlib.py                         | 3373 ++++++++++++++++++++++++++++++
  IXS/BPM/fetchImg.jpg                     |  Bin 0 -> 1729187 bytes
  IXS/BPM/total.png                        |  Bin 0 -> 31317 bytes
  IXS/HFM/HFM0.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFM1.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFM2.jpg                         |  Bin 0 -> 640035 bytes
  IXS/HFM/HFMProc.py                       |    7 +
- IXS/HFM/cvlib.py                         | 3362 ++++++++++++++++++++++++++++++
+ IXS/HFM/cvlib.py                         | 3373 ++++++++++++++++++++++++++++++
  IXS/HFM/slitHFM.jpg                      |  Bin 0 -> 17208 bytes
  IXS/Merlin/README.md                     |    9 +
- IXS/Merlin/cvlib.py                      | 3362 ++++++++++++++++++++++++++++++
+ IXS/Merlin/cvlib.py                      | 3373 ++++++++++++++++++++++++++++++
  IXS/Merlin/cvlib.pyc                     |  Bin 0 -> 54813 bytes
  IXS/Merlin/merlin.py                     |   25 +
  IXS/Merlin/photo1.jpg                    |  Bin 0 -> 4543 bytes
  IXS/Merlin/photo2.jpg                    |  Bin 0 -> 4283 bytes
  IXS/Merlin/photo3.jpg                    |  Bin 0 -> 3861 bytes
  IXS/OnAxis2/adjustPin.py                 |   97 +
- IXS/OnAxis2/cvlib.py                     | 3362 ++++++++++++++++++++++++++++++
+ IXS/OnAxis2/cvlib.py                     | 3373 ++++++++++++++++++++++++++++++
  IXS/OnAxis2/cvlib.pyc                    |  Bin 0 -> 107221 bytes
  IXS/OnAxis2/fetchImg.jpg                 |  Bin 0 -> 3740198 bytes
  IXS/OnAxis2/fit.png                      |  Bin 0 -> 27584 bytes
  IXS/OnAxis2/graph.png                    |  Bin 0 -> 24643 bytes
+ IXS/OnAxis2/localPin.py                  |   38 +
+ IXS/OnAxis2/localPin.py~                 |   36 +
  IXS/OnAxis2/outputPin.txt                |    1 +
  IXS/OnAxis2/pin.py                       |   39 +
  IXS/OnAxis2/pinSample.jpg                |  Bin 0 -> 174994 bytes
@@ -187,7 +191,7 @@
  IXS/OnAxis2/sample_0052.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/test.py                      |    5 +
  IXS/OnAxis2/test.py~                     |    5 +
- IXS/OnAxisImg/cvlib.py                   | 3362 ++++++++++++++++++++++++++++++
+ IXS/OnAxisImg/cvlib.py                   | 3373 ++++++++++++++++++++++++++++++
  IXS/OnAxisImg/cvlib.pyc                  |  Bin 0 -> 61470 bytes
  IXS/OnAxisImg/floodfill.py               |   80 +
  IXS/OnAxisImg/img.jpg                    |  Bin 0 -> 2031427 bytes
@@ -209,9 +213,9 @@
  IXS/VFM/VFM1.jpg                         |  Bin 0 -> 129402 bytes
  IXS/VFM/VFM2.jpg                         |  Bin 0 -> 129402 bytes
  IXS/VFM/VFMProc.py                       |    8 +
- IXS/VFM/cvlib.py                         | 3362 ++++++++++++++++++++++++++++++
+ IXS/VFM/cvlib.py                         | 3373 ++++++++++++++++++++++++++++++
  IXS/VFM/slitVFM.jpg                      |  Bin 0 -> 5855 bytes
- IXS/cvlib.py                             | 3362 ++++++++++++++++++++++++++++++
+ IXS/cvlib.py                             | 3373 ++++++++++++++++++++++++++++++
  IXS/cvlib.pyc                            |  Bin 0 -> 102997 bytes
  IXS/test.py                              |   70 +
  KazImages/Crystals/Crystals.py           |   24 +
@@ -224,7 +228,7 @@
  KazImages/Crystals/bulb/bulbPic.jpg      |  Bin 0 -> 26353 bytes
  KazImages/Crystals/crystalProc.py        |   20 +
  KazImages/Crystals/crystals.png          |  Bin 0 -> 14358985 bytes
- KazImages/Crystals/cvlib.py              | 3362 ++++++++++++++++++++++++++++++
+ KazImages/Crystals/cvlib.py              | 3373 ++++++++++++++++++++++++++++++
  KazImages/Crystals/line.py               |   20 +
  KazImages/Crystals/line/T2016070610.jpg  |  Bin 0 -> 500024 bytes
  KazImages/Crystals/line/T201607068.jpg   |  Bin 0 -> 499584 bytes
@@ -249,7 +253,7 @@
  KazImages/XrayImg/T201606308.jpg         |  Bin 0 -> 46757 bytes
  KazImages/XrayImg/T201606309.jpg         |  Bin 0 -> 51600 bytes
  KazImages/XrayImg/beam.png               |  Bin 0 -> 829223 bytes
- KazImages/XrayImg/cvlib.py               | 3362 ++++++++++++++++++++++++++++++
+ KazImages/XrayImg/cvlib.py               | 3373 ++++++++++++++++++++++++++++++
  KazImages/XrayImg/cvlib.pyc              |  Bin 0 -> 54970 bytes
  KazImages/XrayImg/xray.py                |   32 +
  LICENSE                                  |   21 +
@@ -262,7 +266,7 @@
  Showcase/BPMjet.jpg                      |  Bin 0 -> 648244 bytes
  Showcase/BPMthresh.jpg                   |  Bin 0 -> 39337 bytes
  Showcase/BenchTest/BenchTests.txt        |   21 +
- Showcase/BenchTest/cvlib.py              | 3362 ++++++++++++++++++++++++++++++
+ Showcase/BenchTest/cvlib.py              | 3373 ++++++++++++++++++++++++++++++
  Showcase/BenchTest/cvlib.pyc             |  Bin 0 -> 105607 bytes
  Showcase/BenchTest/gripper.bmp           |  Bin 0 -> 466578 bytes
  Showcase/BenchTest/matchTestNoDis.py     |   36 +
@@ -297,7 +301,7 @@
  Showcase/MerlinJet.jpg                   |  Bin 0 -> 7663 bytes
  Showcase/MerlinResult.jpg                |  Bin 0 -> 7983 bytes
  Showcase/README.md                       |    5 +
- Showcase/cvlib.py                        | 3362 ++++++++++++++++++++++++++++++
+ Showcase/cvlib.py                        | 3373 ++++++++++++++++++++++++++++++
  Showcase/cvlib.pyc                       |  Bin 0 -> 103861 bytes
  Showcase/gripper.bmp                     |  Bin 0 -> 466578 bytes
  Showcase/img1.jpg                        |  Bin 0 -> 142249 bytes
@@ -329,7 +333,7 @@
  XPD/Au10_Test-00005.tif                  |  Bin 0 -> 16777436 bytes
  XPD/Au10_Test-00006.tif                  |  Bin 0 -> 16777436 bytes
  XPD/Au10_Test-00007.tif                  |  Bin 0 -> 16777436 bytes
- XPD/cvlib.py                             | 3362 ++++++++++++++++++++++++++++++
+ XPD/cvlib.py                             | 3373 ++++++++++++++++++++++++++++++
  XPD/cvlib.pyc                            |  Bin 0 -> 106045 bytes
  XPD/cvlibNoEpics.py                      | 3299 +++++++++++++++++++++++++++++
  XPD/cvlibNoEpics.pyc                     |  Bin 0 -> 101202 bytes
@@ -347,13 +351,13 @@
  XPD/test7.tif                            |  Bin 0 -> 4194556 bytes
  XPD/xpdDemo.tif                          |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1513 ++++++++++++++
- cvlib.py                                 | 3362 ++++++++++++++++++++++++++++++
+ cvlib.py                                 | 3373 ++++++++++++++++++++++++++++++
  cvlib.pyc                                |  Bin 0 -> 98896 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1551 ++++++++++++++
+ gitlog.txt                               | 1569 ++++++++++++++
  imgData.txt                              |    0
  install.sh                               |   31 +
  presentation.txt                         |    2 +
@@ -364,7 +368,7 @@
  tests/bit16.png                          |  Bin 0 -> 1777615 bytes
  tests/coherence.jpg                      |  Bin 0 -> 170810 bytes
  tests/coin.jpg                           |  Bin 0 -> 118766 bytes
- tests/cvlib.py                           | 3362 ++++++++++++++++++++++++++++++
+ tests/cvlib.py                           | 3373 ++++++++++++++++++++++++++++++
  tests/cvlib.pyc                          |  Bin 0 -> 103359 bytes
  tests/cvlibNoEpics.py                    | 3299 +++++++++++++++++++++++++++++
  tests/cvlibNoEpics.pyc                   |  Bin 0 -> 102095 bytes
@@ -382,4 +386,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 384 files changed, 76957 insertions(+)
+ 388 files changed, 77360 insertions(+)

@@ -56,11 +56,18 @@ def fetchImg(SYS, DEV):
         """
         SYSDEV = str(SYS) + "{" + str(DEV) + "}"
         img = epics.caget(SYSDEV + "image1:ArrayData")
-        rows = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
-        cols = epics.caget(SYSDEV + "image1:ArraySize0_RBV")
-        dtype = epics.caget(SYSDEV + "cam1:DataType_RBV")
         color = epics.caget(SYSDEV + "cam1:ColorMode_RBV")
-        img = np.resize(img, (rows, cols))
+        if color == 2:
+                rows = epics.caget(SYSDEV + "image1:ArraySize2_RBV")
+                cols = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
+        else :
+                rows = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
+                cols = epics.caget(SYSDEV + "image1:ArraySize0_RBV")
+        dtype = epics.caget(SYSDEV + "cam1:DataType_RBV")
+        if color == 0:
+                img = np.resize(img, (rows, cols))
+        else:
+                img = np.resize(img, (rows, cols, 3))
         return np.array(img)
        
 
@@ -478,7 +485,7 @@ def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
         plt.show()
 
 
-def approxSinCurve(data, adjLinSp=2):
+def approxSinCurve(angles, data, adjLinSp=2):
         """
         Approximates a Sin Curve to given Data using the Least Squares Solutions Method
         
@@ -490,15 +497,19 @@ def approxSinCurve(data, adjLinSp=2):
         * {"data", "amplitude", "phase shift", "vertical shift"} dictionary
         """
         N = len(data)
-        t = np.linspace(0, adjLinSp*np.pi, N)
+        t = [] #angles #np.linspace(0, adjLinSp*np.pi, N)
+        for item in angles:
+                t.append(item * np.pi / 180.0)
         guess_mean = np.mean(data)
         guess_std = 3*np.std(data)/(2**0.5)
         guess_phase = 0
-        data_first_guess = guess_std*np.sin(t+guess_phase) + guess_mean
+        data_first_guess = []
+        for item in t:
+                data_first_guess.append(guess_std*np.sin(item+guess_phase) + guess_mean)
         optimize_func = lambda x: x[0]*np.sin(t+x[1]) + x[2] - data
         est_std, est_phase, est_mean = leastsq(optimize_func, [guess_std, guess_phase, guess_mean])[0]
         data_fit = est_std*np.sin(t+est_phase) + est_mean
-        return {"data": data_fit, "amplitude": est_std, "phase shift":est_phase, "vertical shift": est_mean}
+        return {"data": data_fit, "amplitude": est_std, "phase shift":est_phase*180.0/np.pi, "vertical shift": est_mean}
 
 
 def makeGraph(xval, yval, title = "GRAPH", xlabel="X AXIS", ylabel="Y AXIS", axisRng=None, style='bo', clear=False):
