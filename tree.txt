@@ -257,6 +257,9 @@
  KazImages/XrayImg/cvlib.pyc              |  Bin 0 -> 54970 bytes
  KazImages/XrayImg/xray.py                |   32 +
  LICENSE                                  |   21 +
+ Papers/General Audience Abstract.pdf     |  Bin 0 -> 111554 bytes
+ Papers/Integrating Computer Vision.pdf   |  Bin 0 -> 2498793 bytes
+ Papers/Poster.pdf                        |  Bin 0 -> 1884625 bytes
  README.md                                |   50 +
  Showcase/BPM1Proc.py                     |   22 +
  Showcase/BPM1ProcNoDis.py                |   22 +
@@ -357,9 +360,9 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1575 ++++++++++++++
+ gitlog.txt                               | 1587 ++++++++++++++
  imgData.txt                              |    0
- install.sh                               |   31 +
+ install.sh                               |   26 +
  presentation.txt                         |    2 +
  showDocs.sh                              |    5 +
  testFetch.py                             |    4 +
@@ -386,4 +389,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   23 +
  wordcount.sh                             |    7 +
- 388 files changed, 77366 insertions(+)
+ 391 files changed, 77373 insertions(+)

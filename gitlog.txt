@@ -1,18 +1,30 @@
-* commit eb74c79 (HEAD, origin/master, origin/HEAD, master)
+* commit 3413cfc (HEAD, origin/master, origin/HEAD, master)
+| Author: Bill Watson <wwatso13@jhu.edu>
+| Date:   in the future
+| 
+|     Deliverables
+|  
+* commit d9c0356
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   16 minutes ago
+| Date:   18 minutes ago
+| 
+|     Update Files In Case Of Fire at 13:31:49 - 08/02/16
+|  
+* commit eb74c79
+| Author: William Watson <wwatso13@jhu.edu>
+| Date:   34 minutes ago
 | 
 |     Update Files In Case Of Fire at 13:15:40 - 08/02/16
 |  
 * commit e9e2cd8
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   22 minutes ago
+| Date:   40 minutes ago
 | 
 |     Add files via upload
 |  
 * commit 6dbe6c0
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   23 minutes ago
+| Date:   40 minutes ago
 | 
 |     Add files via upload
 |  

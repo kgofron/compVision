@@ -13,17 +13,12 @@ unzip 3.1.0.zip
 cd opencv-3.1.0
 mkdir build
 cd build
-cmake -D CMAKE_BUILD_TYPE=RELEASE \
-	-D CMAKE_INSTALL_PREFIX=/usr/local \
-	-D INSTALL_C_EXAMPLES=ON \
-	-D INSTALL_PYTHON_EXAMPLES=OFF \
-	-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
-	-D BUILD_EXAMPLES=ON ..
+cmake CMakeLists.txt
 
-make -j4
+make
+make install
 
-sudo make install
-sudo ldconfig
+#sudo ldconfig
 
 printf "Installation Complete..."
 printf "Please Verify that OpenCV 3.1.0 has been imstalled..."
