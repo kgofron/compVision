@@ -1,361 +1,367 @@
-* commit 3413cfc (HEAD, origin/master, origin/HEAD, master)
+* commit 9b13674 (HEAD, origin/master, origin/HEAD, master)
+| Author: William Watson <wwatso13@jhu.edu>
+| Date:   21 hours ago
+| 
+|     Update Files In Case Of Fire at 13:49:24 - 08/02/16
+|  
+* commit 3413cfc
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   in the future
+| Date:   19 hours ago
 | 
 |     Deliverables
 |  
 * commit d9c0356
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   18 minutes ago
+| Date:   21 hours ago
 | 
 |     Update Files In Case Of Fire at 13:31:49 - 08/02/16
 |  
 * commit eb74c79
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   34 minutes ago
+| Date:   22 hours ago
 | 
 |     Update Files In Case Of Fire at 13:15:40 - 08/02/16
 |  
 * commit e9e2cd8
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   40 minutes ago
+| Date:   22 hours ago
 | 
 |     Add files via upload
 |  
 * commit 6dbe6c0
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   40 minutes ago
+| Date:   22 hours ago
 | 
 |     Add files via upload
 |  
 * commit 1c98573
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   24 hours ago
+| Date:   2 days ago
 | 
 |     Update Files In Case Of Fire at 13:30:30 - 08/01/16
 |  
 * commit 8167b31
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   28 hours ago
+| Date:   2 days ago
 | 
 |     Update Files In Case Of Fire at 09:44:50 - 08/01/16
 |    
 *   commit 1bde64e
 |\  Merge: 33186fc d386efb
 | | Author: William Watson <wwatso13@jhu.edu>
-| | Date:   30 hours ago
+| | Date:   2 days ago
 | | 
 | |     Merge branch 'master' of https://github.com/nextBillyonair/compVision
 | |   
 | * commit d386efb
 | | Author: Bill Watson <wwatso13@jhu.edu>
-| | Date:   2 days ago
+| | Date:   3 days ago
 | | 
 | |     Add files via upload
 | |   
 | * commit f0f0b03
 | | Author: Kazimierz <kgofron@bnl.gov>
-| | Date:   4 days ago
+| | Date:   5 days ago
 | | 
 | |     Update Files In Case Of Fire at 15:36:55 - 07/29/16
 | |   
 * | commit 33186fc
 |/  Author: William Watson <wwatso13@jhu.edu>
-|   Date:   30 hours ago
+|   Date:   2 days ago
 |   
 |       push gui
 |  
 * commit eb07969
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   4 days ago
+| Date:   5 days ago
 | 
 |     Update Files In Case Of Fire at 14:53:14 - 07/29/16
 |  
 * commit 817dafe
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   4 days ago
+| Date:   5 days ago
 | 
 |     Update Files In Case Of Fire at 13:48:30 - 07/29/16
 |  
 * commit 9efa150
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   4 days ago
+| Date:   5 days ago
 | 
 |     Update Files In Case Of Fire at 10:16:11 - 07/29/16
 |  
 * commit 0881663
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   5 days ago
+| Date:   6 days ago
 | 
 |     Update Files In Case Of Fire at 11:24:12 - 07/28/16
 |  
 * commit 972a34d
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   5 days ago
+| Date:   6 days ago
 | 
 |     Update Files In Case Of Fire at 09:08:33 - 07/28/16
 |  
 * commit 696d263
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   5 days ago
+| Date:   6 days ago
 | 
 |     Add files via upload
 |  
 * commit dfa0169
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   5 days ago
+| Date:   6 days ago
 | 
 |     Update Files In Case Of Fire at 07:52:45 - 07/28/16
 |  
 * commit f5d1052
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   5 days ago
+| Date:   6 days ago
 | 
 |     Update Files In Case Of Fire at 09:55:33 - 07/28/16
 |  
 * commit 8b6ca02
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   5 days ago
+| Date:   6 days ago
 | 
 |     Update Files In Case Of Fire at 07:39:38 - 07/28/16
 |  
 * commit 72915e2
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   6 days ago
+| Date:   7 days ago
 | 
 |     Update Files In Case Of Fire at 14:30:36 - 07/27/16
 |  
 * commit 47350c2
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   6 days ago
+| Date:   7 days ago
 | 
 |     Update Files In Case Of Fire at 12:29:49 - 07/27/16
 |  
 * commit 5b991a1
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   6 days ago
+| Date:   7 days ago
 | 
 |     Update Files In Case Of Fire at 12:28:12 - 07/27/16
 |  
 * commit 366e902
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   6 days ago
+| Date:   7 days ago
 | 
 |     Update Files In Case Of Fire at 12:27:10 - 07/27/16
 |  
 * commit a893e01
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 16:13:36 - 07/26/16
 |  
 * commit 4e5fce2
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 16:08:55 - 07/26/16
 |  
 * commit cdc3b2b
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 16:07:28 - 07/26/16
 |  
 * commit 46b4e4f
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 16:05:39 - 07/26/16
 |  
 * commit 7a7da4d
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 12:54:24 - 07/26/16
 |  
 * commit 02efbcd
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 12:50:52 - 07/26/16
 |  
 * commit a15524e
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 12:48:54 - 07/26/16
 |  
 * commit 9a6c974
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 12:44:55 - 07/26/16
 |  
 * commit fb9635d
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 14:56:25 - 07/26/16
 |  
 * commit d9150df
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 12:36:29 - 07/26/16
 |  
 * commit 7e35a32
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 10:04:02 - 07/26/16
 |  
 * commit 7608380
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 10:00:40 - 07/26/16
 |  
 * commit 3f56a86
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 11:30:46 - 07/26/16
 |  
 * commit 29107b7
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 08:00:31 - 07/26/16
 |  
 * commit 11d1273
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   7 days ago
+| Date:   8 days ago
 | 
 |     Update Files In Case Of Fire at 07:44:35 - 07/26/16
 |  
 * commit 35a1bc8
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   8 days ago
+| Date:   9 days ago
 | 
 |     Update Files In Case Of Fire at 14:21:46 - 07/25/16
 |  
 * commit 03e422d
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   8 days ago
+| Date:   9 days ago
 | 
 |     Update Files In Case Of Fire at 14:13:53 - 07/25/16
 |  
 * commit c118fd9
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   8 days ago
+| Date:   9 days ago
 | 
 |     Update Files In Case Of Fire at 11:15:40 - 07/25/16
 |  
 * commit cee4e07
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   8 days ago
+| Date:   9 days ago
 | 
 |     Update Files In Case Of Fire at 11:47:48 - 07/25/16
 |  
 * commit 4255965
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   8 days ago
+| Date:   9 days ago
 | 
 |     Update Files In Case Of Fire at 09:26:22 - 07/25/16
 |  
 * commit 00edff2
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   8 days ago
+| Date:   9 days ago
 | 
 |     Update Files In Case Of Fire at 08:29:37 - 07/25/16
 |  
 * commit 79b1824
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   8 days ago
+| Date:   9 days ago
 | 
 |     Update Files In Case Of Fire at 09:47:06 - 07/25/16
 |  
 * commit df0d0af
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   10 days ago
+| Date:   11 days ago
 | 
 |     Update README.md
 |  
 * commit c392077
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   10 days ago
+| Date:   11 days ago
 | 
 |     Update install.sh
 |  
 * commit d4e4118
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   10 days ago
+| Date:   11 days ago
 | 
 |     Update install.sh
 |  
 * commit 32465f2
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   10 days ago
+| Date:   11 days ago
 | 
 |     Update install.sh
 |  
 * commit 1094238
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   10 days ago
+| Date:   11 days ago
 | 
 |     Update Files In Case Of Fire at 16:06:00 - 07/23/16
 |  
 * commit e182055
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   10 days ago
+| Date:   11 days ago
 | 
 |     Update README.md
 |  
 * commit a6af11b
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Add files via upload
 |  
 * commit 6b865c2
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Update Files In Case Of Fire at 09:45:41 - 07/22/16
 |  
 * commit fdd4a23
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Update Files In Case Of Fire at 11:45:54 - 07/22/16
 |  
 * commit 4d2504e
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Update Files In Case Of Fire at 11:38:07 - 07/22/16
 |  
 * commit ec30fda
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Update Files In Case Of Fire at 11:36:33 - 07/22/16
 |  
 * commit 8200d33
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Update Files In Case Of Fire at 11:29:34 - 07/22/16
 |  
 * commit 802d2f3
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Update Files In Case Of Fire at 08:55:24 - 07/22/16
 |  
 * commit 5e54a49
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   11 days ago
+| Date:   12 days ago
 | 
 |     Update Files In Case Of Fire at 08:54:39 - 07/22/16
 |  
@@ -367,355 +373,355 @@
 |  
 * commit 62709cf
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 02:00:44 - 07/22/16
 |  
 * commit 9ded1b8
 | Author: William Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 01:43:40 - 07/22/16
 |  
 * commit 1a13f0f
 | Author: Debian Live user <user@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 01:41:18 - 07/22/16
 |  
 * commit 17d0b2a
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit f4ca598
 | Author: Debian Live user <user@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 23:10:51 - 07/21/16
 |  
 * commit cc62071
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit f1d7651
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 17:02:51 - 07/21/16
 |  
 * commit bcc27da
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 14:47:09 - 07/21/16
 |  
 * commit 85c103a
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 16:23:51 - 07/21/16
 |  
 * commit 4ad298f
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 16:17:16 - 07/21/16
 |  
 * commit 8f33d52
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Create match19.py
 |  
 * commit fe066ec
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Create match7.py
 |  
 * commit dcb5d90
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Create match3.py
 |  
 * commit f48c372
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Create match2.py
 |  
 * commit 4f45878
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 12:44:27 - 07/21/16
 |  
 * commit 6c120a4
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 10:47:12 - 07/21/16
 |  
 * commit 36ef939
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 13:00:40 - 07/21/16
 |  
 * commit 0051e82
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 10:11:23 - 07/21/16
 |  
 * commit 6710d70
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 10:04:35 - 07/21/16
 |  
 * commit 8422b3f
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit 5e1413a
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit 6580d49
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit a81dac0
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 09:48:21 - 07/21/16
 |  
 * commit d07d32d
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit 06abfd0
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Delete ocv3_ipp_speedup.jpg
 |  
 * commit 8f2f811
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 11:50:58 - 07/21/16
 |  
 * commit c91e526
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 09:26:21 - 07/21/16
 |  
 * commit d77193b
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit 8ea9fc3
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit 70868cb
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 08:10:01 - 07/21/16
 |  
 * commit 06837ce
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 08:07:14 - 07/21/16
 |  
 * commit 8322827
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Add files via upload
 |  
 * commit 770b570
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 07:54:14 - 07/21/16
 |  
 * commit 23a320a
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 07:21:56 - 07/21/16
 |  
 * commit a244884
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   12 days ago
+| Date:   13 days ago
 | 
 |     Update Files In Case Of Fire at 07:20:49 - 07/21/16
 |  
 * commit 4090004
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update cvlib.py
 |  
 * commit 8d9f51f
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Add files via upload
 |  
 * commit 1463bf7
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Add files via upload
 |  
 * commit 4015224
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Add files via upload
 |  
 * commit b7b3928
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Add files via upload
 |  
 * commit 5953081
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Add files via upload
 |  
 * commit 825d170
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 14:32:09 - 07/20/16
 |  
 * commit 796a10f
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 14:05:33 - 07/20/16
 |  
 * commit 6ea61bd
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 15:56:03 - 07/20/16
 |  
 * commit a5d9f09
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 13:22:55 - 07/20/16
 |  
 * commit 5699427
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 15:37:38 - 07/20/16
 |  
 * commit 54c99de
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 15:17:34 - 07/20/16
 |  
 * commit fea0331
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 12:50:10 - 07/20/16
 |  
 * commit 803025f
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 10:26:33 - 07/20/16
 |  
 * commit 8aaeaa5
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 10:25:39 - 07/20/16
 |  
 * commit 77ada06
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 12:39:35 - 07/20/16
 |  
 * commit f57a4ec
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 09:43:50 - 07/20/16
 |  
 * commit 2687297
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update LICENSE
 |  
 * commit fd19902
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 11:23:12 - 07/20/16
 |  
 * commit cf67f10
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 08:53:55 - 07/20/16
 |  
 * commit 66e2960
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 11:06:39 - 07/20/16
 |  
 * commit 2ba9ada
 | Author: William Watson <wwatson@localhost.localdomain>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 08:39:50 - 07/20/16
 |  
 * commit 2aea735
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 09:30:13 - 07/20/16
 |  
 * commit 8ffdbfa
 | Author: William Watson <wwatson@xf10id-ws3.cs.nsls2.local>
-| Date:   13 days ago
+| Date:   2 weeks ago
 | 
 |     Update Files In Case Of Fire at 09:25:10 - 07/20/16
 |  
