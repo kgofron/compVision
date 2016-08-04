@@ -489,14 +489,14 @@ def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
         plt.show()
 
 
-def approxSinCurve(angles, data, adjLinSp=2):
+def approxSinCurve(angles, data):
         """
         Approximates a Sin Curve to given Data using the Least Squares Solutions Method
         
         Params:
+        * angles - List of angles
         * data - list of data points
-        * adjLinSp - OPTIONAL - adjusts the linear space multiplier; def: 2 (2 pi range)
-
+        
         Returns:
         * {"data", "amplitude", "phase shift", "vertical shift"} dictionary
         """

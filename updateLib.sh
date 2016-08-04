@@ -2,6 +2,7 @@
 
 printf "Copying Files into Sub Directories..."
 cp cvlib.py AMX/Crystal/cvlib.py
+cp cvlib.py AMX/Crystal/pics/cvlib.py
 cp cvlib.py AMX/RawImages/cvlib.py
 cp cvlib.py AMX/etc/cvlib.py
 cp cvlib.py CVLibrary/cvlib.py

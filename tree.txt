@@ -60,6 +60,17 @@
  AMX/Crystal/jeanImg/loop.gif             |  Bin 0 -> 4229224 bytes
  AMX/Crystal/loop.py                      |   33 +
  AMX/Crystal/loopCenter.py                |   19 +
+ AMX/Crystal/pics/EPICS000.jpg            |  Bin 0 -> 64538 bytes
+ AMX/Crystal/pics/EPICS001.jpg            |  Bin 0 -> 63562 bytes
+ AMX/Crystal/pics/EPICS008.jpg            |  Bin 0 -> 62083 bytes
+ AMX/Crystal/pics/EPICS015.jpg            |  Bin 0 -> 62418 bytes
+ AMX/Crystal/pics/EPICS030.jpg            |  Bin 0 -> 64802 bytes
+ AMX/Crystal/pics/EPICS040.jpg            |  Bin 0 -> 72000 bytes
+ AMX/Crystal/pics/EPICS049.jpg            |  Bin 0 -> 83691 bytes
+ AMX/Crystal/pics/EPICS065.jpg            |  Bin 0 -> 101377 bytes
+ AMX/Crystal/pics/EPICS074.jpg            |  Bin 0 -> 117802 bytes
+ AMX/Crystal/pics/EPICS089.jpg            |  Bin 0 -> 132896 bytes
+ AMX/Crystal/pics/EPICS099.jpg            |  Bin 0 -> 141628 bytes
  AMX/Crystal/pics/EPICS109.jpg            |  Bin 0 -> 138786 bytes
  AMX/Crystal/pics/EPICS122.jpg            |  Bin 0 -> 130038 bytes
  AMX/Crystal/pics/EPICS134.jpg            |  Bin 0 -> 113794 bytes
@@ -84,6 +95,18 @@
  AMX/Crystal/pics/EPICS349.jpg            |  Bin 0 -> 72800 bytes
  AMX/Crystal/pics/EPICS355.jpg            |  Bin 0 -> 67314 bytes
  AMX/Crystal/pics/EPICS359.jpg            |  Bin 0 -> 65056 bytes
+ AMX/Crystal/pics/before.gif              |  Bin 0 -> 7113008 bytes
+ AMX/Crystal/pics/centered.gif            |  Bin 0 -> 8301654 bytes
+ AMX/Crystal/pics/foundEPICS000.jpg       |  Bin 0 -> 87064 bytes
+ AMX/Crystal/pics/foundEPICS005.jpg       |  Bin 0 -> 84717 bytes
+ AMX/Crystal/pics/foundEPICS013.jpg       |  Bin 0 -> 80000 bytes
+ AMX/Crystal/pics/foundEPICS027.jpg       |  Bin 0 -> 78500 bytes
+ AMX/Crystal/pics/foundEPICS037.jpg       |  Bin 0 -> 83730 bytes
+ AMX/Crystal/pics/foundEPICS052.jpg       |  Bin 0 -> 94681 bytes
+ AMX/Crystal/pics/foundEPICS062.jpg       |  Bin 0 -> 104007 bytes
+ AMX/Crystal/pics/foundEPICS073.jpg       |  Bin 0 -> 111123 bytes
+ AMX/Crystal/pics/foundEPICS083.jpg       |  Bin 0 -> 116981 bytes
+ AMX/Crystal/pics/foundEPICS099.jpg       |  Bin 0 -> 121713 bytes
  AMX/Crystal/pics/foundEPICS107.jpg       |  Bin 0 -> 123690 bytes
  AMX/Crystal/pics/foundEPICS122.jpg       |  Bin 0 -> 117401 bytes
  AMX/Crystal/pics/foundEPICS133.jpg       |  Bin 0 -> 110219 bytes
@@ -179,8 +202,10 @@
  AMX/RawImages/pin.bmp                    |  Bin 0 -> 179958 bytes
  AMX/RawImages/pinFlood.py                |  257 +++
  AMX/etc/comprec1-top3.jpg                |  Bin 0 -> 5013745 bytes
- AMX/etc/countCrystals.py                 |    7 +
+ AMX/etc/countCrystals.py                 |   13 +
  AMX/etc/cvlib.py                         | 3377 ++++++++++++++++++++++++++++++
+ AMX/etc/cvlib.pyc                        |  Bin 0 -> 106780 bytes
+ AMX/etc/gray.jpg                         |  Bin 0 -> 1490185 bytes
  CVLibrary/cvlib.py                       | 3377 ++++++++++++++++++++++++++++++
  EPICS/cvlib.py                           | 3377 ++++++++++++++++++++++++++++++
  EPICS/fetchImg.jpg                       |  Bin 0 -> 632889 bytes
@@ -220,7 +245,6 @@
  IXS/OnAxis2/fit.png                      |  Bin 0 -> 27584 bytes
  IXS/OnAxis2/graph.png                    |  Bin 0 -> 24643 bytes
  IXS/OnAxis2/localPin.py                  |   38 +
- IXS/OnAxis2/localPin.py~                 |   36 +
  IXS/OnAxis2/outputPin.txt                |    1 +
  IXS/OnAxis2/pin.py                       |   39 +
  IXS/OnAxis2/pinSample.jpg                |  Bin 0 -> 174994 bytes
@@ -240,7 +264,6 @@
  IXS/OnAxis2/sample_0051.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/sample_0052.tiff             |  Bin 0 -> 16295630 bytes
  IXS/OnAxis2/test.py                      |    5 +
- IXS/OnAxis2/test.py~                     |    5 +
  IXS/OnAxisImg/cvlib.py                   | 3377 ++++++++++++++++++++++++++++++
  IXS/OnAxisImg/cvlib.pyc                  |  Bin 0 -> 61470 bytes
  IXS/OnAxisImg/floodfill.py               |   80 +
@@ -405,12 +428,12 @@
  XPD/xpdDemo.tif                          |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1513 +++++++++++++
  cvlib.py                                 | 3377 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 99127 bytes
+ cvlib.pyc                                |  Bin 0 -> 99195 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1678 +++++++++++++++
+ gitlog.txt                               | 1690 +++++++++++++++
  imgData.txt                              |    0
  install.sh                               |   28 +
  presentation.txt                         |    2 +
@@ -437,6 +460,6 @@
  tests/new.png                            |  Bin 0 -> 870493 bytes
  tests/selfie.jpg                         |  Bin 0 -> 101522 bytes
  tree.txt                                 |    0
- updateLib.sh                             |   24 +
+ updateLib.sh                             |   25 +
  wordcount.sh                             |    7 +
- 441 files changed, 80933 insertions(+)
+ 464 files changed, 80911 insertions(+)
