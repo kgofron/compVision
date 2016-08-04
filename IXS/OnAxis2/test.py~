@@ -1,5 +1,0 @@
-import cvlib
-
-img = cvlib.load("pinSample.jpg")
-print img
-cvlib.display(img)
