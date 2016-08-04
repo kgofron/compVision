@@ -44,11 +44,11 @@ for i in range(NumImgs):
     #cvlib.plotCentroid(img, crystal, radius=7)
     #cvlib.save(img, "foundEPICS%d.jpg" % angle)
 
-cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angle in Degrees", "Original Data Coord", filename="graph.png")
+#cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angle in Degrees", "Original Data Coord", filename="graph.png")
 d = cvlib.approxSinCurve(angles, center)
-print d["amplitude"], d["phase shift"], d["vertical shift"]
+#print d["amplitude"], d["phase shift"], d["vertical shift"]
 
-cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angle in Degrees", "Y Coord Centroid Best Fit", style="r--", filename="fit.png")
+#cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angle in Degrees", "Y Coord Centroid Best Fit", style="r--", filename="fit.png")
 #cvlib.makeGraph(angles, d["data"], "Y Coord Per Angle", "Angle in Degrees", "Y Coord Centroid", style="r--")
 
 
