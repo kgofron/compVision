@@ -95,8 +95,14 @@
  AMX/Crystal/pics/EPICS349.jpg            |  Bin 0 -> 72800 bytes
  AMX/Crystal/pics/EPICS355.jpg            |  Bin 0 -> 67314 bytes
  AMX/Crystal/pics/EPICS359.jpg            |  Bin 0 -> 65056 bytes
+ AMX/Crystal/pics/area.png                |  Bin 0 -> 34397 bytes
+ AMX/Crystal/pics/areaFit.png             |  Bin 0 -> 40338 bytes
+ AMX/Crystal/pics/areaPlot.py             |   71 +
+ AMX/Crystal/pics/areaPlot.py~            |   71 +
  AMX/Crystal/pics/before.gif              |  Bin 0 -> 7113008 bytes
  AMX/Crystal/pics/centered.gif            |  Bin 0 -> 8301654 bytes
+ AMX/Crystal/pics/cvlib.py                | 3377 ++++++++++++++++++++++++++++++
+ AMX/Crystal/pics/cvlib.pyc               |  Bin 0 -> 108445 bytes
  AMX/Crystal/pics/foundEPICS000.jpg       |  Bin 0 -> 87064 bytes
  AMX/Crystal/pics/foundEPICS005.jpg       |  Bin 0 -> 84717 bytes
  AMX/Crystal/pics/foundEPICS013.jpg       |  Bin 0 -> 80000 bytes
@@ -202,10 +208,10 @@
  AMX/RawImages/pin.bmp                    |  Bin 0 -> 179958 bytes
  AMX/RawImages/pinFlood.py                |  257 +++
  AMX/etc/comprec1-top3.jpg                |  Bin 0 -> 5013745 bytes
- AMX/etc/countCrystals.py                 |   13 +
+ AMX/etc/countCrystals.py                 |   14 +
  AMX/etc/cvlib.py                         | 3377 ++++++++++++++++++++++++++++++
- AMX/etc/cvlib.pyc                        |  Bin 0 -> 106780 bytes
- AMX/etc/gray.jpg                         |  Bin 0 -> 1490185 bytes
+ AMX/etc/cvlib.pyc                        |  Bin 0 -> 106717 bytes
+ AMX/etc/gray.jpg                         |  Bin 0 -> 632445 bytes
  CVLibrary/cvlib.py                       | 3377 ++++++++++++++++++++++++++++++
  EPICS/cvlib.py                           | 3377 ++++++++++++++++++++++++++++++
  EPICS/fetchImg.jpg                       |  Bin 0 -> 632889 bytes
@@ -428,12 +434,12 @@
  XPD/xpdDemo.tif                          |  Bin 0 -> 4194556 bytes
  cvlib.html                               | 1513 +++++++++++++
  cvlib.py                                 | 3377 ++++++++++++++++++++++++++++++
- cvlib.pyc                                |  Bin 0 -> 99195 bytes
+ cvlib.pyc                                |  Bin 0 -> 99132 bytes
  cvlibNoEpics.py                          | 3299 +++++++++++++++++++++++++++++
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1690 +++++++++++++++
+ gitlog.txt                               | 1696 +++++++++++++++
  imgData.txt                              |    0
  install.sh                               |   28 +
  presentation.txt                         |    2 +
@@ -462,4 +468,4 @@
  tree.txt                                 |    0
  updateLib.sh                             |   25 +
  wordcount.sh                             |    7 +
- 464 files changed, 80911 insertions(+)
+ 470 files changed, 84437 insertions(+)
