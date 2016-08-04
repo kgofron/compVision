@@ -6,15 +6,10 @@ DEV = "Cam:7"
 MOTOR = "XF:17IDB-ES:AMX{Gon:1-Ax:O}Mtr"
 YMOTOR = "XF:17IDB-ES:AMX{Gon:1-Ax:PY}Mtr"
 ZMOTOR = "XF:17IDB-ES:AMX{Gon:1-Ax:PZ}Mtr"
-<<<<<<< HEAD:AMX/Crystal/crystal.py
+
 YMTRSCALE = 0.859375 #100.0/120.0
 ZMTRSCALE = 0.849609375 #100.0/120.0
 NumImgs = 120
-=======
-YMTRSCALE = 0.859375  #100.0/120.0
-ZMTRSCALE = 0.849609375  #100.0/120.0
-NumImgs = 33
->>>>>>> 584a5c8e892f646c203fea6647465c5fba2c7112:AMX/Crystal/epicsCrystalCentering.py
 
 angle = cvlib.caget(MOTOR+".RBV")
 MaxAngle = 1000000
@@ -49,15 +44,11 @@ for i in range(NumImgs):
         crystal = cnt[1]"""
     centroid = cvlib.centroid(crystal)
     center.append(centroid[1])
-<<<<<<< HEAD:AMX/Crystal/crystal.py
+
     #cvlib.drawContour(img, crystal, thickness=10)
     #cvlib.plotCentroid(img, crystal, radius=7)
     #cvlib.save(img, "foundEPICS%.2f.jpg" % angle)
-=======
-    cvlib.drawContour(img, crystal, thickness=10)
-    cvlib.plotCentroid(img, crystal, radius=7)
-    cvlib.save(img, "foundEPICS%d.jpg" % angle)
->>>>>>> 584a5c8e892f646c203fea6647465c5fba2c7112:AMX/Crystal/epicsCrystalCentering.py
+
 
 cvlib.saveGraph(angles, center, "Y Coord Per Angle", "Angle in Degrees", "Original Data Coord", filename="graph.png")
 d = cvlib.approxSinCurve(angles, center)
@@ -72,19 +63,11 @@ cvlib.caput(YMOTOR+".RLV", -YMTRSCALE*d["amplitude"]*np.sin(d["phase shift"]*np.
 cvlib.caput(ZMOTOR+".RLV", -ZMTRSCALE*d["amplitude"]*np.cos(d["phase shift"]*np.pi/180.0))
 
 
-<<<<<<< HEAD:AMX/Crystal/crystal.py
+
 #cvlib.caput(MOTOR+".VAL", 0)
 #while cvlib.caget(MOTOR+".DMOV") != 1:
 #    continue
-=======
-cvlib.caput(MOTOR+".VAL", 0)
-while cvlib.caget(MOTOR+".DMOV") != 1:
-    angle = cvlib.caget(MOTOR+".RBV")
-    img = cvlib.fetchImg(SYS, DEV) 
-    img = np.array(img, np.uint8)
-    cvlib.save(img, "EPICS%d.jpg" % angle)
-    continue
->>>>>>> 584a5c8e892f646c203fea6647465c5fba2c7112:AMX/Crystal/epicsCrystalCentering.py
+
 
 # X = -[mc/pel]*A*sin(phase)
 # Y = -[mc/pel]*A*cos(phase)
