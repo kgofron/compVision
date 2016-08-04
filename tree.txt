@@ -1,65 +1,112 @@
- AMX/Crystal/Slide1.JPG                   |  Bin 0 -> 410130 bytes
- AMX/Crystal/Slide2.JPG                   |  Bin 0 -> 459294 bytes
- AMX/Crystal/animation.gif                |  Bin 0 -> 4171465 bytes
  AMX/Crystal/crystalCentering.py          |   37 +
  AMX/Crystal/crystalOutput.txt            |    9 +
  AMX/Crystal/cvlib.py                     | 3377 ++++++++++++++++++++++++++++++
- AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 107462 bytes
- AMX/Crystal/epicsCrystalCentering.py     |   67 +
+ AMX/Crystal/cvlib.pyc                    |  Bin 0 -> 105115 bytes
+ AMX/Crystal/epicsCrystalCentering.py     |   75 +
  AMX/Crystal/epicsCrystalCentering.py~    |   46 +
- AMX/Crystal/findloop_0.jpg               |  Bin 0 -> 9966 bytes
- AMX/Crystal/findloop_105.jpg             |  Bin 0 -> 11182 bytes
- AMX/Crystal/findloop_120.jpg             |  Bin 0 -> 10756 bytes
- AMX/Crystal/findloop_135.jpg             |  Bin 0 -> 10492 bytes
- AMX/Crystal/findloop_15.jpg              |  Bin 0 -> 9312 bytes
- AMX/Crystal/findloop_150.jpg             |  Bin 0 -> 10202 bytes
- AMX/Crystal/findloop_165.jpg             |  Bin 0 -> 9889 bytes
- AMX/Crystal/findloop_180.jpg             |  Bin 0 -> 9384 bytes
- AMX/Crystal/findloop_195.jpg             |  Bin 0 -> 8970 bytes
- AMX/Crystal/findloop_210.jpg             |  Bin 0 -> 9632 bytes
- AMX/Crystal/findloop_225.jpg             |  Bin 0 -> 10490 bytes
- AMX/Crystal/findloop_240.jpg             |  Bin 0 -> 10880 bytes
- AMX/Crystal/findloop_255.jpg             |  Bin 0 -> 10863 bytes
- AMX/Crystal/findloop_270.jpg             |  Bin 0 -> 11147 bytes
- AMX/Crystal/findloop_285.jpg             |  Bin 0 -> 11190 bytes
- AMX/Crystal/findloop_30.jpg              |  Bin 0 -> 9320 bytes
- AMX/Crystal/findloop_300.jpg             |  Bin 0 -> 11318 bytes
- AMX/Crystal/findloop_315.jpg             |  Bin 0 -> 11318 bytes
- AMX/Crystal/findloop_330.jpg             |  Bin 0 -> 11490 bytes
- AMX/Crystal/findloop_345.jpg             |  Bin 0 -> 10827 bytes
- AMX/Crystal/findloop_45.jpg              |  Bin 0 -> 9972 bytes
- AMX/Crystal/findloop_60.jpg              |  Bin 0 -> 11174 bytes
- AMX/Crystal/findloop_75.jpg              |  Bin 0 -> 10812 bytes
- AMX/Crystal/findloop_90.jpg              |  Bin 0 -> 11043 bytes
  AMX/Crystal/fit.png                      |  Bin 0 -> 36121 bytes
- AMX/Crystal/found0.jpg                   |  Bin 0 -> 22573 bytes
- AMX/Crystal/found105.jpg                 |  Bin 0 -> 26832 bytes
- AMX/Crystal/found120.jpg                 |  Bin 0 -> 24596 bytes
- AMX/Crystal/found135.jpg                 |  Bin 0 -> 23243 bytes
- AMX/Crystal/found15.jpg                  |  Bin 0 -> 21046 bytes
- AMX/Crystal/found150.jpg                 |  Bin 0 -> 22295 bytes
- AMX/Crystal/found165.jpg                 |  Bin 0 -> 21267 bytes
- AMX/Crystal/found180.jpg                 |  Bin 0 -> 20888 bytes
- AMX/Crystal/found195.jpg                 |  Bin 0 -> 21342 bytes
- AMX/Crystal/found210.jpg                 |  Bin 0 -> 22971 bytes
- AMX/Crystal/found225.jpg                 |  Bin 0 -> 28554 bytes
- AMX/Crystal/found240.jpg                 |  Bin 0 -> 26327 bytes
- AMX/Crystal/found255.jpg                 |  Bin 0 -> 26465 bytes
- AMX/Crystal/found270.jpg                 |  Bin 0 -> 27498 bytes
- AMX/Crystal/found285.jpg                 |  Bin 0 -> 27420 bytes
- AMX/Crystal/found30.jpg                  |  Bin 0 -> 21340 bytes
- AMX/Crystal/found300.jpg                 |  Bin 0 -> 27824 bytes
- AMX/Crystal/found315.jpg                 |  Bin 0 -> 27200 bytes
- AMX/Crystal/found330.jpg                 |  Bin 0 -> 27618 bytes
- AMX/Crystal/found345.jpg                 |  Bin 0 -> 28548 bytes
- AMX/Crystal/found45.jpg                  |  Bin 0 -> 23679 bytes
- AMX/Crystal/found60.jpg                  |  Bin 0 -> 26378 bytes
- AMX/Crystal/found75.jpg                  |  Bin 0 -> 25417 bytes
- AMX/Crystal/found90.jpg                  |  Bin 0 -> 26261 bytes
  AMX/Crystal/graph.png                    |  Bin 0 -> 29015 bytes
- AMX/Crystal/loop.gif                     |  Bin 0 -> 4229224 bytes
+ AMX/Crystal/jeanImg/Slide1.JPG           |  Bin 0 -> 410130 bytes
+ AMX/Crystal/jeanImg/Slide2.JPG           |  Bin 0 -> 459294 bytes
+ AMX/Crystal/jeanImg/animation.gif        |  Bin 0 -> 4171465 bytes
+ AMX/Crystal/jeanImg/findloop_0.jpg       |  Bin 0 -> 9966 bytes
+ AMX/Crystal/jeanImg/findloop_105.jpg     |  Bin 0 -> 11182 bytes
+ AMX/Crystal/jeanImg/findloop_120.jpg     |  Bin 0 -> 10756 bytes
+ AMX/Crystal/jeanImg/findloop_135.jpg     |  Bin 0 -> 10492 bytes
+ AMX/Crystal/jeanImg/findloop_15.jpg      |  Bin 0 -> 9312 bytes
+ AMX/Crystal/jeanImg/findloop_150.jpg     |  Bin 0 -> 10202 bytes
+ AMX/Crystal/jeanImg/findloop_165.jpg     |  Bin 0 -> 9889 bytes
+ AMX/Crystal/jeanImg/findloop_180.jpg     |  Bin 0 -> 9384 bytes
+ AMX/Crystal/jeanImg/findloop_195.jpg     |  Bin 0 -> 8970 bytes
+ AMX/Crystal/jeanImg/findloop_210.jpg     |  Bin 0 -> 9632 bytes
+ AMX/Crystal/jeanImg/findloop_225.jpg     |  Bin 0 -> 10490 bytes
+ AMX/Crystal/jeanImg/findloop_240.jpg     |  Bin 0 -> 10880 bytes
+ AMX/Crystal/jeanImg/findloop_255.jpg     |  Bin 0 -> 10863 bytes
+ AMX/Crystal/jeanImg/findloop_270.jpg     |  Bin 0 -> 11147 bytes
+ AMX/Crystal/jeanImg/findloop_285.jpg     |  Bin 0 -> 11190 bytes
+ AMX/Crystal/jeanImg/findloop_30.jpg      |  Bin 0 -> 9320 bytes
+ AMX/Crystal/jeanImg/findloop_300.jpg     |  Bin 0 -> 11318 bytes
+ AMX/Crystal/jeanImg/findloop_315.jpg     |  Bin 0 -> 11318 bytes
+ AMX/Crystal/jeanImg/findloop_330.jpg     |  Bin 0 -> 11490 bytes
+ AMX/Crystal/jeanImg/findloop_345.jpg     |  Bin 0 -> 10827 bytes
+ AMX/Crystal/jeanImg/findloop_45.jpg      |  Bin 0 -> 9972 bytes
+ AMX/Crystal/jeanImg/findloop_60.jpg      |  Bin 0 -> 11174 bytes
+ AMX/Crystal/jeanImg/findloop_75.jpg      |  Bin 0 -> 10812 bytes
+ AMX/Crystal/jeanImg/findloop_90.jpg      |  Bin 0 -> 11043 bytes
+ AMX/Crystal/jeanImg/found0.jpg           |  Bin 0 -> 22573 bytes
+ AMX/Crystal/jeanImg/found105.jpg         |  Bin 0 -> 26832 bytes
+ AMX/Crystal/jeanImg/found120.jpg         |  Bin 0 -> 24596 bytes
+ AMX/Crystal/jeanImg/found135.jpg         |  Bin 0 -> 23243 bytes
+ AMX/Crystal/jeanImg/found15.jpg          |  Bin 0 -> 21046 bytes
+ AMX/Crystal/jeanImg/found150.jpg         |  Bin 0 -> 22295 bytes
+ AMX/Crystal/jeanImg/found165.jpg         |  Bin 0 -> 21267 bytes
+ AMX/Crystal/jeanImg/found180.jpg         |  Bin 0 -> 20888 bytes
+ AMX/Crystal/jeanImg/found195.jpg         |  Bin 0 -> 21342 bytes
+ AMX/Crystal/jeanImg/found210.jpg         |  Bin 0 -> 22971 bytes
+ AMX/Crystal/jeanImg/found225.jpg         |  Bin 0 -> 28554 bytes
+ AMX/Crystal/jeanImg/found240.jpg         |  Bin 0 -> 26327 bytes
+ AMX/Crystal/jeanImg/found255.jpg         |  Bin 0 -> 26465 bytes
+ AMX/Crystal/jeanImg/found270.jpg         |  Bin 0 -> 27498 bytes
+ AMX/Crystal/jeanImg/found285.jpg         |  Bin 0 -> 27420 bytes
+ AMX/Crystal/jeanImg/found30.jpg          |  Bin 0 -> 21340 bytes
+ AMX/Crystal/jeanImg/found300.jpg         |  Bin 0 -> 27824 bytes
+ AMX/Crystal/jeanImg/found315.jpg         |  Bin 0 -> 27200 bytes
+ AMX/Crystal/jeanImg/found330.jpg         |  Bin 0 -> 27618 bytes
+ AMX/Crystal/jeanImg/found345.jpg         |  Bin 0 -> 28548 bytes
+ AMX/Crystal/jeanImg/found45.jpg          |  Bin 0 -> 23679 bytes
+ AMX/Crystal/jeanImg/found60.jpg          |  Bin 0 -> 26378 bytes
+ AMX/Crystal/jeanImg/found75.jpg          |  Bin 0 -> 25417 bytes
+ AMX/Crystal/jeanImg/found90.jpg          |  Bin 0 -> 26261 bytes
+ AMX/Crystal/jeanImg/loop.gif             |  Bin 0 -> 4229224 bytes
  AMX/Crystal/loop.py                      |   33 +
  AMX/Crystal/loopCenter.py                |   19 +
+ AMX/Crystal/pics/EPICS109.jpg            |  Bin 0 -> 138786 bytes
+ AMX/Crystal/pics/EPICS122.jpg            |  Bin 0 -> 130038 bytes
+ AMX/Crystal/pics/EPICS134.jpg            |  Bin 0 -> 113794 bytes
+ AMX/Crystal/pics/EPICS147.jpg            |  Bin 0 -> 99206 bytes
+ AMX/Crystal/pics/EPICS159.jpg            |  Bin 0 -> 84797 bytes
+ AMX/Crystal/pics/EPICS167.jpg            |  Bin 0 -> 75156 bytes
+ AMX/Crystal/pics/EPICS177.jpg            |  Bin 0 -> 65502 bytes
+ AMX/Crystal/pics/EPICS187.jpg            |  Bin 0 -> 61421 bytes
+ AMX/Crystal/pics/EPICS197.jpg            |  Bin 0 -> 61678 bytes
+ AMX/Crystal/pics/EPICS212.jpg            |  Bin 0 -> 65199 bytes
+ AMX/Crystal/pics/EPICS222.jpg            |  Bin 0 -> 75239 bytes
+ AMX/Crystal/pics/EPICS232.jpg            |  Bin 0 -> 87842 bytes
+ AMX/Crystal/pics/EPICS247.jpg            |  Bin 0 -> 104182 bytes
+ AMX/Crystal/pics/EPICS257.jpg            |  Bin 0 -> 121176 bytes
+ AMX/Crystal/pics/EPICS267.jpg            |  Bin 0 -> 130158 bytes
+ AMX/Crystal/pics/EPICS282.jpg            |  Bin 0 -> 141475 bytes
+ AMX/Crystal/pics/EPICS292.jpg            |  Bin 0 -> 134925 bytes
+ AMX/Crystal/pics/EPICS302.jpg            |  Bin 0 -> 124048 bytes
+ AMX/Crystal/pics/EPICS318.jpg            |  Bin 0 -> 113598 bytes
+ AMX/Crystal/pics/EPICS328.jpg            |  Bin 0 -> 97073 bytes
+ AMX/Crystal/pics/EPICS339.jpg            |  Bin 0 -> 83639 bytes
+ AMX/Crystal/pics/EPICS349.jpg            |  Bin 0 -> 72800 bytes
+ AMX/Crystal/pics/EPICS355.jpg            |  Bin 0 -> 67314 bytes
+ AMX/Crystal/pics/EPICS359.jpg            |  Bin 0 -> 65056 bytes
+ AMX/Crystal/pics/foundEPICS107.jpg       |  Bin 0 -> 123690 bytes
+ AMX/Crystal/pics/foundEPICS122.jpg       |  Bin 0 -> 117401 bytes
+ AMX/Crystal/pics/foundEPICS133.jpg       |  Bin 0 -> 110219 bytes
+ AMX/Crystal/pics/foundEPICS143.jpg       |  Bin 0 -> 101600 bytes
+ AMX/Crystal/pics/foundEPICS158.jpg       |  Bin 0 -> 91937 bytes
+ AMX/Crystal/pics/foundEPICS169.jpg       |  Bin 0 -> 83283 bytes
+ AMX/Crystal/pics/foundEPICS184.jpg       |  Bin 0 -> 78885 bytes
+ AMX/Crystal/pics/foundEPICS194.jpg       |  Bin 0 -> 77479 bytes
+ AMX/Crystal/pics/foundEPICS209.jpg       |  Bin 0 -> 81483 bytes
+ AMX/Crystal/pics/foundEPICS218.jpg       |  Bin 0 -> 86720 bytes
+ AMX/Crystal/pics/foundEPICS229.jpg       |  Bin 0 -> 96102 bytes
+ AMX/Crystal/pics/foundEPICS239.jpg       |  Bin 0 -> 105777 bytes
+ AMX/Crystal/pics/foundEPICS253.jpg       |  Bin 0 -> 115361 bytes
+ AMX/Crystal/pics/foundEPICS264.jpg       |  Bin 0 -> 124449 bytes
+ AMX/Crystal/pics/foundEPICS271.jpg       |  Bin 0 -> 129983 bytes
+ AMX/Crystal/pics/foundEPICS289.jpg       |  Bin 0 -> 134885 bytes
+ AMX/Crystal/pics/foundEPICS296.jpg       |  Bin 0 -> 134995 bytes
+ AMX/Crystal/pics/foundEPICS308.jpg       |  Bin 0 -> 132594 bytes
+ AMX/Crystal/pics/foundEPICS326.jpg       |  Bin 0 -> 129074 bytes
+ AMX/Crystal/pics/foundEPICS338.jpg       |  Bin 0 -> 113107 bytes
+ AMX/Crystal/pics/foundEPICS351.jpg       |  Bin 0 -> 97800 bytes
+ AMX/Crystal/pics/foundEPICS356.jpg       |  Bin 0 -> 89593 bytes
+ AMX/Crystal/pics/foundEPICS359.jpg       |  Bin 0 -> 87321 bytes
  AMX/RawImages/README.md                  |    9 +
  AMX/RawImages/Slide.pdf                  |  Bin 0 -> 117709 bytes
  AMX/RawImages/cvlib.py                   | 3377 ++++++++++++++++++++++++++++++
@@ -131,6 +178,9 @@
  AMX/RawImages/photo9.bmp                 |  Bin 0 -> 1921078 bytes
  AMX/RawImages/pin.bmp                    |  Bin 0 -> 179958 bytes
  AMX/RawImages/pinFlood.py                |  257 +++
+ AMX/etc/comprec1-top3.jpg                |  Bin 0 -> 5013745 bytes
+ AMX/etc/countCrystals.py                 |    7 +
+ AMX/etc/cvlib.py                         | 3377 ++++++++++++++++++++++++++++++
  CVLibrary/cvlib.py                       | 3377 ++++++++++++++++++++++++++++++
  EPICS/cvlib.py                           | 3377 ++++++++++++++++++++++++++++++
  EPICS/fetchImg.jpg                       |  Bin 0 -> 632889 bytes
@@ -360,7 +410,7 @@
  fire.sh                                  |   11 +
  genTreeTable.sh                          |    7 +
  generateDocs.sh                          |    5 +
- gitlog.txt                               | 1611 ++++++++++++++
+ gitlog.txt                               | 1678 +++++++++++++++
  imgData.txt                              |    0
  install.sh                               |   28 +
  presentation.txt                         |    2 +
@@ -387,6 +437,6 @@
  tests/new.png                            |  Bin 0 -> 870493 bytes
  tests/selfie.jpg                         |  Bin 0 -> 101522 bytes
  tree.txt                                 |    0
- updateLib.sh                             |   23 +
+ updateLib.sh                             |   24 +
  wordcount.sh                             |    7 +
- 391 files changed, 77473 insertions(+)
+ 441 files changed, 80933 insertions(+)

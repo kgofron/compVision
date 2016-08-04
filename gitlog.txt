@@ -1,12 +1,79 @@
-* commit 359932e (HEAD, origin/master, origin/HEAD, master)
+* commit d0927e9 (HEAD, origin/master, origin/HEAD, master)
+| Author: Debian Live user <user@localhost.localdomain>
+| Date:   42 minutes ago
+| 
+|     new folders
+|  
+* commit 44b4906
+| Author: Bill Watson <wwatso13@jhu.edu>
+| Date:   in the future
+| 
+|     Add files via upload
+|  
+* commit 65318f2
 | Author: root <root@xf17id2-ca1.cs.nsls2.local>
-| Date:   5 minutes ago
+| Date:   in the future
+| 
+|     fix file
+|  
+* commit 1b9a919
+| Author: root <root@xf17id2-ca1.cs.nsls2.local>
+| Date:   in the future
+| 
+|     fix meger
+|    
+*   commit 11cb71c
+|\  Merge: b4a2047 584a5c8
+| | Author: root <root@xf17id2-ca1.cs.nsls2.local>
+| | Date:   in the future
+| | 
+| |     merge
+| |   
+| * commit 584a5c8
+| | Author: Bill Watson <wwatso13@jhu.edu>
+| | Date:   in the future
+| | 
+| |     Add files via upload
+| |   
+* | commit b4a2047
+|/  Author: root <root@xf17id2-ca1.cs.nsls2.local>
+|   Date:   in the future
+|   
+|       File dump
+|  
+* commit 66be911
+| Author: root <root@xf17id2-ca1.cs.nsls2.local>
+| Date:   in the future
+| 
+|     update
+|  
+* commit 5bff6ce
+| Author: Bill Watson <wwatso13@jhu.edu>
+| Date:   in the future
+| 
+|     Add files via upload
+|  
+* commit 02e582f
+| Author: Bill Watson <wwatso13@jhu.edu>
+| Date:   in the future
+| 
+|     Add files via upload
+|  
+* commit acc8929
+| Author: root <root@xf17id2-ca1.cs.nsls2.local>
+| Date:   46 minutes ago
+| 
+|     Update Files In Case Of Fire at 14:26:07 - 08/04/16
+|  
+* commit 359932e
+| Author: root <root@xf17id2-ca1.cs.nsls2.local>
+| Date:   51 minutes ago
 | 
 |     update install
 |  
 * commit 8494f65
 | Author: Bill Watson <wwatso13@jhu.edu>
-| Date:   25 hours ago
+| Date:   26 hours ago
 | 
 |     Add files via upload
 |  
