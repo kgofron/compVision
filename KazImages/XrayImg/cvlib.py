@@ -56,18 +56,22 @@ def fetchImg(SYS, DEV):
         """
         SYSDEV = str(SYS) + "{" + str(DEV) + "}"
         img = epics.caget(SYSDEV + "image1:ArrayData")
+        #print img
+        #print img.dtype
         color = epics.caget(SYSDEV + "cam1:ColorMode_RBV")
         if color == 2:
                 rows = epics.caget(SYSDEV + "image1:ArraySize2_RBV")
                 cols = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
-        else :
+                img = np.resize(img, (rows, cols, 3))
+        elif color == 1:
                 rows = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
                 cols = epics.caget(SYSDEV + "image1:ArraySize0_RBV")
-        dtype = epics.caget(SYSDEV + "cam1:DataType_RBV")
-        if color == 0:
                 img = np.resize(img, (rows, cols))
         else:
-                img = np.resize(img, (rows, cols, 3))
+                rows = epics.caget(SYSDEV + "image1:ArraySize1_RBV")
+                cols = epics.caget(SYSDEV + "image1:ArraySize0_RBV")
+                img = np.resize(img, (rows, cols))
+        dtype = epics.caget(SYSDEV + "cam1:DataType_RBV")
         return np.array(img)
        
 
