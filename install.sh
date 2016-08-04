@@ -3,17 +3,19 @@ printf "Starting install..."
 
 sudo apt-get -y install libopencv-dev build-essential cmake git libgtk2.0-dev pkg-config python-dev python-numpy python-matplotlib libdc1394-22 libdc1394-22-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev libtbb-dev libqt4-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev x264 v4l-utils unzip libgtk2.0-dev libatlas-base-dev gfortran
 
+mkdir /epics/src
+cd /epics/src
+
 git clone https://github.com/nextBillyonair/compVision.git
 
 mkdir opencv
 cd opencv
-wget https://github.com/opencv/opencv/archive/3.1.0.zip
-unzip 3.1.0.zip
+git clone https://github.com/opencv/opencv
 
-cd opencv-3.1.0
+cd opencv
 mkdir build
 cd build
-cmake CMakeLists.txt
+cmake ../CMakeLists.txt
 
 make
 make install
