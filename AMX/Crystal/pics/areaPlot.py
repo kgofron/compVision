@@ -47,7 +47,7 @@ for i in range(35): #NumImgs
 
 
 cvlib.saveGraph(angles, area, "Crystal Area Per Angle", "Angle in Degrees", "Area", filename="area.png")
-d = cvlib.approxSinCurve(angles, area)
+d = cvlib.approxSinCurve(angles, area, exp=2)
 print d["amplitude"], d["phase shift"], d["vertical shift"]
 
 cvlib.saveGraph(angles, d["data"], "Y Coord Per Angle", "Angle in Degrees", "Y Coord Centroid Best Fit", style="r--", filename="areaFit.png")

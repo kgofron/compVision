@@ -489,13 +489,14 @@ def matplotlibDisplayMulti(imgs, titles=None, colorFlag='gray'):
         plt.show()
 
 
-def approxSinCurve(angles, data):
+def approxSinCurve(angles, data, exp=1):
         """
         Approximates a Sin Curve to given Data using the Least Squares Solutions Method
         
         Params:
         * angles - List of angles
         * data - list of data points
+        * exp - exponent for sin, i.e. sin, sin^2, sin^3; def: 1
         
         Returns:
         * {"data", "amplitude", "phase shift", "vertical shift"} dictionary
@@ -509,10 +510,10 @@ def approxSinCurve(angles, data):
         guess_phase = 0
         data_first_guess = []
         for item in t:
-                data_first_guess.append(guess_std*np.sin(item+guess_phase) + guess_mean)
-        optimize_func = lambda x: x[0]*np.sin(t+x[1]) + x[2] - data
+                data_first_guess.append(guess_std*(np.sin(item+guess_phase))**exp + guess_mean)
+        optimize_func = lambda x: x[0]*(np.sin(t+x[1]))**exp + x[2] - data
         est_std, est_phase, est_mean = leastsq(optimize_func, [guess_std, guess_phase, guess_mean])[0]
-        data_fit = est_std*np.sin(t+est_phase) + est_mean
+        data_fit = est_std*(np.sin(t+est_phase))**exp + est_mean
         return {"data": data_fit, "amplitude": est_std, "phase shift":est_phase*180.0/np.pi, "vertical shift": est_mean}
 
 
